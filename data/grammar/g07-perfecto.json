@@ -1,0 +1,84 @@
+{
+  "id": "g07",
+  "title": "Pretérito Perfecto",
+  "intro": "Die Vergangenheit mit Bezug zum Jetzt: „Hoy he comido paella“ – heute habe ich Paella gegessen. In Spanien ist das Perfecto die Standardform für alles, was heute, diese Woche oder „irgendwann im Leben“ passiert ist.",
+  "sections": [
+    {
+      "h": "Bildung: haber + Partizip",
+      "p": "Das Perfecto besteht aus zwei Teilen: dem Präsens von **haber** (he, has, ha, hemos, habéis, han) + dem **Partizip**. Regelmäßige Partizipien: -ar-Verben → `-ado` (hablar → hablado), -er/-ir-Verben → `-ido` (comer → comido, vivir → vivido). Das Partizip bleibt immer unverändert – es wird nicht angeglichen!",
+      "table": {
+        "head": ["", "hablar", "comer", "vivir"],
+        "rows": [
+          ["yo", "**he** habl**ado**", "**he** com**ido**", "**he** viv**ido**"],
+          ["tú", "**has** habl**ado**", "**has** com**ido**", "**has** viv**ido**"],
+          ["él/ella", "**ha** habl**ado**", "**ha** com**ido**", "**ha** viv**ido**"],
+          ["nosotros", "**hemos** habl**ado**", "**hemos** com**ido**", "**hemos** viv**ido**"],
+          ["vosotros", "**habéis** habl**ado**", "**habéis** com**ido**", "**habéis** viv**ido**"],
+          ["ellos", "**han** habl**ado**", "**han** com**ido**", "**han** viv**ido**"]
+        ]
+      },
+      "examples": [
+        { "es": "Hoy he trabajado mucho.", "de": "Heute habe ich viel gearbeitet." },
+        { "es": "¿Has comido ya?", "de": "Hast du schon gegessen?" }
+      ],
+      "tip": "haber und Partizip sind unzertrennlich! Pronomen stehen davor: **Lo he visto** (Ich habe es gesehen) – nie „he lo visto“."
+    },
+    {
+      "h": "Unregelmäßige Partizipien",
+      "p": "Ein gutes Dutzend häufiger Verben hat ein eigenes Partizip – die musst du auswendig lernen, sie tauchen ständig auf:",
+      "table": {
+        "head": ["Infinitiv", "Partizip", "Bedeutung"],
+        "rows": [
+          ["hacer", "**hecho**", "gemacht"],
+          ["ver", "**visto**", "gesehen"],
+          ["decir", "**dicho**", "gesagt"],
+          ["escribir", "**escrito**", "geschrieben"],
+          ["poner", "**puesto**", "gelegt/gestellt"],
+          ["volver", "**vuelto**", "zurückgekommen"],
+          ["abrir", "**abierto**", "geöffnet"],
+          ["romper", "**roto**", "kaputt gemacht"],
+          ["morir", "**muerto**", "gestorben"]
+        ]
+      },
+      "examples": [
+        { "es": "¿Qué has hecho este fin de semana?", "de": "Was hast du dieses Wochenende gemacht?" },
+        { "es": "Todavía no he visto esa película.", "de": "Ich habe diesen Film noch nicht gesehen." }
+      ],
+      "tip": "Merkhilfe: Die meisten enden auf **-to** oder **-cho**. Zusammensetzungen erben die Form: describir → descrito, devolver → devuelto."
+    },
+    {
+      "h": "Wann Perfecto? Signalwörter & Lebenserfahrung",
+      "p": "Perfecto benutzt man, wenn der Zeitraum **noch andauert** oder das Ergebnis bis jetzt wirkt: **hoy** (heute), **esta semana** (diese Woche), **este mes/año**, **ya** (schon), **todavía no** (noch nicht), **alguna vez** (jemals), **nunca** (nie), **hasta ahora** (bis jetzt). Auch für Lebenserfahrung: „Warst du schon mal …?“",
+      "examples": [
+        { "es": "¿Has estado alguna vez en España?", "de": "Warst du schon einmal in Spanien?" },
+        { "es": "Esta semana hemos tenido mucho trabajo.", "de": "Diese Woche hatten wir viel Arbeit." }
+      ],
+      "tip": "**ya** = schon (Ya he terminado), **todavía no** = noch nicht (Todavía no he terminado). Dieses Paar ist Prüfungsklassiker!"
+    },
+    {
+      "h": "Perfecto oder Indefinido? Die Spanien-Regel",
+      "p": "Die Faustregel in Spanien: Ist der Zeitraum **abgeschlossen** (ayer, la semana pasada, en 2019, hace dos años) → **Indefinido**. Reicht der Zeitraum **bis jetzt** (hoy, esta semana, este año, alguna vez) → **Perfecto**. Vergleiche: `Ayer comí paella` vs. `Hoy he comido paella`. In Lateinamerika sagt man dagegen oft auch bei „hoy“ das Indefinido – für Spanien-Spanisch gilt aber die Zeitraum-Regel.",
+      "examples": [
+        { "es": "Ayer fui al cine, pero hoy he ido al teatro.", "de": "Gestern ging ich ins Kino, aber heute bin ich ins Theater gegangen." },
+        { "es": "Este año hemos viajado mucho; el año pasado viajamos poco.", "de": "Dieses Jahr sind wir viel gereist; letztes Jahr reisten wir wenig." }
+      ],
+      "tip": "Frag dich: Kann ich „bis jetzt“ dazudenken? Ja → Perfecto. Nein, der Zeitraum ist vorbei → Indefinido."
+    }
+  ],
+  "exercises": [
+    { "type": "gap", "text": "Hoy ___ (comer, yo) paella.", "answer": "he comido", "hint": "haber + Partizip", "expl": "hoy → Perfecto: he (yo) + comido (regelmäßig, -er → -ido)." },
+    { "type": "gap", "text": "¿___ (ver, tú) ya la nueva película?", "answer": "has visto", "hint": "unregelmäßiges Partizip", "expl": "ver hat das unregelmäßige Partizip visto: has visto." },
+    { "type": "gap", "text": "Esta semana nosotros ___ (trabajar) mucho.", "answer": "hemos trabajado", "hint": "esta semana → Perfecto", "expl": "esta semana dauert noch an → Perfecto: hemos + trabajado." },
+    { "type": "gap", "text": "Ella todavía no ___ (hacer) los deberes.", "answer": "ha hecho", "hint": "hacer → ?", "expl": "hacer → hecho (unregelmäßig). todavía no ist ein typisches Perfecto-Signal." },
+    { "type": "gap", "text": "¿Qué te ___ (decir) el médico?", "answer": "ha dicho", "hint": "decir → ?", "expl": "decir → dicho. Das Pronomen te steht vor haber: te ha dicho." },
+    { "type": "gap", "text": "Yo nunca ___ (escribir) una novela.", "answer": "he escrito", "hint": "escribir → ?", "expl": "escribir → escrito (unregelmäßig). nunca + Lebenserfahrung → Perfecto." },
+    { "type": "gap", "text": "¿Dónde ___ (poner, tú) las llaves?", "answer": "has puesto", "hint": "poner → ?", "expl": "poner → puesto: has puesto. Das Ergebnis betrifft das Jetzt (die Schlüssel fehlen!)." },
+    { "type": "gap", "text": "Mis padres ya ___ (volver) de vacaciones.", "answer": "han vuelto", "hint": "volver → ?", "expl": "volver → vuelto (unregelmäßig). ya = schon → Perfecto: han vuelto." },
+    { "type": "gap", "text": "¿___ (estar, vosotros) alguna vez en Granada?", "answer": "habéis estado", "hint": "Lebenserfahrung", "expl": "alguna vez fragt nach Lebenserfahrung → Perfecto: habéis estado." },
+    { "type": "mc", "q": "Welcher Satz ist im Spanien-Spanisch richtig?", "options": ["Hoy comí paella.", "Hoy he comido paella.", "Hoy había comido paella."], "answer": 1, "expl": "hoy reicht bis jetzt → Perfecto. „Hoy comí“ hört man in Lateinamerika, in Spanien sagt man „he comido“." },
+    { "type": "mc", "q": "„Ayer ___ al cine.“ – Was passt in Spanien?", "options": ["he ido", "fui", "he vado"], "answer": 1, "expl": "ayer ist ein abgeschlossener Zeitraum → Indefinido: fui. („he vado“ existiert nicht – ir → ido.)" },
+    { "type": "mc", "q": "„Ich habe es noch nicht gemacht“ heißt:", "options": ["Todavía no lo he hecho.", "Todavía no he lo hecho.", "No lo he hacido todavía."], "answer": 0, "expl": "Pronomen (lo) vor haber, und hacer → hecho. haber + Partizip nie trennen!" },
+    { "type": "mc", "q": "Welches Partizip ist FALSCH?", "options": ["abrir → abierto", "romper → roto", "volver → volvido"], "answer": 2, "expl": "volver → vuelto (unregelmäßig). abierto und roto sind korrekt." },
+    { "type": "gap", "text": "Este año ___ (viajar, nosotros) mucho por Europa.", "answer": "hemos viajado", "hint": "este año → ?", "expl": "este año dauert noch an → Perfecto: hemos viajado. Mit „el año pasado“ wäre es Indefinido (viajamos)." }
+  ]
+}

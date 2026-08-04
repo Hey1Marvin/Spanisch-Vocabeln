@@ -1,0 +1,88 @@
+{
+  "id": "g10",
+  "title": "Imperativ",
+  "intro": "Bestellen, nach dem Weg fragen, jemanden warnen – ohne Imperativ läuft im Alltag nichts. Spanisch hat eigene Formen für tú, usted und vosotros, und bei der Verneinung wartet eine Überraschung.",
+  "sections": [
+    {
+      "h": "Bejahter Imperativ: tú & vosotros",
+      "p": "Die **tú-Form** ist einfach die 3. Person Singular Presente: `habla` (sprich!), `come` (iss!), `abre` (öffne!). Die **vosotros-Form** bildest du, indem du das **-r** des Infinitivs durch **-d** ersetzt: `hablad`, `comed`, `vivid` – ohne Ausnahme regelmäßig!",
+      "table": {
+        "head": ["Infinitiv", "tú", "vosotros"],
+        "rows": [
+          ["hablar", "habl**a**", "habla**d**"],
+          ["comer", "com**e**", "come**d**"],
+          ["vivir", "viv**e**", "vivi**d**"]
+        ]
+      },
+      "examples": [
+        { "es": "¡Habla más despacio, por favor!", "de": "Sprich langsamer, bitte!" },
+        { "es": "¡Venid a la playa con nosotros!", "de": "Kommt mit uns an den Strand!" }
+      ],
+      "tip": "tú-Imperativ = er/sie-Form: „Was ER macht, sollst DU tun.“ `él habla → ¡habla!`"
+    },
+    {
+      "h": "Die acht Kurzen: unregelmäßige tú-Formen",
+      "p": "Acht sehr häufige Verben haben einsilbige tú-Imperative – die musst du auswendig können:",
+      "table": {
+        "head": ["Infinitiv", "Imperativ tú", "Bedeutung"],
+        "rows": [
+          ["tener", "**ten**", "nimm! / hab!"],
+          ["venir", "**ven**", "komm!"],
+          ["hacer", "**haz**", "mach!"],
+          ["poner", "**pon**", "stell! / leg!"],
+          ["salir", "**sal**", "geh raus!"],
+          ["decir", "**di**", "sag!"],
+          ["ir", "**ve**", "geh!"],
+          ["ser", "**sé**", "sei!"]
+        ]
+      },
+      "examples": [
+        { "es": "¡Ten cuidado con la maleta!", "de": "Pass auf den Koffer auf!" },
+        { "es": "Ven aquí y di la verdad.", "de": "Komm her und sag die Wahrheit." }
+      ],
+      "tip": "Merk sie dir im Rhythmus: **ten – ven – haz – pon – sal – di – ve – sé**. Achtung: `ve` kann „geh!“ (ir) und „sieh!“ (ver) bedeuten – der Kontext entscheidet."
+    },
+    {
+      "h": "usted & Verneinung: hier übernimmt der Subjuntivo",
+      "p": "Für **usted/ustedes** und für **jeden verneinten Imperativ** benutzt du die Subjuntivo-Formen: -ar-Verben bekommen **-e**, -er/-ir-Verben **-a**. Also: `¡Hable!` (Sprechen Sie!), aber `¡No hables!` (Sprich nicht!). Bejaht bei tú/vosotros gelten die Formen aus Abschnitt 1 – verneint wechselt ALLES zum Subjuntivo.",
+      "table": {
+        "head": ["", "bejaht (tú)", "verneint (tú)", "usted", "verneint (vosotros)"],
+        "rows": [
+          ["hablar", "habla", "no habl**es**", "habl**e**", "no habl**éis**"],
+          ["comer", "come", "no com**as**", "com**a**", "no com**áis**"],
+          ["abrir", "abre", "no abr**as**", "abr**a**", "no abr**áis**"]
+        ]
+      },
+      "examples": [
+        { "es": "Perdone, ¿puede ayudarme? Hable más alto, por favor.", "de": "Entschuldigen Sie, können Sie mir helfen? Sprechen Sie bitte lauter." },
+        { "es": "¡No comas tan rápido!", "de": "Iss nicht so schnell!" }
+      ],
+      "tip": "Eselsbrücke: Beim usted-Imperativ und bei der Verneinung „tauschen“ die Vokale: -ar → e, -er/-ir → a."
+    },
+    {
+      "h": "Pronomen & typische Alltagsbefehle",
+      "p": "Beim **bejahten** Imperativ hängst du Pronomen direkt ans Verb: `dímelo` (sag es mir!), `siéntate` (setz dich!), `dame` (gib mir!) – oft mit neuem Akzent, damit die Betonung bleibt. Beim **verneinten** Imperativ stehen die Pronomen wie gewohnt davor: `no me lo digas`, `no te sientes`. Und diese Mini-Imperative hörst du in Spanien ständig: **oye** (hör mal / du!), **mira** (schau mal), **perdona/perdone** (entschuldige/-n Sie), **dime** (sag – auch am Telefon oder als „Was darf's sein?“), **tranquilo/-a** (ganz ruhig).",
+      "examples": [
+        { "es": "Oye, perdona, ¿la estación está por aquí?", "de": "Du, entschuldige, ist der Bahnhof hier in der Nähe?" },
+        { "es": "¡Siéntate y tranquilo, ya llega el tren!", "de": "Setz dich und ganz ruhig, der Zug kommt gleich!" }
+      ],
+      "tip": "Bejaht: Pronomen hinten dran (`¡Dímelo!`). Verneint: Pronomen nach vorn (`¡No me lo digas!`)."
+    }
+  ],
+  "exercises": [
+    { "type": "gap", "text": "¡___ (hablar, tú) más despacio, por favor!", "answer": ["habla", "Habla"], "hint": "3. Person Singular Presente", "expl": "Bejahter tú-Imperativ = er/sie-Form des Presente: habla." },
+    { "type": "mc", "q": "Imperativ tú von „venir“:", "options": ["vene", "ven", "viene"], "answer": 1, "expl": "venir gehört zu den acht Kurzformen: ¡ven! = komm! (viene ist die normale Presente-Form)." },
+    { "type": "gap", "text": "¡___ (tener, tú) cuidado, el suelo está mojado!", "answer": ["ten", "Ten"], "hint": "Kurzform", "expl": "tener → ten: ¡Ten cuidado! = Pass auf! Eine der acht unregelmäßigen Kurzformen." },
+    { "type": "mc", "q": "Sie-Form (usted) von „hablar“:", "options": ["habla", "hable", "hablas"], "answer": 1, "expl": "usted-Imperativ = Subjuntivo-Form: -ar-Verben bekommen -e → hable." },
+    { "type": "gap", "text": "¡___ (comer, vosotros) más verdura!", "answer": ["comed", "Comed"], "hint": "Infinitiv: -r wird zu -d", "expl": "vosotros-Imperativ: comer → comed. Das -r des Infinitivs wird einfach zu -d." },
+    { "type": "mc", "q": "Verneinter Imperativ tú von „hablar“:", "options": ["no habla", "no hables", "no hable"], "answer": 1, "expl": "Verneint wechselt der Imperativ zum Subjuntivo: no hables. (no hable wäre die usted-Form.)" },
+    { "type": "gap", "text": "¡No ___ (comer, tú) tan rápido!", "answer": "comas", "hint": "verneint → Subjuntivo", "expl": "Verneinter tú-Imperativ = Subjuntivo: -er-Verb bekommt -as → no comas." },
+    { "type": "mc", "q": "„Sag es mir!“ mit angehängten Pronomen:", "options": ["Dímelo", "Melodí", "Di me lo"], "answer": 0, "expl": "Bejahter Imperativ: Pronomen werden ans Verb gehängt (di + me + lo) und zusammengeschrieben – mit Akzent: dímelo." },
+    { "type": "gap", "text": "¡___ (sentarse, tú) aquí, hay sitio!", "answer": ["siéntate", "sientate"], "hint": "reflexiv: Pronomen anhängen", "expl": "sentarse ist reflexiv: sienta + te = ¡siéntate! (setz dich!). Der Akzent hält die Betonung an ihrem Platz." },
+    { "type": "mc", "q": "Höflich zum Gast (usted): „Nehmen Sie Platz“:", "options": ["Siéntese", "Siéntate", "Te sientas"], "answer": 0, "expl": "usted-Form von sentarse: siente + se = siéntese. Siéntate ist die tú-Form." },
+    { "type": "gap", "text": "¡___ (hacer, tú) la maleta, nos vamos en una hora!", "answer": ["haz", "Haz"], "hint": "Kurzform", "expl": "hacer → haz: ¡Haz la maleta! = Pack den Koffer! Wieder eine der acht Kurzformen." },
+    { "type": "mc", "q": "„¡Oye!“ bedeutet ungefähr:", "options": ["Hör mal! / Du!", "Bete!", "Geh weg!"], "answer": 0, "expl": "oye ist der tú-Imperativ von oír (hören) – der Klassiker, um jemanden anzusprechen: Hör mal! / Du!" },
+    { "type": "gap", "text": "No ___ (preocuparse, tú), no pasa nada.", "answer": "te preocupes", "hint": "verneint: Pronomen vor das Verb", "expl": "Verneinter Imperativ: Pronomen nach vorn + Subjuntivo → no te preocupes = mach dir keine Sorgen." },
+    { "type": "mc", "q": "Wegbeschreibung, Sie-Form: „___ todo recto y gire a la derecha.“", "options": ["Siga", "Sigue", "Seguid"], "answer": 0, "expl": "usted → Subjuntivo-Form von seguir: siga (gehen Sie geradeaus). Sigue wäre tú, seguid vosotros." }
+  ]
+}

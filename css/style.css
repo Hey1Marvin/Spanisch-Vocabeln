@@ -181,7 +181,7 @@ nav.tabbar {
 .btn:active { transform: scale(.97); }
 .btn-row { display: flex; flex-wrap: wrap; gap: .5rem; margin: .6rem 0; }
 
-.quick-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: .6rem; margin-bottom: .95rem; }
+.quick-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: .6rem; margin-bottom: .95rem; }
 .quick {
   display: block; text-align: center; text-decoration: none; color: var(--text);
   background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
@@ -327,6 +327,25 @@ input.answer-input:focus { outline: none; border-color: var(--accent); }
 .cloze-gap {
   display: inline-block; min-width: 4.5rem; border-bottom: 2px solid var(--accent);
   text-align: center; font-weight: 700; color: var(--accent);
+}
+
+/* ---------- Satzbau-Chips ---------- */
+
+.chip {
+  display: inline-block; padding: .4rem .75rem; margin: .18rem;
+  border: 1px solid var(--line); border-radius: 99px;
+  background: var(--card); color: var(--text);
+  font-weight: 600; font-size: .92rem;
+  transition: transform .1s, border-color .15s;
+}
+.chip:hover { border-color: var(--accent); }
+.chip:active { transform: scale(.95); }
+.chip.used { opacity: .3; }
+.chip.picked { background: var(--accent-soft); border-color: var(--accent); color: var(--accent); }
+.order-area {
+  min-height: 3.2rem; border: 1.5px dashed var(--line); border-radius: 14px;
+  padding: .35rem; margin: .6rem 0;
+  display: flex; flex-wrap: wrap; align-items: center;
 }
 
 /* ---------- Suche ---------- */

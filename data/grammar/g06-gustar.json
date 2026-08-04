@@ -1,0 +1,80 @@
+{
+  "id": "g06",
+  "title": "Gustar & Co.",
+  "intro": "„Me gusta España“ heißt wörtlich „Spanien gefällt mir“ – nicht „ich mag“. Wer diese Dreh-Konstruktion einmal verstanden hat, beherrscht gleich eine ganze Verbfamilie: encantar, interesar, doler, molestar, apetecer, parecer.",
+  "sections": [
+    {
+      "h": "Die Konstruktion: me gusta / me gustan",
+      "p": "Bei `gustar` ist die **Sache das Subjekt**, nicht die Person! Das Verb richtet sich also nach dem, was gefällt: `me gusta` + Singular oder Infinitiv, `me gustan` + Plural. Die Person erscheint nur als indirektes Pronomen: `me`, `te`, `le`, `nos`, `os`, `les`.",
+      "table": {
+        "head": ["", "+ Singular / Infinitiv", "+ Plural"],
+        "rows": [
+          ["(a mí)", "me gust**a** el café / viajar", "me gust**an** los cafés"],
+          ["(a ti)", "te gust**a** la playa", "te gust**an** las playas"],
+          ["(a él/ella)", "le gust**a** bailar", "le gust**an** las tapas"],
+          ["(a nosotros)", "nos gust**a** el mar", "nos gust**an** los museos"],
+          ["(a vosotros)", "os gust**a** el vino", "os gust**an** los vinos"],
+          ["(a ellos)", "les gust**a** España", "les gust**an** las fiestas"]
+        ]
+      },
+      "examples": [
+        { "es": "Me gusta mucho la comida española.", "de": "Mir schmeckt das spanische Essen sehr. (wörtlich: gefällt mir)" },
+        { "es": "¿Te gustan los churros?", "de": "Magst du Churros? (wörtlich: Gefallen dir die Churros?)" }
+      ],
+      "tip": "Nach gustar folgt fast immer nur **gusta** oder **gustan** – die anderen Personen (gusto, gustas …) brauchst du selten. Infinitive zählen als Singular: Me gust**a** viajar."
+    },
+    {
+      "h": "Betonte Formen: a mí me gusta",
+      "p": "Zur **Betonung oder Klarstellung** kommt `a` + betontes Pronomen dazu: `a mí`, `a ti`, `a él/ella`, `a nosotros`, `a vosotros`, `a ellos` – oder ein Name: `a Juan le gusta`. Bei `le`/`les` ist das oft nötig, weil sonst unklar bleibt, wer gemeint ist. Kurzantworten: „A mí también“ (ich auch) und „A mí no“ (ich nicht).",
+      "examples": [
+        { "es": "A mí me gusta el flamenco, pero a mi novia no.", "de": "Ich mag Flamenco, aber meine Freundin nicht." },
+        { "es": "A Carmen le encanta cocinar. – ¡A mí también!", "de": "Carmen liebt es zu kochen. – Ich auch!" }
+      ],
+      "tip": "„A mí me gusta“ ist keine Dopplung aus Versehen, sondern korrektes Spanisch – das `a mí` betont, das `me` ist Pflicht und darf nie wegfallen."
+    },
+    {
+      "h": "Verben nach demselben Muster",
+      "p": "Eine ganze Familie funktioniert wie gustar: **encantar** (begeistern/lieben), **interesar** (interessieren), **doler (o→ue)** (wehtun), **molestar** (stören), **apetecer** (Lust haben auf), **parecer** (erscheinen/finden). Immer gilt: Pronomen + Verb in 3. Person Singular oder Plural.",
+      "table": {
+        "head": ["Verb", "Beispiel", "Bedeutung"],
+        "rows": [
+          ["encantar", "Me encant**an** las playas.", "Ich liebe die Strände."],
+          ["interesar", "¿Te interes**a** la historia?", "Interessiert dich Geschichte?"],
+          ["doler", "Me duel**e** la cabeza. / Me duel**en** los pies.", "Mir tut der Kopf weh / tun die Füße weh."],
+          ["molestar", "Nos molest**a** el ruido.", "Uns stört der Lärm."],
+          ["apetecer", "¿Os apetec**e** un café?", "Habt ihr Lust auf einen Kaffee?"],
+          ["parecer", "¿Qué te parec**e** el hotel?", "Wie findest du das Hotel?"]
+        ]
+      },
+      "examples": [
+        { "es": "Me duelen las piernas después de la caminata.", "de": "Mir tun die Beine weh nach der Wanderung." },
+        { "es": "¿Te apetece salir esta noche?", "de": "Hast du Lust, heute Abend auszugehen?" }
+      ],
+      "tip": "**encantar** ist schon gesteigert – nie „me encanta mucho“ sagen. Es heißt: me gusta → me gusta mucho → me encanta."
+    },
+    {
+      "h": "Der Vergleich mit dem Deutschen",
+      "p": "Die gute Nachricht: Das Deutsche kennt das Muster längst! „Der Film **gefällt mir**“ funktioniert exakt wie „**Me gusta** la película“ – Sache = Subjekt, Person = Dativ. Auch „Mir **tut** der Kopf **weh**“ = „Me **duele** la cabeza“. Der Denkfehler entsteht nur, wenn man von „ich mag“ ausgeht und dann fälschlich „yo gusto“ bildet.",
+      "examples": [
+        { "es": "Me gustan las ciudades pequeñas.", "de": "Mir gefallen die kleinen Städte. (nicht: ich gefalle …)" }
+      ],
+      "tip": "Übersetze gustar-Sätze im Kopf immer mit **gefallen**, nie mit **mögen** – dann stimmen Subjekt und Verbform automatisch."
+    }
+  ],
+  "exercises": [
+    { "type": "gap", "text": "Me ___ (gustar) los churros con chocolate.", "answer": "gustan", "hint": "Plural!", "expl": "los churros ist das Subjekt und steht im Plural → gustan." },
+    { "type": "gap", "text": "¿Te ___ (gustar) bailar salsa?", "answer": "gusta", "hint": "Infinitiv = Singular", "expl": "Ein Infinitiv (bailar) zählt als Singular → gusta." },
+    { "type": "gap", "text": "A mi madre ___ encanta el flamenco.", "answer": ["le", "Le"], "hint": "welches Pronomen?", "expl": "a mi madre = 3. Person Singular → le. Das a-Objekt ersetzt das Pronomen nicht, beide stehen zusammen." },
+    { "type": "gap", "text": "Nos ___ (interesar) mucho la historia de España.", "answer": "interesa", "hint": "Was ist das Subjekt?", "expl": "la historia = Singular-Subjekt → interesa. Das nos ändert daran nichts." },
+    { "type": "gap", "text": "Me ___ (doler) la cabeza desde esta mañana.", "answer": "duele", "hint": "o→ue", "expl": "doler ist ein o→ue-Verb: la cabeza (Singular) → duele." },
+    { "type": "gap", "text": "A los niños les ___ (doler) los pies de tanto caminar.", "answer": "duelen", "hint": "Plural-Subjekt", "expl": "los pies = Plural → duelen. Die Person (a los niños … les) bleibt Dativ." },
+    { "type": "gap", "text": "A Juan y a Ana ___ molesta el ruido de la calle.", "answer": ["les", "Les"], "hint": "zwei Personen!", "expl": "Juan y Ana = Plural → les. Das Verb bleibt trotzdem Singular (molesta), weil el ruido das Subjekt ist." },
+    { "type": "gap", "text": "¿Te apetece salir? – ___ mí no, estoy cansado.", "answer": ["A", "a"], "hint": "betonte Form", "expl": "Kurzantwort mit betonter Form: A mí no (ich nicht) / A mí también (ich auch). Das a gehört immer dazu." },
+    { "type": "gap", "text": "Me ___ (encantar) las playas del norte.", "answer": "encantan", "hint": "wie gustar", "expl": "encantar funktioniert genau wie gustar: las playas = Plural → encantan." },
+    { "type": "mc", "q": "„Der Film gefällt mir“ heißt:", "options": ["Me gusta la película.", "Yo gusto la película.", "Me gusta las películas."], "answer": 0, "expl": "Die Sache (la película) ist Subjekt, die Person nur Pronomen (me). „Yo gusto“ hieße „ich gefalle“!" },
+    { "type": "mc", "q": "Me ___ las tapas de este bar.", "options": ["gusta", "gustan", "gusto"], "answer": 1, "expl": "las tapas = Plural-Subjekt → gustan. Das Verb richtet sich nach der Sache, nie nach mir." },
+    { "type": "mc", "q": "Was ist das grammatische Subjekt in „Me gustan los perros“?", "options": ["yo", "los perros", "me"], "answer": 1, "expl": "los perros – deshalb steht gustan im Plural. Wörtlich: Die Hunde gefallen mir." },
+    { "type": "mc", "q": "„Was hältst du von der Idee?“ – ¿Qué te ___ la idea?", "options": ["parece", "parecen", "pareces"], "answer": 0, "expl": "parecer nach dem gustar-Muster: la idea = Singular → parece. ¿Qué te parece? ist DIE Frage nach einer Meinung." },
+    { "type": "mc", "q": "Welches deutsche Verb funktioniert grammatisch wie gustar?", "options": ["mögen", "gefallen", "lieben"], "answer": 1, "expl": "Bei „gefallen“ ist wie bei gustar die Sache das Subjekt und die Person steht im Dativ: Mir gefällt … = Me gusta …" }
+  ]
+}

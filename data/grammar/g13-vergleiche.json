@@ -1,0 +1,68 @@
+{
+  "id": "g13",
+  "title": "Vergleiche & Superlativ",
+  "intro": "Größer, kleiner, genauso gut, am besten: Mit más/menos … que, tan … como und dem Superlativ kannst du alles vergleichen – und mit -ísimo sogar sagen, dass die Paella „superlecker“ war: ¡riquísima!",
+  "sections": [
+    {
+      "h": "Ungleichheit: más / menos … que",
+      "p": "Der Grundvergleich: **más** + Adjektiv/Substantiv/Adverb + **que** (mehr … als) und **menos … que** (weniger … als). Das Adjektiv passt sich wie immer an: `Madrid es más grande que Sevilla`. Achtung vor Zahlen: dort steht **de** statt que: `más de veinte euros` (mehr als zwanzig Euro).",
+      "examples": [
+        { "es": "El tren es más rápido que el autobús.", "de": "Der Zug ist schneller als der Bus." },
+        { "es": "Este hotel cuesta menos que el otro.", "de": "Dieses Hotel kostet weniger als das andere." }
+      ],
+      "tip": "Vergleich mit Person/Sache → **que**. Vor Zahlen → **de**: „más de cien personas“ = mehr als hundert Leute."
+    },
+    {
+      "h": "Gleichheit: tan … como & tanto como",
+      "p": "So … wie: **tan** + Adjektiv/Adverb + **como**: `tan caro como` (so teuer wie). Bei Substantiven: **tanto/tanta/tantos/tantas** + Substantiv + **como** (angeglichen!): `tanta gente como` (so viele Leute wie). Nach einem Verb steht **tanto como** unverändert: `Trabajo tanto como tú` (Ich arbeite so viel wie du).",
+      "table": {
+        "head": ["Struktur", "Beispiel"],
+        "rows": [
+          ["tan + Adjektiv + como", "tan **alto** como"],
+          ["tanto/-a + Substantiv + como", "tanta **suerte** como"],
+          ["tantos/-as + Substantiv + como", "tantos **amigos** como"],
+          ["Verb + tanto como", "come **tanto como** yo"]
+        ]
+      },
+      "examples": [
+        { "es": "Mi hermano es tan alto como yo.", "de": "Mein Bruder ist so groß wie ich." },
+        { "es": "No tengo tanto dinero como tú.", "de": "Ich habe nicht so viel Geld wie du." }
+      ],
+      "tip": "Vor Adjektiv immer das kurze **tan** – „tanto alto como“ ist ein klassischer Fehler!"
+    },
+    {
+      "h": "Unregelmäßig: mejor, peor, mayor, menor",
+      "p": "Vier Adjektive bilden den Vergleich ohne más: **bueno → mejor** (besser), **malo → peor** (schlechter), **grande → mayor** (größer/älter), **pequeño → menor** (kleiner/jünger). Bei Alter benutzt man immer mayor/menor: `mi hermana mayor` = meine ältere Schwester. Im Plural: mejores, peores, mayores, menores.",
+      "examples": [
+        { "es": "Este restaurante es mejor que el del centro.", "de": "Dieses Restaurant ist besser als das im Zentrum." },
+        { "es": "Soy dos años mayor que mi hermano.", "de": "Ich bin zwei Jahre älter als mein Bruder." }
+      ],
+      "tip": "Nie „más bueno“ oder „más grande“ fürs Alter – **mejor** und **mayor** übernehmen. (más grande geht nur für räumliche Größe.)"
+    },
+    {
+      "h": "Superlativ: el más … de & -ísimo",
+      "p": "Der relative Superlativ: **el/la/los/las + más (menos)** + Adjektiv + **de**: `el museo más famoso de Madrid` (das berühmteste Museum Madrids) – nach Superlativ steht **de**, nicht „en“! Auch hier: el mejor, la peor, el mayor. Der absolute Superlativ mit **-ísimo/-a** bedeutet „sehr/total“: alto → alt**ísimo**, fácil → facil**ísimo**. Achtung Schreibung: rico → ri**qu**ísimo, largo → lar**gu**ísimo, feliz → feli**c**ísimo.",
+      "examples": [
+        { "es": "Es la playa más bonita de la isla.", "de": "Das ist der schönste Strand der Insel." },
+        { "es": "La paella estaba riquísima.", "de": "Die Paella war superlecker." }
+      ],
+      "tip": "-ísimo ersetzt „muy“: muy caro = carísimo. Aber nie beides zusammen – „muy carísimo“ ist doppelt gemoppelt!"
+    }
+  ],
+  "exercises": [
+    { "type": "gap", "text": "El avión es ___ rápido que el tren.", "answer": "más", "hint": "mehr … als", "expl": "más + Adjektiv + que = Komparativ der Ungleichheit: más rápido que." },
+    { "type": "gap", "text": "Este bar es ___ caro ___ el restaurante. (so … wie)", "answer": ["tan como", "tan ... como", "tan, como"], "hint": "Gleichheit + Adjektiv", "expl": "Vor Adjektiven steht das kurze tan … como: tan caro como." },
+    { "type": "gap", "text": "Mi madre cocina mejor ___ yo.", "answer": "que", "hint": "als = ?", "expl": "Der Vergleichspartner wird mit que angeschlossen: mejor que yo." },
+    { "type": "gap", "text": "En el concierto había más ___ mil personas.", "answer": "de", "hint": "vor Zahlen!", "expl": "Vor Zahlen steht de statt que: más de mil = mehr als tausend." },
+    { "type": "gap", "text": "Esta película es ___ (gut, Komparativ) que la primera.", "answer": "mejor", "hint": "nicht „más buena“", "expl": "bueno hat den unregelmäßigen Komparativ mejor." },
+    { "type": "gap", "text": "El servicio aquí es ___ (schlecht, Komparativ) que antes.", "answer": "peor", "hint": "malo → ?", "expl": "malo → peor (unregelmäßig): schlechter als vorher." },
+    { "type": "gap", "text": "Mi hermana ___ tiene 30 años; yo solo 25.", "answer": "mayor", "hint": "die ältere Schwester", "expl": "Beim Alter benutzt man mayor: mi hermana mayor = meine ältere Schwester." },
+    { "type": "gap", "text": "No tengo ___ tiempo como tú.", "answer": "tanto", "hint": "tiempo ist maskulin Singular", "expl": "Vor Substantiven wird tanto angeglichen: tanto tiempo como (nicht tan!)." },
+    { "type": "gap", "text": "Es el restaurante más famoso ___ la ciudad.", "answer": "de", "hint": "Superlativ + ?", "expl": "Nach dem Superlativ steht de: el más famoso de la ciudad – nicht „en“." },
+    { "type": "gap", "text": "La tarta está ___ (rico + -ísimo, feminin).", "answer": ["riquísima", "riquisima"], "hint": "c → qu!", "expl": "rico → riquísima: Vor í wird c zu qu, damit der k-Laut erhalten bleibt. Feminin wegen la tarta." },
+    { "type": "mc", "q": "„Ich arbeite so viel wie du“ heißt:", "options": ["Trabajo tanto como tú.", "Trabajo tan como tú.", "Trabajo tanto que tú."], "answer": 0, "expl": "Nach einem Verb steht unverändertes tanto como. tan steht nur vor Adjektiven/Adverbien, und Gleichheit braucht como, nicht que." },
+    { "type": "mc", "q": "Welcher Satz ist richtig?", "options": ["Juan es más mayor que Pedro.", "Juan es mayor que Pedro.", "Juan es más viejo como Pedro."], "answer": 1, "expl": "mayor ist schon Komparativ – „más mayor“ ist doppelt. Und Vergleich → que, nicht como." },
+    { "type": "mc", "q": "„superteuer“ mit absolutem Superlativ:", "options": ["muy carísimo", "carísimo", "el más caro que"], "answer": 1, "expl": "caro → carísimo = sehr/total teuer. muy + -ísimo kombiniert man nicht." },
+    { "type": "mc", "q": "„Das ist das beste Hotel der Stadt“ heißt:", "options": ["Es el mejor hotel de la ciudad.", "Es el más mejor hotel en la ciudad.", "Es el hotel más bueno que la ciudad."], "answer": 0, "expl": "el mejor + Substantiv + de: el mejor hotel de la ciudad. mejor braucht kein más, und nach dem Superlativ steht de." }
+  ]
+}

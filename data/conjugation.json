@@ -1,0 +1,21 @@
+{
+  "tenses": { "presente": "Presente", "indefinido": "Indefinido" },
+  "persons": ["yo", "tú", "él/ella", "nosotros", "vosotros", "ellos"],
+  "verbs": [
+    { "inf": "ser", "de": "sein", "presente": ["soy", "eres", "es", "somos", "sois", "son"], "indefinido": ["fui", "fuiste", "fue", "fuimos", "fuisteis", "fueron"] },
+    { "inf": "estar", "de": "sein (Ort/Zustand)", "presente": ["estoy", "estás", "está", "estamos", "estáis", "están"], "indefinido": ["estuve", "estuviste", "estuvo", "estuvimos", "estuvisteis", "estuvieron"] },
+    { "inf": "tener", "de": "haben", "presente": ["tengo", "tienes", "tiene", "tenemos", "tenéis", "tienen"], "indefinido": ["tuve", "tuviste", "tuvo", "tuvimos", "tuvisteis", "tuvieron"] },
+    { "inf": "hacer", "de": "machen", "presente": ["hago", "haces", "hace", "hacemos", "hacéis", "hacen"], "indefinido": ["hice", "hiciste", "hizo", "hicimos", "hicisteis", "hicieron"] },
+    { "inf": "ir", "de": "gehen/fahren", "presente": ["voy", "vas", "va", "vamos", "vais", "van"], "indefinido": ["fui", "fuiste", "fue", "fuimos", "fuisteis", "fueron"] },
+    { "inf": "poder", "de": "können", "presente": ["puedo", "puedes", "puede", "podemos", "podéis", "pueden"], "indefinido": ["pude", "pudiste", "pudo", "pudimos", "pudisteis", "pudieron"] },
+    { "inf": "querer", "de": "wollen/mögen", "presente": ["quiero", "quieres", "quiere", "queremos", "queréis", "quieren"], "indefinido": ["quise", "quisiste", "quiso", "quisimos", "quisisteis", "quisieron"] },
+    { "inf": "hablar", "de": "sprechen", "presente": ["hablo", "hablas", "habla", "hablamos", "habláis", "hablan"], "indefinido": ["hablé", "hablaste", "habló", "hablamos", "hablasteis", "hablaron"] },
+    { "inf": "comer", "de": "essen", "presente": ["como", "comes", "come", "comemos", "coméis", "comen"], "indefinido": ["comí", "comiste", "comió", "comimos", "comisteis", "comieron"] },
+    { "inf": "vivir", "de": "leben/wohnen", "presente": ["vivo", "vives", "vive", "vivimos", "vivís", "viven"], "indefinido": ["viví", "viviste", "vivió", "vivimos", "vivisteis", "vivieron"] },
+    { "inf": "pedir", "de": "bestellen/bitten", "presente": ["pido", "pides", "pide", "pedimos", "pedís", "piden"], "indefinido": ["pedí", "pediste", "pidió", "pedimos", "pedisteis", "pidieron"] },
+    { "inf": "saber", "de": "wissen", "presente": ["sé", "sabes", "sabe", "sabemos", "sabéis", "saben"], "indefinido": ["supe", "supiste", "supo", "supimos", "supisteis", "supieron"] },
+    { "inf": "venir", "de": "kommen", "presente": ["vengo", "vienes", "viene", "venimos", "venís", "vienen"], "indefinido": ["vine", "viniste", "vino", "vinimos", "vinisteis", "vinieron"] },
+    { "inf": "decir", "de": "sagen", "presente": ["digo", "dices", "dice", "decimos", "decís", "dicen"], "indefinido": ["dije", "dijiste", "dijo", "dijimos", "dijisteis", "dijeron"] },
+    { "inf": "dar", "de": "geben", "presente": ["doy", "das", "da", "damos", "dais", "dan"], "indefinido": ["di", "diste", "dio", "dimos", "disteis", "dieron"] }
+  ]
+}

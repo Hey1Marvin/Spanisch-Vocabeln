@@ -1,0 +1,95 @@
+{
+  "id": "g08",
+  "title": "Futuro & Pläne",
+  "intro": "Über die Zukunft sprechen: Im Alltag reicht meist „voy a + Infinitiv“ (ich werde/habe vor), fürs echte Futur gibt es das futuro simple – das kann sogar Vermutungen ausdrücken: „Serán las cinco“ = Es wird wohl fünf Uhr sein.",
+  "sections": [
+    {
+      "h": "ir a + Infinitiv – die Alltagszukunft",
+      "p": "Die häufigste Zukunftsform im gesprochenen Spanisch: Präsens von **ir** + **a** + Infinitiv. Perfekt für Pläne und Absichten, besonders für die nahe Zukunft – wie deutsch „ich werde gleich / ich habe vor zu“.",
+      "table": {
+        "head": ["", "ir a + Infinitiv"],
+        "rows": [
+          ["yo", "**voy a** viajar"],
+          ["tú", "**vas a** viajar"],
+          ["él/ella", "**va a** viajar"],
+          ["nosotros", "**vamos a** viajar"],
+          ["vosotros", "**vais a** viajar"],
+          ["ellos", "**van a** viajar"]
+        ]
+      },
+      "examples": [
+        { "es": "Esta noche voy a cenar con mis amigos.", "de": "Heute Abend werde ich mit meinen Freunden zu Abend essen." },
+        { "es": "¿Qué vas a hacer mañana?", "de": "Was wirst du morgen machen?" }
+      ],
+      "tip": "Das **a** nicht vergessen! „Voy a comer“ = ich werde essen, aber „voy comer“ ist falsch."
+    },
+    {
+      "h": "Futuro simple: Bildung",
+      "p": "Ganz einfach: **Infinitiv + Endung** – die Endungen `-é, -ás, -á, -emos, -éis, -án` sind für alle Verben gleich (-ar, -er, -ir). Der Infinitiv bleibt komplett stehen!",
+      "table": {
+        "head": ["", "hablar", "comer", "vivir"],
+        "rows": [
+          ["yo", "hablar**é**", "comer**é**", "vivir**é**"],
+          ["tú", "hablar**ás**", "comer**ás**", "vivir**ás**"],
+          ["él/ella", "hablar**á**", "comer**á**", "vivir**á**"],
+          ["nosotros", "hablar**emos**", "comer**emos**", "vivir**emos**"],
+          ["vosotros", "hablar**éis**", "comer**éis**", "vivir**éis**"],
+          ["ellos", "hablar**án**", "comer**án**", "vivir**án**"]
+        ]
+      },
+      "examples": [
+        { "es": "El año que viene viviré en Madrid.", "de": "Nächstes Jahr werde ich in Madrid leben." },
+        { "es": "Te llamaré esta tarde.", "de": "Ich rufe dich heute Nachmittag an." }
+      ],
+      "tip": "Alle Endungen außer -emos tragen einen Akzent – das Futur ist am Akzent auf der Endung zu erkennen."
+    },
+    {
+      "h": "Unregelmäßige Futur-Stämme",
+      "p": "Rund ein Dutzend Verben verändert den Stamm – die Endungen bleiben aber gleich: **tener → tendr-**, **hacer → har-**, **poder → podr-**, **salir → saldr-**, **venir → vendr-**, **poner → pondr-**, **decir → dir-**, **querer → querr-**, **saber → sabr-**, **haber → habr-** (hay → habrá).",
+      "table": {
+        "head": ["Infinitiv", "Stamm", "yo-Form"],
+        "rows": [
+          ["tener", "tendr-", "**tendré**"],
+          ["hacer", "har-", "**haré**"],
+          ["poder", "podr-", "**podré**"],
+          ["salir", "saldr-", "**saldré**"],
+          ["venir", "vendr-", "**vendré**"],
+          ["poner", "pondr-", "**pondré**"],
+          ["decir", "dir-", "**diré**"],
+          ["querer", "querr-", "**querré**"],
+          ["saber", "sabr-", "**sabré**"]
+        ]
+      },
+      "examples": [
+        { "es": "Mañana no podré venir a clase.", "de": "Morgen werde ich nicht zum Unterricht kommen können." },
+        { "es": "¿A qué hora saldrá el tren?", "de": "Um wie viel Uhr wird der Zug abfahren?" }
+      ],
+      "tip": "Drei Muster: e fällt weg (podr-, sabr-), e/i wird zu **d** (tendr-, saldr-, vendr-, pondr-) oder Kurzform (har-, dir-)."
+    },
+    {
+      "h": "Gebrauch: Zukunft, Versprechen – und Vermutung!",
+      "p": "Das futuro simple steht für fernere Zukunft, Vorhersagen und Versprechen. Typische Zeitausdrücke: **mañana** (morgen), **pasado mañana** (übermorgen), **la semana que viene** (nächste Woche), **el mes/año que viene**, **dentro de dos días** (in zwei Tagen), **algún día** (eines Tages). Spezialität: Das Futur drückt auch **Vermutungen über die Gegenwart** aus: `Serán las cinco` = Es wird wohl fünf Uhr sein. `¿Dónde estará Juan?` = Wo mag Juan wohl sein?",
+      "examples": [
+        { "es": "La semana que viene tendremos más tiempo.", "de": "Nächste Woche werden wir mehr Zeit haben." },
+        { "es": "No sé qué hora es – serán las cinco.", "de": "Ich weiß nicht, wie spät es ist – es wird wohl fünf sein." }
+      ],
+      "tip": "Futur ohne Zukunftsbedeutung = Vermutung. „Estará en casa“ heißt oft nicht „er wird zu Hause sein“, sondern „er ist wohl zu Hause“."
+    }
+  ],
+  "exercises": [
+    { "type": "gap", "text": "Esta noche ___ (ir, yo) a ver una película.", "answer": "voy a", "hint": "ir a + Infinitiv", "expl": "Naher Plan → voy a + Infinitiv: Voy a ver una película." },
+    { "type": "gap", "text": "¿Qué ___ (ir, tú) a hacer este fin de semana?", "answer": "vas a", "hint": "Präsens von ir + a", "expl": "tú → vas a hacer. Die Alltagsform für Pläne." },
+    { "type": "gap", "text": "Mañana ___ (hablar, yo) con mi jefe.", "answer": "hablaré", "hint": "futuro simple, regelmäßig", "expl": "Infinitiv + é: hablaré. Mit Akzent auf dem é!" },
+    { "type": "gap", "text": "El año que viene nosotros ___ (vivir) en España.", "answer": "viviremos", "hint": "Infinitiv + -emos", "expl": "vivir + emos = viviremos. Die -emos-Form ist die einzige ohne Akzent." },
+    { "type": "gap", "text": "La semana que viene ___ (tener, yo) vacaciones.", "answer": "tendré", "hint": "unregelmäßiger Stamm!", "expl": "tener → tendr- + é = tendré. Das e wird durch d ersetzt." },
+    { "type": "gap", "text": "¿Qué ___ (hacer, tú) pasado mañana?", "answer": "harás", "hint": "har-", "expl": "hacer → har- + ás = harás. Kurzstamm ohne -ce-." },
+    { "type": "gap", "text": "Lo siento, no ___ (poder, yo) venir a la fiesta.", "answer": "podré", "hint": "podr-", "expl": "poder → podr- + é = podré. Das e des Infinitivs fällt weg." },
+    { "type": "gap", "text": "El tren ___ (salir) a las ocho.", "answer": "saldrá", "hint": "sald-...", "expl": "salir → saldr- + á = saldrá. Wie tener und venir: Einschub-d." },
+    { "type": "gap", "text": "Te lo ___ (decir, yo) mañana, prometido.", "answer": "diré", "hint": "dir-", "expl": "decir → dir- + é = diré. Kurzstamm wie bei hacer (haré)." },
+    { "type": "mc", "q": "„Serán las cinco“ bedeutet hier am ehesten:", "options": ["Es wird Punkt fünf Uhr sein (Termin).", "Es wird wohl fünf Uhr sein (Vermutung).", "Es war fünf Uhr."], "answer": 1, "expl": "Das Futur drückt Vermutungen über die Gegenwart aus: Serán las cinco = Es ist wohl ungefähr fünf." },
+    { "type": "mc", "q": "Welcher Satz ist richtig?", "options": ["Voy comer ahora.", "Voy a comer ahora.", "Iré a comer significa dasselbe wie voy comer."], "answer": 1, "expl": "ir a + Infinitiv – das a ist Pflicht: Voy a comer." },
+    { "type": "mc", "q": "„Nächste Woche“ heißt auf Spanisch:", "options": ["la semana pasada", "la semana que viene", "la próxima vez"], "answer": 1, "expl": "la semana que viene (oder la próxima semana) = nächste Woche. la semana pasada = letzte Woche!" },
+    { "type": "mc", "q": "Welche Futur-Form ist FALSCH?", "options": ["saber → sabré", "venir → veniré", "poner → pondré"], "answer": 1, "expl": "venir hat den unregelmäßigen Stamm vendr-: vendré, nicht „veniré“." },
+    { "type": "gap", "text": "¿Dónde está Ana? No sé, ___ (estar) en casa.", "answer": "estará", "hint": "Vermutung!", "expl": "Futur als Vermutung über die Gegenwart: estará en casa = sie ist wohl zu Hause." }
+  ]
+}

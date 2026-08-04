@@ -590,6 +590,201 @@ Vamos.quiz = (function () {
     next();
   }
 
+  /* ---------- Satzbau: Wörter in die richtige Reihenfolge tippen ---------- */
+
+  function renderOrderQuiz(el, cards, backLink) {
+    var pool = cards.filter(function (w) {
+      if (!w.ex) return false;
+      var n = w.ex.split(/\s+/).length;
+      return n >= 4 && n <= 9;
+    });
+    if (pool.length < 4) {
+      el.innerHTML = '<div class="empty-state"><div class="big">🤷</div>' +
+        "<p>Zu wenige passende Sätze in dieser Auswahl.</p>" +
+        '<a class="btn" href="' + backLink + '">Zurück</a></div>';
+      return;
+    }
+    var questions = shuffle(pool).slice(0, Math.min(8, pool.length));
+    var idx = 0, score = 0;
+
+    function next() {
+      if (idx >= questions.length) return finish();
+      var card = questions[idx];
+      var tokens = card.ex.split(/\s+/);
+      var chips = shuffle(tokens.map(function (t, i) { return { t: t, i: i }; }));
+      var picked = [];
+
+      function render() {
+        el.innerHTML =
+          '<div class="session-bar"><span>Satzbau · ' + (idx + 1) + " / " + questions.length +
+          "</span><span>" + score + " richtig</span></div>" +
+          '<div class="card"><div class="muted small">Baue den Satz: „' +
+          esc(card.exDe || card.de) + "“</div>" +
+          '<div class="order-area" id="orderArea">' +
+          (picked.length
+            ? picked.map(function (p, k) {
+                return '<button class="chip picked" data-k="' + k + '">' + esc(p.t) + "</button>";
+              }).join("")
+            : '<span class="muted small" style="padding:.3rem">Tippe die Wörter unten an …</span>') +
+          "</div>" +
+          '<div id="chipPool">' +
+          chips.map(function (c, k) {
+            var used = picked.indexOf(c) >= 0;
+            return '<button class="chip' + (used ? " used" : "") + '" data-c="' + k + '"' +
+              (used ? " disabled" : "") + ">" + esc(c.t) + "</button>";
+          }).join("") + "</div>" +
+          '<div id="feedback"></div>' +
+          '<div class="btn-row"><button class="btn primary" id="checkBtn"' +
+          (picked.length === tokens.length ? "" : " disabled") + ">Prüfen</button>" +
+          '<button class="btn" id="resetBtn">Zurücksetzen</button></div></div>';
+
+        el.querySelectorAll("[data-c]").forEach(function (b) {
+          b.addEventListener("click", function () {
+            picked.push(chips[parseInt(b.getAttribute("data-c"), 10)]);
+            render();
+          });
+        });
+        el.querySelectorAll("[data-k]").forEach(function (b) {
+          b.addEventListener("click", function () {
+            picked.splice(parseInt(b.getAttribute("data-k"), 10), 1);
+            render();
+          });
+        });
+        el.querySelector("#resetBtn").addEventListener("click", function () {
+          picked = [];
+          render();
+        });
+        el.querySelector("#checkBtn").addEventListener("click", check);
+      }
+
+      function check() {
+        var ok = picked.length === tokens.length && picked.every(function (p, k) {
+          return p.i === k;
+        });
+        // Alternative: gleicher Wortlaut zählt auch (bei doppelten Wörtern)
+        if (!ok) {
+          ok = picked.map(function (p) { return p.t; }).join(" ") === tokens.join(" ");
+        }
+        if (ok) score += 1;
+        var fb = el.querySelector("#feedback");
+        fb.innerHTML = ok
+          ? '<div class="feedback ok">✅ ¡Perfecto! ' + esc(card.ex) + " " + speakBtn(card.ex) + "</div>"
+          : '<div class="feedback no">❌ Richtig wäre:<br><strong>' + esc(card.ex) +
+            "</strong> " + speakBtn(card.ex) + "</div>";
+        bindSpeak(fb);
+        Vamos.audio.speak(card.ex);
+        var row = el.querySelector(".btn-row");
+        row.innerHTML = '<button class="btn primary" id="nextBtn">Weiter</button>';
+        el.querySelector("#nextBtn").addEventListener("click", function () { idx += 1; next(); });
+        el.querySelectorAll(".chip").forEach(function (c) { c.disabled = true; });
+      }
+
+      render();
+    }
+
+    function finish() {
+      var pct = Math.round(100 * score / questions.length);
+      if (pct >= 80) Vamos.ui.confetti(14);
+      el.innerHTML =
+        '<div class="empty-state"><div class="big">' + (pct >= 80 ? "🏆" : pct >= 50 ? "💪" : "🧩") + "</div>" +
+        "<p><strong>" + score + " von " + questions.length + " Sätzen gebaut (" + pct + " %)</strong></p>" +
+        '<div class="btn-row" style="justify-content:center">' +
+        '<button class="btn primary" id="againBtn">Nochmal</button>' +
+        '<a class="btn" href="' + backLink + '">Zurück</a></div></div>';
+      el.querySelector("#againBtn").addEventListener("click", function () {
+        renderOrderQuiz(el, cards, backLink);
+      });
+    }
+
+    next();
+  }
+
+  /* ---------- Konjugationstrainer ---------- */
+
+  function renderConjQuiz(el, conj) {
+    var tenseKeys = Object.keys(conj.tenses);
+    var questions = [];
+    for (var i = 0; i < 12; i++) {
+      var verb = conj.verbs[Math.floor(Math.random() * conj.verbs.length)];
+      var tense = tenseKeys[Math.floor(Math.random() * tenseKeys.length)];
+      var person = Math.floor(Math.random() * conj.persons.length);
+      questions.push({ verb: verb, tense: tense, person: person });
+    }
+    var idx = 0, score = 0;
+
+    function next() {
+      if (idx >= questions.length) return finish();
+      var q = questions[idx];
+      var answer = q.verb[q.tense][q.person];
+
+      el.innerHTML =
+        '<div class="session-bar"><span>Konjugation · ' + (idx + 1) + " / " + questions.length +
+        "</span><span>" + score + " richtig</span></div>" +
+        '<div class="card" style="text-align:center">' +
+        '<div class="muted small">' + esc(conj.tenses[q.tense]) + "</div>" +
+        '<div class="word" style="font-size:1.5rem;font-weight:800;margin:.2rem 0">' +
+        esc(q.verb.inf) + '</div>' +
+        '<div class="muted small">' + esc(q.verb.de) + "</div>" +
+        '<div style="font-size:1.15rem;font-weight:700;margin:.7rem 0 .4rem">' +
+        esc(conj.persons[q.person]) + " ___</div>" +
+        '<input class="answer-input" id="conjInput" autocomplete="off" autocapitalize="off" ' +
+        'style="max-width:280px;text-align:center" placeholder="Form eintippen …">' +
+        '<div id="feedback"></div>' +
+        '<div class="btn-row" style="justify-content:center">' +
+        '<button class="btn primary" id="checkBtn">Prüfen</button>' +
+        '<button class="btn" id="skipBtn">Weiß ich nicht</button></div></div>';
+
+      var input = el.querySelector("#conjInput");
+      input.focus();
+      input.addEventListener("keydown", function (e) { if (e.key === "Enter") check(); });
+      el.querySelector("#checkBtn").addEventListener("click", check);
+      el.querySelector("#skipBtn").addEventListener("click", function () { resolve(0, true); });
+
+      function check() {
+        var given = normalize(input.value);
+        if (!given) return;
+        if (given === normalize(answer)) return resolve(2);
+        if (stripAccents(given) === stripAccents(normalize(answer))) return resolve(1);
+        resolve(0);
+      }
+
+      function resolve(points, skipped) {
+        score += points > 0 ? 1 : 0;
+        var fb = el.querySelector("#feedback");
+        var sol = "<strong>" + esc(conj.persons[q.person]) + " " + esc(answer) + "</strong> " +
+          speakBtn(conj.persons[q.person].split("/")[0] + " " + answer);
+        if (points === 2) fb.innerHTML = '<div class="feedback ok">✅ ¡Muy bien! ' + sol + "</div>";
+        else if (points === 1) fb.innerHTML = '<div class="feedback almost">🟡 Fast – Akzent beachten: ' + sol + "</div>";
+        else fb.innerHTML = '<div class="feedback no">' + (skipped ? "" : "❌ ") + "Richtig: " + sol + "</div>";
+        bindSpeak(fb);
+        input.disabled = true;
+        el.querySelector("#checkBtn").style.display = "none";
+        var skip = el.querySelector("#skipBtn");
+        var clone = skip.cloneNode(true);
+        clone.textContent = "Weiter";
+        skip.parentNode.replaceChild(clone, skip);
+        clone.addEventListener("click", function () { idx += 1; next(); });
+        clone.focus();
+      }
+    }
+
+    function finish() {
+      var pct = Math.round(100 * score / questions.length);
+      if (pct >= 80) Vamos.ui.confetti(14);
+      el.innerHTML =
+        '<div class="empty-state"><div class="big">' + (pct >= 80 ? "🏆" : pct >= 50 ? "💪" : "🏃") + "</div>" +
+        "<p><strong>" + score + " von " + questions.length + " Formen richtig (" + pct + " %)</strong></p>" +
+        '<div class="btn-row" style="justify-content:center">' +
+        '<button class="btn primary" id="againBtn">Nochmal</button>' +
+        '<a class="btn" href="#/">Zum Dashboard</a></div></div>';
+      el.querySelector("#againBtn").addEventListener("click", function () {
+        renderConjQuiz(el, conj);
+      });
+    }
+
+    next();
+  }
+
   return {
     renderLearnSession: renderLearnSession,
     renderMcQuiz: renderMcQuiz,
@@ -597,6 +792,8 @@ Vamos.quiz = (function () {
     renderListenQuiz: renderListenQuiz,
     renderClozeQuiz: renderClozeQuiz,
     renderMixQuiz: renderMixQuiz,
+    renderOrderQuiz: renderOrderQuiz,
+    renderConjQuiz: renderConjQuiz,
     esc: esc, shuffle: shuffle, speakBtn: speakBtn, bindSpeak: bindSpeak
   };
 })();

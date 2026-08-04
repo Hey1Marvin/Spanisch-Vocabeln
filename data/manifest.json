@@ -110,6 +110,66 @@
       "rank": 11,
       "level": "A2/B1",
       "desc": "Arzt, Apotheke, Polizei: die Sätze, die du hoffentlich nie brauchst – und dann doch draufhaben willst."
+    },
+    {
+      "id": "u14",
+      "file": "data/vocab/u14-familie-personen.json",
+      "title": "Familie & Personen beschreiben",
+      "emoji": "👨‍👩‍👧",
+      "phase": 3,
+      "rank": 14,
+      "level": "A2/B1",
+      "desc": "Familie, Beziehungen, Aussehen und Charakter – Menschen beschreiben können."
+    },
+    {
+      "id": "u15",
+      "file": "data/vocab/u15-freizeit-hobbys.json",
+      "title": "Freizeit, Hobbys & Sport",
+      "emoji": "⚽",
+      "phase": 3,
+      "rank": 15,
+      "level": "A2/B1",
+      "desc": "Worüber man wirklich redet: Hobbys, Sport, Musik, Filme – und sich verabreden."
+    },
+    {
+      "id": "u16",
+      "file": "data/vocab/u16-wetter.json",
+      "title": "Wetter & Jahreszeiten",
+      "emoji": "⛅",
+      "phase": 3,
+      "rank": 16,
+      "level": "A2",
+      "desc": "Das Smalltalk-Thema Nummer eins – plus alles für die Reiseplanung."
+    },
+    {
+      "id": "u17",
+      "file": "data/vocab/u17-gefuehle-meinung.json",
+      "title": "Gefühle & Meinung äußern",
+      "emoji": "💭",
+      "phase": 3,
+      "rank": 17,
+      "level": "B1",
+      "desc": "Sagen, wie es dir geht und was du denkst – zustimmen, widersprechen, begeistert sein."
+    },
+    {
+      "id": "u21",
+      "file": "data/vocab/u21-ausgehen-feiern.json",
+      "title": "Ausgehen, Feiern & Kultur",
+      "emoji": "🎉",
+      "phase": 4,
+      "rank": 21,
+      "level": "B1",
+      "desc": "Bar, Konzert, Fiesta: einladen, anstoßen und den Abend genießen."
+    },
+    {
+      "id": "u24",
+      "file": "data/vocab/u24-diskutieren.json",
+      "title": "Diskutieren & Argumentieren",
+      "emoji": "🗣️",
+      "phase": 4,
+      "rank": 24,
+      "level": "B1/B2",
+      "desc": "Standpunkte vertreten, abwägen, höflich widersprechen – Konversation auf B2-Niveau."
     }
   ],
   "grammar": [
@@ -135,6 +195,78 @@
       "title": "Pretérito Indefinido",
       "emoji": "⏪",
       "rank": 3,
+      "level": "A2/B1"
+    },
+    {
+      "id": "g04",
+      "file": "data/grammar/g04-imperfecto.json",
+      "title": "Pretérito Imperfecto",
+      "emoji": "🕰️",
+      "rank": 4,
+      "level": "A2/B1"
+    },
+    {
+      "id": "g05",
+      "file": "data/grammar/g05-objektpronomen.json",
+      "title": "Objektpronomen",
+      "emoji": "🎯",
+      "rank": 5,
+      "level": "A2/B1"
+    },
+    {
+      "id": "g06",
+      "file": "data/grammar/g06-gustar.json",
+      "title": "Gustar & Co.",
+      "emoji": "💚",
+      "rank": 6,
+      "level": "A2"
+    },
+    {
+      "id": "g07",
+      "file": "data/grammar/g07-perfecto.json",
+      "title": "Pretérito Perfecto",
+      "emoji": "📆",
+      "rank": 7,
+      "level": "A2/B1"
+    },
+    {
+      "id": "g08",
+      "file": "data/grammar/g08-futuro.json",
+      "title": "Futuro & Pläne",
+      "emoji": "🔮",
+      "rank": 8,
+      "level": "B1"
+    },
+    {
+      "id": "g09",
+      "file": "data/grammar/g09-condicional.json",
+      "title": "Condicional & höfliche Bitten",
+      "emoji": "🙏",
+      "rank": 9,
+      "level": "B1"
+    },
+    {
+      "id": "g10",
+      "file": "data/grammar/g10-imperativ.json",
+      "title": "Imperativ",
+      "emoji": "📢",
+      "rank": 10,
+      "level": "B1"
+    },
+    {
+      "id": "g11",
+      "file": "data/grammar/g11-subjuntivo1.json",
+      "title": "Subjuntivo I – Einstieg",
+      "emoji": "✨",
+      "rank": 11,
+      "level": "B1/B2"
+    },
+    {
+      "id": "g13",
+      "file": "data/grammar/g13-vergleiche.json",
+      "title": "Vergleiche & Superlativ",
+      "emoji": "🆚",
+      "rank": 13,
       "level": "A2/B1"
     }
   ]

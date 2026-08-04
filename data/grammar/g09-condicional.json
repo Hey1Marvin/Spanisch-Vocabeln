@@ -1,0 +1,84 @@
+{
+  "id": "g09",
+  "title": "Condicional & höfliche Bitten",
+  "intro": "Mit dem Condicional klingst du sofort höflicher: Aus „Ich will ein Zimmer“ wird „Ich hätte gern ein Zimmer“. Für die Reise ist es DIE Höflichkeitsform – und die Bildung ist erfreulich einfach.",
+  "sections": [
+    {
+      "h": "Bildung: Infinitiv + -ía",
+      "p": "Das Condicional ist regelmäßiger als fast alles andere im Spanischen: Du hängst die Endungen **-ía, -ías, -ía, -íamos, -íais, -ían** an den **kompletten Infinitiv** – egal ob -ar, -er oder -ir. `hablar → hablaría`, `comer → comería`, `vivir → viviría`.",
+      "table": {
+        "head": ["", "hablar", "comer", "vivir"],
+        "rows": [
+          ["yo", "hablar**ía**", "comer**ía**", "vivir**ía**"],
+          ["tú", "hablar**ías**", "comer**ías**", "vivir**ías**"],
+          ["él/ella/usted", "hablar**ía**", "comer**ía**", "vivir**ía**"],
+          ["nosotros/-as", "hablar**íamos**", "comer**íamos**", "vivir**íamos**"],
+          ["vosotros/-as", "hablar**íais**", "comer**íais**", "vivir**íais**"],
+          ["ellos/ustedes", "hablar**ían**", "comer**ían**", "vivir**ían**"]
+        ]
+      },
+      "examples": [
+        { "es": "Me encantaría visitar Sevilla.", "de": "Ich würde liebend gern Sevilla besuchen." },
+        { "es": "¿Serías tan amable de ayudarme?", "de": "Wärst du so nett, mir zu helfen?" }
+      ],
+      "tip": "Die Endungen kennst du schon: Es sind exakt die Imperfecto-Endungen der -er/-ir-Verben (`comía`) – sie wandern nur an den ganzen Infinitiv. Und immer mit Akzent auf dem í!"
+    },
+    {
+      "h": "Die üblichen Verdächtigen: unregelmäßige Stämme",
+      "p": "Etwa ein Dutzend Verben benutzt einen verkürzten Stamm – **exakt dieselben wie im Futuro**. Die Endungen bleiben völlig regelmäßig.",
+      "table": {
+        "head": ["Infinitiv", "Stamm", "Condicional (yo)"],
+        "rows": [
+          ["tener", "tendr-", "tendr**ía**"],
+          ["poder", "podr-", "podr**ía**"],
+          ["hacer", "har-", "har**ía**"],
+          ["decir", "dir-", "dir**ía**"],
+          ["poner", "pondr-", "pondr**ía**"],
+          ["salir", "saldr-", "saldr**ía**"],
+          ["venir", "vendr-", "vendr**ía**"],
+          ["saber", "sabr-", "sabr**ía**"],
+          ["querer", "querr-", "querr**ía**"],
+          ["haber", "habr-", "habr**ía**"]
+        ]
+      },
+      "examples": [
+        { "es": "¿Podrías repetirlo más despacio, por favor?", "de": "Könntest du das bitte langsamer wiederholen?" },
+        { "es": "¿Qué harías tú en mi lugar?", "de": "Was würdest du an meiner Stelle tun?" }
+      ],
+      "tip": "Wer das Futuro kann, kann auch das Condicional: gleicher Stamm, andere Endung – `tendré → tendría`, `haré → haría`."
+    },
+    {
+      "h": "Höflichkeit unterwegs: die Reise-Formeln",
+      "p": "Im Hotel, Restaurant oder Taxi ist das Condicional Gold wert. Die wichtigsten Muster: **Me gustaría + Infinitiv** (ich würde gern / hätte gern), **¿Podría(s)…?** (könnten Sie / könntest du…?), **Querría…** (ich hätte gern…), **¿Le importaría…?** (würde es Ihnen etwas ausmachen…?) und **¿Sería posible…?** (wäre es möglich…?).",
+      "examples": [
+        { "es": "Me gustaría reservar una mesa para dos, por favor.", "de": "Ich würde gern einen Tisch für zwei reservieren, bitte." },
+        { "es": "¿Podría traernos la cuenta?", "de": "Könnten Sie uns die Rechnung bringen?" }
+      ],
+      "tip": "Merke die Höflichkeitsleiter: `Quiero un café` (direkt) → `Querría un café` (höflich) → `¿Podría ponerme un café?` (sehr höflich). Mit Condicional liegst du nie falsch."
+    },
+    {
+      "h": "Ratschläge & Hypothesen",
+      "p": "Ratschläge gibst du mit **Deberías + Infinitiv** (du solltest…) oder mit **Yo que tú… / Yo en tu lugar…** (ich an deiner Stelle…) plus Condicional. Außerdem drückt das Condicional Hypothetisches aus – was unter anderen Umständen passieren **würde**.",
+      "examples": [
+        { "es": "Yo que tú cogería el tren de la mañana.", "de": "Ich an deiner Stelle würde den Morgenzug nehmen." },
+        { "es": "Con más tiempo, viajaríamos por toda Andalucía.", "de": "Mit mehr Zeit würden wir durch ganz Andalusien reisen." }
+      ]
+    }
+  ],
+  "exercises": [
+    { "type": "gap", "text": "¿___ (poder, tú) sacarme una foto, por favor?", "answer": ["podrías", "Podrías"], "hint": "unregelmäßiger Stamm podr-", "expl": "poder hat den Kurzstamm podr-: podrías = könntest du. Die klassische höfliche Bitte." },
+    { "type": "gap", "text": "Me ___ (gustar) reservar una habitación doble.", "answer": "gustaría", "hint": "Infinitiv + -ía", "expl": "Me gustaría + Infinitiv = ich würde gern / hätte gern. Die wichtigste Reiseformel überhaupt." },
+    { "type": "mc", "q": "Höflich nach dem Weg fragen: ¿___ decirme dónde está la catedral?", "options": ["Puedes", "Podría", "Podré"], "answer": 1, "expl": "Podría (Condicional, usted-Form) ist die höfliche Variante. Puedes ist direkter, podré ist Futur (ich werde können)." },
+    { "type": "gap", "text": "¿Qué ___ (hacer, tú) en mi lugar?", "answer": "harías", "hint": "Kurzstamm!", "expl": "hacer → har-: harías = würdest du tun. Typische Frage, um sich Rat zu holen." },
+    { "type": "mc", "q": "„Wir hätten gern zwei Kaffee“: ___ dos cafés.", "options": ["Queremos", "Querríamos", "Querremos"], "answer": 1, "expl": "querer → querr- + -íamos = querríamos (wir hätten gern). Queremos = wir wollen (direkt), querremos = wir werden wollen (Futur)." },
+    { "type": "gap", "text": "Yo que tú ___ (coger) un taxi, es muy tarde.", "answer": "cogería", "hint": "regelmäßig", "expl": "Nach Yo que tú… (ich an deiner Stelle) folgt das Condicional: cogería = ich würde nehmen." },
+    { "type": "mc", "q": "Einen Ratschlag geben: ___ probar el marisco aquí.", "options": ["Deberías", "Debías", "Deberás"], "answer": 0, "expl": "Deberías + Infinitiv = du solltest (höflicher Ratschlag). Debías ist Imperfecto (du musstest), deberás Futur (du wirst müssen)." },
+    { "type": "gap", "text": "¿Le ___ (importar) cerrar la ventana?", "answer": "importaría", "hint": "Würde es Ihnen etwas ausmachen…?", "expl": "¿Le importaría + Infinitiv? = Würde es Ihnen etwas ausmachen…? Sehr höfliche Bitte an Fremde." },
+    { "type": "mc", "q": "Welche Form ist FALSCH?", "options": ["tendría", "haría", "podería"], "answer": 2, "expl": "poder hat den Kurzstamm podr-: richtig ist podría, nicht podería. tendría (tener) und haría (hacer) stimmen." },
+    { "type": "gap", "text": "¿___ (ser) posible cambiar la reserva?", "answer": ["sería", "Sería"], "hint": "ser ist hier regelmäßig", "expl": "¿Sería posible…? = Wäre es möglich…? – perfekt, um im Hotel etwas umzubuchen. ser ist im Condicional regelmäßig: ser + -ía." },
+    { "type": "mc", "q": "„Me gustaría“ heißt wörtlich:", "options": ["Es würde mir gefallen", "Es gefällt mir", "Es hat mir gefallen"], "answer": 0, "expl": "gustaría ist das Condicional von gustar: Es würde mir gefallen → sinngemäß: ich würde gern / ich hätte gern." },
+    { "type": "gap", "text": "Con más dinero, ___ (viajar, nosotros) por toda España.", "answer": "viajaríamos", "hint": "hypothetisch: wir würden…", "expl": "Hypothese: Mit mehr Geld würden wir reisen → Condicional viajaríamos (Infinitiv + -íamos)." },
+    { "type": "mc", "q": "Im Restaurant, Sie-Form: ¿___ traerme la cuenta, por favor?", "options": ["Podrías", "Podría", "Puedes"], "answer": 1, "expl": "Für usted gilt die 3. Person Singular: ¿Podría…? Podrías und puedes sind tú-Formen – fürs Restaurant meist zu vertraut." },
+    { "type": "gap", "text": "En tu lugar, no ___ (decir, yo) nada.", "answer": "diría", "hint": "Kurzstamm dir-", "expl": "decir → dir-: no diría nada = ich würde nichts sagen. En tu lugar = an deiner Stelle." }
+  ]
+}

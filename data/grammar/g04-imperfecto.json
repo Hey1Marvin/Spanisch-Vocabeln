@@ -1,0 +1,90 @@
+{
+  "id": "g04",
+  "title": "Pretérito Imperfecto",
+  "intro": "Die Beschreib-Vergangenheit: Hintergrund, Gewohnheiten und Zustände. „Früher wohnte ich in Madrid, jeden Tag ging ich ins Café“ – alles Imperfecto. Zusammen mit dem Indefinido ergibt es den kompletten Vergangenheits-Werkzeugkasten.",
+  "sections": [
+    {
+      "h": "Regelmäßige Bildung: -aba und -ía",
+      "p": "Das Imperfecto ist die einfachste Vergangenheitszeit: -ar-Verben bekommen `-aba`, -er- und -ir-Verben bekommen `-ía` – beide Gruppen mit identischen Endungen. Achtung: **yo** und **él/ella** sind gleich, oft hilft nur der Kontext oder das Subjektpronomen.",
+      "table": {
+        "head": ["", "hablar", "comer", "vivir"],
+        "rows": [
+          ["yo", "habl**aba**", "com**ía**", "viv**ía**"],
+          ["tú", "habl**abas**", "com**ías**", "viv**ías**"],
+          ["él/ella", "habl**aba**", "com**ía**", "viv**ía**"],
+          ["nosotros", "habl**ábamos**", "com**íamos**", "viv**íamos**"],
+          ["vosotros", "habl**abais**", "com**íais**", "viv**íais**"],
+          ["ellos", "habl**aban**", "com**ían**", "viv**ían**"]
+        ]
+      },
+      "examples": [
+        { "es": "Antes vivíamos cerca de la playa.", "de": "Früher wohnten wir in der Nähe des Strandes." },
+        { "es": "De niño comía demasiados dulces.", "de": "Als Kind aß ich zu viele Süßigkeiten." }
+      ],
+      "tip": "Nur **nosotros** trägt bei -ar-Verben einen Akzent: habl**á**bamos. Bei -er/-ir sitzt der Akzent immer auf dem í: com**í**a."
+    },
+    {
+      "h": "Nur drei unregelmäßige Verben",
+      "p": "Das Imperfecto hat genau **drei** unregelmäßige Verben – weniger als jede andere Zeit: **ser**, **ir** und **ver**. Alles andere ist regelmäßig, auch estar (`estaba`), tener (`tenía`) und hacer (`hacía`)!",
+      "table": {
+        "head": ["", "ser", "ir", "ver"],
+        "rows": [
+          ["yo", "era", "iba", "veía"],
+          ["tú", "eras", "ibas", "veías"],
+          ["él/ella", "era", "iba", "veía"],
+          ["nosotros", "éramos", "íbamos", "veíamos"],
+          ["vosotros", "erais", "ibais", "veíais"],
+          ["ellos", "eran", "iban", "veían"]
+        ]
+      },
+      "examples": [
+        { "es": "Cuando era pequeño, iba en bici al colegio.", "de": "Als ich klein war, fuhr ich mit dem Rad zur Schule." },
+        { "es": "Desde la terraza veíamos el mar.", "de": "Von der Terrasse aus sahen wir das Meer." }
+      ],
+      "tip": "Eselsbrücke: **ver** ist fast regelmäßig – es behält nur das **e** vom Stamm: ve**ía** statt vía."
+    },
+    {
+      "h": "Wann Imperfecto? Hintergrund, Gewohnheiten, Beschreibungen",
+      "p": "Das Imperfecto malt die Kulisse der Vergangenheit: **1. Gewohnheiten** (was man immer/früher tat), **2. Beschreibungen** (Personen, Orte, Wetter, Uhrzeit, Alter, Gefühle), **3. Hintergrundhandlungen** (was gerade lief). Typische Signalwörter: **siempre**, **antes**, **todos los días**, **cada verano**, **normalmente**, **de niño/de pequeño**, **mientras**.",
+      "examples": [
+        { "es": "Todos los días desayunábamos en el bar de la esquina.", "de": "Jeden Tag frühstückten wir in der Bar an der Ecke." },
+        { "es": "Hacía sol y la gente paseaba por la plaza.", "de": "Die Sonne schien und die Leute spazierten über den Platz." }
+      ],
+      "tip": "Frag dich: Beschreibe ich, **wie es war** (Imperfecto), oder erzähle ich, **was passierte** (Indefinido)?"
+    },
+    {
+      "h": "Schwerpunkt: Imperfecto vs. Indefinido",
+      "p": "Die beiden Zeiten arbeiten zusammen wie Bühnenbild und Handlung: Das Imperfecto liefert den **Hintergrund**, das Indefinido die **neue, abgeschlossene Aktion**. Klassiker: `Mientras cenaba, llamó mi madre.` – die laufende Handlung (cenaba) wird von einem Ereignis (llamó) unterbrochen. Die Signalwörter verraten fast immer die richtige Zeit:",
+      "table": {
+        "head": ["Imperfecto (Hintergrund/Gewohnheit)", "Indefinido (Ereignis/abgeschlossen)"],
+        "rows": [
+          ["siempre, antes, normalmente", "ayer, anoche, el lunes"],
+          ["todos los días, cada verano", "una vez, de repente"],
+          ["de niño, en aquella época", "el año pasado, en 2019, hace dos días"],
+          ["mientras (während etwas lief)", "entonces, luego (dann geschah …)"]
+        ]
+      },
+      "examples": [
+        { "es": "Mientras cenaba, llamó mi madre.", "de": "Während ich zu Abend aß, rief meine Mutter an." },
+        { "es": "Antes fumaba mucho, pero el año pasado lo dejé.", "de": "Früher rauchte ich viel, aber letztes Jahr hörte ich damit auf." }
+      ],
+      "tip": "Filmvergleich: Imperfecto = die laufende Kamera im Hintergrund, Indefinido = das, was ins Bild **platzt**."
+    }
+  ],
+  "exercises": [
+    { "type": "gap", "text": "Antes yo ___ (vivir) en Madrid.", "answer": "vivía", "hint": "Imperfecto, -ir", "expl": "„antes“ (früher) → Gewohnheit/Zustand → Imperfecto: vivía." },
+    { "type": "gap", "text": "De niño, Juan ___ (jugar) al fútbol todos los días.", "answer": "jugaba", "hint": "-ar → -aba", "expl": "„de niño“ + „todos los días“ = Gewohnheit → jugaba." },
+    { "type": "gap", "text": "Cada verano ___ (ir, nosotros) al pueblo de mis abuelos.", "answer": "íbamos", "hint": "unregelmäßig!", "expl": "ir ist eines der nur drei unregelmäßigen Verben: iba, ibas, iba, íbamos …" },
+    { "type": "gap", "text": "Mi abuela siempre ___ (hacer) tortilla los domingos.", "answer": "hacía", "hint": "im Imperfecto regelmäßig!", "expl": "hacer ist nur im Indefinido unregelmäßig (hice) – im Imperfecto ganz normal: hacía." },
+    { "type": "gap", "text": "Desde mi habitación ___ (ver, yo) las montañas.", "answer": "veía", "hint": "eines der drei unregelmäßigen", "expl": "ver behält das e: veía (nicht vía). Beschreibung des Hintergrunds → Imperfecto." },
+    { "type": "gap", "text": "Cuando ___ (ser, yo) joven, no me gustaba madrugar.", "answer": "era", "hint": "ser, unregelmäßig", "expl": "Alter und Eigenschaften in der Vergangenheit → Imperfecto: era. „Cuando era joven“ ist eine feste Wendung." },
+    { "type": "gap", "text": "Los domingos mis padres ___ (levantarse) tarde.", "answer": ["se levantaban", "levantaban"], "hint": "Gewohnheit, reflexiv", "expl": "„los domingos“ = jeden Sonntag → Gewohnheit → se levantaban." },
+    { "type": "gap", "text": "Mientras yo ___ (leer), mi hermano escuchaba música.", "answer": "leía", "hint": "zwei parallele Handlungen", "expl": "Zwei gleichzeitig laufende Hintergrundhandlungen → beide im Imperfecto: leía … escuchaba." },
+    { "type": "gap", "text": "Cuando ___ (salir, yo) de casa, empezó a llover.", "answer": "salía", "hint": "laufende Handlung + Unterbrechung", "expl": "Die laufende Handlung (salía = ich war gerade dabei) steht im Imperfecto, das plötzliche Ereignis (empezó) im Indefinido." },
+    { "type": "mc", "q": "Mientras ___, llamó mi madre.", "options": ["cené", "cenaba", "ceno"], "answer": 1, "expl": "„mientras“ leitet die Hintergrundhandlung ein → Imperfecto (cenaba). Der Anruf (llamó) unterbricht sie → Indefinido." },
+    { "type": "mc", "q": "Ayer ___ una carta a mi amiga.", "options": ["escribí", "escribía", "escribo"], "answer": 0, "expl": "„ayer“ + einmalige, abgeschlossene Handlung → Indefinido: escribí. Nicht jede Vergangenheit ist Imperfecto!" },
+    { "type": "mc", "q": "De repente ___ un ruido extraño.", "options": ["oía", "oí", "oigo"], "answer": 1, "expl": "„de repente“ (plötzlich) ist ein klassisches Indefinido-Signalwort: Etwas Neues passiert → oí." },
+    { "type": "mc", "q": "El hotel ___ muy bonito y tenía piscina.", "options": ["fue", "era", "es"], "answer": 1, "expl": "Beschreibung von Orten und Eigenschaften in der Vergangenheit → Imperfecto: era. „tenía“ im gleichen Satz ist das zweite Indiz." },
+    { "type": "mc", "q": "Welches Signalwort verlangt fast immer das Imperfecto?", "options": ["anoche", "todos los días", "hace dos años"], "answer": 1, "expl": "„todos los días“ beschreibt eine Gewohnheit → Imperfecto. „anoche“ und „hace dos años“ deuten auf abgeschlossene Ereignisse → Indefinido." }
+  ]
+}

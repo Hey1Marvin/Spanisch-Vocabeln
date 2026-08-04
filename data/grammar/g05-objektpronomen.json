@@ -1,0 +1,83 @@
+{
+  "id": "g05",
+  "title": "Objektpronomen",
+  "intro": "„Siehst du den Turm? – Ja, ich sehe ihn.“ Ohne Objektpronomen klingt jedes Gespräch hölzern. Hier lernst du lo/la/los/las und me/te/le & Co. – inklusive der berühmten Kombination „se lo doy“.",
+  "sections": [
+    {
+      "h": "Direkte Objektpronomen: lo, la, los, las",
+      "p": "Das direkte Objektpronomen ersetzt das **Akkusativobjekt** (wen oder was?). In der 3. Person richtet es sich nach Genus und Numerus des ersetzten Wortes: `lo` (ihn/es), `la` (sie), `los`, `las`. Für die anderen Personen: `me`, `te`, `nos`, `os`.",
+      "table": {
+        "head": ["Person", "Singular", "Plural"],
+        "rows": [
+          ["1.", "me (mich)", "nos (uns)"],
+          ["2.", "te (dich)", "os (euch)"],
+          ["3. maskulin", "**lo** (ihn/es)", "**los** (sie)"],
+          ["3. feminin", "**la** (sie)", "**las** (sie)"]
+        ]
+      },
+      "examples": [
+        { "es": "¿Ves la catedral? – Sí, la veo.", "de": "Siehst du die Kathedrale? – Ja, ich sehe sie." },
+        { "es": "Compro los billetes y los pago con tarjeta.", "de": "Ich kaufe die Tickets und bezahle sie mit Karte." }
+      ],
+      "tip": "In Spanien hört man für Personen oft auch `le` statt `lo` („le veo“ = ich sehe ihn) – das sogenannte Leísmo. Verstehen ja, aktiv lernen: **lo**."
+    },
+    {
+      "h": "Indirekte Objektpronomen: me, te, le, nos, os, les",
+      "p": "Das indirekte Objektpronomen ersetzt das **Dativobjekt** (wem?): `me`, `te`, `le`, `nos`, `os`, `les`. Wichtig: In der 3. Person gibt es **keinen Genus-Unterschied** – `le` heißt ihm UND ihr. Typisch spanisch: Das Pronomen steht oft **zusätzlich** zum genannten Objekt: „**Le** doy el mapa **a María**.“",
+      "table": {
+        "head": ["Person", "Singular", "Plural"],
+        "rows": [
+          ["1.", "me (mir)", "nos (uns)"],
+          ["2.", "te (dir)", "os (euch)"],
+          ["3.", "**le** (ihm/ihr/Ihnen)", "**les** (ihnen)"]
+        ]
+      },
+      "examples": [
+        { "es": "Le escribo un mensaje a mi hermana.", "de": "Ich schreibe meiner Schwester eine Nachricht." },
+        { "es": "¿Nos puedes traer la cuenta?", "de": "Kannst du uns die Rechnung bringen?" }
+      ],
+      "tip": "Verben wie **dar**, **decir**, **preguntar**, **regalar**, **escribir** haben fast immer ein indirektes Objekt – wer gibt, gibt jemandem etwas."
+    },
+    {
+      "h": "Die Stellung: davor oder angehängt",
+      "p": "Grundregel: Das Pronomen steht **vor dem konjugierten Verb**: „Lo veo.“ An **Infinitiv** und **Gerundium** wird es dagegen **angehängt**: `verlo`, `viéndolo`. Bei Verb + Infinitiv (querer, poder, ir a …) hast du die Wahl: „**Lo** quiero ver“ ODER „Quiero ver**lo**“ – beides ist richtig.",
+      "examples": [
+        { "es": "¿El museo? Queremos visitarlo mañana. / Lo queremos visitar mañana.", "de": "Das Museum? Wir wollen es morgen besuchen." },
+        { "es": "Está buscando las llaves. – Está buscándolas.", "de": "Er/Sie sucht die Schlüssel. – Er/Sie sucht sie gerade." }
+      ],
+      "tip": "Beim Anhängen ans Gerundium braucht es einen Akzent, damit die Betonung bleibt: buscando → busc**á**ndolas."
+    },
+    {
+      "h": "Doppelte Pronomen und die le→se-Regel",
+      "p": "Stehen beide Pronomen im Satz, gilt: **indirekt vor direkt** – „¿Me das el libro? – Sí, **te lo** doy.“ Und jetzt die Spezialregel: `le`/`les` + `lo`/`la`/`los`/`las` wird zu **se** – „le lo doy“ ist falsch, richtig ist „**se lo** doy“ (ich gebe es ihm/ihr).",
+      "table": {
+        "head": ["ohne le→se", "mit le→se"],
+        "rows": [
+          ["te **lo** doy (ich gebe es dir)", "**se** lo doy (ich gebe es ihm/ihr)"],
+          ["me **la** enseña (er zeigt sie mir)", "**se** la enseña (er zeigt sie ihm/ihr)"],
+          ["os **los** mando (ich schicke sie euch)", "**se** los mando (ich schicke sie ihnen)"]
+        ]
+      },
+      "examples": [
+        { "es": "¿Le diste la dirección a Ana? – Sí, se la di ayer.", "de": "Hast du Ana die Adresse gegeben? – Ja, ich gab sie ihr gestern." }
+      ],
+      "tip": "Eselsbrücke: Zwei l-Wörter hintereinander (le lo) klingen für Spanier scheußlich – deshalb wird das erste zu **se**."
+    }
+  ],
+  "exercises": [
+    { "type": "gap", "text": "¿Ves la torre? – Sí, ___ veo.", "answer": "la", "hint": "direkt, feminin", "expl": "la torre ist feminin Singular → direktes Pronomen la." },
+    { "type": "gap", "text": "¿Compraste los billetes? – Sí, ___ compré ayer.", "answer": "los", "hint": "direkt, Plural", "expl": "los billetes → maskulin Plural → los." },
+    { "type": "gap", "text": "___ escribo un correo a María.", "answer": ["Le", "le"], "hint": "wem?", "expl": "a María = indirektes Objekt (wem schreibe ich?) → le. Das Pronomen steht zusätzlich zu „a María“ – typisch spanisch." },
+    { "type": "gap", "text": "No encuentro mis gafas. ¿___ has visto?", "answer": ["Las", "las"], "hint": "las gafas", "expl": "las gafas → feminin Plural → direktes Pronomen las, vor dem konjugierten Verb (has visto)." },
+    { "type": "gap", "text": "¿Me das tu número? – Claro, te ___ doy.", "answer": "lo", "hint": "el número", "expl": "el número → lo. Reihenfolge: indirekt (te) vor direkt (lo): te lo doy." },
+    { "type": "gap", "text": "A mis padres ___ mando fotos del viaje.", "answer": ["les", "Les"], "hint": "Plural!", "expl": "a mis padres = ihnen → les. Bei mehreren Empfängern immer les, nicht le." },
+    { "type": "gap", "text": "Doy el libro a Ana. → ___ ___ doy.", "answer": ["Se lo", "se lo"], "hint": "le→se!", "expl": "le (a Ana) + lo (el libro) → le wird vor lo zu se: Se lo doy." },
+    { "type": "gap", "text": "¿Le compraste el regalo a Luis? – Sí, ___ ___ compré ayer.", "answer": ["se lo", "Se lo"], "hint": "zwei Pronomen", "expl": "el regalo → lo, a Luis → le, und le + lo → se lo." },
+    { "type": "mc", "q": "„Quiero comprar el libro“ mit Pronomen – welche Form ist richtig?", "options": ["Quiero comprarlo.", "Quiero lo comprar.", "Comprar quiero lo."], "answer": 0, "expl": "Ans Infinitiv wird angehängt: comprarlo. Genauso richtig wäre: Lo quiero comprar (vor dem konjugierten Verb) – aber nie mitten dazwischen." },
+    { "type": "mc", "q": "„Ich gebe es dir“ heißt:", "options": ["Te lo doy.", "Lo te doy.", "Te doy lo."], "answer": 0, "expl": "Regel: indirektes Pronomen (te) vor direktem (lo), beide vor dem konjugierten Verb → Te lo doy." },
+    { "type": "mc", "q": "Warum heißt es „se lo doy“ und nicht „le lo doy“?", "options": ["se ist höflicher als le", "le/les wird vor lo/la/los/las zu se", "lo wird nach le zu se"], "answer": 1, "expl": "Die le→se-Regel: Vor den direkten Pronomen lo/la/los/las verwandelt sich le (und les) in se." },
+    { "type": "mc", "q": "Está explicando la ruta (uns) – mit Pronomen:", "options": ["Está explicándonos la ruta.", "Está nos explicando la ruta.", "Nos está explicándonos la ruta."], "answer": 0, "expl": "Ans Gerundium wird angehängt – mit Akzent: explicándonos. Auch richtig: Nos está explicando (vor dem konjugierten Verb) – aber nicht beides gleichzeitig." },
+    { "type": "mc", "q": "___ pregunto al camarero si hay mesa libre.", "options": ["Le", "Lo", "La"], "answer": 0, "expl": "preguntar a alguien → man fragt jemandeM (indirekt) → le. Das Erfragte wäre das direkte Objekt." },
+    { "type": "gap", "text": "¿Dónde está el pasaporte? Estoy buscándo___.", "answer": "lo", "hint": "angehängt", "expl": "el pasaporte → lo, ans Gerundium angehängt: buscándolo (mit Akzent auf dem á)." }
+  ]
+}

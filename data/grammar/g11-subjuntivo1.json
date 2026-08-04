@@ -1,0 +1,91 @@
+{
+  "id": "g11",
+  "title": "Subjuntivo I – Einstieg",
+  "intro": "Der Subjuntivo ist kein Zeitform-Monster, sondern ein Modus: Mit ihm markierst du Wünsche, Bewertungen und Unsicheres. Die Formen sind schnell gelernt – die eigentliche Kunst ist zu wissen, WANN er drankommt.",
+  "sections": [
+    {
+      "h": "Die Bildung: Endungen tauschen",
+      "p": "Nimm die **yo-Form** des Presente, streiche das `-o` und hänge die „vertauschten“ Endungen an: **-ar**-Verben bekommen **-e**-Endungen, **-er/-ir**-Verben **-a**-Endungen.",
+      "table": {
+        "head": ["", "hablar", "comer", "vivir"],
+        "rows": [
+          ["yo", "habl**e**", "com**a**", "viv**a**"],
+          ["tú", "habl**es**", "com**as**", "viv**as**"],
+          ["él/ella/usted", "habl**e**", "com**a**", "viv**a**"],
+          ["nosotros/-as", "habl**emos**", "com**amos**", "viv**amos**"],
+          ["vosotros/-as", "habl**éis**", "com**áis**", "viv**áis**"],
+          ["ellos/ustedes", "habl**en**", "com**an**", "viv**an**"]
+        ]
+      },
+      "examples": [
+        { "es": "Espero que hables con ella.", "de": "Ich hoffe, dass du mit ihr sprichst." },
+        { "es": "Quiere que comamos juntos.", "de": "Er/Sie will, dass wir zusammen essen." }
+      ],
+      "tip": "Merksatz: „-ar wird zu -e, der Rest zu -a.“ Und weil die yo-Form die Basis ist, bleiben Unregelmäßigkeiten erhalten: conocer → cono**zc**o → cono**zc**a. Achtung: yo und él/ella haben dieselbe Form."
+    },
+    {
+      "h": "Die wichtigsten unregelmäßigen Formen",
+      "p": "Acht Verben tanzen aus der Reihe – die musst du auswendig können. Die Endungen dahinter sind aber ganz normal: `sea, seas, sea, seamos, seáis, sean`.",
+      "table": {
+        "head": ["Infinitiv", "Subjuntivo", "Beispiel"],
+        "rows": [
+          ["ser", "**sea**", "…que sea fácil"],
+          ["estar", "**esté**", "…que esté aquí"],
+          ["ir", "**vaya**", "…que vaya sola"],
+          ["tener", "**tenga**", "…que tenga tiempo"],
+          ["hacer", "**haga**", "…que haga sol"],
+          ["poder", "**pueda**", "…que pueda venir"],
+          ["querer", "**quiera**", "…que quiera ayudar"],
+          ["saber", "**sepa**", "…que sepa la verdad"]
+        ]
+      },
+      "examples": [
+        { "es": "Ojalá tengas razón.", "de": "Hoffentlich hast du recht." },
+        { "es": "Espero que todo vaya bien.", "de": "Ich hoffe, dass alles gut läuft." }
+      ],
+      "tip": "`tenga`, `haga` und `pueda` folgen brav der yo-Form (tengo → tenga, hago → haga). Wirklich lernen musst du nur **sea**, **vaya**, **sepa** – und **esté** mit Akzent."
+    },
+    {
+      "h": "Auslöser: Wunsch, Wille und Empfehlung",
+      "p": "Der Subjuntivo steht fast nie allein – ein Auslöser im Hauptsatz plus **que** schaltet ihn ein: **querer que**, **esperar que**, **ojalá** (hoffentlich) und Empfehlungen wie **te recomiendo que** oder **te aconsejo que**.",
+      "examples": [
+        { "es": "Quiero que vengas a mi fiesta.", "de": "Ich will, dass du zu meiner Party kommst." },
+        { "es": "Te recomiendo que pruebes la paella.", "de": "Ich empfehle dir, die Paella zu probieren." }
+      ],
+      "tip": "Nur bei **Subjektwechsel**! Gleiche Person → Infinitiv: `Quiero ir` (ich will, ich gehe). Verschiedene Personen → que + Subjuntivo: `Quiero que vayas` (ich will, DU gehst)."
+    },
+    {
+      "h": "Wann Subjuntivo? Der Kontrast zum Indicativo",
+      "p": "Faustregel: Fakten und feste Überzeugungen → **Indicativo**. Wünsche, Bewertungen und Unsicheres → **Subjuntivo**. Auch unpersönliche Ausdrücke wie **es importante que**, **es mejor que** und **es posible que** lösen ihn aus.",
+      "table": {
+        "head": ["Indicativo (Fakt)", "Subjuntivo (Wunsch/Bewertung/Zweifel)"],
+        "rows": [
+          ["Creo que **viene**.", "No creo que **venga**."],
+          ["Sé que **está** en casa.", "Es posible que **esté** en casa."],
+          ["Es seguro que **llega** hoy.", "Es importante que **llegue** hoy."]
+        ]
+      },
+      "examples": [
+        { "es": "Es importante que llegues puntual.", "de": "Es ist wichtig, dass du pünktlich ankommst." },
+        { "es": "Creo que viene, pero no creo que venga solo.", "de": "Ich glaube, dass er kommt, aber ich glaube nicht, dass er allein kommt." }
+      ],
+      "tip": "Der Lackmustest ist `Creo que viene` ↔ `No creo que venga`: Sobald du etwas nicht mehr als Fakt hinstellst, kippt der Nebensatz in den Subjuntivo."
+    }
+  ],
+  "exercises": [
+    { "type": "gap", "text": "Espero que ___ (tener, tú) suerte.", "answer": "tengas", "hint": "unregelmäßig: yo-Form als Basis", "expl": "esperar que löst Subjuntivo aus. tener → tengo → tenga, tengas …" },
+    { "type": "gap", "text": "Quiero que me ___ (llamar, tú) esta noche.", "answer": "llames", "hint": "-ar → -e-Endungen", "expl": "querer que + Subjektwechsel → Subjuntivo: llamar → llames (tú)." },
+    { "type": "gap", "text": "Ojalá ___ (hacer) buen tiempo mañana.", "answer": "haga", "hint": "yo-Form: hago", "expl": "Nach ojalá steht immer Subjuntivo: hacer → hago → haga." },
+    { "type": "gap", "text": "Es importante que ___ (ser, vosotros) puntuales.", "answer": "seáis", "hint": "komplett unregelmäßig", "expl": "Unpersönlicher Ausdruck es importante que → Subjuntivo. ser: sea, seas, sea, seamos, seáis, sean." },
+    { "type": "gap", "text": "Te recomiendo que ___ (ir, tú) al médico.", "answer": "vayas", "hint": "unregelmäßig!", "expl": "Empfehlungen (te recomiendo que) lösen Subjuntivo aus: ir → vaya, vayas …" },
+    { "type": "gap", "text": "Es posible que Ana no ___ (poder) venir hoy.", "answer": "pueda", "hint": "o → ue bleibt erhalten", "expl": "es posible que drückt Unsicherheit aus → Subjuntivo: poder → puedo → pueda." },
+    { "type": "gap", "text": "Esperamos que el hotel ___ (estar) cerca de la playa.", "answer": "esté", "hint": "Akzent nicht vergessen", "expl": "esperar que → Subjuntivo. estar: esté, estés, esté … – mit Akzent auf dem e." },
+    { "type": "gap", "text": "Es mejor que ___ (comer, nosotros) algo antes de salir.", "answer": "comamos", "hint": "-er → -a-Endungen", "expl": "es mejor que ist eine Bewertung → Subjuntivo: comer → comamos." },
+    { "type": "gap", "text": "Mis padres quieren que ___ (estudiar, yo) más.", "answer": "estudie", "hint": "yo-Form endet auf -e", "expl": "querer que + Subjektwechsel (Eltern wollen, ICH lerne) → Subjuntivo: estudiar → estudie." },
+    { "type": "gap", "text": "No creo que ___ (saber, ellos) la respuesta.", "answer": "sepan", "hint": "komplett unregelmäßig", "expl": "no creer que → Subjuntivo. saber hat die Sonderform sepa: sepa, sepas, sepa … sepan." },
+    { "type": "mc", "q": "Creo que Juan ___ mañana.", "options": ["venga", "viene", "vaya"], "answer": 1, "expl": "creo que ist bejaht – der Sprecher stellt es als Fakt hin → Indicativo: viene. Nur verneint (no creo que) käme venga." },
+    { "type": "mc", "q": "Quiero que mi hijo ___ más verduras.", "options": ["coma", "come", "comer"], "answer": 0, "expl": "querer que + andere Person → Subjuntivo: coma. Der Infinitiv (comer) ginge nur ohne Subjektwechsel: Quiero comer." },
+    { "type": "mc", "q": "No creo que el tren ___ a tiempo.", "options": ["llega", "llegará", "llegue"], "answer": 2, "expl": "Verneintes creer → Subjuntivo: llegue. Deutsch nutzt hier den Indikativ („dass er ankommt“) – Spanisch nicht!" },
+    { "type": "mc", "q": "Ojalá ___ vernos pronto.", "options": ["podemos", "poder", "podamos"], "answer": 2, "expl": "ojalá verlangt immer Subjuntivo: poder → podamos. „Hoffentlich können wir uns bald sehen.“" }
+  ]
+}

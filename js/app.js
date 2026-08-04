@@ -97,6 +97,7 @@ window.Vamos = window.Vamos || {};
         '<div class="quick-grid">' +
         '<a class="quick" href="#/mix"><span class="ico">🔀</span><span class="lbl">Mix-Quiz</span></a>' +
         '<a class="quick" href="#/listen"><span class="ico">🎧</span><span class="lbl">Hör-Quiz</span></a>' +
+        '<a class="quick" href="#/conj"><span class="ico">🏃</span><span class="lbl">Konjugation</span></a>' +
         '<a class="quick" href="#/search"><span class="ico">🔍</span><span class="lbl">Suche</span></a>' +
         "</div>" +
 
@@ -199,6 +200,7 @@ window.Vamos = window.Vamos || {};
         '<a class="btn" href="#/type/' + id + '">Tippen</a>' +
         '<a class="btn" href="#/listen/' + id + '">Hören 🎧</a>' +
         '<a class="btn" href="#/cloze/' + id + '">Satz-Lücke ✍️</a>' +
+        '<a class="btn" href="#/order/' + id + '">Satzbau 🧩</a>' +
         "</div>" +
         '<div class="btn-row no-print">' +
         '<button class="btn small" id="ankiBtn">Anki ⬇</button>' +
@@ -258,6 +260,16 @@ window.Vamos = window.Vamos || {};
     loading();
     Vamos.data.loadAllUnits().then(function (units) {
       Vamos.quiz.renderMixQuiz(main, units);
+    }).catch(fail);
+  }
+
+  function viewConj() {
+    loading();
+    fetch("data/conjugation.json").then(function (r) {
+      if (!r.ok) throw new Error("HTTP " + r.status);
+      return r.json();
+    }).then(function (conj) {
+      Vamos.quiz.renderConjQuiz(main, conj);
     }).catch(fail);
   }
 
@@ -532,6 +544,8 @@ window.Vamos = window.Vamos || {};
     { re: /^#\/listen$/, fn: viewListenGlobal, tab: "learn" },
     { re: /^#\/listen\/([\w-]+)$/, fn: function (id) { withUnit(id, function (u) { Vamos.quiz.renderListenQuiz(main, u.words, "#/unit/" + id, u.meta.title); }); }, tab: "units" },
     { re: /^#\/cloze\/([\w-]+)$/, fn: function (id) { withUnit(id, function (u) { Vamos.quiz.renderClozeQuiz(main, u.words, "#/unit/" + id); }); }, tab: "units" },
+    { re: /^#\/order\/([\w-]+)$/, fn: function (id) { withUnit(id, function (u) { Vamos.quiz.renderOrderQuiz(main, u.words, "#/unit/" + id); }); }, tab: "units" },
+    { re: /^#\/conj$/, fn: viewConj, tab: "learn" },
     { re: /^#\/quiz\/([\w-]+)$/, fn: function (id) { withUnit(id, function (u) { Vamos.quiz.renderMcQuiz(main, u); }); }, tab: "units" },
     { re: /^#\/type\/([\w-]+)$/, fn: function (id) { withUnit(id, function (u) { Vamos.quiz.renderTypeQuiz(main, u); }); }, tab: "units" },
     { re: /^#\/grammar$/, fn: viewGrammarList, tab: "grammar" },
