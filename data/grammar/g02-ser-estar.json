@@ -1,0 +1,71 @@
+{
+  "id": "g02",
+  "title": "Ser vs. Estar",
+  "intro": "Beide heißen „sein“ – aber sie sind nicht austauschbar. Die gute Nachricht: Mit zwei Grundregeln liegst du in 90 % der Fälle richtig.",
+  "sections": [
+    {
+      "h": "SER – was etwas IST (Wesen & Identität)",
+      "p": "**ser** benutzt du für dauerhafte Eigenschaften: Identität, Herkunft, Beruf, Charakter, Material, Besitz – und für die Uhrzeit.",
+      "examples": [
+        { "es": "Soy alemán.", "de": "Ich bin Deutscher. (Herkunft)" },
+        { "es": "Ana es peluquera.", "de": "Ana ist Friseurin. (Beruf)" },
+        { "es": "El hotel es muy moderno.", "de": "Das Hotel ist sehr modern. (Eigenschaft)" },
+        { "es": "Son las cinco.", "de": "Es ist fünf Uhr. (Uhrzeit)" }
+      ],
+      "tip": "Merkwort **DOCTOR**: **D**escription, **O**ccupation, **C**haracteristic, **T**ime, **O**rigin, **R**elationship – alles ser."
+    },
+    {
+      "h": "ESTAR – wie/wo etwas IST (Zustand & Ort)",
+      "p": "**estar** benutzt du für Ortsangaben und für (veränderliche) Zustände: Stimmung, Gesundheit, Ergebnis einer Veränderung.",
+      "examples": [
+        { "es": "El hotel está en el centro.", "de": "Das Hotel ist im Zentrum. (Ort)" },
+        { "es": "Estoy cansado del viaje.", "de": "Ich bin müde von der Reise. (Zustand)" },
+        { "es": "La sopa está fría.", "de": "Die Suppe ist kalt. (Zustand – sollte warm sein!)" },
+        { "es": "El museo está cerrado.", "de": "Das Museum ist geschlossen. (Zustand)" }
+      ],
+      "tip": "Merkwort **PLACE**: **P**osition, **L**ocation, **A**ction (estar + gerundio), **C**ondition, **E**motion – alles estar."
+    },
+    {
+      "h": "Gleiche Wörter, andere Bedeutung",
+      "p": "Manche Adjektive ändern mit ser/estar die Bedeutung – hier lohnt sich das Auswendiglernen:",
+      "table": {
+        "head": ["Adjektiv", "mit SER", "mit ESTAR"],
+        "rows": [
+          ["aburrido", "langweilig (Person/Sache)", "gelangweilt"],
+          ["listo", "schlau", "fertig / bereit"],
+          ["rico", "reich", "lecker"],
+          ["malo", "schlecht/böse", "krank"],
+          ["bueno", "gut(mütig)", "gesund / gut drauf / attraktiv"]
+        ]
+      },
+      "examples": [
+        { "es": "La paella está muy rica.", "de": "Die Paella ist sehr lecker." },
+        { "es": "¿Estás listo? El taxi espera.", "de": "Bist du fertig? Das Taxi wartet." }
+      ]
+    },
+    {
+      "h": "estar + gerundio: gerade dabei sein",
+      "p": "Wie das englische „-ing“: **estar + -ando/-iendo** = etwas passiert gerade. `Estoy comiendo` = Ich esse gerade.",
+      "examples": [
+        { "es": "Estamos esperando el autobús.", "de": "Wir warten gerade auf den Bus." },
+        { "es": "¿Qué estás haciendo?", "de": "Was machst du gerade?" }
+      ]
+    }
+  ],
+  "exercises": [
+    { "type": "mc", "q": "Yo ___ de Alemania.", "options": ["soy", "estoy"], "answer": 0, "expl": "Herkunft → ser: Soy de Alemania." },
+    { "type": "mc", "q": "El baño ___ al fondo a la derecha.", "options": ["es", "está"], "answer": 1, "expl": "Ortsangabe → estar." },
+    { "type": "mc", "q": "Nosotros ___ muy cansados hoy.", "options": ["somos", "estamos"], "answer": 1, "expl": "Zustand/Befinden → estar: estamos cansados." },
+    { "type": "mc", "q": "Madrid ___ la capital de España.", "options": ["es", "está"], "answer": 0, "expl": "Identität/Definition → ser." },
+    { "type": "mc", "q": "¡Este gazpacho ___ muy rico!", "options": ["es", "está"], "answer": 1, "expl": "Geschmack im Moment → estar rico = lecker. (ser rico = reich!)" },
+    { "type": "mc", "q": "¿Qué hora ___? — ___ las diez.", "options": ["es / Son", "está / Están"], "answer": 0, "expl": "Uhrzeit → immer ser: ¿Qué hora es? Son las diez." },
+    { "type": "mc", "q": "El museo ___ cerrado los lunes.", "options": ["es", "está"], "answer": 1, "expl": "Zustand (geschlossen) → estar cerrado." },
+    { "type": "mc", "q": "Mi amigo ___ camarero en un bar de tapas.", "options": ["es", "está"], "answer": 0, "expl": "Beruf → ser." },
+    { "type": "gap", "text": "¿Dónde ___ (ser/estar) la estación de tren?", "answer": ["está", "esta"], "hint": "Ort!", "expl": "Ortsangabe → estar: ¿Dónde está …?" },
+    { "type": "gap", "text": "Nosotros ___ (ser/estar) en el hotel ahora.", "answer": "estamos", "hint": "Ort!", "expl": "Wo wir gerade sind → estar: estamos en el hotel." },
+    { "type": "gap", "text": "La catedral ___ (ser/estar) del siglo trece.", "answer": "es", "hint": "Eigenschaft", "expl": "Dauerhafte Eigenschaft (Baujahr) → ser." },
+    { "type": "gap", "text": "Yo ___ (ser/estar) esperando un taxi.", "answer": "estoy", "hint": "gerade dabei", "expl": "estar + gerundio: estoy esperando = ich warte gerade." },
+    { "type": "mc", "q": "„Ana ist gelangweilt“ heißt:", "options": ["Ana es aburrida.", "Ana está aburrida."], "answer": 1, "expl": "está aburrida = gelangweilt (Zustand). es aburrida = sie ist langweilig (Charakter)!" },
+    { "type": "mc", "q": "¿___ listo? ¡Nos vamos!", "options": ["Eres", "Estás"], "answer": 1, "expl": "estar listo = fertig/bereit sein. ser listo = schlau sein." }
+  ]
+}

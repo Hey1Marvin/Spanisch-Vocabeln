@@ -1,0 +1,69 @@
+{
+  "id": "g03",
+  "title": "Pretérito Indefinido",
+  "intro": "Die Erzähl-Vergangenheit: abgeschlossene Handlungen zu einem bestimmten Zeitpunkt. „Gestern besuchte ich die Alhambra, aß Tapas und lernte nette Leute kennen“ – alles Indefinido. Für Reiseberichte unverzichtbar.",
+  "sections": [
+    {
+      "h": "Regelmäßige Formen",
+      "p": "-er und -ir haben im Indefinido die gleichen Endungen – nur zwei Muster zu lernen:",
+      "table": {
+        "head": ["", "hablar", "comer", "vivir"],
+        "rows": [
+          ["yo", "habl**é**", "com**í**", "viv**í**"],
+          ["tú", "habl**aste**", "com**iste**", "viv**iste**"],
+          ["él/ella", "habl**ó**", "com**ió**", "viv**ió**"],
+          ["nosotros", "habl**amos**", "com**imos**", "viv**imos**"],
+          ["vosotros", "habl**asteis**", "com**isteis**", "viv**isteis**"],
+          ["ellos", "habl**aron**", "com**ieron**", "viv**ieron**"]
+        ]
+      },
+      "examples": [
+        { "es": "Ayer comí en un restaurante increíble.", "de": "Gestern aß ich in einem unglaublichen Restaurant." },
+        { "es": "¿Hablaste con la recepción?", "de": "Hast du mit der Rezeption gesprochen?" }
+      ],
+      "tip": "Die Akzente sind wichtig: **hablo** = ich spreche, **habló** = er/sie sprach!"
+    },
+    {
+      "h": "Wichtige unregelmäßige Verben",
+      "p": "Die häufigsten mit eigenem Stamm (alle ohne Akzente in den Endungen): **estar → estuv-**, **tener → tuv-**, **hacer → hic-**, **poder → pud-**, **querer → quis-**, **venir → vin-** + Endungen -e, -iste, -o, -imos, -isteis, -ieron.",
+      "table": {
+        "head": ["", "ser / ir (!)", "estar", "hacer", "tener"],
+        "rows": [
+          ["yo", "fui", "estuve", "hice", "tuve"],
+          ["tú", "fuiste", "estuviste", "hiciste", "tuviste"],
+          ["él/ella", "fue", "estuvo", "hizo", "tuvo"],
+          ["nosotros", "fuimos", "estuvimos", "hicimos", "tuvimos"],
+          ["vosotros", "fuisteis", "estuvisteis", "hicisteis", "tuvisteis"],
+          ["ellos", "fueron", "estuvieron", "hicieron", "tuvieron"]
+        ]
+      },
+      "examples": [
+        { "es": "El año pasado fui a Mallorca.", "de": "Letztes Jahr fuhr ich nach Mallorca." },
+        { "es": "Estuvimos tres días en Barcelona.", "de": "Wir waren drei Tage in Barcelona." }
+      ],
+      "tip": "**ser** und **ir** sind im Indefinido identisch! „Fui“ heißt „ich war“ ODER „ich ging/fuhr“ – der Kontext macht es klar."
+    },
+    {
+      "h": "Wann Indefinido? Die Signalwörter",
+      "p": "Abgeschlossene Handlung + konkreter Zeitpunkt → Indefinido. Typische Signalwörter: **ayer** (gestern), **anoche** (gestern Abend), **la semana pasada** (letzte Woche), **el año pasado**, **en 2019**, **hace dos días** (vor zwei Tagen), **de repente** (plötzlich).",
+      "examples": [
+        { "es": "Anoche cenamos en la plaza.", "de": "Gestern Abend aßen wir auf dem Platz." },
+        { "es": "Hace dos años estuve en Sevilla.", "de": "Vor zwei Jahren war ich in Sevilla." }
+      ]
+    }
+  ],
+  "exercises": [
+    { "type": "gap", "text": "Ayer ___ (comer, yo) paella por primera vez.", "answer": "comí", "hint": "regelmäßig, -er", "expl": "comer → yo comí. Mit Akzent auf dem í!" },
+    { "type": "gap", "text": "¿___ (hablar, tú) con el camarero?", "answer": "hablaste", "hint": "regelmäßig, -ar", "expl": "hablar → tú hablaste." },
+    { "type": "gap", "text": "El año pasado ___ (ir, nosotros) a España.", "answer": "fuimos", "hint": "unregelmäßig!", "expl": "ir → fuimos. Identisch mit ser!" },
+    { "type": "gap", "text": "Ella ___ (visitar) la Alhambra el lunes.", "answer": "visitó", "hint": "Akzent!", "expl": "visitar → él/ella visitó – mit Akzent, sonst hieße es „ich besuche“." },
+    { "type": "gap", "text": "Anoche ___ (estar, yo) en un concierto.", "answer": "estuve", "hint": "estuv-", "expl": "estar → estuve: eigener Stamm estuv-, Endung ohne Akzent." },
+    { "type": "gap", "text": "¿Qué ___ (hacer, tú) el fin de semana?", "answer": "hiciste", "hint": "hic-", "expl": "hacer → hiciste." },
+    { "type": "gap", "text": "Ellos ___ (llegar) muy tarde al hotel.", "answer": "llegaron", "expl": "llegar → llegaron: regelmäßig, Endung -aron." },
+    { "type": "gap", "text": "Nosotros ___ (tener) mucha suerte con el tiempo.", "answer": "tuvimos", "hint": "tuv-", "expl": "tener → tuvimos: Stamm tuv-." },
+    { "type": "mc", "q": "„Ich war zwei Wochen in Madrid“ heißt:", "options": ["Estuve dos semanas en Madrid.", "Estaba dos semanas en Madrid.", "Estoy dos semanas en Madrid."], "answer": 0, "expl": "Abgeschlossener Zeitraum („zwei Wochen“) → Indefinido: estuve." },
+    { "type": "mc", "q": "Welcher Satz ist richtig?", "options": ["Ayer hablo con mi madre.", "Ayer hablé con mi madre.", "Ayer hablaba con mi madre ist immer falsch."], "answer": 1, "expl": "ayer + abgeschlossene Handlung → hablé (Indefinido)." },
+    { "type": "mc", "q": "„Fuimos a la playa“ kann bedeuten:", "options": ["Nur: Wir gingen zum Strand.", "Nur: Wir waren der Strand.", "Wir gingen zum Strand ODER wir waren … (ser=ir!)"], "answer": 2, "expl": "ser und ir sind im Indefinido identisch – meist hilft der Kontext: „fuimos a“ = wir gingen/fuhren nach." },
+    { "type": "gap", "text": "De repente ___ (empezar) a llover.", "answer": ["empezó", "empezo"], "hint": "3. Person", "expl": "empezar → empezó. „De repente“ ist ein typisches Indefinido-Signalwort." }
+  ]
+}

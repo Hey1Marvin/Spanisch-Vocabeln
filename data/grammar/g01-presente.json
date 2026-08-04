@@ -1,0 +1,90 @@
+{
+  "id": "g01",
+  "title": "Presente – Gegenwart",
+  "intro": "Das Presente ist deine wichtigste Zeit: Damit redest du über Gewohnheiten, Fakten und die unmittelbare Zukunft. Mit dem Presente + ein paar Verben kommst du überall durch.",
+  "sections": [
+    {
+      "h": "Regelmäßige Verben",
+      "p": "Es gibt drei Verbklassen: **-ar**, **-er** und **-ir**. Stamm behalten, Endung austauschen:",
+      "table": {
+        "head": ["", "hablar (sprechen)", "comer (essen)", "vivir (wohnen)"],
+        "rows": [
+          ["yo", "habl**o**", "com**o**", "viv**o**"],
+          ["tú", "habl**as**", "com**es**", "viv**es**"],
+          ["él/ella/usted", "habl**a**", "com**e**", "viv**e**"],
+          ["nosotros/-as", "habl**amos**", "com**emos**", "viv**imos**"],
+          ["vosotros/-as", "habl**áis**", "com**éis**", "viv**ís**"],
+          ["ellos/ustedes", "habl**an**", "com**en**", "viv**en**"]
+        ]
+      },
+      "examples": [
+        { "es": "Hablo un poco de español.", "de": "Ich spreche ein bisschen Spanisch." },
+        { "es": "¿Dónde vives?", "de": "Wo wohnst du?" }
+      ],
+      "tip": "-er und -ir unterscheiden sich nur bei **nosotros** und **vosotros**. Und: Das Subjektpronomen (yo, tú …) lässt man meistens weg – die Endung sagt schon alles."
+    },
+    {
+      "h": "Die wichtigsten unregelmäßigen Verben",
+      "p": "Diese fünf musst du auswendig können – sie kommen in fast jedem Gespräch vor:",
+      "table": {
+        "head": ["", "ser (sein)", "estar (sein)", "ir (gehen)", "tener (haben)", "hacer (machen)"],
+        "rows": [
+          ["yo", "soy", "estoy", "voy", "tengo", "hago"],
+          ["tú", "eres", "estás", "vas", "tienes", "haces"],
+          ["él/ella", "es", "está", "va", "tiene", "hace"],
+          ["nosotros", "somos", "estamos", "vamos", "tenemos", "hacemos"],
+          ["vosotros", "sois", "estáis", "vais", "tenéis", "hacéis"],
+          ["ellos", "son", "están", "van", "tienen", "hacen"]
+        ]
+      },
+      "examples": [
+        { "es": "Tengo dos entradas para el museo.", "de": "Ich habe zwei Tickets fürs Museum." },
+        { "es": "Vamos a la playa mañana.", "de": "Wir gehen morgen an den Strand." }
+      ]
+    },
+    {
+      "h": "Verben mit Vokalwechsel (e→ie, o→ue, e→i)",
+      "p": "Bei vielen Verben ändert sich der Stammvokal – außer bei nosotros/vosotros: **querer → quiero**, **poder → puedo**, **pedir → pido**.",
+      "table": {
+        "head": ["", "querer (wollen)", "poder (können)", "pedir (bestellen)"],
+        "rows": [
+          ["yo", "qu**ie**ro", "p**ue**do", "p**i**do"],
+          ["tú", "qu**ie**res", "p**ue**des", "p**i**des"],
+          ["él/ella", "qu**ie**re", "p**ue**de", "p**i**de"],
+          ["nosotros", "queremos", "podemos", "pedimos"],
+          ["vosotros", "queréis", "podéis", "pedís"],
+          ["ellos", "qu**ie**ren", "p**ue**den", "p**i**den"]
+        ]
+      },
+      "examples": [
+        { "es": "¿Puedo pagar con tarjeta?", "de": "Kann ich mit Karte zahlen?" },
+        { "es": "Quiero reservar una mesa.", "de": "Ich möchte einen Tisch reservieren." }
+      ],
+      "tip": "Merkhilfe „Stiefel-Verben“: Die Formen mit Wechsel (yo, tú, él, ellos) bilden in der Tabelle die Form eines Stiefels – nosotros und vosotros bleiben draußen."
+    },
+    {
+      "h": "Presente für die Zukunft",
+      "p": "Im Alltag benutzt man fürs Planen oft einfach **ir a + Infinitiv**: `Voy a comer` = Ich werde essen / Ich esse gleich.",
+      "examples": [
+        { "es": "Esta noche vamos a cenar fuera.", "de": "Heute Abend gehen wir auswärts essen." },
+        { "es": "Mañana voy a visitar la Alhambra.", "de": "Morgen besuche ich die Alhambra." }
+      ]
+    }
+  ],
+  "exercises": [
+    { "type": "gap", "text": "Yo ___ (hablar) un poco de español.", "answer": "hablo", "hint": "regelmäßig, -ar", "expl": "hablar → yo hablo: Stamm habl- + Endung -o." },
+    { "type": "gap", "text": "¿Dónde ___ (vivir) tú?", "answer": "vives", "hint": "regelmäßig, -ir", "expl": "vivir → tú vives: -ir-Verben haben bei tú die Endung -es." },
+    { "type": "gap", "text": "Nosotros ___ (comer) a las dos.", "answer": "comemos", "hint": "regelmäßig, -er", "expl": "comer → nosotros comemos." },
+    { "type": "gap", "text": "Yo ___ (ser) de Alemania.", "answer": "soy", "hint": "unregelmäßig!", "expl": "ser ist komplett unregelmäßig: soy, eres, es …" },
+    { "type": "gap", "text": "¿___ (tener, tú) la llave de la habitación?", "answer": "tienes", "hint": "e → ie", "expl": "tener: tengo, tienes, tiene – mit Vokalwechsel e→ie (außer yo: tengo)." },
+    { "type": "gap", "text": "Ellos ___ (ir) al mercado por la mañana.", "answer": "van", "hint": "unregelmäßig!", "expl": "ir: voy, vas, va, vamos, vais, van." },
+    { "type": "gap", "text": "¿___ (poder, yo) pagar con tarjeta?", "answer": "puedo", "hint": "o → ue", "expl": "poder → puedo: Vokalwechsel o→ue." },
+    { "type": "gap", "text": "Nosotros ___ (querer) dos cafés, por favor.", "answer": "queremos", "hint": "Vorsicht: nosotros!", "expl": "Bei nosotros gibt es KEINEN Vokalwechsel: queremos, nicht quieremos." },
+    { "type": "gap", "text": "Él ___ (hacer) una foto de la catedral.", "answer": "hace", "expl": "hacer ist nur bei yo unregelmäßig (hago), sonst regelmäßig: haces, hace …" },
+    { "type": "gap", "text": "Hoy yo ___ (pedir) la paella.", "answer": "pido", "hint": "e → i", "expl": "pedir → pido: Vokalwechsel e→i." },
+    { "type": "mc", "q": "„Wir wohnen in Berlin“ heißt:", "options": ["Vivimos en Berlín.", "Vivemos en Berlín.", "Vivamos en Berlín."], "answer": 0, "expl": "vivir ist ein -ir-Verb: nosotros vivimos (nicht -emos wie bei -er-Verben)." },
+    { "type": "mc", "q": "Was ist die richtige Form? „¿A qué hora ___ el tren?“", "options": ["salgo", "sale", "salimos"], "answer": 1, "expl": "Der Zug = él → sale. salir ist nur bei yo unregelmäßig (salgo)." },
+    { "type": "mc", "q": "„Morgen gehe ich an den Strand“ – am natürlichsten:", "options": ["Mañana voy a ir a la playa.", "Mañana voy a la playa.", "Beide sind richtig."], "answer": 2, "expl": "Beides geht! „Voy a la playa“ (Presente) und „voy a ir“ (ir a + Infinitiv) sind beide üblich." },
+    { "type": "gap", "text": "Vosotros ___ (hablar) muy rápido.", "answer": "habláis", "hint": "vosotros-Form", "expl": "hablar → vosotros habláis. Die vosotros-Form braucht den Akzent: -áis." }
+  ]
+}
