@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>¡Vamos! – Spanisch lernen</title>
+  <meta name="description" content="Persönliche Spanisch-Lern-App: Vokabeln, Grammatik, Spaced Repetition.">
+  <meta name="theme-color" content="#c8402a">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <h1><a href="#/">🇪🇸 ¡Vamos!</a></h1>
+    <a class="gear" href="#/settings" title="Einstellungen">⚙️</a>
+  </header>
+
+  <main id="app">
+    <div class="empty-state"><div class="big">⏳</div><p class="muted">Lade …</p></div>
+  </main>
+
+  <nav class="tabbar">
+    <a href="#/" data-tab="home"><span class="ico">🏠</span>Start</a>
+    <a href="#/units" data-tab="units"><span class="ico">📚</span>Einheiten</a>
+    <a href="#/learn" data-tab="learn"><span class="ico">🧠</span>Lernen</a>
+    <a href="#/grammar" data-tab="grammar"><span class="ico">📖</span>Grammatik</a>
+    <a href="#/stats" data-tab="stats"><span class="ico">📊</span>Statistik</a>
+  </nav>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="js/store.js"></script>
+  <script src="js/srs.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/quiz.js"></script>
+  <script src="js/grammar.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
