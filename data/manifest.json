@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "units": [
+    { "id": "u01", "file": "data/vocab/u01-begruessung.json", "title": "Begrüßung & Höflichkeit", "emoji": "👋", "phase": 1, "rank": 1, "level": "A1", "desc": "Hallo sagen, danken, sich entschuldigen – und die Survival-Sätze, mit denen du jede Situation überlebst." },
+    { "id": "u02", "file": "data/vocab/u02-zahlen-zeit.json", "title": "Zahlen, Uhrzeit & Datum", "emoji": "🔢", "phase": 1, "rank": 2, "level": "A1", "desc": "Preise verstehen, Uhrzeiten nennen, Termine machen – Zahlen brauchst du ständig." },
+    { "id": "u03", "file": "data/vocab/u03-verben.json", "title": "Die wichtigsten Verben", "emoji": "⚡", "phase": 1, "rank": 3, "level": "A1/A2", "desc": "Die Verben, aus denen 80 % aller Sätze bestehen – jedes mit Beispielsatz." },
+    { "id": "u04", "file": "data/vocab/u04-fragen.json", "title": "Fragen stellen & verstehen", "emoji": "❓", "phase": 1, "rank": 4, "level": "A1/A2", "desc": "Alle Fragewörter plus die Alltagsfragen, die dir unterwegs wirklich gestellt werden." },
+    { "id": "u05", "file": "data/vocab/u05-transport.json", "title": "Unterwegs: Flughafen, Zug & Taxi", "emoji": "✈️", "phase": 2, "rank": 5, "level": "A2", "desc": "Vom Check-in bis zum Taxi – alles, um von A nach B zu kommen." },
+    { "id": "u06", "file": "data/vocab/u06-hotel.json", "title": "Hotel & Unterkunft", "emoji": "🏨", "phase": 2, "rank": 6, "level": "A2", "desc": "Einchecken, nach Sachen fragen, Probleme melden." },
+    { "id": "u07", "file": "data/vocab/u07-restaurant.json", "title": "Restaurant & Bestellen", "emoji": "🍽️", "phase": 2, "rank": 7, "level": "A2", "desc": "Tisch bekommen, bestellen, Sonderwünsche, Rechnung – der komplette Restaurantbesuch." },
+    { "id": "u08", "file": "data/vocab/u08-essen.json", "title": "Essen & Trinken", "emoji": "🥘", "phase": 2, "rank": 8, "level": "A2", "desc": "Lebensmittel, Getränke, Geschmack – damit du weißt, was auf der Karte steht." },
+    { "id": "u09", "file": "data/vocab/u09-stadt-weg.json", "title": "Stadt & Wegbeschreibung", "emoji": "🗺️", "phase": 2, "rank": 9, "level": "A2", "desc": "Nach dem Weg fragen, Antworten verstehen, Orte in der Stadt." }
+  ],
+  "grammar": [
+    { "id": "g01", "file": "data/grammar/g01-presente.json", "title": "Presente – Gegenwart", "emoji": "⏱️", "rank": 1, "level": "A1/A2" },
+    { "id": "g02", "file": "data/grammar/g02-ser-estar.json", "title": "Ser vs. Estar", "emoji": "⚖️", "rank": 2, "level": "A2" },
+    { "id": "g03", "file": "data/grammar/g03-indefinido.json", "title": "Pretérito Indefinido", "emoji": "⏪", "rank": 3, "level": "A2/B1" }
+  ]
+}
