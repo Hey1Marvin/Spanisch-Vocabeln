@@ -25,7 +25,9 @@ Vamos.store = (function () {
     newPerDay: 15,
     direction: "es-de", // es-de | de-es | mixed
     voiceURI: "",
-    speechRate: 0.9
+    speechRate: 0.9,
+    dailyGoal: 30,      // Wiederholungen pro Tag (Tagesziel-Ring)
+    theme: "auto"       // auto | light | dark
   };
 
   function settings() {

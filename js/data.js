@@ -96,6 +96,61 @@ Vamos.data = (function () {
     return rows.join("\n");
   }
 
+  /* Anki-Textdatei (Anki 2.1.54+): #-Header + Tab-getrennt, GUID-Spalte sorgt dafür,
+     dass ein Re-Import Karten aktualisiert statt dupliziert. */
+  function ankiTxt(cards, deckName, tags) {
+    var esc = function (s) {
+      return String(s == null ? "" : s).replace(/\t/g, " ").replace(/\n/g, "<br>");
+    };
+    var lines = [
+      "#separator:tab",
+      "#html:true",
+      "#guid column:1",
+      "#deck:" + deckName,
+      "#notetype:Basic",
+      "#tags:" + tags,
+      "#columns:GUID\tFront\tBack"
+    ];
+    cards.forEach(function (w) {
+      var back = esc(w.de);
+      if (w.emoji) back = esc(w.emoji) + " " + back;
+      if (w.ex) back += "<br><i>" + esc(w.ex) + "</i>";
+      if (w.exDe) back += "<br><span style=\"color:#888\">" + esc(w.exDe) + "</span>";
+      lines.push("vamos-" + w.id + "\t" + esc(w.es) + "\t" + back);
+    });
+    return lines.join("\n");
+  }
+
+  function unitToAnki(unit) {
+    return ankiTxt(unit.words, "Spanisch ¡Vamos!::" + unit.meta.title,
+      "vamos " + unit.meta.id);
+  }
+
+  function allToAnki(units) {
+    var all = [];
+    units.forEach(function (u) { all = all.concat(u.words); });
+    return ankiTxt(all, "Spanisch ¡Vamos!::Alle Einheiten", "vamos");
+  }
+
+  /* Nur Sätze & Formulierungen (type: "phrase") über alle Einheiten. */
+  function phrasesToAnki(units) {
+    var phrases = [];
+    units.forEach(function (u) {
+      u.words.forEach(function (w) { if (w.type === "phrase") phrases.push(w); });
+    });
+    return ankiTxt(phrases, "Spanisch ¡Vamos!::Sätze & Formulierungen", "vamos phrase");
+  }
+
+  function allToCsv(units) {
+    var rows = ["Einheit;Spanisch;Deutsch;Beispiel;Beispiel (DE)"];
+    units.forEach(function (u) {
+      u.words.forEach(function (w) {
+        rows.push([u.meta.title, w.es, w.de, w.ex || "", w.exDe || ""].map(csvEscape).join(";"));
+      });
+    });
+    return rows.join("\n");
+  }
+
   function download(filename, text, mime) {
     var blob = new Blob(["﻿" + text], { type: (mime || "text/csv") + ";charset=utf-8" });
     var a = document.createElement("a");
@@ -112,6 +167,8 @@ Vamos.data = (function () {
   return {
     loadManifest: loadManifest, loadUnit: loadUnit, loadAllUnits: loadAllUnits,
     allCards: allCards, unitMeta: unitMeta, grammarMeta: grammarMeta,
-    loadGrammar: loadGrammar, unitToCsv: unitToCsv, download: download
+    loadGrammar: loadGrammar, unitToCsv: unitToCsv, download: download,
+    unitToAnki: unitToAnki, allToAnki: allToAnki, phrasesToAnki: phrasesToAnki,
+    allToCsv: allToCsv
   };
 })();

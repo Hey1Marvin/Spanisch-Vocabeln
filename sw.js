@@ -1,12 +1,13 @@
 /* Service Worker: App-Shell cache-first, Daten network-first (Updates kommen an,
    offline gibt es den Cache). Bei neuen Inhalten CACHE-Version hochzählen. */
-var CACHE = "vamos-v1";
+var CACHE = "vamos-v2";
 
 var SHELL = [
   "./",
   "index.html",
   "css/style.css",
   "js/store.js",
+  "js/ui.js",
   "js/srs.js",
   "js/audio.js",
   "js/data.js",
