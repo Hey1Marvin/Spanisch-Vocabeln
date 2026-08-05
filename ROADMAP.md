@@ -34,7 +34,7 @@ Abhaken, was fertig im Repo ist. Hintergründe: [docs/RESEARCH.md](docs/RESEARCH
 - [x] **U16 Wetter & Jahreszeiten**
 - [x] **U17 Gefühle & Meinung äußern** – zustimmen, widersprechen, finden dass …
 - [x] **U18 Arbeit & Alltag erzählen**
-- [ ] **U19 Konnektoren & Füllwörter** – bueno, pues, es que, sin embargo … (größter Flüssigkeits-Hebel!)
+- [x] **U19 Konnektoren & Füllwörter** – bueno, pues, es que, sin embargo … (größter Flüssigkeits-Hebel!)
 - [x] **U20 Zeit-Ausdrücke & Häufigkeit** – schon, noch nicht, gerade, meistens, neulich
 - [x] **G06 Gustar & Co.** – gefallen, interessieren, wehtun
 - [x] **G07 Pretérito Perfecto** – „heute/diese Woche“-Vergangenheit
