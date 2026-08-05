@@ -348,6 +348,18 @@ input.answer-input:focus { outline: none; border-color: var(--accent); }
   display: flex; flex-wrap: wrap; align-items: center;
 }
 
+/* ---------- KI-Tutor Chat ---------- */
+
+.chat-log { display: flex; flex-direction: column; gap: .5rem; margin: .8rem 0 0; max-height: 55vh; overflow-y: auto; }
+.bubble {
+  max-width: 85%; padding: .55rem .85rem; border-radius: 15px;
+  font-size: .93rem; white-space: pre-wrap; line-height: 1.45;
+}
+.bubble.user { align-self: flex-end; background: var(--accent); color: #fff; border-bottom-right-radius: 5px; }
+.bubble.ai { align-self: flex-start; background: var(--bg-soft); border: 1px solid var(--line); border-bottom-left-radius: 5px; }
+.bubble.err { align-self: center; background: var(--accent-soft); color: var(--accent); font-size: .84rem; }
+textarea.answer-input { resize: vertical; font-family: inherit; line-height: 1.5; }
+
 /* ---------- Suche ---------- */
 
 .search-hit { display: flex; align-items: baseline; gap: .5rem; padding: .5rem .2rem; border-bottom: 1px solid var(--line); }

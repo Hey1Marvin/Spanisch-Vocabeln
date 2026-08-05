@@ -106,6 +106,10 @@ window.Vamos = window.Vamos || {};
         '<a class="quick" href="#/listen"><span class="ico">🎧</span><span class="lbl">Hör-Quiz</span></a>' +
         '<a class="quick" href="#/conj"><span class="ico">🏃</span><span class="lbl">Konjugation</span></a>' +
         '<a class="quick" href="#/search"><span class="ico">🔍</span><span class="lbl">Suche</span></a>' +
+        '<a class="quick" href="#/tutor"><span class="ico">🤖</span><span class="lbl">KI-Tutor</span></a>' +
+        '<a class="quick" href="#/write"><span class="ico">✍️</span><span class="lbl">Text-Check</span></a>' +
+        '<a class="quick" href="#/dict"><span class="ico">📖</span><span class="lbl">Wörterbuch</span></a>' +
+        '<a class="quick" href="#/verbs"><span class="ico">📊</span><span class="lbl">Verbtabellen</span></a>' +
         "</div>" +
 
         '<div class="stat-grid">' +
@@ -423,6 +427,316 @@ window.Vamos = window.Vamos || {};
     }).catch(fail);
   }
 
+  /* ---------- Verbtabellen ---------- */
+
+  function viewVerbs() {
+    var common = ["hablar", "comer", "vivir"].concat(Vamos.conj.irregularVerbs.slice(0, 15));
+    main.innerHTML =
+      '<div class="card"><h2>📊 Verbtabellen</h2>' +
+      '<p class="muted small">Beliebiges Verb im Infinitiv eingeben – alle 7 Zeitformen. ' +
+      "Unregelmäßige Kernverben sind hinterlegt, der Rest wird nach den Regeln gebildet.</p>" +
+      '<input class="answer-input" id="verbInput" autocomplete="off" autocapitalize="off" placeholder="z. B. hablar, tener, ir …">' +
+      '<div style="margin:.5rem 0">' + common.map(function (v) {
+        return '<button class="chip" data-verb="' + v + '">' + v + "</button>";
+      }).join("") + "</div>" +
+      '<div id="verbTables"></div></div>';
+
+    var input = document.getElementById("verbInput");
+    var out = document.getElementById("verbTables");
+
+    function show(verb) {
+      var t = Vamos.conj.TENSES;
+      var html = "";
+      var any = false;
+      Object.keys(t).forEach(function (key) {
+        var forms = Vamos.conj.conjugate(verb, key);
+        if (!forms) return;
+        any = true;
+        html += '<h3 style="margin-top:1rem">' + esc(t[key]) + "</h3>" +
+          '<table class="vocab"><tbody>' +
+          forms.map(function (f, i) {
+            return '<tr><td style="width:40%;color:var(--muted)">' +
+              esc(Vamos.conj.PERSONS[i]) + '</td><td class="es">' + esc(f) + " " +
+              Vamos.quiz.speakBtn(f) + "</td></tr>";
+          }).join("") + "</tbody></table>";
+      });
+      if (!any) {
+        out.innerHTML = '<p class="muted small">„' + esc(verb) + "“ sieht nicht nach einem spanischen Infinitiv aus (-ar/-er/-ir).</p>";
+        return;
+      }
+      out.innerHTML = '<div class="theory"><p><strong>' + esc(verb) + "</strong>" +
+        (Vamos.conj.isKnownIrregular(verb) ? ' <span class="pill phase">unregelmäßig</span>' :
+          ' <span class="pill level">regelmäßig gebildet</span>') + "</p>" + html + "</div>";
+      Vamos.quiz.bindSpeak(out);
+    }
+
+    input.addEventListener("keydown", function (e) {
+      if (e.key === "Enter" && input.value.trim()) show(input.value.trim());
+    });
+    input.addEventListener("input", function () {
+      var v = input.value.trim().toLowerCase();
+      if (/[aei]r$/.test(v) && v.length > 3) show(v);
+    });
+    main.querySelectorAll("[data-verb]").forEach(function (b) {
+      b.addEventListener("click", function () {
+        input.value = b.getAttribute("data-verb");
+        show(input.value);
+      });
+    });
+    show("hablar");
+  }
+
+  /* ---------- Wörterbuch (lokal + MyMemory-API) ---------- */
+
+  function viewDict() {
+    loading();
+    Vamos.data.loadAllUnits().then(function (units) {
+      var all = [];
+      units.forEach(function (u) { u.words.forEach(function (w) { all.push(w); }); });
+
+      main.innerHTML =
+        '<div class="card"><h2>📖 Wörterbuch</h2>' +
+        '<input class="answer-input" id="dictInput" autocomplete="off" placeholder="Wort auf Deutsch oder Spanisch …">' +
+        '<div class="btn-row"><button class="btn primary" id="deEs">DE → ES</button>' +
+        '<button class="btn" id="esDe">ES → DE</button></div>' +
+        '<div id="dictOut"></div>' +
+        '<p class="muted small" style="margin-bottom:0">Nachschlagen im Web: ' +
+        '<a id="lnkSd" href="#" target="_blank" rel="noopener">SpanishDict</a> · ' +
+        '<a id="lnkWr" href="#" target="_blank" rel="noopener">WordReference</a> · ' +
+        '<a id="lnkDl" href="#" target="_blank" rel="noopener">DeepL</a></p></div>';
+
+      var input = document.getElementById("dictInput");
+      var out = document.getElementById("dictOut");
+      input.focus();
+
+      function updateLinks() {
+        var q = encodeURIComponent(input.value.trim());
+        document.getElementById("lnkSd").href = "https://www.spanishdict.com/translate/" + q;
+        document.getElementById("lnkWr").href = "https://www.wordreference.com/deses/" + q;
+        document.getElementById("lnkDl").href = "https://www.deepl.com/translator#de/es/" + q;
+      }
+      input.addEventListener("input", updateLinks);
+      updateLinks();
+
+      function localHits(q) {
+        var norm = function (s) {
+          return s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+        };
+        var nq = norm(q);
+        return all.filter(function (w) {
+          return norm(w.es).indexOf(nq) >= 0 || norm(w.de).indexOf(nq) >= 0;
+        }).slice(0, 6);
+      }
+
+      function lookup(pair) {
+        var q = input.value.trim();
+        if (!q) return;
+        out.innerHTML = '<div class="skeleton" style="min-height:60px"></div>';
+        var hits = localHits(q);
+        fetch("https://api.mymemory.translated.net/get?q=" + encodeURIComponent(q) +
+          "&langpair=" + pair)
+          .then(function (r) { return r.json(); })
+          .then(function (d) {
+            var html = "";
+            if (d.responseData && d.responseData.translatedText) {
+              html += '<div class="feedback ok" style="font-size:1.05rem"><strong>' +
+                esc(d.responseData.translatedText) + "</strong> " +
+                Vamos.quiz.speakBtn(pair === "de|es" ? d.responseData.translatedText : q) + "</div>";
+            }
+            var seen = {};
+            var alts = (d.matches || []).filter(function (m) {
+              var k = (m.translation || "").toLowerCase();
+              if (!k || seen[k] || k === (d.responseData.translatedText || "").toLowerCase()) return false;
+              seen[k] = true;
+              return m.quality >= 50;
+            }).slice(0, 4);
+            if (alts.length) {
+              html += '<p class="muted small">Alternativen: ' + alts.map(function (m) {
+                return esc(m.translation);
+              }).join(" · ") + "</p>";
+            }
+            if (hits.length) {
+              html += '<h3 style="margin-top:.8rem">Aus deinen Vokabeln</h3>' +
+                hits.map(function (w) {
+                  var meta = Vamos.data.unitMeta(w.unitId) || {};
+                  return '<div class="search-hit">' + (w.emoji ? esc(w.emoji) + " " : "") +
+                    '<span class="es">' + esc(w.es) + "</span> " + Vamos.quiz.speakBtn(w.es) +
+                    '<span class="muted">' + esc(w.de) + "</span>" +
+                    '<a class="unit" href="#/unit/' + esc(w.unitId) + '">' + esc(meta.title || "") + "</a></div>";
+                }).join("");
+            }
+            out.innerHTML = html || '<p class="muted small">Nichts gefunden.</p>';
+            Vamos.quiz.bindSpeak(out);
+          })
+          .catch(function () {
+            out.innerHTML = '<p class="muted small">Online-Wörterbuch nicht erreichbar' +
+              (hits.length ? " – aber deine Vokabeln haben Treffer (siehe Suche)." : ".") + "</p>";
+          });
+      }
+
+      document.getElementById("deEs").addEventListener("click", function () { lookup("de|es"); });
+      document.getElementById("esDe").addEventListener("click", function () { lookup("es|de"); });
+      input.addEventListener("keydown", function (e) {
+        if (e.key === "Enter") lookup(/[áéíñü¿¡]/.test(input.value) ? "es|de" : "de|es");
+      });
+    }).catch(fail);
+  }
+
+  /* ---------- KI-Tutor: Konversations-Simulation ---------- */
+
+  var tutorState = { scenario: null, messages: [] };
+
+  function aiConfigCard() {
+    var cfg = Vamos.tutor.aiConfig();
+    return '<div class="card" id="aiCfg"' + (cfg.key ? ' style="display:none"' : "") + ">" +
+      "<h2>🔑 KI-Zugang einrichten</h2>" +
+      '<p class="muted small">Dein API-Key wird <strong>nur in diesem Browser</strong> gespeichert – ' +
+      "nie auf GitHub, nie im Backup. Du brauchst einen Key von Anthropic (console.anthropic.com) " +
+      "oder OpenAI (platform.openai.com).</p>" +
+      '<label class="setting">Anbieter</label>' +
+      '<select id="aiProvider">' +
+      '<option value="anthropic"' + ((cfg.provider || "anthropic") === "anthropic" ? " selected" : "") + ">Anthropic (Claude)</option>" +
+      '<option value="openai"' + (cfg.provider === "openai" ? " selected" : "") + ">OpenAI / kompatibel</option>" +
+      "</select>" +
+      '<label class="setting">API-Key</label>' +
+      '<input type="password" class="answer-input" id="aiKey" value="' + esc(cfg.key || "") + '" placeholder="sk-…">' +
+      '<label class="setting">Modell (leer = Standard)</label>' +
+      '<input class="answer-input" id="aiModel" value="' + esc(cfg.model || "") + '" placeholder="claude-haiku-4-5-20251001 / gpt-4o-mini">' +
+      '<label class="setting">Base-URL (nur für OpenAI-kompatible Endpoints)</label>' +
+      '<input class="answer-input" id="aiBase" value="' + esc(cfg.baseUrl || "") + '" placeholder="https://api.openai.com/v1">' +
+      '<div class="btn-row"><button class="btn primary" id="aiSave">Speichern</button></div></div>';
+  }
+
+  function bindAiConfig(afterSave) {
+    document.getElementById("aiSave").addEventListener("click", function () {
+      Vamos.tutor.saveAiConfig({
+        provider: document.getElementById("aiProvider").value,
+        key: document.getElementById("aiKey").value.trim(),
+        model: document.getElementById("aiModel").value.trim(),
+        baseUrl: document.getElementById("aiBase").value.trim()
+      });
+      toast("KI-Zugang gespeichert");
+      if (afterSave) afterSave();
+    });
+  }
+
+  function viewTutor() {
+    var html = aiConfigCard() +
+      '<div class="card"><h2>🤖 KI-Tutor <button class="btn small" id="aiCfgToggle" style="float:right">🔑</button></h2>' +
+      '<p class="muted small">Wähle ein Szenario und sprich (schreib) Spanisch – der Tutor antwortet, ' +
+      "korrigiert deine Fehler und hält das Gespräch am Laufen. Tippe <strong>?</strong> für einen Hinweis.</p>" +
+      '<div id="scenarios">' + Vamos.tutor.SCENARIOS.map(function (s, i) {
+        return '<button class="chip" data-sc="' + i + '">' + s.emoji + " " + esc(s.title) + "</button>";
+      }).join("") + "</div>" +
+      '<div class="chat-log" id="chatLog"></div>' +
+      '<div style="display:flex;gap:.5rem;margin-top:.5rem">' +
+      '<input class="answer-input" id="chatInput" autocomplete="off" placeholder="Escribe en español …" style="flex:1">' +
+      '<button class="btn primary" id="chatSend">➤</button></div></div>';
+    main.innerHTML = html;
+    bindAiConfig(viewTutor);
+    document.getElementById("aiCfgToggle").addEventListener("click", function () {
+      var c = document.getElementById("aiCfg");
+      c.style.display = c.style.display === "none" ? "" : "none";
+    });
+
+    var log = document.getElementById("chatLog");
+    var input = document.getElementById("chatInput");
+
+    function renderLog() {
+      log.innerHTML = tutorState.messages.map(function (m) {
+        if (m.role === "error") return '<div class="bubble err">' + esc(m.content) + "</div>";
+        return '<div class="bubble ' + (m.role === "user" ? "user" : "ai") + '">' +
+          esc(m.content) + (m.role === "assistant" ? " " + Vamos.quiz.speakBtn(m.content.replace(/✏️[^\n]*\n?/g, "")) : "") +
+          "</div>";
+      }).join("");
+      Vamos.quiz.bindSpeak(log);
+      log.scrollTop = log.scrollHeight;
+    }
+
+    function apiMessages() {
+      return tutorState.messages.filter(function (m) {
+        return m.role === "user" || m.role === "assistant";
+      }).map(function (m) { return { role: m.role, content: m.content }; });
+    }
+
+    function startScenario(s) {
+      tutorState.scenario = s;
+      tutorState.messages = [{ role: "user", content: "Empieza la conversación con un saludo breve." }];
+      log.innerHTML = '<div class="bubble ai">…</div>';
+      Vamos.tutor.chat(Vamos.tutor.systemPrompt(s), apiMessages()).then(function (reply) {
+        tutorState.messages = [{ role: "assistant", content: reply }];
+        renderLog();
+      }).catch(function (e) {
+        tutorState.messages = [{ role: "error", content: e.message }];
+        renderLog();
+      });
+    }
+
+    main.querySelectorAll("[data-sc]").forEach(function (b) {
+      b.addEventListener("click", function () {
+        startScenario(Vamos.tutor.SCENARIOS[parseInt(b.getAttribute("data-sc"), 10)]);
+      });
+    });
+
+    function send() {
+      var text = input.value.trim();
+      if (!text) return;
+      if (!tutorState.scenario) {
+        toast("Wähle zuerst ein Szenario");
+        return;
+      }
+      input.value = "";
+      tutorState.messages.push({ role: "user", content: text });
+      renderLog();
+      log.innerHTML += '<div class="bubble ai">…</div>';
+      log.scrollTop = log.scrollHeight;
+      Vamos.tutor.chat(Vamos.tutor.systemPrompt(tutorState.scenario), apiMessages())
+        .then(function (reply) {
+          tutorState.messages.push({ role: "assistant", content: reply });
+          renderLog();
+        }).catch(function (e) {
+          tutorState.messages.push({ role: "error", content: e.message });
+          renderLog();
+        });
+    }
+    document.getElementById("chatSend").addEventListener("click", send);
+    input.addEventListener("keydown", function (e) { if (e.key === "Enter") send(); });
+
+    if (tutorState.messages.length) renderLog();
+  }
+
+  /* ---------- Text schreiben & korrigieren lassen ---------- */
+
+  function viewWrite() {
+    main.innerHTML = aiConfigCard() +
+      '<div class="card"><h2>✍️ Text-Check <button class="btn small" id="aiCfgToggle" style="float:right">🔑</button></h2>' +
+      '<p class="muted small">Schreib einen Text auf Spanisch (Tagebuch, E-Mail, Urlaubsbericht …) – ' +
+      "die KI korrigiert ihn und erklärt jeden Fehler auf Deutsch.</p>" +
+      '<textarea class="answer-input" id="writeText" rows="7" placeholder="Hoy he visitado la catedral y después…"></textarea>' +
+      '<div class="btn-row"><button class="btn primary" id="checkText">Korrigieren lassen</button></div>' +
+      '<div id="writeOut"></div></div>';
+    bindAiConfig(viewWrite);
+    document.getElementById("aiCfgToggle").addEventListener("click", function () {
+      var c = document.getElementById("aiCfg");
+      c.style.display = c.style.display === "none" ? "" : "none";
+    });
+    document.getElementById("checkText").addEventListener("click", function () {
+      var text = document.getElementById("writeText").value.trim();
+      if (text.length < 10) {
+        toast("Schreib erst ein paar Sätze");
+        return;
+      }
+      var out = document.getElementById("writeOut");
+      out.innerHTML = '<div class="skeleton" style="min-height:80px"></div>';
+      Vamos.tutor.correct(text).then(function (result) {
+        out.innerHTML = '<div class="theory" style="margin-top:.6rem">' +
+          Vamos.grammar.md(result).replace(/\n/g, "<br>") + "</div>";
+      }).catch(function (e) {
+        out.innerHTML = '<div class="feedback no">' + esc(e.message) + "</div>";
+      });
+    });
+  }
+
   /* ---------- Grammatik ---------- */
 
   function viewGrammarList() {
@@ -643,6 +957,10 @@ window.Vamos = window.Vamos || {};
     { re: /^#\/grammar$/, fn: viewGrammarList, tab: "grammar" },
     { re: /^#\/grammar\/([\w-]+)$/, fn: viewGrammar, tab: "grammar" },
     { re: /^#\/stats$/, fn: viewStats, tab: "stats" },
+    { re: /^#\/verbs$/, fn: viewVerbs, tab: "" },
+    { re: /^#\/dict$/, fn: viewDict, tab: "" },
+    { re: /^#\/tutor$/, fn: viewTutor, tab: "" },
+    { re: /^#\/write$/, fn: viewWrite, tab: "" },
     { re: /^#\/search$/, fn: viewSearch, tab: "" },
     { re: /^#\/settings$/, fn: viewSettings, tab: "" }
   ];
