@@ -113,7 +113,7 @@ window.Vamos = window.Vamos || {};
         '<a class="quick" href="#/speak"><span class="ico">' + Vamos.icons.svg("mic") + '</span><span class="lbl">Nachsprechen</span></a>' +
         '<a class="quick" href="#/review"><span class="ico">' + Vamos.icons.svg("refresh") + '</span><span class="lbl">Rückblick</span></a>' +
         '<a class="quick" href="#/grammar"><span class="ico">' + Vamos.icons.svg("reader") + '</span><span class="lbl">Lesetexte</span></a>' +
-        '<a class="quick" href="#/units"><span class="ico">' + Vamos.icons.svg("download") + '</span><span class="lbl">Downloads</span></a>' +
+        '<a class="quick" href="#/dictation"><span class="ico">' + Vamos.icons.svg("type") + '</span><span class="lbl">Diktat</span></a>' +
         "</div>" +
         (function () {
           var w = wordOfDay(cards);
@@ -1097,6 +1097,7 @@ window.Vamos = window.Vamos || {};
     { re: /^#\/order\/([\w-]+)$/, fn: function (id) { withUnit(id, function (u) { Vamos.quiz.renderOrderQuiz(main, u.words, "#/unit/" + id); }); }, tab: "units" },
     { re: /^#\/conj$/, fn: viewConj, tab: "learn" },
     { re: /^#\/speak$/, fn: viewSpeak, tab: "learn" },
+    { re: /^#\/dictation$/, fn: function () { loading(); Vamos.data.loadAllUnits().then(function (units) { Vamos.quiz.renderDictation(main, startedCards(units, Vamos.store.srs())); }).catch(fail); }, tab: "learn" },
     { re: /^#\/review$/, fn: viewReview, tab: "learn" },
     { re: /^#\/quiz\/([\w-]+)$/, fn: function (id) { withUnit(id, function (u) { Vamos.quiz.renderMcQuiz(main, u); }); }, tab: "units" },
     { re: /^#\/type\/([\w-]+)$/, fn: function (id) { withUnit(id, function (u) { Vamos.quiz.renderTypeQuiz(main, u); }); }, tab: "units" },
@@ -1115,6 +1116,7 @@ window.Vamos = window.Vamos || {};
   function route() {
     var hash = location.hash || "#/";
     if (window.speechSynthesis) speechSynthesis.cancel();
+    document.onkeydown = null; // Session-Shortcuts beim Viewwechsel lösen
     for (var i = 0; i < routes.length; i++) {
       var m = hash.match(routes[i].re);
       if (m) {
