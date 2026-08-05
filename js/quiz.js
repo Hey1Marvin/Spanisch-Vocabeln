@@ -20,7 +20,8 @@ Vamos.quiz = (function () {
 
   function speakBtn(text) {
     if (!Vamos.audio.available()) return "";
-    return '<button class="speak-btn" data-speak="' + esc(text) + '" title="Anhören">🔊</button>';
+    return '<button class="speak-btn" data-speak="' + esc(text) +
+      '" title="Anhören" aria-label="Anhören: ' + esc(text) + '">🔊</button>';
   }
 
   function bindSpeak(el) {

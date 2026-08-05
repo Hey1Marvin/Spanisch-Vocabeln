@@ -141,6 +141,15 @@ Vamos.data = (function () {
     return ankiTxt(phrases, "Spanisch ¡Vamos!::Sätze & Formulierungen", "vamos phrase");
   }
 
+  /* Beliebige Kartenmenge als CSV (z. B. Suchtreffer, Themen-Pakete). */
+  function cardsToCsv(cards) {
+    var rows = ["Spanisch;Deutsch;Beispiel;Beispiel (DE)"];
+    cards.forEach(function (w) {
+      rows.push([w.es, w.de, w.ex || "", w.exDe || ""].map(csvEscape).join(";"));
+    });
+    return rows.join("\n");
+  }
+
   function allToCsv(units) {
     var rows = ["Einheit;Spanisch;Deutsch;Beispiel;Beispiel (DE)"];
     units.forEach(function (u) {
@@ -169,6 +178,6 @@ Vamos.data = (function () {
     allCards: allCards, unitMeta: unitMeta, grammarMeta: grammarMeta,
     loadGrammar: loadGrammar, unitToCsv: unitToCsv, download: download,
     unitToAnki: unitToAnki, allToAnki: allToAnki, phrasesToAnki: phrasesToAnki,
-    allToCsv: allToCsv
+    allToCsv: allToCsv, ankiTxt: ankiTxt, cardsToCsv: cardsToCsv
   };
 })();

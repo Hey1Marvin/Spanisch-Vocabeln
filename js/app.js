@@ -94,6 +94,13 @@ window.Vamos = window.Vamos || {};
         '<span class="ring-label">Tagesziel</span>' +
         "</div></div>" +
 
+        (c.mastered + c.learning === 0
+          ? '<div class="card"><h2>👋 So funktioniert’s</h2>' +
+            '<p class="muted small">1️⃣ <strong>Lernen</strong> zeigt dir neue Karten und fragt fällige ab – ' +
+            "bewerte ehrlich, der Rest passiert automatisch (Spaced Repetition).<br>" +
+            "2️⃣ Die Einheiten sind nach Wichtigkeit sortiert – einfach oben anfangen.<br>" +
+            "3️⃣ 10–15 Minuten täglich schlagen jede Wochenend-Session. 🔥</p></div>"
+          : "") +
         '<div class="quick-grid">' +
         '<a class="quick" href="#/mix"><span class="ico">🔀</span><span class="lbl">Mix-Quiz</span></a>' +
         '<a class="quick" href="#/listen"><span class="ico">🎧</span><span class="lbl">Hör-Quiz</span></a>' +
@@ -132,6 +139,25 @@ window.Vamos = window.Vamos || {};
       "</span></a>";
   }
 
+  /* ---------- Themen-Pakete: kuratierte Bündel quer über Einheiten ---------- */
+
+  var THEMES = [
+    { id: "essen", title: "Essen komplett", emoji: "🍽️", units: ["u07", "u08"] },
+    { id: "reise-basics", title: "Reise-Basics", emoji: "🧳", units: ["u01", "u02", "u04", "u05"] },
+    { id: "ankommen", title: "Ankommen & Zurechtfinden", emoji: "🏨", units: ["u06", "u09", "u10"] },
+    { id: "konversation", title: "Konversation & Leute", emoji: "💬", units: ["u13", "u14", "u15", "u17"] },
+    { id: "sicherheit", title: "Geld, Notfall & Orga", emoji: "🚨", units: ["u10", "u11", "u22"] },
+    { id: "fluessig", title: "Flüssig klingen", emoji: "🔗", units: ["u19", "u20", "u23"] }
+  ];
+
+  function themeCards(theme, units) {
+    var cards = [];
+    units.forEach(function (u) {
+      if (theme.units.indexOf(u.meta.id) >= 0) cards = cards.concat(u.words);
+    });
+    return cards;
+  }
+
   /* ---------- Einheiten ---------- */
 
   var PHASES = {
@@ -161,8 +187,40 @@ window.Vamos = window.Vamos || {};
         '<button class="btn" id="dlAnkiAll">Alle Vokabeln (Anki)</button>' +
         '<button class="btn" id="dlAnkiPhrases">Nur Sätze & Formulierungen (Anki)</button>' +
         '<button class="btn" id="dlCsvAll">Alles als CSV</button>' +
-        "</div></div>";
+        "</div></div>" +
+        '<div class="card"><h2>🎁 Themen-Pakete</h2>' +
+        '<p class="muted small">Fertig geschnürte Bündel quer über die Einheiten – z. B. alles rund ums Essen.</p>' +
+        THEMES.map(function (t, i) {
+          var n = themeCards(t, units).length;
+          if (!n) return "";
+          return '<div class="unit-row" style="cursor:default">' +
+            '<span class="emoji">' + t.emoji + "</span>" +
+            '<span class="body"><span class="title">' + esc(t.title) + "</span>" +
+            '<span class="muted small" style="display:block">' + n + " Karten</span></span>" +
+            '<span class="btn-row" style="margin:0">' +
+            '<button class="btn small" data-theme-anki="' + i + '">Anki</button>' +
+            '<button class="btn small" data-theme-csv="' + i + '">CSV</button>' +
+            "</span></div>";
+        }).join("") + "</div>";
       main.innerHTML = html;
+
+      main.querySelectorAll("[data-theme-anki]").forEach(function (b) {
+        b.addEventListener("click", function () {
+          var t = THEMES[parseInt(b.getAttribute("data-theme-anki"), 10)];
+          Vamos.data.download("vamos-thema-" + t.id + ".txt",
+            Vamos.data.ankiTxt(themeCards(t, units), "Spanisch ¡Vamos!::Thema " + t.title,
+              "vamos thema-" + t.id), "text/plain");
+          toast("Anki-Paket heruntergeladen");
+        });
+      });
+      main.querySelectorAll("[data-theme-csv]").forEach(function (b) {
+        b.addEventListener("click", function () {
+          var t = THEMES[parseInt(b.getAttribute("data-theme-csv"), 10)];
+          Vamos.data.download("vamos-thema-" + t.id + ".csv",
+            Vamos.data.cardsToCsv(themeCards(t, units)));
+          toast("CSV heruntergeladen");
+        });
+      });
 
       document.getElementById("dlAnkiAll").addEventListener("click", function () {
         Vamos.data.download("vamos-alle-einheiten.txt", Vamos.data.allToAnki(units), "text/plain");
@@ -207,19 +265,31 @@ window.Vamos = window.Vamos || {};
         '<button class="btn small" id="csvBtn">CSV ⬇</button>' +
         '<button class="btn small" id="printBtn">Drucken 🖨</button>' +
         "</div></div>" +
-        '<div class="card"><h2 class="no-print">Vokabeln</h2><table class="vocab"><tbody>';
+        "";
 
-      u.words.forEach(function (w) {
-        var st = Vamos.srs.status(srsMap[w.id]);
-        html += "<tr><td>" +
-          '<span class="dot ' + st + '"></span><span class="es">' + esc(w.es) + "</span> " +
-          Vamos.quiz.speakBtn(w.es) +
-          (w.ex ? '<div class="ex">' + esc(w.ex) + "</div>" : "") +
-          "</td><td>" + (w.emoji ? esc(w.emoji) + " " : "") + esc(w.de) +
-          (w.exDe ? '<div class="ex">' + esc(w.exDe) + "</div>" : "") +
-          "</td></tr>";
-      });
-      html += "</tbody></table></div>";
+      function vocabTable(words) {
+        var rows = "";
+        words.forEach(function (w) {
+          var st = Vamos.srs.status(srsMap[w.id]);
+          rows += "<tr><td>" +
+            '<span class="dot ' + st + '"></span><span class="es">' + esc(w.es) + "</span> " +
+            Vamos.quiz.speakBtn(w.es) +
+            (w.ex ? '<div class="ex">' + esc(w.ex) + "</div>" : "") +
+            "</td><td>" + (w.emoji ? esc(w.emoji) + " " : "") + esc(w.de) +
+            (w.exDe ? '<div class="ex">' + esc(w.exDe) + "</div>" : "") +
+            "</td></tr>";
+        });
+        return '<table class="vocab"><tbody>' + rows + "</tbody></table>";
+      }
+
+      var words = u.words.filter(function (w) { return w.type !== "phrase"; });
+      var phrases = u.words.filter(function (w) { return w.type === "phrase"; });
+      html += '<div class="card"><h2>Vokabeln <span class="muted small">(' + words.length +
+        ")</span></h2>" + vocabTable(words) + "</div>";
+      if (phrases.length) {
+        html += '<div class="card"><h2>💬 Sätze & Formulierungen <span class="muted small">(' +
+          phrases.length + ")</span></h2>" + vocabTable(phrases) + "</div>";
+      }
       main.innerHTML = html;
       Vamos.quiz.bindSpeak(main);
 
@@ -294,9 +364,26 @@ window.Vamos = window.Vamos || {};
         '<div class="card"><h2>🔍 Suche</h2>' +
         '<input class="answer-input" id="searchInput" autocomplete="off" ' +
         'placeholder="Spanisch oder Deutsch …">' +
-        '<div id="results" style="margin-top:.6rem"></div></div>';
+        '<div id="results" style="margin-top:.6rem"></div>' +
+        '<div class="btn-row" id="exportRow" style="display:none">' +
+        '<button class="btn small" id="exportAnki">Treffer als Anki ⬇</button>' +
+        '<button class="btn small" id="exportCsv">Treffer als CSV ⬇</button></div></div>';
       var input = document.getElementById("searchInput");
       var results = document.getElementById("results");
+      var lastHits = [];
+      document.getElementById("exportAnki").addEventListener("click", function () {
+        if (!lastHits.length) return;
+        Vamos.data.download("vamos-suche-" + input.value.trim() + ".txt",
+          Vamos.data.ankiTxt(lastHits, "Spanisch ¡Vamos!::Suche " + input.value.trim(),
+            "vamos suche"), "text/plain");
+        toast("Anki-Datei heruntergeladen");
+      });
+      document.getElementById("exportCsv").addEventListener("click", function () {
+        if (!lastHits.length) return;
+        Vamos.data.download("vamos-suche-" + input.value.trim() + ".csv",
+          Vamos.data.cardsToCsv(lastHits));
+        toast("CSV heruntergeladen");
+      });
       input.focus();
 
       function norm(s) {
@@ -305,13 +392,18 @@ window.Vamos = window.Vamos || {};
 
       input.addEventListener("input", function () {
         var q = norm(input.value.trim());
+        var exportRow = document.getElementById("exportRow");
         if (q.length < 2) {
           results.innerHTML = '<p class="muted small">Mindestens 2 Zeichen …</p>';
+          exportRow.style.display = "none";
           return;
         }
         var hits = all.filter(function (w) {
-          return norm(w.es).indexOf(q) >= 0 || norm(w.de).indexOf(q) >= 0;
-        }).slice(0, 30);
+          return norm(w.es).indexOf(q) >= 0 || norm(w.de).indexOf(q) >= 0 ||
+            (w.ex && norm(w.ex).indexOf(q) >= 0);
+        }).slice(0, 50);
+        lastHits = hits;
+        exportRow.style.display = hits.length ? "" : "none";
         if (!hits.length) {
           results.innerHTML = '<p class="muted small">Nichts gefunden.</p>';
           return;
