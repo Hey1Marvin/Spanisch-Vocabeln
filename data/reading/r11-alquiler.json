@@ -1,0 +1,48 @@
+{
+  "id": "r11",
+  "title": "El coche de alquiler",
+  "emoji": "🚗",
+  "level": "B1",
+  "text": "Esta mañana recojo mi coche de alquiler en una oficina cerca de la estación. Quiero explorar los pueblos blancos de Andalucía. El empleado me da las llaves y me dice: «El coche está en la plaza doce del aparcamiento».\n\nAntes de salir, reviso el coche con atención. En la puerta derecha descubro un arañazo bastante grande. En el contrato no aparece ningún daño. Vuelvo a la oficina y le explico el problema al empleado: «Este arañazo no es mío. No quiero pagar por un daño que ya estaba ahí».\n\nEl empleado no parece convencido y llama a su jefa. Yo le enseño unas fotos que he hecho con el móvil hace un momento. La jefa mira las fotos, revisa el contrato y me pide disculpas: «Tiene usted razón, ha sido un error nuestro».\n\nElla anota el daño en el contrato y me da una copia. Además, me ofrece un descuento por las molestias. Salgo contento de la oficina: siempre hay que hacer fotos antes de arrancar.",
+  "textDe": "Heute Morgen hole ich meinen Mietwagen in einem Büro in der Nähe des Bahnhofs ab. Ich möchte die weißen Dörfer Andalusiens erkunden. Der Angestellte gibt mir die Schlüssel und sagt: „Das Auto steht auf Platz zwölf des Parkplatzes.“\n\nBevor ich losfahre, überprüfe ich das Auto genau. An der rechten Tür entdecke ich einen ziemlich großen Kratzer. Im Vertrag ist kein Schaden vermerkt. Ich gehe zurück ins Büro und erkläre dem Angestellten das Problem: „Dieser Kratzer ist nicht von mir. Ich will nicht für einen Schaden bezahlen, der schon da war.“\n\nDer Angestellte scheint nicht überzeugt und ruft seine Chefin. Ich zeige ihr einige Fotos, die ich vor einem Moment mit dem Handy gemacht habe. Die Chefin schaut sich die Fotos an, prüft den Vertrag und entschuldigt sich bei mir: „Sie haben recht, das war unser Fehler.“\n\nSie vermerkt den Schaden im Vertrag und gibt mir eine Kopie. Außerdem bietet sie mir einen Rabatt für die Unannehmlichkeiten an. Zufrieden verlasse ich das Büro: Man sollte immer Fotos machen, bevor man losfährt.",
+  "glossary": [
+    {"es": "el coche de alquiler", "de": "der Mietwagen"},
+    {"es": "recoger", "de": "abholen"},
+    {"es": "las llaves", "de": "die Schlüssel"},
+    {"es": "el aparcamiento", "de": "der Parkplatz"},
+    {"es": "revisar", "de": "überprüfen"},
+    {"es": "el arañazo", "de": "der Kratzer"},
+    {"es": "el daño", "de": "der Schaden"},
+    {"es": "el contrato", "de": "der Vertrag"},
+    {"es": "el empleado", "de": "der Angestellte"},
+    {"es": "el descuento", "de": "der Rabatt"},
+    {"es": "las molestias", "de": "die Unannehmlichkeiten"},
+    {"es": "arrancar", "de": "losfahren, den Motor starten"}
+  ],
+  "questions": [
+    {
+      "q": "¿Dónde descubre el narrador el arañazo?",
+      "options": ["En la puerta derecha", "En el maletero", "En la puerta izquierda"],
+      "answer": 0,
+      "expl": "„En la puerta derecha descubro un arañazo bastante grande“ — an der rechten Tür entdeckt er einen ziemlich großen Kratzer."
+    },
+    {
+      "q": "¿Qué le enseña el narrador a la jefa?",
+      "options": ["El contrato original", "Unas fotos hechas con el móvil", "Las llaves del coche"],
+      "answer": 1,
+      "expl": "„Le enseño unas fotos que he hecho con el móvil“ — er zeigt ihr Fotos, die er kurz vorher mit dem Handy gemacht hat."
+    },
+    {
+      "q": "¿Qué hace la jefa al final?",
+      "options": ["Llama a la policía", "Le cobra el daño", "Anota el daño en el contrato"],
+      "answer": 2,
+      "expl": "„Ella anota el daño en el contrato y me da una copia“ — die Chefin vermerkt den Schaden im Vertrag und gibt ihm eine Kopie."
+    },
+    {
+      "q": "¿Qué recibe el narrador por las molestias?",
+      "options": ["Un descuento", "Un coche nuevo", "Una noche de hotel gratis"],
+      "answer": 0,
+      "expl": "„Además, me ofrece un descuento por las molestias“ — als Entschädigung für die Unannehmlichkeiten bekommt er einen Rabatt."
+    }
+  ]
+}

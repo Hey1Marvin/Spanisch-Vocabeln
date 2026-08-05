@@ -1,0 +1,88 @@
+{
+  "id": "g16",
+  "title": "Se-Konstruktionen & Passiv",
+  "intro": "Wie sagt man „man“ auf Spanisch? Mit **se**! „Se habla español“ steht an jeder Sprachschule, „Se venden pisos“ an jedem Hauseingang. Dazu ein kurzer Blick auf das echte Passiv mit ser – und du verstehst jedes Schild und jede Anzeige in Spanien.",
+  "sections": [
+    {
+      "h": "Se impersonal: „man“ auf Spanisch",
+      "p": "Mit `se` + Verb in der **3. Person Singular** drückt man aus, was „man“ allgemein tut – ohne zu sagen, wer: se habla, se come, se vive. Das Verb bleibt hier **immer im Singular**. Perfekt für allgemeine Aussagen, Regeln und Gewohnheiten eines Landes.",
+      "examples": [
+        { "es": "En España se cena muy tarde.", "de": "In Spanien isst man sehr spät zu Abend." },
+        { "es": "¿Cómo se va al centro desde aquí?", "de": "Wie kommt man von hier ins Zentrum?" }
+      ],
+      "tip": "Die nützlichsten Kurs-Fragen überhaupt sind se-Konstruktionen: **¿Cómo se dice …?** (Wie sagt man …?) und **¿Cómo se escribe …?** (Wie schreibt man …?)."
+    },
+    {
+      "h": "Se pasiva: se venden pisos",
+      "p": "Bei der se-Passiv-Konstruktion richtet sich das Verb nach dem **Subjekt**: Singular bei einer Sache (`se vende un piso`), **Plural** bei mehreren (`se venden pisos`). Was im Deutschen „wird verkauft / werden verkauft“ heißt, löst Spanisch elegant mit se – wer es tut, bleibt ungenannt.",
+      "table": {
+        "head": ["Singular", "Plural"],
+        "rows": [
+          ["Se vende un piso céntrico.", "Se vend**en** pisos céntricos."],
+          ["Se necesita camarero.", "Se necesit**an** camareros."],
+          ["Se alquila habitación.", "Se alquil**an** bicicletas."],
+          ["Se busca cocinero.", "Se busc**an** actores para la obra."]
+        ]
+      },
+      "examples": [
+        { "es": "En este quiosco se venden entradas para el concierto.", "de": "An diesem Kiosk werden Karten für das Konzert verkauft." },
+        { "es": "Aquí se sirve el mejor café de la ciudad.", "de": "Hier wird der beste Kaffee der Stadt serviert." }
+      ],
+      "tip": "Merkhilfe: Zähl das, was verkauft, gesucht oder vermietet wird – **mehrere Dinge → Verb im Plural**: se vend**en** pisos, se busc**an** camareros."
+    },
+    {
+      "h": "Der Unterschied – und wann welches se?",
+      "p": "Beide übersetzen wir oft mit „man“, der Unterschied steckt im Verb: Die **se pasiva** hat ein Sach-Subjekt, nach dem sich das Verb richtet (Singular oder Plural). Das **se impersonal** hat keins – das Verb bleibt starr im Singular: bei Verben ohne Objekt (se vive bien), nach se + Infinitiv (no se puede fumar) und vor Personen mit **a** (se ayuda **a** los niños).",
+      "table": {
+        "head": ["se impersonal (immer Singular)", "se pasiva (richtet sich nach dem Subjekt)"],
+        "rows": [
+          ["En mi pueblo se vive muy bien.", "Se venden pisos en mi pueblo."],
+          ["Aquí no se puede aparcar.", "Se necesitan camareros."],
+          ["Se entrevista a los candidatos.", "Se alquilan bicicletas."],
+          ["¿Cómo se dice „Brot“ en español?", "Se sirven tapas típicas."]
+        ]
+      },
+      "examples": [
+        { "es": "En la biblioteca no se puede hablar en voz alta.", "de": "In der Bibliothek darf man nicht laut sprechen." },
+        { "es": "Se entrevista a los candidatos por la mañana.", "de": "Die Kandidaten werden vormittags interviewt / Man interviewt die Kandidaten vormittags." }
+      ],
+      "tip": "Faustregel für den Alltag: Steht eine **Sache im Plural** dahinter, muss das Verb in den Plural – in allen anderen Fällen bleibt es beim Singular."
+    },
+    {
+      "h": "Passiv mit ser & typische Schilder",
+      "p": "Das echte Passiv `ser + Partizip` gibt es auch: `La novela fue escrita por Cervantes.` Hier richtet sich das **Partizip** nach dem Subjekt (escrit**a**), und nur hier darf der Täter mit **por** genannt werden. Es klingt allerdings förmlich – typisch für Zeitungen und Geschichtsbücher. Im Alltag und auf Schildern regiert das se:",
+      "table": {
+        "head": ["Schild / Anzeige", "Bedeutung"],
+        "rows": [
+          ["Se habla español.", "Hier spricht man Spanisch."],
+          ["Se vende. / Se alquila.", "Zu verkaufen. / Zu vermieten."],
+          ["Se busca camarero.", "Kellner gesucht."],
+          ["No se admiten perros.", "Hunde nicht erlaubt."],
+          ["Se prohíbe fumar.", "Rauchen verboten."],
+          ["Se ruega silencio.", "Um Ruhe wird gebeten."]
+        ]
+      },
+      "examples": [
+        { "es": "El Quijote fue escrito por Cervantes.", "de": "Der Quijote wurde von Cervantes geschrieben." },
+        { "es": "La catedral fue construida en el siglo XIII.", "de": "Die Kathedrale wurde im 13. Jahrhundert erbaut." }
+      ],
+      "tip": "Nur beim ser-Passiv kann der Urheber mit **por** stehen (fue escrito **por** Cervantes). Sobald der Täter egal ist – und das ist er meistens –, nimm die se-Konstruktion."
+    }
+  ],
+  "exercises": [
+    { "type": "gap", "text": "En España ___ (hablar) cuatro lenguas oficiales.", "answer": "se hablan", "hint": "lenguas = Plural!", "expl": "Das Subjekt „cuatro lenguas“ steht im Plural → se pasiva mit Plural-Verb: se hablan." },
+    { "type": "gap", "text": "Aquí ___ (vender) fruta fresca del mercado.", "answer": "se vende", "hint": "fruta = Singular", "expl": "„fruta“ ist Singular (Sammelbegriff) → Verb im Singular: se vende." },
+    { "type": "gap", "text": "___ (buscar) camareros para la temporada de verano.", "answer": ["Se buscan", "se buscan"], "hint": "typische Stellenanzeige", "expl": "„camareros“ ist Plural → Se buscan. Genau so steht es in spanischen Stellenanzeigen." },
+    { "type": "gap", "text": "¿Cómo ___ (decir) „Danke“ en español?", "answer": "se dice", "hint": "feste Wendung", "expl": "„¿Cómo se dice …?“ ist die Standardfrage im Sprachkurs – se impersonal, immer Singular." },
+    { "type": "gap", "text": "En este hotel no ___ (admitir) perros.", "answer": "se admiten", "hint": "perros = Plural", "expl": "„perros“ ist Plural → se admiten. Auf Schildern meist verneint: No se admiten perros." },
+    { "type": "gap", "text": "En Argentina ___ (comer) mucha carne.", "answer": "se come", "hint": "carne = Singular", "expl": "„mucha carne“ ist Singular → se come. Allgemeine Aussage über Essgewohnheiten." },
+    { "type": "gap", "text": "___ (alquilar) habitaciones con vistas al mar.", "answer": ["Se alquilan", "se alquilan"], "hint": "habitaciones = Plural", "expl": "Mehrere Zimmer → Verb im Plural: Se alquilan habitaciones." },
+    { "type": "gap", "text": "La catedral ___ (ser) construida en el siglo XIII.", "answer": "fue", "hint": "ser-Passiv im Indefinido", "expl": "Echtes Passiv: ser + Partizip. Das Partizip richtet sich nach dem Subjekt: fue construid**a** (la catedral)." },
+    { "type": "gap", "text": "En mi pueblo ___ (vivir) muy tranquilo.", "answer": "se vive", "hint": "kein Subjekt → Singular", "expl": "vivir hat hier kein Objekt/Subjekt-Bezugswort → se impersonal, immer Singular: se vive." },
+    { "type": "mc", "q": "Was steht auf dem Schild, wenn eine Wohnung zu vermieten ist?", "options": ["Se alquila", "Se alquilan", "Alquila se"], "answer": 0, "expl": "Eine Wohnung = Singular → Se alquila. Das se steht immer **vor** dem konjugierten Verb." },
+    { "type": "mc", "q": "Se ___ pisos en el centro de Madrid.", "options": ["vende", "venden", "vendemos"], "answer": 1, "expl": "„pisos“ ist Plural → se pasiva mit Plural-Verb: Se venden pisos – der Klassiker unter den Anzeigen." },
+    { "type": "mc", "q": "En la biblioteca no se ___ hablar en voz alta.", "options": ["puede", "pueden", "podemos"], "answer": 0, "expl": "se + poder + Infinitiv ist unpersönlich („man darf nicht“) → immer Singular: no se puede." },
+    { "type": "mc", "q": "El museo ___ inaugurado por el rey en 1992.", "options": ["se", "fue", "está"], "answer": 1, "expl": "Der Täter wird mit **por** genannt → echtes ser-Passiv: fue inaugurado por el rey." },
+    { "type": "mc", "q": "Welcher Satz ist richtig?", "options": ["Se necesitan un cocinero.", "Se necesita un cocinero.", "Se necesito un cocinero."], "answer": 1, "expl": "„un cocinero“ ist Singular → Verb im Singular: Se necesita. Plural (necesitan) wäre nur bei mehreren Köchen richtig." }
+  ]
+}

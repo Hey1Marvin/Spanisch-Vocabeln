@@ -1,0 +1,48 @@
+{
+  "id": "r09",
+  "title": "El tren a Valencia",
+  "emoji": "🚆",
+  "level": "A2/B1",
+  "text": "Hoy viajo en tren de Madrid a Valencia. En la estación de Atocha compro un billete de ida y vuelta y busco mi andén. El tren sale a las nueve y media, así que tengo tiempo para tomar un café.\n\nSubo al vagón número cuatro y me siento junto a la ventanilla. De repente, una señora me dice: «Perdone, pero creo que este es mi asiento». Miro mi billete y veo que tiene razón: mi asiento está en el vagón cinco. ¡Qué vergüenza! Le pido disculpas y cojo mi mochila.\n\nLa señora sonríe y me dice: «No pasa nada, el asiento de al lado está libre». Me siento a su lado y empezamos a charlar. Se llama Carmen y es de Valencia. Me recomienda visitar la Ciudad de las Artes y probar una paella auténtica.\n\nEl viaje pasa volando. Cuando llegamos, Carmen me da su número de teléfono y me dice: «Si necesitas algo, llámame». Pienso que la gente aquí es muy amable.",
+  "textDe": "Heute fahre ich mit dem Zug von Madrid nach Valencia. Im Bahnhof Atocha kaufe ich eine Hin- und Rückfahrkarte und suche meinen Bahnsteig. Der Zug fährt um halb zehn ab, ich habe also Zeit, einen Kaffee zu trinken.\n\nIch steige in Wagen Nummer vier ein und setze mich ans Fenster. Plötzlich sagt eine Dame zu mir: „Entschuldigen Sie, aber ich glaube, das ist mein Platz.“ Ich schaue auf mein Ticket und sehe, dass sie recht hat: Mein Platz ist in Wagen fünf. Wie peinlich! Ich entschuldige mich und nehme meinen Rucksack.\n\nDie Dame lächelt und sagt zu mir: „Macht nichts, der Platz daneben ist frei.“ Ich setze mich neben sie und wir beginnen zu plaudern. Sie heißt Carmen und kommt aus Valencia. Sie empfiehlt mir, die Stadt der Künste und Wissenschaften zu besuchen und eine echte Paella zu probieren.\n\nDie Fahrt vergeht wie im Flug. Als wir ankommen, gibt mir Carmen ihre Telefonnummer und sagt: „Wenn du etwas brauchst, ruf mich an.“ Ich denke, dass die Leute hier sehr freundlich sind.",
+  "glossary": [
+    {"es": "el billete de ida y vuelta", "de": "die Hin- und Rückfahrkarte"},
+    {"es": "el andén", "de": "der Bahnsteig"},
+    {"es": "el vagón", "de": "der Waggon"},
+    {"es": "el asiento", "de": "der Sitzplatz"},
+    {"es": "tener razón", "de": "recht haben"},
+    {"es": "¡qué vergüenza!", "de": "wie peinlich!"},
+    {"es": "pedir disculpas", "de": "sich entschuldigen"},
+    {"es": "no pasa nada", "de": "macht nichts"},
+    {"es": "el asiento de al lado", "de": "der Platz daneben"},
+    {"es": "charlar", "de": "plaudern"},
+    {"es": "pasar volando", "de": "wie im Flug vergehen"},
+    {"es": "amable", "de": "freundlich"}
+  ],
+  "questions": [
+    {
+      "q": "¿Adónde viaja el narrador?",
+      "options": ["A Valencia", "A Sevilla", "A Madrid"],
+      "answer": 0,
+      "expl": "Im Text steht: „Hoy viajo en tren de Madrid a Valencia“ — er fährt von Madrid nach Valencia, das Ziel ist also Valencia."
+    },
+    {
+      "q": "¿Dónde está el asiento correcto del narrador?",
+      "options": ["En el vagón cuatro", "En el vagón cinco", "En el vagón siete"],
+      "answer": 1,
+      "expl": "Er schaut auf sein Ticket und stellt fest: „mi asiento está en el vagón cinco“ — sein richtiger Platz ist in Wagen fünf."
+    },
+    {
+      "q": "¿De dónde es Carmen?",
+      "options": ["De Madrid", "De Granada", "De Valencia"],
+      "answer": 2,
+      "expl": "„Se llama Carmen y es de Valencia“ — die Sitznachbarin heißt Carmen und kommt aus Valencia."
+    },
+    {
+      "q": "¿Qué le da Carmen al final del viaje?",
+      "options": ["Su número de teléfono", "Un billete de tren", "Una paella"],
+      "answer": 0,
+      "expl": "Am Ende der Fahrt gibt Carmen ihm ihre Telefonnummer und sagt: «Si necesitas algo, llámame» — ruf mich an, wenn du etwas brauchst."
+    }
+  ]
+}

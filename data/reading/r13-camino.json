@@ -1,0 +1,47 @@
+{
+  "id": "r13",
+  "title": "Un día en el Camino de Santiago",
+  "emoji": "🥾",
+  "level": "B1",
+  "text": "Son las seis de la mañana cuando salgo del albergue con mi mochila a la espalda. Todavía está oscuro, pero en el camino ya hay muchos peregrinos con sus linternas. Hoy me esperan veintidós kilómetros hasta Portomarín. Sigo las flechas amarillas que marcan la ruta.\n\nDespués de dos horas me duelen los pies. Me siento en un muro de piedra y me quito las botas: tengo una ampolla enorme en el talón. Una peregrina francesa se para y me ofrece una tirita. «El Camino nos enseña a ayudarnos», dice sonriendo. Caminamos juntos un rato y me cuenta que viene andando desde Francia.\n\nA mediodía paramos en un pequeño bar de pueblo. Pido una tortilla y un café con leche. Otros peregrinos nos saludan con un alegre «¡Buen Camino!». Aunque venimos de países diferentes, todos compartimos el mismo objetivo: llegar a Santiago.\n\nPor la tarde llego al albergue, cansado pero feliz. Sello mi credencial, me ducho y lavo mi ropa. Antes de dormir pienso: mañana, otra etapa.",
+  "textDe": "Es ist sechs Uhr morgens, als ich mit meinem Rucksack auf dem Rücken aus der Herberge aufbreche. Es ist noch dunkel, aber auf dem Weg sind schon viele Pilger mit ihren Taschenlampen. Heute erwarten mich zweiundzwanzig Kilometer bis Portomarín. Ich folge den gelben Pfeilen, die die Route markieren.\n\nNach zwei Stunden tun mir die Füße weh. Ich setze mich auf eine Steinmauer und ziehe meine Stiefel aus: Ich habe eine riesige Blase an der Ferse. Eine französische Pilgerin bleibt stehen und bietet mir ein Pflaster an. „Der Camino lehrt uns, einander zu helfen“, sagt sie lächelnd. Wir gehen eine Weile zusammen, und sie erzählt mir, dass sie zu Fuß aus Frankreich kommt.\n\nMittags machen wir in einer kleinen Dorfbar Halt. Ich bestelle eine Tortilla und einen Milchkaffee. Andere Pilger grüßen uns mit einem fröhlichen „Buen Camino!“. Obwohl wir aus verschiedenen Ländern kommen, teilen wir alle dasselbe Ziel: nach Santiago zu gelangen.\n\nAm Nachmittag komme ich in der Herberge an, müde, aber glücklich. Ich lasse meinen Pilgerausweis stempeln, dusche und wasche meine Kleidung. Bevor ich einschlafe, denke ich: Morgen wartet die nächste Etappe.",
+  "glossary": [
+    {"es": "el albergue", "de": "die (Pilger-)Herberge"},
+    {"es": "el peregrino / la peregrina", "de": "der Pilger / die Pilgerin"},
+    {"es": "la etapa", "de": "die Etappe"},
+    {"es": "las flechas amarillas", "de": "die gelben Pfeile"},
+    {"es": "me duelen los pies", "de": "mir tun die Füße weh"},
+    {"es": "la ampolla", "de": "die Blase (an der Haut)"},
+    {"es": "el talón", "de": "die Ferse"},
+    {"es": "la tirita", "de": "das Pflaster"},
+    {"es": "¡Buen Camino!", "de": "Guten Weg! (Pilgergruß)"},
+    {"es": "sellar la credencial", "de": "den Pilgerausweis stempeln lassen"},
+    {"es": "la mochila", "de": "der Rucksack"}
+  ],
+  "questions": [
+    {
+      "q": "¿Cuántos kilómetros tiene la etapa de hoy?",
+      "options": ["Veintidós", "Doce", "Treinta y dos"],
+      "answer": 0,
+      "expl": "Im Text steht: „Hoy me esperan veintidós kilómetros hasta Portomarín“ — die heutige Etappe bis Portomarín ist zweiundzwanzig Kilometer lang."
+    },
+    {
+      "q": "¿Qué problema tiene el narrador?",
+      "options": ["Ha perdido su mochila", "Tiene una ampolla en el talón", "No encuentra el albergue"],
+      "answer": 1,
+      "expl": "„Tengo una ampolla enorme en el talón“ — er hat eine riesige Blase an der Ferse und muss sich deshalb die Stiefel ausziehen."
+    },
+    {
+      "q": "¿Qué le ofrece la peregrina francesa?",
+      "options": ["Una tirita", "Un café", "Un mapa"],
+      "answer": 0,
+      "expl": "„Una peregrina francesa se para y me ofrece una tirita“ — die französische Pilgerin bleibt stehen und bietet ihm ein Pflaster an."
+    },
+    {
+      "q": "¿Qué hace el narrador al llegar al albergue por la tarde?",
+      "options": ["Sella su credencial y se ducha", "Va a un restaurante", "Continúa caminando hasta Santiago"],
+      "answer": 0,
+      "expl": "„Sello mi credencial, me ducho y lavo mi ropa“ — er lässt seinen Pilgerausweis stempeln, duscht und wäscht seine Kleidung."
+    }
+  ]
+}

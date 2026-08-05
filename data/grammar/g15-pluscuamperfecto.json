@@ -1,0 +1,88 @@
+{
+  "id": "g15",
+  "title": "Pluscuamperfecto",
+  "intro": "Die Vorvergangenheit: was schon passiert war, bevor etwas anderes geschah. „Als ich am Bahnhof ankam, war der Zug schon abgefahren“ – der Zug fuhr zuerst, dann kam ich. Gebildet wird das Ganze denkbar einfach: había + Partizip.",
+  "sections": [
+    {
+      "h": "Bildung: había + Partizip",
+      "p": "Das Pluscuamperfecto besteht aus dem **Imperfecto von haber** (había, habías …) und dem **Partizip** – genau wie das Perfecto, nur mit había statt he. Das Partizip endet auf `-ado` (-ar) bzw. `-ido` (-er/-ir) und bleibt **unveränderlich**. Zwischen haber und Partizip darf nichts stehen.",
+      "table": {
+        "head": ["", "hablar", "comer", "vivir"],
+        "rows": [
+          ["yo", "había habl**ado**", "había com**ido**", "había viv**ido**"],
+          ["tú", "habías habl**ado**", "habías com**ido**", "habías viv**ido**"],
+          ["él/ella", "había habl**ado**", "había com**ido**", "había viv**ido**"],
+          ["nosotros", "habíamos habl**ado**", "habíamos com**ido**", "habíamos viv**ido**"],
+          ["vosotros", "habíais habl**ado**", "habíais com**ido**", "habíais viv**ido**"],
+          ["ellos", "habían habl**ado**", "habían com**ido**", "habían viv**ido**"]
+        ]
+      },
+      "examples": [
+        { "es": "Cuando llegué a casa, mi madre ya había preparado la cena.", "de": "Als ich nach Hause kam, hatte meine Mutter das Abendessen schon vorbereitet." },
+        { "es": "Nunca habíamos estado en Sevilla.", "de": "Wir waren noch nie in Sevilla gewesen." }
+      ],
+      "tip": "Die unregelmäßigen Partizipien kennst du schon vom Perfecto: **hecho, dicho, escrito, visto, puesto, vuelto, abierto, roto** – sie gelten hier genauso."
+    },
+    {
+      "h": "Gebrauch: die Vorvergangenheit",
+      "p": "Das Pluscuamperfecto drückt aus, dass etwas **vor** einem anderen Punkt in der Vergangenheit bereits passiert war – es entspricht dem deutschen Plusquamperfekt („hatte gemacht“, „war gegangen“). Es braucht immer einen **Bezugspunkt** in der Vergangenheit: Erst von dort aus blickt man noch weiter zurück.",
+      "examples": [
+        { "es": "Cuando llegué a la estación, el tren ya había salido.", "de": "Als ich am Bahnhof ankam, war der Zug schon abgefahren." },
+        { "es": "Estaba cansado porque no había dormido bien.", "de": "Er war müde, weil er nicht gut geschlafen hatte." }
+      ],
+      "tip": "Zwei Zeitstufen im Kopf behalten: **Vergangenheit** (ich kam an) und **Vor-Vergangenheit** (der Zug war schon weg). Das Pluscuamperfecto übernimmt immer die frühere Stufe."
+    },
+    {
+      "h": "Kombination mit dem Indefinido",
+      "p": "Der Klassiker ist der `cuando`-Satz: Das **Indefinido** liefert das Ereignis (llegué), das **Pluscuamperfecto** das, was zu diesem Zeitpunkt schon geschehen war (había salido). So machst du die Reihenfolge zweier Handlungen glasklar – ohne „zuerst“ und „danach“ sagen zu müssen.",
+      "table": {
+        "head": ["Indefinido (Ereignis)", "Pluscuamperfecto (schon vorher passiert)"],
+        "rows": [
+          ["Cuando llegué al cine, …", "… la película ya había empezado."],
+          ["No te llamé porque …", "… había perdido tu número."],
+          ["Me contó que …", "… había vivido dos años en Chile."],
+          ["Cuando abrimos la caja, …", "… alguien ya había cogido el dinero."]
+        ]
+      },
+      "examples": [
+        { "es": "Cuando llegamos al teatro, la obra ya había empezado.", "de": "Als wir am Theater ankamen, hatte das Stück schon angefangen." },
+        { "es": "No comí nada porque ya había comido en casa.", "de": "Ich aß nichts, weil ich zu Hause schon gegessen hatte." }
+      ],
+      "tip": "Vergleiche: `Cuando llegué, el tren salió.` (er fuhr **in dem Moment** los) vs. `Cuando llegué, el tren había salido.` (er war **schon weg**). Nur die Zeitform ändert die ganze Geschichte!"
+    },
+    {
+      "h": "Signalwörter: ya, todavía no, nunca antes",
+      "p": "Bestimmte Wörter kündigen das Pluscuamperfecto fast immer an: **ya** (schon), **todavía no / aún no** (noch nicht), **nunca antes** (nie zuvor), **antes de** + Zeitpunkt – meist in Kombination mit einem `cuando`-Satz im Indefinido (cuando llegué, cuando volvió …).",
+      "table": {
+        "head": ["Signalwort", "Beispiel"],
+        "rows": [
+          ["ya", "Cuando volví, ya se **habían ido**."],
+          ["todavía no / aún no", "Todavía no **había terminado** cuando me llamaste."],
+          ["nunca antes", "Nunca antes **había visto** el mar."],
+          ["antes de …", "Antes de 2020 no **había viajado** en avión."]
+        ]
+      },
+      "examples": [
+        { "es": "Nunca antes había probado la paella.", "de": "Ich hatte nie zuvor Paella probiert." },
+        { "es": "Todavía no habíamos desayunado cuando llegaron los invitados.", "de": "Wir hatten noch nicht gefrühstückt, als die Gäste ankamen." }
+      ],
+      "tip": "**ya** steht meist direkt vor había: `ya había salido`. Verneinung davor: `todavía no había salido` – die Klammer haber + Partizip bleibt immer zusammen."
+    }
+  ],
+  "exercises": [
+    { "type": "gap", "text": "Cuando llegué a la estación, el tren ya ___ (salir).", "answer": "había salido", "hint": "Vorvergangenheit", "expl": "Der Zug fuhr **vor** meiner Ankunft ab → Pluscuamperfecto: había salido." },
+    { "type": "gap", "text": "Nunca antes ___ (ver, yo) un volcán.", "answer": "había visto", "hint": "unregelmäßiges Partizip", "expl": "„nunca antes“ ist ein klassisches Signalwort. ver hat das unregelmäßige Partizip **visto**." },
+    { "type": "gap", "text": "Mis padres ya ___ (cenar) cuando volví a casa.", "answer": "habían cenado", "hint": "3. Person Plural", "expl": "Das Abendessen lag vor meiner Rückkehr → habían cenado. haber richtet sich nach dem Subjekt (mis padres)." },
+    { "type": "gap", "text": "No te llamé porque ___ (perder, yo) tu número.", "answer": "había perdido", "hint": "Grund lag noch weiter zurück", "expl": "Das Verlieren passierte **vor** dem Nicht-Anrufen → Pluscuamperfecto: había perdido." },
+    { "type": "gap", "text": "Cuando abrió la puerta, alguien ya ___ (romper) la ventana.", "answer": "había roto", "hint": "Partizip unregelmäßig!", "expl": "romper hat das unregelmäßige Partizip **roto**: había roto." },
+    { "type": "gap", "text": "Ella estaba cansada porque no ___ (dormir) bien.", "answer": "había dormido", "hint": "Verneinung vor había", "expl": "Der schlechte Schlaf lag vor der Müdigkeit → no había dormido. Das no steht vor der ganzen Verbklammer." },
+    { "type": "gap", "text": "Ya ___ (hacer, nosotros) los deberes cuando llegó el profesor.", "answer": "habíamos hecho", "hint": "Partizip unregelmäßig!", "expl": "hacer → Partizip **hecho**. Wir waren fertig, bevor der Lehrer kam → habíamos hecho." },
+    { "type": "gap", "text": "¿Todavía no ___ (escribir, tú) el correo cuando te llamé?", "answer": "habías escrito", "hint": "Partizip auf -to", "expl": "escribir → Partizip **escrito**. „todavía no“ + Bezugspunkt (te llamé) → Pluscuamperfecto: habías escrito." },
+    { "type": "gap", "text": "El concierto ya ___ (empezar) cuando entramos.", "answer": "había empezado", "hint": "ya + cuando + Indefinido", "expl": "Typisches Muster: cuando + Indefinido (entramos) als Bezugspunkt, davor Geschehenes im Pluscuamperfecto: había empezado." },
+    { "type": "mc", "q": "Cuando llegamos al cine, la película ya ___.", "options": ["empezó", "había empezado", "empezaba"], "answer": 1, "expl": "„ya“ + Bezugspunkt in der Vergangenheit (llegamos) → der Film lief schon vorher → había empezado." },
+    { "type": "mc", "q": "Ayer ___ una película muy buena.", "options": ["había visto", "vi", "veía"], "answer": 1, "expl": "„ayer“ + einmalige, abgeschlossene Handlung ohne Vor-Vergangenheit → Indefinido: vi. Nicht jede Vergangenheit ist Pluscuamperfecto!" },
+    { "type": "mc", "q": "Mit welcher Form von haber wird das Pluscuamperfecto gebildet?", "options": ["he (Presente)", "había (Imperfecto)", "hube (Indefinido)"], "answer": 1, "expl": "Pluscuamperfecto = **Imperfecto von haber** + Partizip: había hablado. Mit he wäre es das Perfecto." },
+    { "type": "mc", "q": "No comí nada en la fiesta porque ya ___ en casa.", "options": ["comí", "había comido", "como"], "answer": 1, "expl": "Das Essen zu Hause lag **vor** der Party → Vorvergangenheit → había comido." },
+    { "type": "mc", "q": "„Als ich ankam, war er schon gegangen.“ – Welcher Satz ist richtig?", "options": ["Cuando llegué, ya se fue.", "Cuando llegué, ya se había ido.", "Cuando llegaba, ya se va."], "answer": 1, "expl": "Bezugspunkt im Indefinido (llegué), das frühere Ereignis im Pluscuamperfecto: ya se había ido." }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "r10",
+  "title": "Una visita al médico",
+  "emoji": "🩺",
+  "level": "B1",
+  "text": "Llevo dos días con dolor de estómago. Anoche apenas pude dormir y esta mañana me encuentro fatal. Primero voy a una farmacia que está cerca del hotel. La farmacéutica me pregunta: «¿Qué síntomas tiene usted?». Le explico que me duele el estómago y que tengo náuseas.\n\nElla me aconseja ir al médico: «Si el dolor dura más de dos días, es mejor que le vea un médico». Me apunta la dirección de un centro de salud que está a diez minutos a pie.\n\nEn el centro de salud enseño mi tarjeta sanitaria europea y espero media hora. Por fin me llama la doctora. Me examina y me hace algunas preguntas: «¿Ha comido algo diferente estos días?». Le cuento que ayer comí mariscos en un chiringuito de la playa.\n\nLa doctora me tranquiliza: solo es una infección de estómago leve. Me receta unas pastillas y me recomienda beber mucha agua y comer arroz. Con la receta vuelvo a la farmacia. Según la doctora, en tres días estaré como nuevo.",
+  "textDe": "Seit zwei Tagen habe ich Magenschmerzen. Letzte Nacht konnte ich kaum schlafen und heute Morgen fühle ich mich furchtbar. Zuerst gehe ich in eine Apotheke, die in der Nähe des Hotels liegt. Die Apothekerin fragt mich: „Welche Symptome haben Sie?“ Ich erkläre ihr, dass mir der Magen wehtut und dass mir übel ist.\n\nSie rät mir, zum Arzt zu gehen: „Wenn der Schmerz länger als zwei Tage anhält, sollte Sie besser ein Arzt ansehen.“ Sie schreibt mir die Adresse eines Gesundheitszentrums auf, das zehn Minuten zu Fuß entfernt ist.\n\nIm Gesundheitszentrum zeige ich meine europäische Gesundheitskarte und warte eine halbe Stunde. Endlich ruft mich die Ärztin auf. Sie untersucht mich und stellt mir einige Fragen: „Haben Sie in diesen Tagen etwas Ungewöhnliches gegessen?“ Ich erzähle ihr, dass ich gestern Meeresfrüchte in einer Strandbar gegessen habe.\n\nDie Ärztin beruhigt mich: Es ist nur eine leichte Magen-Darm-Infektion. Sie verschreibt mir Tabletten und empfiehlt mir, viel Wasser zu trinken und Reis zu essen. Mit dem Rezept gehe ich zurück in die Apotheke. Laut der Ärztin bin ich in drei Tagen wieder wie neu.",
+  "glossary": [
+    {"es": "el dolor de estómago", "de": "die Magenschmerzen"},
+    {"es": "encontrarse fatal", "de": "sich furchtbar fühlen"},
+    {"es": "la farmacia", "de": "die Apotheke"},
+    {"es": "los síntomas", "de": "die Symptome"},
+    {"es": "las náuseas", "de": "die Übelkeit"},
+    {"es": "el centro de salud", "de": "das Gesundheitszentrum"},
+    {"es": "la tarjeta sanitaria", "de": "die Gesundheitskarte"},
+    {"es": "los mariscos", "de": "die Meeresfrüchte"},
+    {"es": "el chiringuito", "de": "die Strandbar"},
+    {"es": "recetar", "de": "verschreiben"},
+    {"es": "las pastillas", "de": "die Tabletten"},
+    {"es": "la receta", "de": "das Rezept"}
+  ],
+  "questions": [
+    {
+      "q": "¿Cuánto tiempo lleva el narrador con dolor de estómago?",
+      "options": ["Dos días", "Una semana", "Tres horas"],
+      "answer": 0,
+      "expl": "Der Text beginnt mit: „Llevo dos días con dolor de estómago“ — er hat seit zwei Tagen Magenschmerzen."
+    },
+    {
+      "q": "¿Adónde va el narrador primero?",
+      "options": ["Al centro de salud", "A una farmacia", "Al hospital"],
+      "answer": 1,
+      "expl": "„Primero voy a una farmacia que está cerca del hotel“ — zuerst geht er in eine Apotheke in der Nähe des Hotels, erst danach zum Arzt."
+    },
+    {
+      "q": "¿Qué comió el narrador en la playa?",
+      "options": ["Una paella", "Pescado frito", "Mariscos"],
+      "answer": 2,
+      "expl": "Er erzählt der Ärztin: „ayer comí mariscos en un chiringuito de la playa“ — er hat Meeresfrüchte in einer Strandbar gegessen."
+    },
+    {
+      "q": "¿Qué le recomienda la doctora?",
+      "options": ["Beber mucha agua y comer arroz", "Quedarse una semana en la cama", "No comer nada durante tres días"],
+      "answer": 0,
+      "expl": "„Me recomienda beber mucha agua y comer arroz“ — die Ärztin empfiehlt ihm, viel Wasser zu trinken und Reis zu essen."
+    }
+  ]
+}

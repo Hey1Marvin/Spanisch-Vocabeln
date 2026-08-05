@@ -1,0 +1,91 @@
+{
+  "id": "g17",
+  "title": "Relativsätze",
+  "intro": "„Das Buch, das ich lese“, „die Stadt, in der ich wohne“ – Relativsätze verbinden Informationen elegant. Im Spanischen erledigt `que` fast alles, dazu kommen quien, el que, lo que, donde und das feine cuyo. Und: Die Komma-Regeln sind anders als im Deutschen!",
+  "sections": [
+    {
+      "h": "que – der Allrounder",
+      "p": "Das Relativpronomen `que` ist **unveränderlich** und deckt **Personen und Sachen** ab. Während das Deutsche zwischen der/die/das/den wechselt, bleibt das Spanische schlicht bei que. Es steht direkt hinter dem Bezugswort – ohne Präposition und meist ohne Komma.",
+      "table": {
+        "head": ["Deutsch", "Spanisch"],
+        "rows": [
+          ["der Mann, **der** …", "el hombre **que** …"],
+          ["das Buch, **das** …", "el libro **que** …"],
+          ["die Frau, **die** ich sehe", "la mujer **que** veo"],
+          ["die Kinder, **die** spielen", "los niños **que** juegan"]
+        ]
+      },
+      "examples": [
+        { "es": "El libro que estoy leyendo es de Almudena Grandes.", "de": "Das Buch, das ich gerade lese, ist von Almudena Grandes." },
+        { "es": "La mujer que vive arriba es profesora.", "de": "Die Frau, die oben wohnt, ist Lehrerin." }
+      ],
+      "tip": "Anders als im Deutschen steht vor `que` **kein Komma**, wenn der Relativsatz die Person oder Sache erst identifiziert (siehe letzte Sektion)."
+    },
+    {
+      "h": "quien, el que und lo que",
+      "p": "Neben que gibt es drei Spezialisten: **quien/quienes** steht nur für **Personen**, vor allem nach Präpositionen oder in Komma-Sätzen. **el que / la que / los que / las que** („derjenige, der“) funktioniert für Personen und Sachen – nach Präpositionen oder allein am Satzanfang. **lo que** ist neutral und bedeutet „das, was“: Es bezieht sich auf eine ganze Aussage oder etwas Unbestimmtes.",
+      "table": {
+        "head": ["Pronomen", "Verwendung", "Beispiel"],
+        "rows": [
+          ["quien / quienes", "nur Personen; nach Präposition oder Komma", "la amiga con **quien** viajo"],
+          ["el que / la que …", "Personen und Sachen; nach Präposition oder allein", "**los que** estudian aprueban"],
+          ["lo que", "neutral: „das, was“ – ganze Aussagen", "**lo que** dices es verdad"]
+        ]
+      },
+      "examples": [
+        { "es": "Lo que más me gusta es la playa.", "de": "Was mir am besten gefällt, ist der Strand." },
+        { "es": "Los que llegan tarde no pueden entrar.", "de": "Diejenigen, die zu spät kommen, dürfen nicht hinein." }
+      ],
+      "tip": "**quien** steht nie mit Artikel und nur für **Menschen** – für Sachen nimmst du el que / la que."
+    },
+    {
+      "h": "Mit Präposition: la ciudad en la que … und donde",
+      "p": "Sobald eine Präposition im Spiel ist, reicht das nackte que meist nicht mehr: Die Präposition rückt **vor** das Relativpronomen (nie ans Satzende!), und danach steht **el que / la que** (Sachen) oder **quien / el que** (Personen). Bei Orten kannst du en el que / en la que elegant durch **donde** ersetzen.",
+      "table": {
+        "head": ["Struktur", "Beispiel", "Übersetzung"],
+        "rows": [
+          ["en + el/la que", "la ciudad **en la que** vivo", "die Stadt, in der ich wohne"],
+          ["con + quien / el que", "el amigo **con quien** trabajo", "der Freund, mit dem ich arbeite"],
+          ["de + el que → del que", "el tema **del que** hablamos", "das Thema, über das wir sprechen"],
+          ["donde (nur Orte)", "la ciudad **donde** vivo", "die Stadt, wo ich wohne"]
+        ]
+      },
+      "examples": [
+        { "es": "La empresa para la que trabajo está en Barcelona.", "de": "Die Firma, für die ich arbeite, ist in Barcelona." },
+        { "es": "Ese es el pueblo donde nació mi madre.", "de": "Das ist das Dorf, wo meine Mutter geboren wurde." }
+      ],
+      "tip": "Wie immer verschmelzen de + el zu **del** und a + el zu **al**: el tema **del que** hablamos, el partido **al que** fuimos."
+    },
+    {
+      "h": "Komma-Regeln und cuyo",
+      "p": "Zwei Sorten Relativsätze: **Notwendige** (especificativos) identifizieren das Bezugswort und stehen **ohne Komma**. **Erläuternde** (explicativos) liefern nur Zusatzinfo und stehen **mit Komma** – hier ist bei Personen auch quien möglich. Das Komma ändert die Bedeutung! Dazu kurz **cuyo/cuya/cuyos/cuyas** („dessen/deren“): Es richtet sich in Genus und Numerus nach dem **Besitz**, nicht nach dem Besitzer, und klingt eher schriftsprachlich.",
+      "table": {
+        "head": ["Typ", "Komma?", "Beispiel", "Bedeutung"],
+        "rows": [
+          ["especificativo", "ohne Komma", "Los alumnos que estudiaron aprobaron.", "Nur die, die lernten, bestanden."],
+          ["explicativo", "mit Komma", "Los alumnos, que estudiaron, aprobaron.", "Alle bestanden – sie hatten ja gelernt."]
+        ]
+      },
+      "examples": [
+        { "es": "Mi hermano, que vive en Múnich, viene en Navidad.", "de": "Mein Bruder, der in München wohnt, kommt an Weihnachten." },
+        { "es": "El autor cuya novela ganó el premio es chileno.", "de": "Der Autor, dessen Roman den Preis gewann, ist Chilene." }
+      ],
+      "tip": "**cuyo** verhält sich wie ein Adjektiv zum folgenden Nomen: el hombre cuy**a** cas**a** … – auch wenn der Besitzer ein Mann ist."
+    }
+  ],
+  "exercises": [
+    { "type": "gap", "text": "El libro ___ me regalaste es fantástico.", "answer": "que", "hint": "Sache, ohne Präposition", "expl": "Ohne Präposition ist `que` fast immer richtig – für Personen und Sachen gleichermaßen." },
+    { "type": "gap", "text": "La chica con ___ hablé ayer es mi vecina.", "answer": ["quien", "la que"], "hint": "Person nach Präposition", "expl": "Nach einer Präposition steht bei Personen quien (oder la que) – das nackte que geht hier nicht." },
+    { "type": "gap", "text": "La ciudad en ___ vivo tiene mucha historia.", "answer": "la que", "hint": "en + Artikel + que", "expl": "Nach Präposition braucht die Sache Artikel + que: en la que. Ohne Präposition ginge auch donde: la ciudad donde vivo." },
+    { "type": "gap", "text": "No entiendo ___ quieres decir.", "answer": "lo que", "hint": "neutral: „das, was …“", "expl": "Es gibt kein konkretes Bezugswort – gemeint ist die ganze Aussage → lo que (das, was)." },
+    { "type": "gap", "text": "Ese es el pueblo ___ nací.", "answer": ["donde", "en el que"], "hint": "Ort", "expl": "Bei Orten ist donde die eleganteste Lösung – gleichwertig ist en el que." },
+    { "type": "gap", "text": "El tema ___ que hablamos ayer era muy interesante.", "answer": "del", "hint": "de + el = ?", "expl": "hablar **de** algo → die Präposition rückt vor das Pronomen, und de + el verschmilzt zu del: el tema del que hablamos." },
+    { "type": "gap", "text": "El escritor ___ novelas leemos en clase es mexicano.", "answer": "cuyas", "hint": "richtet sich nach novelas", "expl": "cuyo kongruiert mit dem **Besitz** (las novelas, feminin Plural), nicht mit dem Schriftsteller → cuyas." },
+    { "type": "gap", "text": "Los ___ quieren venir necesitan una entrada.", "answer": "que", "hint": "los + ___ = diejenigen, die", "expl": "Artikel + que ohne Bezugswort bedeutet „diejenigen, die“: los que quieren venir." },
+    { "type": "mc", "q": "___ más me molesta es el ruido.", "options": ["Lo que", "El que", "Que"], "answer": 0, "expl": "Bezugspunkt ist keine konkrete Person oder Sache, sondern ein Sachverhalt → neutrales lo que (das, was)." },
+    { "type": "mc", "q": "La empresa para ___ trabajo está en Berlín.", "options": ["la que", "quien", "que"], "answer": 0, "expl": "la empresa ist eine Sache → nach Präposition la que. quien geht nur bei Personen, und das nackte que steht nie direkt nach para." },
+    { "type": "mc", "q": "Mi padre, ___ tiene 70 años, todavía trabaja.", "options": ["que", "cuyo", "lo que"], "answer": 0, "expl": "Erläuternder Relativsatz mit Komma → que (bei Personen wäre auch quien möglich). cuyo bräuchte ein Besitzverhältnis, lo que ein neutrales Bezugswort." },
+    { "type": "mc", "q": "Welcher Satz bedeutet, dass ALLE Schüler bestanden haben?", "options": ["Los alumnos que estudiaron aprobaron.", "Los alumnos, que estudiaron, aprobaron."], "answer": 1, "expl": "Mit Kommas ist der Relativsatz nur Zusatzinfo (explicativo): Alle bestanden. Ohne Kommas bestanden nur diejenigen, die gelernt hatten." },
+    { "type": "mc", "q": "Es el chico ___ padre es médico.", "options": ["cuyo", "que su", "de quien"], "answer": 0, "expl": "„dessen Vater“ → cuyo, kongruent mit padre (maskulin Singular). „que su“ ist ein typischer, aber falscher Deutsch-Transfer." }
+  ]
+}

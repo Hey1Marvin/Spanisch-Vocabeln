@@ -1,0 +1,48 @@
+{
+  "id": "r12",
+  "title": "Un cumpleaños español",
+  "emoji": "🎂",
+  "level": "A2/B1",
+  "text": "Mi amiga española Lucía me invita a su fiesta de cumpleaños. Cumple treinta años y lo celebra en casa de sus padres, en un pueblo cerca de Sevilla. Por la tarde compro un regalo: un libro de fotografía y una botella de vino.\n\nCuando llego, Lucía me abraza y me presenta a toda su familia. En la mesa hay muchísima comida: tortilla, jamón, queso y ensaladilla rusa. Su abuela me dice: «Come, hijo, que estás muy delgado». Todos se ríen.\n\nDespués de la cena llega la tarta con treinta velas. Todos cantamos «Cumpleaños feliz» y Lucía sopla las velas. Luego sus primos le tiran de las orejas treinta veces, una por cada año. Me explican que es una tradición española muy antigua.\n\nLa fiesta dura hasta las tres de la madrugada. Bailamos, cantamos y hablamos mucho. En Alemania mis cumpleaños son más tranquilos, pero esta noche entiendo por qué me encanta España.",
+  "textDe": "Meine spanische Freundin Lucía lädt mich zu ihrer Geburtstagsfeier ein. Sie wird dreißig Jahre alt und feiert im Haus ihrer Eltern, in einem Dorf in der Nähe von Sevilla. Am Nachmittag kaufe ich ein Geschenk: einen Fotoband und eine Flasche Wein.\n\nAls ich ankomme, umarmt mich Lucía und stellt mich ihrer ganzen Familie vor. Auf dem Tisch steht sehr viel Essen: Tortilla, Schinken, Käse und russischer Salat. Ihre Großmutter sagt zu mir: „Iss, mein Junge, du bist ja ganz dünn.“ Alle lachen.\n\nNach dem Abendessen kommt die Torte mit dreißig Kerzen. Wir alle singen „Cumpleaños feliz“ und Lucía bläst die Kerzen aus. Danach ziehen ihre Cousins sie dreißigmal an den Ohren, einmal für jedes Jahr. Man erklärt mir, dass das eine sehr alte spanische Tradition ist.\n\nDie Feier dauert bis drei Uhr morgens. Wir tanzen, singen und reden viel. In Deutschland sind meine Geburtstage ruhiger, aber in dieser Nacht verstehe ich, warum ich Spanien so liebe.",
+  "glossary": [
+    {"es": "cumplir años", "de": "Geburtstag haben"},
+    {"es": "invitar", "de": "einladen"},
+    {"es": "el regalo", "de": "das Geschenk"},
+    {"es": "abrazar", "de": "umarmen"},
+    {"es": "presentar a alguien", "de": "jemanden vorstellen"},
+    {"es": "la ensaladilla rusa", "de": "der russische Salat"},
+    {"es": "delgado", "de": "dünn, schlank"},
+    {"es": "la tarta", "de": "die Torte"},
+    {"es": "las velas", "de": "die Kerzen"},
+    {"es": "soplar las velas", "de": "die Kerzen ausblasen"},
+    {"es": "tirar de las orejas", "de": "an den Ohren ziehen"},
+    {"es": "la madrugada", "de": "die frühen Morgenstunden"}
+  ],
+  "questions": [
+    {
+      "q": "¿Cuántos años cumple Lucía?",
+      "options": ["Veinte", "Treinta", "Cuarenta"],
+      "answer": 1,
+      "expl": "Im Text steht: „Cumple treinta años y lo celebra en casa de sus padres“ — Lucía wird dreißig Jahre alt."
+    },
+    {
+      "q": "¿Qué compra el narrador como regalo?",
+      "options": ["Un libro de fotografía y una botella de vino", "Flores y bombones", "Una tarta de cumpleaños"],
+      "answer": 0,
+      "expl": "„Compro un regalo: un libro de fotografía y una botella de vino“ — er kauft einen Fotoband und eine Flasche Wein."
+    },
+    {
+      "q": "¿Qué hacen los primos después de soplar las velas?",
+      "options": ["Cantan otra canción", "Abren los regalos", "Le tiran de las orejas treinta veces"],
+      "answer": 2,
+      "expl": "„Sus primos le tiran de las orejas treinta veces, una por cada año“ — nach dem Ausblasen der Kerzen ziehen die Cousins sie dreißigmal an den Ohren, ein spanischer Geburtstagsbrauch."
+    },
+    {
+      "q": "¿Hasta qué hora dura la fiesta?",
+      "options": ["Hasta medianoche", "Hasta la una", "Hasta las tres de la madrugada"],
+      "answer": 2,
+      "expl": "„La fiesta dura hasta las tres de la madrugada“ — die Feier dauert bis drei Uhr morgens."
+    }
+  ]
+}

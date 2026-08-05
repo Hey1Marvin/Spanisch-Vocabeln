@@ -110,7 +110,22 @@ window.Vamos = window.Vamos || {};
         '<a class="quick" href="#/write"><span class="ico">' + Vamos.icons.svg("pen") + '</span><span class="lbl">Text-Check</span></a>' +
         '<a class="quick" href="#/dict"><span class="ico">' + Vamos.icons.svg("book") + '</span><span class="lbl">Wörterbuch</span></a>' +
         '<a class="quick" href="#/verbs"><span class="ico">' + Vamos.icons.svg("table") + '</span><span class="lbl">Verbtabellen</span></a>' +
+        '<a class="quick" href="#/speak"><span class="ico">' + Vamos.icons.svg("mic") + '</span><span class="lbl">Nachsprechen</span></a>' +
+        '<a class="quick" href="#/review"><span class="ico">' + Vamos.icons.svg("refresh") + '</span><span class="lbl">Rückblick</span></a>' +
+        '<a class="quick" href="#/grammar"><span class="ico">' + Vamos.icons.svg("reader") + '</span><span class="lbl">Lesetexte</span></a>' +
+        '<a class="quick" href="#/units"><span class="ico">' + Vamos.icons.svg("download") + '</span><span class="lbl">Downloads</span></a>' +
         "</div>" +
+        (function () {
+          var w = wordOfDay(cards);
+          return '<div class="card" style="display:flex;align-items:center;gap:.9rem">' +
+            '<span style="color:var(--gold)">' + Vamos.icons.svg("star", "lg") + "</span>" +
+            '<div style="flex:1;min-width:0"><div class="muted small">Wort des Tages</div>' +
+            '<div style="font-weight:750;font-size:1.05rem">' + (w.emoji ? esc(w.emoji) + " " : "") +
+            esc(w.es) + " " + Vamos.quiz.speakBtn(w.es) +
+            ' <span class="muted" style="font-weight:400">– ' + esc(w.de) + "</span></div>" +
+            (w.ex ? '<div class="muted small">' + esc(w.ex) + "</div>" : "") +
+            "</div></div>";
+        })() +
 
         '<div class="stat-grid">' +
         '<div class="card"><div class="num">' + st + " 🔥</div><div class=\"lbl\">Streak</div></div>" +
@@ -124,6 +139,7 @@ window.Vamos = window.Vamos || {};
         main.innerHTML = html;
         document.getElementById("unitList").innerHTML =
           units.slice(0, 5).map(function (u) { return unitRow(u, srsMap); }).join("");
+        Vamos.quiz.bindSpeak(main);
       });
     }).catch(fail);
   }
@@ -335,6 +351,28 @@ window.Vamos = window.Vamos || {};
     Vamos.data.loadAllUnits().then(function (units) {
       Vamos.quiz.renderMixQuiz(main, units);
     }).catch(fail);
+  }
+
+  function viewSpeak() {
+    loading();
+    Vamos.data.loadAllUnits().then(function (units) {
+      Vamos.quiz.renderSpeakPractice(main, startedCards(units, Vamos.store.srs()));
+    }).catch(fail);
+  }
+
+  function viewReview() {
+    loading();
+    Vamos.data.loadAllUnits().then(function (units) {
+      Vamos.quiz.renderMixQuiz(main, units, { onlyLearned: true, title: "Rückblick" });
+    }).catch(fail);
+  }
+
+  /* Wort des Tages: deterministisch aus dem Datum. */
+  function wordOfDay(cards) {
+    var d = new Date().toISOString().slice(0, 10);
+    var h = 0;
+    for (var i = 0; i < d.length; i++) h = (h * 31 + d.charCodeAt(i)) >>> 0;
+    return cards[h % cards.length];
   }
 
   function viewConj() {
@@ -584,9 +622,9 @@ window.Vamos = window.Vamos || {};
 
   var tutorState = { scenario: null, messages: [] };
 
-  function aiConfigCard() {
+  function aiConfigCard(forceShow) {
     var cfg = Vamos.tutor.aiConfig();
-    return '<div class="card" id="aiCfg"' + (cfg.key ? ' style="display:none"' : "") + ">" +
+    return '<div class="card" id="aiCfg"' + (cfg.key && !forceShow ? ' style="display:none"' : "") + ">" +
       '<h2>' + Vamos.icons.svg("key") + ' KI-Zugang einrichten</h2>' +
       '<p class="muted small">Dein API-Key wird <strong>nur in diesem Browser</strong> gespeichert – ' +
       "nie auf GitHub, nie im Backup. Du brauchst einen Key von Anthropic (console.anthropic.com) " +
@@ -711,7 +749,8 @@ window.Vamos = window.Vamos || {};
       '<p class="muted small">Schreib einen Text auf Spanisch (Tagebuch, E-Mail, Urlaubsbericht …) – ' +
       "die KI korrigiert ihn und erklärt jeden Fehler auf Deutsch.</p>" +
       '<textarea class="answer-input" id="writeText" rows="7" placeholder="Hoy he visitado la catedral y después…"></textarea>' +
-      '<div class="btn-row"><button class="btn primary" id="checkText">Korrigieren lassen</button></div>' +
+      '<div class="btn-row"><button class="btn primary" id="checkText">KI-Korrektur</button>' +
+      '<button class="btn" id="ltCheck">Schnell-Check (ohne KI, gratis)</button></div>' +
       '<div id="writeOut"></div></div>';
     bindAiConfig(viewWrite);
     document.getElementById("aiCfgToggle").addEventListener("click", function () {
@@ -729,6 +768,41 @@ window.Vamos = window.Vamos || {};
       Vamos.tutor.correct(text).then(function (result) {
         out.innerHTML = '<div class="theory" style="margin-top:.6rem">' +
           Vamos.grammar.md(result).replace(/\n/g, "<br>") + "</div>";
+      }).catch(function (e) {
+        out.innerHTML = '<div class="feedback no">' + esc(e.message) + "</div>";
+      });
+    });
+    // LanguageTool: kostenlose Rechtschreib-/Grammatikprüfung ohne Key
+    document.getElementById("ltCheck").addEventListener("click", function () {
+      var text = document.getElementById("writeText").value.trim();
+      if (text.length < 5) {
+        toast("Schreib erst etwas");
+        return;
+      }
+      var out = document.getElementById("writeOut");
+      out.innerHTML = '<div class="skeleton" style="min-height:60px"></div>';
+      fetch("https://api.languagetool.org/v2/check", {
+        method: "POST",
+        headers: { "content-type": "application/x-www-form-urlencoded" },
+        body: "language=es&text=" + encodeURIComponent(text)
+      }).then(function (r) {
+        if (!r.ok) throw new Error("LanguageTool nicht erreichbar (HTTP " + r.status + ")");
+        return r.json();
+      }).then(function (d) {
+        if (!d.matches || !d.matches.length) {
+          out.innerHTML = '<div class="feedback ok">✅ Keine Fehler gefunden – ¡muy bien! ' +
+            '<span class="small">(automatische Prüfung, ohne Gewähr)</span></div>';
+          return;
+        }
+        out.innerHTML = '<p class="muted small" style="margin:.6rem 0 .3rem">' + d.matches.length +
+          " Hinweis(e) – LanguageTool:</p>" +
+          d.matches.map(function (m) {
+            var wrong = text.substr(m.offset, m.length);
+            var sugg = (m.replacements || []).slice(0, 3).map(function (rp) { return rp.value; });
+            return '<div class="feedback almost"><strong>' + esc(wrong) + "</strong>" +
+              (sugg.length ? " → " + esc(sugg.join(" / ")) : "") +
+              '<br><span class="small">' + esc(m.message) + "</span></div>";
+          }).join("");
       }).catch(function (e) {
         out.innerHTML = '<div class="feedback no">' + esc(e.message) + "</div>";
       });
@@ -938,6 +1012,7 @@ window.Vamos = window.Vamos || {};
       '<div class="btn-row" style="margin-top:1rem">' +
       '<button class="btn small" id="testVoice">Stimme testen</button></div>' +
       "</div>" +
+      aiConfigCard(true) +
       '<div class="card"><h2>' + Vamos.icons.svg("download") + ' Backup</h2>' +
       '<p class="muted small">Dein Fortschritt liegt nur in diesem Browser. Exportiere regelmäßig ein Backup, ' +
       "z. B. vor einem Gerätewechsel.</p>" +
@@ -952,6 +1027,7 @@ window.Vamos = window.Vamos || {};
       '<p class="muted small" style="text-align:center">¡Vamos! · <a href="https://github.com/Hey1Marvin/Spanisch-Vocabeln">GitHub</a></p>';
 
     main.innerHTML = html;
+    bindAiConfig(viewSettings);
 
     function save() {
       Vamos.store.saveSettings({
@@ -1020,6 +1096,8 @@ window.Vamos = window.Vamos || {};
     { re: /^#\/cloze\/([\w-]+)$/, fn: function (id) { withUnit(id, function (u) { Vamos.quiz.renderClozeQuiz(main, u.words, "#/unit/" + id); }); }, tab: "units" },
     { re: /^#\/order\/([\w-]+)$/, fn: function (id) { withUnit(id, function (u) { Vamos.quiz.renderOrderQuiz(main, u.words, "#/unit/" + id); }); }, tab: "units" },
     { re: /^#\/conj$/, fn: viewConj, tab: "learn" },
+    { re: /^#\/speak$/, fn: viewSpeak, tab: "learn" },
+    { re: /^#\/review$/, fn: viewReview, tab: "learn" },
     { re: /^#\/quiz\/([\w-]+)$/, fn: function (id) { withUnit(id, function (u) { Vamos.quiz.renderMcQuiz(main, u); }); }, tab: "units" },
     { re: /^#\/type\/([\w-]+)$/, fn: function (id) { withUnit(id, function (u) { Vamos.quiz.renderTypeQuiz(main, u); }); }, tab: "units" },
     { re: /^#\/grammar$/, fn: viewGrammarList, tab: "grammar" },

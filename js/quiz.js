@@ -487,9 +487,9 @@ Vamos.quiz = (function () {
 
   /* ---------- Mix-Quiz: Interleaving über angefangene Einheiten ---------- */
 
-  function renderMixQuiz(el, units) {
+  function renderMixQuiz(el, units, opts) {
+    opts = opts || {};
     var srsMap = Vamos.store.srs();
-    // Karten aus Einheiten, in denen schon gelernt wurde; sonst die ersten zwei Einheiten
     var started = units.filter(function (u) {
       return u.words.some(function (w) {
         var st = srsMap[w.id];
@@ -499,6 +499,19 @@ Vamos.quiz = (function () {
     if (!started.length) started = units.slice(0, 2);
     var pool = [];
     started.forEach(function (u) { pool = pool.concat(u.words); });
+    if (opts.onlyLearned) {
+      // Rückblick: nur Karten, die schon bewertet wurden
+      pool = pool.filter(function (w) {
+        var st = srsMap[w.id];
+        return st && st.r > 0;
+      });
+      if (pool.length < 8) {
+        el.innerHTML = '<div class="empty-state"><div class="big">🌱</div>' +
+          "<p>Für einen Rückblick-Test brauchst du erst ein paar gelernte Karten.</p>" +
+          '<a class="btn primary" href="#/learn">Erst lernen</a></div>';
+        return;
+      }
+    }
 
     var questions = shuffle(pool).slice(0, Math.min(15, pool.length));
     var idx = 0, score = 0;
@@ -529,7 +542,7 @@ Vamos.quiz = (function () {
       var unitTitle = (Vamos.data.unitMeta(card.unitId) || {}).title || "";
 
       el.innerHTML =
-        '<div class="session-bar"><span>Mix-Quiz · ' + (idx + 1) + " / " + questions.length +
+        '<div class="session-bar"><span>' + (opts.title || "Mix-Quiz") + ' · ' + (idx + 1) + " / " + questions.length +
         "</span><span>" + score + " richtig</span></div>" +
         '<div class="card"' + (mode === 2 ? ' style="text-align:center"' : "") + ">" +
         '<div class="muted small">' + header + " <span class=\"pill phase\">" +
@@ -584,7 +597,7 @@ Vamos.quiz = (function () {
         '<button class="btn primary" id="againBtn">Nochmal</button>' +
         '<a class="btn" href="#/">Zum Dashboard</a></div></div>';
       el.querySelector("#againBtn").addEventListener("click", function () {
-        renderMixQuiz(el, units);
+        renderMixQuiz(el, units, opts);
       });
     }
 
@@ -786,6 +799,81 @@ Vamos.quiz = (function () {
     next();
   }
 
+  /* ---------- Nachsprechen (Pimsleur-Prinzip): hören → laut sprechen → vergleichen ---------- */
+
+  function renderSpeakPractice(el, cards) {
+    var pool = cards.filter(function (w) { return w.type === "phrase" || (w.ex && w.ex.length < 60); });
+    if (pool.length < 5) pool = cards;
+    var questions = shuffle(pool).slice(0, 10);
+    var idx = 0, good = 0;
+
+    if (!Vamos.audio.available()) {
+      el.innerHTML = '<div class="empty-state"><div class="big">🔇</div>' +
+        "<p>Dein Browser unterstützt keine Sprachausgabe.</p>" +
+        '<a class="btn" href="#/">Zurück</a></div>';
+      return;
+    }
+
+    function next() {
+      if (idx >= questions.length) return finish();
+      var card = questions[idx];
+      var phrase = card.type === "phrase" ? card.es : card.ex;
+      var phraseDe = card.type === "phrase" ? card.de : (card.exDe || card.de);
+
+      el.innerHTML =
+        '<div class="session-bar"><span>Nachsprechen · ' + (idx + 1) + " / " + questions.length +
+        '</span><a href="#/">Beenden ✕</a></div>' +
+        '<div class="card" style="text-align:center">' +
+        '<div class="muted small">Hör zu und sprich laut nach – erst dann aufdecken.</div>' +
+        '<div style="font-size:1.05rem;margin:.6rem 0">🇩🇪 ' + esc(phraseDe) + "</div>" +
+        '<button class="listen-big" id="playBtn">' + Vamos.icons.svg("speaker", "lg") + "</button>" +
+        '<div id="solution"></div>' +
+        '<div class="btn-row" style="justify-content:center" id="actions">' +
+        '<button class="btn primary" id="revealBtn">Auflösen</button></div></div>';
+
+      var play = function () { Vamos.audio.speak(phrase); };
+      el.querySelector("#playBtn").addEventListener("click", play);
+      setTimeout(play, 300);
+
+      el.querySelector("#revealBtn").addEventListener("click", function () {
+        el.querySelector("#solution").innerHTML =
+          '<div class="feedback ok reveal-anim" style="font-size:1.1rem"><strong>' +
+          esc(phrase) + "</strong> " + speakBtn(phrase) + "</div>" +
+          '<p class="muted small">Wie war dein Versuch?</p>';
+        bindSpeak(el.querySelector("#solution"));
+        el.querySelector("#actions").innerHTML =
+          '<button class="btn" id="againB">Nochmal üben</button>' +
+          '<button class="btn primary" id="goodB">Konnte ich ✓</button>';
+        el.querySelector("#againB").addEventListener("click", function () {
+          questions.push(card);
+          idx += 1;
+          next();
+        });
+        el.querySelector("#goodB").addEventListener("click", function () {
+          good += 1;
+          Vamos.store.bumpLog(1);
+          idx += 1;
+          next();
+        });
+      });
+    }
+
+    function finish() {
+      Vamos.ui.confetti(12);
+      el.innerHTML =
+        '<div class="empty-state"><div class="big">🗣️</div>' +
+        "<p><strong>" + good + " Sätze laut gesprochen – genau so kommt Sprechflüssigkeit!</strong></p>" +
+        '<div class="btn-row" style="justify-content:center">' +
+        '<button class="btn primary" id="againBtn">Neue Runde</button>' +
+        '<a class="btn" href="#/">Zum Dashboard</a></div></div>';
+      el.querySelector("#againBtn").addEventListener("click", function () {
+        renderSpeakPractice(el, cards);
+      });
+    }
+
+    next();
+  }
+
   return {
     renderLearnSession: renderLearnSession,
     renderMcQuiz: renderMcQuiz,
@@ -795,6 +883,7 @@ Vamos.quiz = (function () {
     renderMixQuiz: renderMixQuiz,
     renderOrderQuiz: renderOrderQuiz,
     renderConjQuiz: renderConjQuiz,
+    renderSpeakPractice: renderSpeakPractice,
     esc: esc, shuffle: shuffle, speakBtn: speakBtn, bindSpeak: bindSpeak
   };
 })();
