@@ -20,25 +20,26 @@
 </head>
 <body>
   <header class="topbar">
-    <h1><a href="#/">🇪🇸 ¡Vamos!</a></h1>
-    <a class="gear" href="#/settings" title="Einstellungen">⚙️</a>
+    <h1><a href="#/">¡Vamos!</a></h1>
+    <a class="gear" href="#/settings" title="Einstellungen" aria-label="Einstellungen"><svg class="icn" viewBox="0 0 24 24" aria-hidden="true"><line x1="21" x2="14" y1="4" y2="4"/><line x1="10" x2="3" y1="4" y2="4"/><line x1="21" x2="12" y1="12" y2="12"/><line x1="8" x2="3" y1="12" y2="12"/><line x1="21" x2="16" y1="20" y2="20"/><line x1="12" x2="3" y1="20" y2="20"/><line x1="14" x2="14" y1="2" y2="6"/><line x1="8" x2="8" y1="10" y2="14"/><line x1="16" x2="16" y1="18" y2="22"/></svg></a>
   </header>
 
   <main id="app">
-    <div class="empty-state"><div class="big">⏳</div><p class="muted">Lade …</p></div>
+    <div class="empty-state"><p class="muted">Lade …</p></div>
   </main>
 
   <nav class="tabbar">
-    <a href="#/" data-tab="home"><span class="ico">🏠</span>Start</a>
-    <a href="#/units" data-tab="units"><span class="ico">📚</span>Einheiten</a>
-    <a href="#/learn" data-tab="learn"><span class="ico">🧠</span>Lernen</a>
-    <a href="#/grammar" data-tab="grammar"><span class="ico">📖</span>Grammatik</a>
-    <a href="#/stats" data-tab="stats"><span class="ico">📊</span>Statistik</a>
+    <a href="#/" data-tab="home"><span class="ico"><svg class="icn" viewBox="0 0 24 24" aria-hidden="true"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></span>Start</a>
+    <a href="#/units" data-tab="units"><span class="ico"><svg class="icn" viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></span>Einheiten</a>
+    <a href="#/learn" data-tab="learn"><span class="ico"><svg class="icn" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3z"/></svg></span>Lernen</a>
+    <a href="#/grammar" data-tab="grammar"><span class="ico"><svg class="icn" viewBox="0 0 24 24" aria-hidden="true"><path d="M21.42 10.92a1 1 0 0 0-.02-1.84L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.83l8.57 3.91a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg></span>Grammatik</a>
+    <a href="#/stats" data-tab="stats"><span class="ico"><svg class="icn" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3v18h18"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></svg></span>Statistik</a>
   </nav>
 
   <div class="toast" id="toast"></div>
 
   <script src="js/store.js"></script>
+  <script src="js/icons.js"></script>
   <script src="js/ui.js"></script>
   <script src="js/srs.js"></script>
   <script src="js/audio.js"></script>

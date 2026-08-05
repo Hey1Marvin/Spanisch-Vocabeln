@@ -21,7 +21,7 @@ Vamos.quiz = (function () {
   function speakBtn(text) {
     if (!Vamos.audio.available()) return "";
     return '<button class="speak-btn" data-speak="' + esc(text) +
-      '" title="Anhören" aria-label="Anhören: ' + esc(text) + '">🔊</button>';
+      '" title="Anhören" aria-label="Anhören: ' + esc(text) + '">' + Vamos.icons.svg("speaker") + "</button>";
   }
 
   function bindSpeak(el) {
@@ -343,7 +343,7 @@ Vamos.quiz = (function () {
         questions.length + "</span><span>" + score + " richtig</span></div>" +
         '<div class="card" style="text-align:center">' +
         '<div class="muted small">Hör zu – was bedeutet das?</div>' +
-        '<button class="listen-big" id="playBtn" title="Nochmal anhören">🔊</button>' +
+        '<button class="listen-big" id="playBtn" title="Nochmal anhören">' + Vamos.icons.svg("speaker", "lg") + '</button>' +
         '<div id="options" style="text-align:left"></div></div>';
 
       var play = function () { Vamos.audio.speak(card.es); };
@@ -535,7 +535,7 @@ Vamos.quiz = (function () {
         '<div class="muted small">' + header + " <span class=\"pill phase\">" +
         esc(unitTitle) + "</span></div>" +
         (mode === 2
-          ? '<button class="listen-big" id="playBtn">🔊</button>'
+          ? '<button class="listen-big" id="playBtn">' + Vamos.icons.svg("speaker", "lg") + '</button>'
           : '<div class="word" style="font-size:1.3rem;font-weight:700;margin:.3rem 0 .8rem">' +
             esc(prompt) + (mode === 0 ? " " + speakBtn(card.es) : "") + "</div>") +
         '<div id="options" style="text-align:left"></div></div>';

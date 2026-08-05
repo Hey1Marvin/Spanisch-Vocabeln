@@ -1,0 +1,47 @@
+{
+  "id": "r02",
+  "title": "Un día en la playa",
+  "emoji": "🏖️",
+  "level": "A2",
+  "text": "Hoy es mi tercer día de vacaciones y voy a la playa de la Barceloneta. Llevo mi toalla, crema solar y una botella de agua. Hace mucho calor, casi treinta grados.\n\nEn la playa hay un puesto que alquila sombrillas y tumbonas. Pregunto al chico: «¿Cuánto cuesta una sombrilla para todo el día?». Él contesta: «Doce euros, y una tumbona seis más». Alquilo las dos cosas porque el sol es muy fuerte.\n\nPor la mañana nado en el mar y leo mi libro. El agua está un poco fría, pero muy limpia. A las dos tengo hambre y voy a un chiringuito que se llama La Ola. Pido una ración de sardinas y una limonada. Todo está riquísimo.\n\nPor la tarde duermo una pequeña siesta bajo la sombrilla. Antes de volver al hotel, compro un helado de chocolate. Ha sido un día perfecto en la playa.",
+  "textDe": "Heute ist mein dritter Urlaubstag und ich gehe an den Strand von La Barceloneta. Ich nehme mein Handtuch, Sonnencreme und eine Flasche Wasser mit. Es ist sehr heiß, fast dreißig Grad.\n\nAm Strand gibt es einen Stand, der Sonnenschirme und Liegen vermietet. Ich frage den jungen Mann: „Wie viel kostet ein Sonnenschirm für den ganzen Tag?“ Er antwortet: „Zwölf Euro, und eine Liege sechs mehr.“ Ich miete beides, weil die Sonne sehr stark ist.\n\nAm Vormittag schwimme ich im Meer und lese mein Buch. Das Wasser ist ein bisschen kalt, aber sehr sauber. Um zwei Uhr habe ich Hunger und gehe zu einer Strandbar, die La Ola heißt. Ich bestelle eine Portion Sardinen und eine Limonade. Alles ist superlecker.\n\nAm Nachmittag mache ich eine kleine Siesta unter dem Sonnenschirm. Bevor ich ins Hotel zurückkehre, kaufe ich ein Schokoladeneis. Es war ein perfekter Tag am Strand.",
+  "glossary": [
+    {"es": "la toalla", "de": "das Handtuch"},
+    {"es": "la crema solar", "de": "die Sonnencreme"},
+    {"es": "el puesto", "de": "der Stand"},
+    {"es": "alquilar", "de": "mieten"},
+    {"es": "la sombrilla", "de": "der Sonnenschirm"},
+    {"es": "la tumbona", "de": "die Sonnenliege"},
+    {"es": "el chiringuito", "de": "die Strandbar"},
+    {"es": "una ración de sardinas", "de": "eine Portion Sardinen"},
+    {"es": "riquísimo", "de": "superlecker"},
+    {"es": "la siesta", "de": "der Mittagsschlaf"},
+    {"es": "el helado", "de": "das Eis"}
+  ],
+  "questions": [
+    {
+      "q": "¿Cuánto cuesta la sombrilla para todo el día?",
+      "options": ["Seis euros", "Doce euros", "Dieciocho euros"],
+      "answer": 1,
+      "expl": "Der junge Mann antwortet: «Doce euros, y una tumbona seis más» — der Sonnenschirm kostet zwölf Euro, die Liege sechs Euro extra."
+    },
+    {
+      "q": "¿Cómo está el agua del mar?",
+      "options": ["Fría y limpia", "Caliente y sucia", "Muy caliente"],
+      "answer": 0,
+      "expl": "„El agua está un poco fría, pero muy limpia“ — das Wasser ist ein bisschen kalt, aber sehr sauber."
+    },
+    {
+      "q": "¿Qué pide en el chiringuito?",
+      "options": ["Una paella", "Sardinas y limonada", "Un bocadillo"],
+      "answer": 1,
+      "expl": "„Pido una ración de sardinas y una limonada“ — er bestellt in der Strandbar La Ola Sardinen und eine Limonade."
+    },
+    {
+      "q": "¿Qué compra antes de volver al hotel?",
+      "options": ["Un helado", "Una toalla", "Un libro"],
+      "answer": 0,
+      "expl": "„Antes de volver al hotel, compro un helado de chocolate“ — vor der Rückkehr ins Hotel kauft er ein Schokoladeneis."
+    }
+  ]
+}

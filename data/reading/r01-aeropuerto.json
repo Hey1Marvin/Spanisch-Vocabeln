@@ -1,0 +1,47 @@
+{
+  "id": "r01",
+  "title": "En el aeropuerto",
+  "emoji": "🛬",
+  "level": "A2",
+  "text": "Por fin estoy en España. Mi avión aterriza en el aeropuerto de Málaga a las diez de la mañana. Estoy un poco cansado, pero muy contento. Primero tengo que recoger mi maleta. Sigo las señales hasta la cinta de equipaje número siete.\n\nEspero quince minutos, pero mi maleta no llega. Estoy nervioso. Por suerte, al final veo mi maleta roja. «¡Menos mal!», pienso. Cojo también mi mochila y paso por la aduana. No tengo nada que declarar.\n\nEn la salida busco un taxi. Un señor mayor me pregunta: «¿Adónde va usted?». Le respondo: «Al hotel Sol, en el centro, por favor». Él pone mi maleta en el maletero y salimos del aeropuerto.\n\nDurante el viaje miro por la ventanilla. Hace sol y el mar es azul. El taxista me dice: «Bienvenido a Málaga». El viaje cuesta veinticinco euros. Le doy treinta y le digo: «Quédese con el cambio».",
+  "textDe": "Endlich bin ich in Spanien. Mein Flugzeug landet um zehn Uhr morgens auf dem Flughafen von Málaga. Ich bin ein bisschen müde, aber sehr glücklich. Zuerst muss ich meinen Koffer abholen. Ich folge den Schildern bis zum Gepäckband Nummer sieben.\n\nIch warte fünfzehn Minuten, aber mein Koffer kommt nicht. Ich bin nervös. Zum Glück sehe ich am Ende meinen roten Koffer. „Gott sei Dank!“, denke ich. Ich nehme auch meinen Rucksack und gehe durch den Zoll. Ich habe nichts zu verzollen.\n\nAm Ausgang suche ich ein Taxi. Ein älterer Herr fragt mich: „Wohin fahren Sie?“ Ich antworte ihm: „Zum Hotel Sol, im Zentrum, bitte.“ Er legt meinen Koffer in den Kofferraum und wir fahren vom Flughafen los.\n\nWährend der Fahrt schaue ich aus dem Fenster. Die Sonne scheint und das Meer ist blau. Der Taxifahrer sagt zu mir: „Willkommen in Málaga.“ Die Fahrt kostet fünfundzwanzig Euro. Ich gebe ihm dreißig und sage: „Behalten Sie das Wechselgeld.“",
+  "glossary": [
+    {"es": "aterrizar", "de": "landen"},
+    {"es": "recoger la maleta", "de": "den Koffer abholen"},
+    {"es": "las señales", "de": "die Schilder"},
+    {"es": "la cinta de equipaje", "de": "das Gepäckband"},
+    {"es": "por suerte", "de": "zum Glück"},
+    {"es": "¡menos mal!", "de": "Gott sei Dank!"},
+    {"es": "la aduana", "de": "der Zoll"},
+    {"es": "nada que declarar", "de": "nichts zu verzollen"},
+    {"es": "el maletero", "de": "der Kofferraum"},
+    {"es": "la ventanilla", "de": "das Autofenster"},
+    {"es": "quédese con el cambio", "de": "behalten Sie das Wechselgeld"}
+  ],
+  "questions": [
+    {
+      "q": "¿A qué hora aterriza el avión?",
+      "options": ["A las diez", "A las doce", "A las siete"],
+      "answer": 0,
+      "expl": "Im Text steht: „Mi avión aterriza en el aeropuerto de Málaga a las diez de la mañana“ — das Flugzeug landet um zehn Uhr morgens."
+    },
+    {
+      "q": "¿De qué color es la maleta?",
+      "options": ["Azul", "Roja", "Negra"],
+      "answer": 1,
+      "expl": "„Por suerte, al final veo mi maleta roja“ — er sieht schließlich seinen roten Koffer."
+    },
+    {
+      "q": "¿Adónde quiere ir el narrador?",
+      "options": ["Al hotel Sol", "A la playa", "Al museo"],
+      "answer": 0,
+      "expl": "Er sagt dem Taxifahrer: «Al hotel Sol, en el centro, por favor» — er möchte zum Hotel Sol im Zentrum."
+    },
+    {
+      "q": "¿Cuánto cuesta el viaje en taxi?",
+      "options": ["Treinta euros", "Quince euros", "Veinticinco euros"],
+      "answer": 2,
+      "expl": "„El viaje cuesta veinticinco euros“ — die Fahrt kostet 25 Euro; er gibt 30 und lässt das Wechselgeld als Trinkgeld."
+    }
+  ]
+}

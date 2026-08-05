@@ -1,0 +1,47 @@
+{
+  "id": "r04",
+  "title": "Perdido en Madrid",
+  "emoji": "🗺️",
+  "level": "B1",
+  "text": "Ayer por la tarde me perdí en Madrid. Había salido del Museo del Prado y quería volver andando a mi hostal, cerca de la Puerta del Sol. Pero después de veinte minutos me di cuenta de que las calles no me sonaban de nada. Mi móvil estaba sin batería, así que no podía usar el mapa.\n\nDecidí preguntar a una señora que paseaba con su perro. «Perdone, ¿me puede decir cómo se va a la Puerta del Sol?». Ella me miró sorprendida: «Uy, está bastante lejos. Andando son casi cuarenta minutos. Le recomiendo que coja el metro».\n\nMe explicó el camino hasta la estación más cercana. «Coja la línea dos, dirección Cuatro Caminos, y bájese en Sol. Son solo cuatro paradas». Le di las gracias y seguí sus indicaciones.\n\nEn el metro compré un billete sencillo por dos euros. Un cuarto de hora después salí de la estación y vi la famosa plaza. ¡Qué alivio! Perderse no es tan grave si la gente es tan amable como en Madrid.",
+  "textDe": "Gestern Nachmittag habe ich mich in Madrid verlaufen. Ich war aus dem Prado-Museum gekommen und wollte zu Fuß zu meinem Hostal in der Nähe der Puerta del Sol zurückgehen. Aber nach zwanzig Minuten merkte ich, dass mir die Straßen überhaupt nicht bekannt vorkamen. Mein Handy hatte keinen Akku mehr, also konnte ich die Karte nicht benutzen.\n\nIch beschloss, eine Frau zu fragen, die mit ihrem Hund spazieren ging. „Entschuldigung, können Sie mir sagen, wie man zur Puerta del Sol kommt?“ Sie sah mich überrascht an: „Oh, das ist ziemlich weit. Zu Fuß sind es fast vierzig Minuten. Ich empfehle Ihnen, die Metro zu nehmen.“\n\nSie erklärte mir den Weg zur nächsten Station. „Nehmen Sie die Linie zwei, Richtung Cuatro Caminos, und steigen Sie an der Station Sol aus. Es sind nur vier Haltestellen.“ Ich bedankte mich und folgte ihrer Wegbeschreibung.\n\nIn der Metro kaufte ich ein Einzelticket für zwei Euro. Eine Viertelstunde später kam ich aus der Station und sah den berühmten Platz. Was für eine Erleichterung! Sich zu verlaufen ist nicht so schlimm, wenn die Leute so freundlich sind wie in Madrid.",
+  "glossary": [
+    {"es": "perderse (me perdí)", "de": "sich verlaufen (ich verlief mich)"},
+    {"es": "darse cuenta de", "de": "bemerken, merken"},
+    {"es": "no me sonaban de nada", "de": "sie kamen mir überhaupt nicht bekannt vor"},
+    {"es": "estar sin batería", "de": "keinen Akku mehr haben"},
+    {"es": "¿cómo se va a...?", "de": "wie kommt man zu...?"},
+    {"es": "le recomiendo que coja", "de": "ich empfehle Ihnen zu nehmen"},
+    {"es": "bájese en", "de": "steigen Sie aus an/in"},
+    {"es": "la parada", "de": "die Haltestelle"},
+    {"es": "las indicaciones", "de": "die Wegbeschreibung"},
+    {"es": "un billete sencillo", "de": "ein Einzelticket"},
+    {"es": "¡qué alivio!", "de": "was für eine Erleichterung!"}
+  ],
+  "questions": [
+    {
+      "q": "¿Por qué no podía usar el mapa del móvil?",
+      "options": ["Estaba sin batería", "Lo había perdido", "No tenía internet"],
+      "answer": 0,
+      "expl": "„Mi móvil estaba sin batería, así que no podía usar el mapa“ — das Handy hatte keinen Akku mehr."
+    },
+    {
+      "q": "¿Qué le recomienda la señora?",
+      "options": ["Coger un taxi", "Coger el metro", "Ir andando"],
+      "answer": 1,
+      "expl": "Die Frau sagt: «Le recomiendo que coja el metro» — zu Fuß wären es fast vierzig Minuten."
+    },
+    {
+      "q": "¿En qué estación tiene que bajarse?",
+      "options": ["Cuatro Caminos", "Sol", "Prado"],
+      "answer": 1,
+      "expl": "«Coja la línea dos, dirección Cuatro Caminos, y bájese en Sol» — Cuatro Caminos ist nur die Richtung, aussteigen muss er an der Station Sol."
+    },
+    {
+      "q": "¿Cuánto cuesta el billete de metro?",
+      "options": ["Cuatro euros", "Un euro", "Dos euros"],
+      "answer": 2,
+      "expl": "„Compré un billete sencillo por dos euros“ — das Einzelticket kostet zwei Euro."
+    }
+  ]
+}

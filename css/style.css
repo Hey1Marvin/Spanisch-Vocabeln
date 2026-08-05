@@ -67,6 +67,26 @@
 
 * { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; }
+
+/* Globaler Button-Reset: nie UA-Weiß im Dark Mode durchscheinen lassen */
+button {
+  appearance: none;
+  -webkit-appearance: none;
+  background: transparent;
+  border: 0;
+  color: inherit;
+  padding: 0;
+}
+
+/* Stroke-Icons */
+.icn {
+  width: 1.15em; height: 1.15em;
+  vertical-align: -0.22em;
+  stroke: currentColor; fill: none;
+  stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;
+  flex-shrink: 0;
+}
+.icn.lg { width: 1.6em; height: 1.6em; }
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
@@ -121,9 +141,10 @@ nav.tabbar {
   text-decoration: none; color: var(--muted); font-size: .66rem; font-weight: 500;
   border-radius: 12px; transition: color .15s, background .15s;
 }
-.tabbar a .ico { display: block; font-size: 1.28rem; line-height: 1.35; filter: grayscale(.5); opacity: .8; transition: filter .15s, opacity .15s, transform .15s; }
+.tabbar a .ico { display: block; line-height: 1.1; opacity: .75; transition: opacity .15s, transform .15s; }
+.tabbar a .ico .icn { width: 1.45rem; height: 1.45rem; vertical-align: middle; }
 .tabbar a.active { color: var(--accent); font-weight: 700; background: var(--accent-soft); }
-.tabbar a.active .ico { filter: none; opacity: 1; transform: translateY(-1px); }
+.tabbar a.active .ico { opacity: 1; transform: translateY(-1px); }
 
 /* ---------- Karten & Grundbausteine ---------- */
 
@@ -189,7 +210,8 @@ nav.tabbar {
   transition: transform .12s, box-shadow .15s;
 }
 .quick:hover { transform: translateY(-2px); box-shadow: var(--shadow-lift); }
-.quick .ico { font-size: 1.5rem; display: block; margin-bottom: .15rem; }
+.quick .ico { display: block; margin-bottom: .3rem; color: var(--accent); }
+.quick .ico .icn { width: 1.5rem; height: 1.5rem; }
 .quick .lbl { font-size: .74rem; font-weight: 650; }
 
 .pill {

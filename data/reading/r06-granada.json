@@ -1,0 +1,48 @@
+{
+  "id": "r06",
+  "title": "Excursión a Granada",
+  "emoji": "🏰",
+  "level": "B1",
+  "text": "El mes pasado hice una excursión de un día a Granada. Salí del hotel muy temprano, cuando todavía estaba oscuro, y cogí el autobús de las siete. Durante el viaje, el paisaje era precioso: olivos, montañas y pueblos blancos bajo el sol de la mañana.\n\nCompré la entrada para la Alhambra por internet dos semanas antes, porque las entradas se agotan rápido. Menos mal, porque en la taquilla había una cola enorme. Un turista me preguntó: «¿Sabe usted si quedan entradas para hoy?». Por desgracia, ya no quedaba ninguna.\n\nLa visita fue impresionante. Los palacios nazaríes me encantaron: los patios, las fuentes y los detalles de las paredes. Desde el mirador de San Nicolás vi la Alhambra con Sierra Nevada al fondo. Hacía sol y la vista era espectacular.\n\nPor la tarde paseé por el Albaicín y probé unas tapas en un bar pequeño. Cuando volví al autobús, estaba cansado pero feliz. Fue, sin duda, el mejor día de mis vacaciones.",
+  "textDe": "Letzten Monat machte ich einen Tagesausflug nach Granada. Ich verließ das Hotel sehr früh, als es noch dunkel war, und nahm den Bus um sieben. Während der Fahrt war die Landschaft wunderschön: Olivenbäume, Berge und weiße Dörfer in der Morgensonne.\n\nDie Eintrittskarte für die Alhambra kaufte ich zwei Wochen vorher im Internet, weil die Tickets schnell ausverkauft sind. Zum Glück, denn am Schalter gab es eine riesige Schlange. Ein Tourist fragte mich: «Wissen Sie, ob es noch Tickets für heute gibt?». Leider gab es keines mehr.\n\nDie Besichtigung war beeindruckend. Die Nasridenpaläste begeisterten mich: die Innenhöfe, die Brunnen und die Details der Wände. Vom Aussichtspunkt San Nicolás sah ich die Alhambra mit der Sierra Nevada im Hintergrund. Die Sonne schien und die Aussicht war spektakulär.\n\nAm Nachmittag spazierte ich durch das Albaicín-Viertel und probierte ein paar Tapas in einer kleinen Bar. Als ich zum Bus zurückkam, war ich müde, aber glücklich. Es war ohne Zweifel der beste Tag meines Urlaubs.",
+  "glossary": [
+    {"es": "la excursión de un día", "de": "der Tagesausflug"},
+    {"es": "el paisaje", "de": "die Landschaft"},
+    {"es": "el olivo", "de": "der Olivenbaum"},
+    {"es": "agotarse", "de": "ausverkauft sein/ausgehen"},
+    {"es": "la taquilla", "de": "der Ticketschalter/die Kasse"},
+    {"es": "la cola", "de": "die (Warte-)Schlange"},
+    {"es": "menos mal", "de": "zum Glück/Gott sei Dank"},
+    {"es": "ya no quedaba ninguna", "de": "es war keine mehr übrig"},
+    {"es": "la fuente", "de": "der Brunnen"},
+    {"es": "el mirador", "de": "der Aussichtspunkt"},
+    {"es": "al fondo", "de": "im Hintergrund"},
+    {"es": "sin duda", "de": "ohne Zweifel/zweifellos"}
+  ],
+  "questions": [
+    {
+      "q": "¿Cómo viajó el narrador a Granada?",
+      "options": ["En tren", "En autobús", "En coche de alquiler"],
+      "answer": 1,
+      "expl": "Im ersten Absatz steht: „cogí el autobús de las siete“ — er nahm den Bus um sieben Uhr morgens."
+    },
+    {
+      "q": "¿Cuándo compró la entrada para la Alhambra?",
+      "options": ["Ese día en la taquilla", "Dos semanas antes, por internet", "No compró ninguna entrada"],
+      "answer": 1,
+      "expl": "Er sagt: „Compré la entrada para la Alhambra por internet dos semanas antes“ — online, zwei Wochen im Voraus, weil die Tickets schnell ausverkauft sind."
+    },
+    {
+      "q": "¿Qué vio desde el mirador de San Nicolás?",
+      "options": ["La catedral de Granada", "El mar Mediterráneo", "La Alhambra con Sierra Nevada"],
+      "answer": 2,
+      "expl": "Im dritten Absatz: „Desde el mirador de San Nicolás vi la Alhambra con Sierra Nevada al fondo“ — die Alhambra mit der Sierra Nevada im Hintergrund."
+    },
+    {
+      "q": "¿Cómo se sentía el narrador al volver al autobús?",
+      "options": ["Cansado pero feliz", "Enfadado y triste", "Nervioso y preocupado"],
+      "answer": 0,
+      "expl": "Am Ende heißt es: „Cuando volví al autobús, estaba cansado pero feliz“ — müde, aber glücklich."
+    }
+  ]
+}

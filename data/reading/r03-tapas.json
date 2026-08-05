@@ -1,0 +1,47 @@
+{
+  "id": "r03",
+  "title": "De tapas por Sevilla",
+  "emoji": "🍤",
+  "level": "A2/B1",
+  "text": "Esta noche salgo de tapas por el centro de Sevilla. Son las nueve y las calles están llenas de gente. Entro en un bar pequeño que se llama Casa Manolo. Huele muy bien y hay mucho ruido, como en todos los bares buenos de España.\n\nMe siento en la barra y el camarero me saluda: «¡Buenas noches! ¿Qué te pongo?». Miro la pizarra con las tapas del día y pido una cerveza, jamón ibérico y unas croquetas caseras. «Buena elección», dice el camarero con una sonrisa.\n\nMientras como, hablamos un poco. Le cuento que soy alemán y que estoy una semana de vacaciones. «¿Y qué te parece Sevilla?», me pregunta. «Me encanta, aunque hace demasiado calor», respondo. Él se ríe: «Esto no es nada. En agosto llegamos a cuarenta y cinco grados».\n\nAl final pido también tortilla de patatas y otra caña. Pago doce euros y dejo propina. «¡Hasta pronto!», me dice el camarero. Creo que voy a volver mañana.",
+  "textDe": "Heute Abend gehe ich im Zentrum von Sevilla Tapas essen. Es ist neun Uhr und die Straßen sind voller Menschen. Ich gehe in eine kleine Bar namens Casa Manolo. Es riecht sehr gut und es ist laut, wie in allen guten Bars Spaniens.\n\nIch setze mich an die Theke und der Kellner begrüßt mich: „Guten Abend! Was darf ich dir bringen?“ Ich schaue auf die Tafel mit den Tagestapas und bestelle ein Bier, iberischen Schinken und hausgemachte Kroketten. „Gute Wahl“, sagt der Kellner mit einem Lächeln.\n\nWährend ich esse, unterhalten wir uns ein bisschen. Ich erzähle ihm, dass ich Deutscher bin und eine Woche Urlaub mache. „Und wie gefällt dir Sevilla?“, fragt er mich. „Ich liebe es, obwohl es zu heiß ist“, antworte ich. Er lacht: „Das ist noch gar nichts. Im August erreichen wir fünfundvierzig Grad.“\n\nAm Ende bestelle ich noch Kartoffel-Tortilla und ein weiteres kleines Bier. Ich zahle zwölf Euro und gebe Trinkgeld. „Bis bald!“, sagt der Kellner. Ich glaube, ich komme morgen wieder.",
+  "glossary": [
+    {"es": "salir de tapas", "de": "Tapas essen gehen"},
+    {"es": "oler (huele)", "de": "riechen (es riecht)"},
+    {"es": "la barra", "de": "die Theke"},
+    {"es": "¿Qué te pongo?", "de": "Was darf ich dir bringen?"},
+    {"es": "la pizarra", "de": "die Tafel"},
+    {"es": "las croquetas caseras", "de": "hausgemachte Kroketten"},
+    {"es": "buena elección", "de": "gute Wahl"},
+    {"es": "¿Qué te parece...?", "de": "Wie findest du...?"},
+    {"es": "aunque", "de": "obwohl"},
+    {"es": "la caña", "de": "kleines Bier vom Fass"},
+    {"es": "dejar propina", "de": "Trinkgeld geben"}
+  ],
+  "questions": [
+    {
+      "q": "¿Dónde se sienta el narrador?",
+      "options": ["En la terraza", "En la barra", "En una mesa"],
+      "answer": 1,
+      "expl": "„Me siento en la barra y el camarero me saluda“ — er setzt sich an die Theke."
+    },
+    {
+      "q": "¿Qué pide primero?",
+      "options": ["Cerveza, jamón y croquetas", "Paella y vino", "Solo una tortilla"],
+      "answer": 0,
+      "expl": "„Pido una cerveza, jamón ibérico y unas croquetas caseras“ — zuerst bestellt er Bier, Schinken und Kroketten; die Tortilla kommt erst am Ende."
+    },
+    {
+      "q": "¿De dónde es el narrador?",
+      "options": ["De España", "De Francia", "De Alemania"],
+      "answer": 2,
+      "expl": "„Le cuento que soy alemán y que estoy una semana de vacaciones“ — er erzählt dem Kellner, dass er Deutscher ist."
+    },
+    {
+      "q": "¿Cuánto paga al final?",
+      "options": ["Veinte euros", "Doce euros", "Nueve euros"],
+      "answer": 1,
+      "expl": "„Pago doce euros y dejo propina“ — er zahlt zwölf Euro und gibt zusätzlich Trinkgeld."
+    }
+  ]
+}

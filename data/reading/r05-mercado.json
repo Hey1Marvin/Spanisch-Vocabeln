@@ -1,0 +1,48 @@
+{
+  "id": "r05",
+  "title": "En el mercado",
+  "emoji": "🛒",
+  "level": "A2/B1",
+  "text": "Es sábado por la mañana y voy al mercado semanal del pueblo. Hay puestos de fruta, verdura, queso y aceitunas. Todo huele muy bien y hay mucha gente. Me gusta el ambiente: los vendedores gritan sus ofertas y los vecinos charlan tranquilamente.\n\nEn un puesto de fruta compro naranjas y fresas. La vendedora es muy simpática. «¿De dónde eres?», me pregunta. «Soy de Alemania, estoy aquí de vacaciones», respondo. Ella me recomienda los melocotones: «Están dulcísimos, pruébalos».\n\nDespués quiero comprar un bolso de cuero en otro puesto. El vendedor pide treinta euros. Me parece un poco caro, así que intento regatear: «¿Me lo deja por veinte?». Al final pagamos veinticinco y los dos quedamos contentos.\n\nAntes de volver al hotel, compro un trozo de queso manchego y pan recién hecho. La vendedora me regala unas aceitunas para probar. «¡Hasta el sábado que viene!», me dice con una sonrisa. Creo que voy a volver.",
+  "textDe": "Es ist Samstagmorgen und ich gehe zum Wochenmarkt des Dorfes. Es gibt Stände mit Obst, Gemüse, Käse und Oliven. Alles riecht sehr gut und es sind viele Leute da. Mir gefällt die Atmosphäre: Die Verkäufer rufen ihre Angebote aus und die Nachbarn plaudern in Ruhe.\n\nAn einem Obststand kaufe ich Orangen und Erdbeeren. Die Verkäuferin ist sehr sympathisch. «Woher kommst du?», fragt sie mich. «Ich bin aus Deutschland, ich bin hier im Urlaub», antworte ich. Sie empfiehlt mir die Pfirsiche: «Die sind super süß, probier sie».\n\nDanach möchte ich an einem anderen Stand eine Ledertasche kaufen. Der Verkäufer verlangt dreißig Euro. Das erscheint mir etwas teuer, also versuche ich zu handeln: «Lassen Sie sie mir für zwanzig?». Am Ende zahlen wir fünfundzwanzig und wir sind beide zufrieden.\n\nBevor ich ins Hotel zurückgehe, kaufe ich ein Stück Manchego-Käse und frisch gebackenes Brot. Die Verkäuferin schenkt mir ein paar Oliven zum Probieren. «Bis nächsten Samstag!», sagt sie mit einem Lächeln. Ich glaube, ich komme wieder.",
+  "glossary": [
+    {"es": "el puesto", "de": "der (Markt-)Stand"},
+    {"es": "las aceitunas", "de": "die Oliven"},
+    {"es": "el ambiente", "de": "die Atmosphäre/Stimmung"},
+    {"es": "charlar", "de": "plaudern"},
+    {"es": "el melocotón", "de": "der Pfirsich"},
+    {"es": "dulcísimo", "de": "super süß (Steigerung von dulce)"},
+    {"es": "el cuero", "de": "das Leder"},
+    {"es": "regatear", "de": "handeln/feilschen"},
+    {"es": "¿Me lo deja por…?", "de": "Lassen Sie es mir für…? (beim Handeln)"},
+    {"es": "recién hecho", "de": "frisch gemacht/gebacken"},
+    {"es": "regalar", "de": "schenken"},
+    {"es": "la sonrisa", "de": "das Lächeln"}
+  ],
+  "questions": [
+    {
+      "q": "¿Cuándo va el narrador al mercado?",
+      "options": ["El sábado por la mañana", "El domingo por la tarde", "El viernes por la noche"],
+      "answer": 0,
+      "expl": "Gleich im ersten Satz heißt es: „Es sábado por la mañana y voy al mercado semanal“ — er geht am Samstagmorgen."
+    },
+    {
+      "q": "¿Qué fruta le recomienda la vendedora?",
+      "options": ["Las naranjas", "Los melocotones", "Las fresas"],
+      "answer": 1,
+      "expl": "Die Verkäuferin empfiehlt die Pfirsiche: „Ella me recomienda los melocotones: «Están dulcísimos, pruébalos»“."
+    },
+    {
+      "q": "¿Cuánto paga al final por el bolso de cuero?",
+      "options": ["Veinte euros", "Treinta euros", "Veinticinco euros"],
+      "answer": 2,
+      "expl": "Nach dem Feilschen einigen sie sich: „Al final pagamos veinticinco“ — er zahlt 25 Euro statt der verlangten 30."
+    },
+    {
+      "q": "¿Qué le regala la vendedora de queso?",
+      "options": ["Unas aceitunas", "Un trozo de pan", "Unas fresas"],
+      "answer": 0,
+      "expl": "Im letzten Absatz steht: „La vendedora me regala unas aceitunas para probar“ — sie schenkt ihm Oliven zum Probieren."
+    }
+  ]
+}

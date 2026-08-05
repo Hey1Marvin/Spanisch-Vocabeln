@@ -95,21 +95,21 @@ window.Vamos = window.Vamos || {};
         "</div></div>" +
 
         (c.mastered + c.learning === 0
-          ? '<div class="card"><h2>👋 So funktioniert’s</h2>' +
+          ? '<div class="card"><h2>So funktioniert’s 👋</h2>' +
             '<p class="muted small">1️⃣ <strong>Lernen</strong> zeigt dir neue Karten und fragt fällige ab – ' +
             "bewerte ehrlich, der Rest passiert automatisch (Spaced Repetition).<br>" +
             "2️⃣ Die Einheiten sind nach Wichtigkeit sortiert – einfach oben anfangen.<br>" +
             "3️⃣ 10–15 Minuten täglich schlagen jede Wochenend-Session. 🔥</p></div>"
           : "") +
         '<div class="quick-grid">' +
-        '<a class="quick" href="#/mix"><span class="ico">🔀</span><span class="lbl">Mix-Quiz</span></a>' +
-        '<a class="quick" href="#/listen"><span class="ico">🎧</span><span class="lbl">Hör-Quiz</span></a>' +
-        '<a class="quick" href="#/conj"><span class="ico">🏃</span><span class="lbl">Konjugation</span></a>' +
-        '<a class="quick" href="#/search"><span class="ico">🔍</span><span class="lbl">Suche</span></a>' +
-        '<a class="quick" href="#/tutor"><span class="ico">🤖</span><span class="lbl">KI-Tutor</span></a>' +
-        '<a class="quick" href="#/write"><span class="ico">✍️</span><span class="lbl">Text-Check</span></a>' +
-        '<a class="quick" href="#/dict"><span class="ico">📖</span><span class="lbl">Wörterbuch</span></a>' +
-        '<a class="quick" href="#/verbs"><span class="ico">📊</span><span class="lbl">Verbtabellen</span></a>' +
+        '<a class="quick" href="#/mix"><span class="ico">' + Vamos.icons.svg("shuffle") + '</span><span class="lbl">Mix-Quiz</span></a>' +
+        '<a class="quick" href="#/listen"><span class="ico">' + Vamos.icons.svg("headphones") + '</span><span class="lbl">Hör-Quiz</span></a>' +
+        '<a class="quick" href="#/conj"><span class="ico">' + Vamos.icons.svg("zap") + '</span><span class="lbl">Konjugation</span></a>' +
+        '<a class="quick" href="#/search"><span class="ico">' + Vamos.icons.svg("search") + '</span><span class="lbl">Suche</span></a>' +
+        '<a class="quick" href="#/tutor"><span class="ico">' + Vamos.icons.svg("bot") + '</span><span class="lbl">KI-Tutor</span></a>' +
+        '<a class="quick" href="#/write"><span class="ico">' + Vamos.icons.svg("pen") + '</span><span class="lbl">Text-Check</span></a>' +
+        '<a class="quick" href="#/dict"><span class="ico">' + Vamos.icons.svg("book") + '</span><span class="lbl">Wörterbuch</span></a>' +
+        '<a class="quick" href="#/verbs"><span class="ico">' + Vamos.icons.svg("table") + '</span><span class="lbl">Verbtabellen</span></a>' +
         "</div>" +
 
         '<div class="stat-grid">' +
@@ -184,7 +184,7 @@ window.Vamos = window.Vamos || {};
         html += '<div class="card"><h2>' + esc(PHASES[ph] || "Phase " + ph) + "</h2>" +
           byPhase[ph].map(function (u) { return unitRow(u, srsMap); }).join("") + "</div>";
       });
-      html += '<div class="card"><h2>📥 Downloads</h2>' +
+      html += '<div class="card"><h2>' + Vamos.icons.svg("download") + ' Downloads</h2>' +
         '<p class="muted small">Anki-Dateien: In Anki über „Datei → Importieren“ laden. ' +
         "Erneuter Import aktualisiert die Karten, statt sie zu doppeln.</p>" +
         '<div class="btn-row">' +
@@ -192,7 +192,7 @@ window.Vamos = window.Vamos || {};
         '<button class="btn" id="dlAnkiPhrases">Nur Sätze & Formulierungen (Anki)</button>' +
         '<button class="btn" id="dlCsvAll">Alles als CSV</button>' +
         "</div></div>" +
-        '<div class="card"><h2>🎁 Themen-Pakete</h2>' +
+        '<div class="card"><h2>' + Vamos.icons.svg("gift") + ' Themen-Pakete</h2>' +
         '<p class="muted small">Fertig geschnürte Bündel quer über die Einheiten – z. B. alles rund ums Essen.</p>' +
         THEMES.map(function (t, i) {
           var n = themeCards(t, units).length;
@@ -260,14 +260,14 @@ window.Vamos = window.Vamos || {};
         '<div class="btn-row no-print">' +
         '<a class="btn primary" href="#/quiz/' + id + '">Quiz</a>' +
         '<a class="btn" href="#/type/' + id + '">Tippen</a>' +
-        '<a class="btn" href="#/listen/' + id + '">Hören 🎧</a>' +
-        '<a class="btn" href="#/cloze/' + id + '">Satz-Lücke ✍️</a>' +
-        '<a class="btn" href="#/order/' + id + '">Satzbau 🧩</a>' +
+        '<a class="btn" href="#/listen/' + id + '">Hören</a>' +
+        '<a class="btn" href="#/cloze/' + id + '">Satz-Lücke</a>' +
+        '<a class="btn" href="#/order/' + id + '">Satzbau</a>' +
         "</div>" +
         '<div class="btn-row no-print">' +
-        '<button class="btn small" id="ankiBtn">Anki ⬇</button>' +
-        '<button class="btn small" id="csvBtn">CSV ⬇</button>' +
-        '<button class="btn small" id="printBtn">Drucken 🖨</button>' +
+        '<button class="btn small" id="ankiBtn">Anki</button>' +
+        '<button class="btn small" id="csvBtn">CSV</button>' +
+        '<button class="btn small" id="printBtn">Drucken</button>' +
         "</div></div>" +
         "";
 
@@ -291,7 +291,7 @@ window.Vamos = window.Vamos || {};
       html += '<div class="card"><h2>Vokabeln <span class="muted small">(' + words.length +
         ")</span></h2>" + vocabTable(words) + "</div>";
       if (phrases.length) {
-        html += '<div class="card"><h2>💬 Sätze & Formulierungen <span class="muted small">(' +
+        html += '<div class="card"><h2>' + Vamos.icons.svg("message") + ' Sätze & Formulierungen <span class="muted small">(' +
           phrases.length + ")</span></h2>" + vocabTable(phrases) + "</div>";
       }
       main.innerHTML = html;
@@ -365,7 +365,7 @@ window.Vamos = window.Vamos || {};
         u.words.forEach(function (w) { all.push(w); });
       });
       main.innerHTML =
-        '<div class="card"><h2>🔍 Suche</h2>' +
+        '<div class="card"><h2>' + Vamos.icons.svg("search") + ' Suche</h2>' +
         '<input class="answer-input" id="searchInput" autocomplete="off" ' +
         'placeholder="Spanisch oder Deutsch …">' +
         '<div id="results" style="margin-top:.6rem"></div>' +
@@ -432,7 +432,7 @@ window.Vamos = window.Vamos || {};
   function viewVerbs() {
     var common = ["hablar", "comer", "vivir"].concat(Vamos.conj.irregularVerbs.slice(0, 15));
     main.innerHTML =
-      '<div class="card"><h2>📊 Verbtabellen</h2>' +
+      '<div class="card"><h2>' + Vamos.icons.svg("table") + ' Verbtabellen</h2>' +
       '<p class="muted small">Beliebiges Verb im Infinitiv eingeben – alle 7 Zeitformen. ' +
       "Unregelmäßige Kernverben sind hinterlegt, der Rest wird nach den Regeln gebildet.</p>" +
       '<input class="answer-input" id="verbInput" autocomplete="off" autocapitalize="off" placeholder="z. B. hablar, tener, ir …">' +
@@ -495,7 +495,7 @@ window.Vamos = window.Vamos || {};
       units.forEach(function (u) { u.words.forEach(function (w) { all.push(w); }); });
 
       main.innerHTML =
-        '<div class="card"><h2>📖 Wörterbuch</h2>' +
+        '<div class="card"><h2>' + Vamos.icons.svg("book") + ' Wörterbuch</h2>' +
         '<input class="answer-input" id="dictInput" autocomplete="off" placeholder="Wort auf Deutsch oder Spanisch …">' +
         '<div class="btn-row"><button class="btn primary" id="deEs">DE → ES</button>' +
         '<button class="btn" id="esDe">ES → DE</button></div>' +
@@ -538,25 +538,8 @@ window.Vamos = window.Vamos || {};
           .then(function (r) { return r.json(); })
           .then(function (d) {
             var html = "";
-            if (d.responseData && d.responseData.translatedText) {
-              html += '<div class="feedback ok" style="font-size:1.05rem"><strong>' +
-                esc(d.responseData.translatedText) + "</strong> " +
-                Vamos.quiz.speakBtn(pair === "de|es" ? d.responseData.translatedText : q) + "</div>";
-            }
-            var seen = {};
-            var alts = (d.matches || []).filter(function (m) {
-              var k = (m.translation || "").toLowerCase();
-              if (!k || seen[k] || k === (d.responseData.translatedText || "").toLowerCase()) return false;
-              seen[k] = true;
-              return m.quality >= 50;
-            }).slice(0, 4);
-            if (alts.length) {
-              html += '<p class="muted small">Alternativen: ' + alts.map(function (m) {
-                return esc(m.translation);
-              }).join(" · ") + "</p>";
-            }
             if (hits.length) {
-              html += '<h3 style="margin-top:.8rem">Aus deinen Vokabeln</h3>' +
+              html += '<h3 style="margin-top:.4rem">Aus deinen Vokabeln ⭐</h3>' +
                 hits.map(function (w) {
                   var meta = Vamos.data.unitMeta(w.unitId) || {};
                   return '<div class="search-hit">' + (w.emoji ? esc(w.emoji) + " " : "") +
@@ -564,6 +547,21 @@ window.Vamos = window.Vamos || {};
                     '<span class="muted">' + esc(w.de) + "</span>" +
                     '<a class="unit" href="#/unit/' + esc(w.unitId) + '">' + esc(meta.title || "") + "</a></div>";
                 }).join("");
+            }
+            var seen = {};
+            var alts = (d.matches || []).filter(function (m) {
+              var k = (m.translation || "").toLowerCase();
+              if (!k || seen[k]) return false;
+              seen[k] = true;
+              return m.quality >= 50;
+            }).slice(0, 5);
+            if (d.responseData && d.responseData.translatedText) {
+              html += '<h3 style="margin-top:.8rem">Online-Übersetzung <span class="muted small">(MyMemory, ohne Gewähr)</span></h3>' +
+                '<div class="feedback ok"><strong>' + esc(d.responseData.translatedText) + "</strong> " +
+                Vamos.quiz.speakBtn(pair === "de|es" ? d.responseData.translatedText : q) +
+                (alts.length > 1 ? '<br><span class="small">Auch: ' + alts.slice(1).map(function (m) {
+                  return esc(m.translation);
+                }).join(" · ") + "</span>" : "") + "</div>";
             }
             out.innerHTML = html || '<p class="muted small">Nichts gefunden.</p>';
             Vamos.quiz.bindSpeak(out);
@@ -589,7 +587,7 @@ window.Vamos = window.Vamos || {};
   function aiConfigCard() {
     var cfg = Vamos.tutor.aiConfig();
     return '<div class="card" id="aiCfg"' + (cfg.key ? ' style="display:none"' : "") + ">" +
-      "<h2>🔑 KI-Zugang einrichten</h2>" +
+      '<h2>' + Vamos.icons.svg("key") + ' KI-Zugang einrichten</h2>' +
       '<p class="muted small">Dein API-Key wird <strong>nur in diesem Browser</strong> gespeichert – ' +
       "nie auf GitHub, nie im Backup. Du brauchst einen Key von Anthropic (console.anthropic.com) " +
       "oder OpenAI (platform.openai.com).</p>" +
@@ -622,7 +620,7 @@ window.Vamos = window.Vamos || {};
 
   function viewTutor() {
     var html = aiConfigCard() +
-      '<div class="card"><h2>🤖 KI-Tutor <button class="btn small" id="aiCfgToggle" style="float:right">🔑</button></h2>' +
+      '<div class="card"><h2>' + Vamos.icons.svg("bot") + ' KI-Tutor <button class="btn small" id="aiCfgToggle" style="float:right">' + Vamos.icons.svg("key") + '</button></h2>' +
       '<p class="muted small">Wähle ein Szenario und sprich (schreib) Spanisch – der Tutor antwortet, ' +
       "korrigiert deine Fehler und hält das Gespräch am Laufen. Tippe <strong>?</strong> für einen Hinweis.</p>" +
       '<div id="scenarios">' + Vamos.tutor.SCENARIOS.map(function (s, i) {
@@ -709,7 +707,7 @@ window.Vamos = window.Vamos || {};
 
   function viewWrite() {
     main.innerHTML = aiConfigCard() +
-      '<div class="card"><h2>✍️ Text-Check <button class="btn small" id="aiCfgToggle" style="float:right">🔑</button></h2>' +
+      '<div class="card"><h2>' + Vamos.icons.svg("pen") + ' Text-Check <button class="btn small" id="aiCfgToggle" style="float:right">' + Vamos.icons.svg("key") + '</button></h2>' +
       '<p class="muted small">Schreib einen Text auf Spanisch (Tagebuch, E-Mail, Urlaubsbericht …) – ' +
       "die KI korrigiert ihn und erklärt jeden Fehler auf Deutsch.</p>" +
       '<textarea class="answer-input" id="writeText" rows="7" placeholder="Hoy he visitado la catedral y después…"></textarea>' +
@@ -743,7 +741,7 @@ window.Vamos = window.Vamos || {};
     loading();
     Vamos.data.loadManifest().then(function (m) {
       var results = Vamos.store.grammar();
-      var html = '<div class="card"><h2>📖 Grammatik</h2>' +
+      var html = '<div class="card"><h2>' + Vamos.icons.svg("cap") + ' Grammatik</h2>' +
         m.grammar.map(function (g) {
           var r = results[g.id];
           return '<a class="unit-row" href="#/grammar/' + g.id + '">' +
@@ -841,7 +839,7 @@ window.Vamos = window.Vamos || {};
     var s = Vamos.store.settings();
     var voices = Vamos.audio.spanishVoices();
     var html =
-      '<div class="card"><h2>⚙️ Einstellungen</h2>' +
+      '<div class="card"><h2>' + Vamos.icons.svg("sliders") + ' Einstellungen</h2>' +
       '<label class="setting">Design</label>' +
       '<select id="setTheme">' +
       '<option value="auto"' + (s.theme === "auto" ? " selected" : "") + ">Automatisch (System)</option>" +
@@ -868,9 +866,9 @@ window.Vamos = window.Vamos || {};
       '<label class="setting">Sprechtempo: <span id="rateVal">' + s.speechRate + "</span></label>" +
       '<input type="range" id="setRate" min="0.5" max="1.2" step="0.1" value="' + s.speechRate + '" style="width:100%">' +
       '<div class="btn-row" style="margin-top:1rem">' +
-      '<button class="btn small" id="testVoice">🔊 Stimme testen</button></div>' +
+      '<button class="btn small" id="testVoice">Stimme testen</button></div>' +
       "</div>" +
-      '<div class="card"><h2>💾 Backup</h2>' +
+      '<div class="card"><h2>' + Vamos.icons.svg("download") + ' Backup</h2>' +
       '<p class="muted small">Dein Fortschritt liegt nur in diesem Browser. Exportiere regelmäßig ein Backup, ' +
       "z. B. vor einem Gerätewechsel.</p>" +
       '<div class="btn-row">' +
@@ -878,7 +876,7 @@ window.Vamos = window.Vamos || {};
       '<button class="btn" id="importBtn">Backup importieren</button>' +
       '<input type="file" id="importFile" accept=".json" style="display:none">' +
       "</div></div>" +
-      '<div class="card"><h2>🗑 Zurücksetzen</h2>' +
+      '<div class="card"><h2>Zurücksetzen</h2>' +
       '<p class="muted small">Löscht den kompletten Lernfortschritt auf diesem Gerät.</p>' +
       '<button class="btn" id="resetBtn" style="color:var(--accent)">Fortschritt löschen …</button></div>' +
       '<p class="muted small" style="text-align:center">¡Vamos! · <a href="https://github.com/Hey1Marvin/Spanisch-Vocabeln">GitHub</a></p>';

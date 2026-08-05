@@ -1,0 +1,48 @@
+{
+  "id": "r07",
+  "title": "En la peluquería",
+  "emoji": "💈",
+  "level": "B1",
+  "text": "En Alemania trabajo como peluquero, por eso me encanta visitar peluquerías cuando viajo. Ayer entré en un salón pequeño en el centro de Sevilla. Quería cortarme el pelo y, sobre todo, charlar un rato con un colega español.\n\nEl peluquero se llamaba Antonio y llevaba más de veinte años en el oficio. «¿Cómo lo quieres?», me preguntó. «Corto por los lados, con tijera por arriba, y el flequillo un poco más ligero», le expliqué. Antonio sonrió: «Se nota que eres del gremio».\n\nMientras me cortaba el pelo, hablamos de nuestro trabajo: de los productos, de las tendencias y de los clientes difíciles. Me enseñó sus tijeras japonesas y me recomendó una cera para peinar que usan mucho en España.\n\nAl final me miré en el espejo: el corte era perfecto. Le dejé una buena propina y nos despedimos como amigos. «Cuando vengas a Alemania, te corto yo el pelo», le prometí.",
+  "textDe": "In Deutschland arbeite ich als Friseur, deshalb liebe ich es, auf Reisen Friseursalons zu besuchen. Gestern betrat ich einen kleinen Salon im Zentrum von Sevilla. Ich wollte mir die Haare schneiden lassen und vor allem ein wenig mit einem spanischen Kollegen fachsimpeln.\n\nDer Friseur hieß Antonio und war seit über zwanzig Jahren im Beruf. «Wie möchtest du ihn?», fragte er mich. «An den Seiten kurz, oben mit der Schere, und den Pony etwas leichter», erklärte ich ihm. Antonio lächelte: «Man merkt, dass du vom Fach bist».\n\nWährend er mir die Haare schnitt, sprachen wir über unsere Arbeit: über Produkte, Trends und schwierige Kunden. Er zeigte mir seine japanischen Scheren und empfahl mir ein Stylingwachs, das in Spanien viel benutzt wird.\n\nAm Ende schaute ich in den Spiegel: Der Schnitt war perfekt. Ich gab ihm ein gutes Trinkgeld und wir verabschiedeten uns wie Freunde. «Wenn du nach Deutschland kommst, schneide ich dir die Haare», versprach ich ihm.",
+  "glossary": [
+    {"es": "el peluquero / la peluquería", "de": "der Friseur / der Friseursalon"},
+    {"es": "cortarse el pelo", "de": "sich die Haare schneiden (lassen)"},
+    {"es": "el oficio", "de": "das Handwerk/der Beruf"},
+    {"es": "las tijeras", "de": "die Schere"},
+    {"es": "el flequillo", "de": "der Pony"},
+    {"es": "ligero", "de": "leicht (hier: ausgedünnt)"},
+    {"es": "ser del gremio", "de": "vom Fach sein"},
+    {"es": "la tendencia", "de": "der Trend"},
+    {"es": "la cera para peinar", "de": "das Stylingwachs"},
+    {"es": "el corte (de pelo)", "de": "der (Haar-)Schnitt"},
+    {"es": "la propina", "de": "das Trinkgeld"},
+    {"es": "despedirse", "de": "sich verabschieden"}
+  ],
+  "questions": [
+    {
+      "q": "¿Por qué le gusta al narrador visitar peluquerías cuando viaja?",
+      "options": ["Porque es peluquero en Alemania", "Porque tiene el pelo muy largo", "Porque busca trabajo en España"],
+      "answer": 0,
+      "expl": "Der erste Satz erklärt es: „En Alemania trabajo como peluquero, por eso me encanta visitar peluquerías cuando viajo“ — er ist selbst Friseur."
+    },
+    {
+      "q": "¿Cómo quiere el corte el narrador?",
+      "options": ["Todo muy corto con máquina", "Corto por los lados y con tijera por arriba", "Solo lavar y peinar"],
+      "answer": 1,
+      "expl": "Er bestellt genau: „Corto por los lados, con tijera por arriba, y el flequillo un poco más ligero“ — seitlich kurz, oben mit der Schere."
+    },
+    {
+      "q": "¿Qué le recomienda Antonio?",
+      "options": ["Un champú alemán", "Un tinte nuevo", "Una cera para peinar"],
+      "answer": 2,
+      "expl": "Im dritten Absatz: „me recomendó una cera para peinar que usan mucho en España“ — ein Stylingwachs."
+    },
+    {
+      "q": "¿Qué hace el narrador al final de la visita?",
+      "options": ["Se queja del corte", "Deja una buena propina", "Compra unas tijeras japonesas"],
+      "answer": 1,
+      "expl": "Im letzten Absatz steht: „Le dejé una buena propina y nos despedimos como amigos“ — er ist zufrieden und gibt ein gutes Trinkgeld."
+    }
+  ]
+}

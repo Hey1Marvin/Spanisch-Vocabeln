@@ -1,0 +1,48 @@
+{
+  "id": "r08",
+  "title": "La fiesta del pueblo",
+  "emoji": "🎉",
+  "level": "B1",
+  "text": "Esta semana se celebran las fiestas del pueblo donde paso mis vacaciones. Anoche, mientras cenaba en la plaza, mis vecinos Carmen y Paco me invitaron a acompañarlos. «¡No puedes quedarte en el hotel, esto hay que vivirlo!», me dijo Carmen entre risas.\n\nLa plaza estaba llena de gente de todas las edades. Una orquesta tocaba pasodobles y canciones del verano, y todo el mundo bailaba. Había puestos con bocadillos, churros y vino de la tierra. Paco me trajo una tapa de jamón: «Prueba esto, es de aquí».\n\nA medianoche brindamos con los vecinos. «¡Salud y buenas fiestas!», gritamos todos juntos. Luego hubo fuegos artificiales sobre la iglesia y el cielo se llenó de colores. La gente aplaudía y los niños miraban con la boca abierta.\n\nVolví al hotel a las tres de la madrugada, cansado y contento. Hoy Carmen me ha invitado a la comida popular en la plaza. Creo que esta fiesta es lo mejor de mis vacaciones.",
+  "textDe": "Diese Woche wird das Dorffest in dem Ort gefeiert, wo ich meinen Urlaub verbringe. Gestern Abend, während ich auf dem Platz zu Abend aß, luden mich meine Nachbarn Carmen und Paco ein, sie zu begleiten. «Du kannst nicht im Hotel bleiben, das muss man erleben!», sagte Carmen lachend zu mir.\n\nDer Platz war voller Menschen jeden Alters. Eine Festkapelle spielte Pasodobles und Sommerhits, und alle tanzten. Es gab Stände mit belegten Brötchen, Churros und Wein aus der Gegend. Paco brachte mir eine Tapa mit Schinken: «Probier das, der ist von hier».\n\nUm Mitternacht stießen wir mit den Nachbarn an. «Zum Wohl und schöne Fiestas!», riefen wir alle zusammen. Danach gab es ein Feuerwerk über der Kirche und der Himmel füllte sich mit Farben. Die Leute applaudierten und die Kinder schauten mit offenem Mund zu.\n\nIch kam um drei Uhr morgens ins Hotel zurück, müde und zufrieden. Heute hat Carmen mich zum Gemeinschaftsessen auf dem Platz eingeladen. Ich glaube, dieses Fest ist das Beste an meinem Urlaub.",
+  "glossary": [
+    {"es": "las fiestas del pueblo", "de": "das Dorffest"},
+    {"es": "acompañar", "de": "begleiten"},
+    {"es": "entre risas", "de": "lachend/unter Gelächter"},
+    {"es": "la orquesta", "de": "die Festkapelle/das Orchester"},
+    {"es": "el pasodoble", "de": "der Pasodoble (spanische Musik/Tanz)"},
+    {"es": "el bocadillo", "de": "das belegte Brötchen"},
+    {"es": "el vino de la tierra", "de": "der Wein aus der Gegend/Landwein"},
+    {"es": "brindar", "de": "anstoßen"},
+    {"es": "¡Salud!", "de": "Zum Wohl!/Prost!"},
+    {"es": "los fuegos artificiales", "de": "das Feuerwerk"},
+    {"es": "la madrugada", "de": "die frühen Morgenstunden"},
+    {"es": "la comida popular", "de": "das Gemeinschaftsessen (beim Dorffest)"}
+  ],
+  "questions": [
+    {
+      "q": "¿Quién invita al narrador a la fiesta?",
+      "options": ["El recepcionista del hotel", "Sus vecinos Carmen y Paco", "Un camarero de la plaza"],
+      "answer": 1,
+      "expl": "Im ersten Absatz steht: „mis vecinos Carmen y Paco me invitaron a acompañarlos“ — seine Nachbarn laden ihn ein."
+    },
+    {
+      "q": "¿Qué le trae Paco para probar?",
+      "options": ["Una tapa de jamón", "Un plato de churros", "Un bocadillo de queso"],
+      "answer": 0,
+      "expl": "Paco bringt ihm eine Tapa: „Paco me trajo una tapa de jamón: «Prueba esto, es de aquí»“."
+    },
+    {
+      "q": "¿Qué pasa a medianoche?",
+      "options": ["Termina la fiesta", "Empieza un concierto de rock", "Brindan y hay fuegos artificiales"],
+      "answer": 2,
+      "expl": "Im dritten Absatz: „A medianoche brindamos con los vecinos“ und danach „hubo fuegos artificiales sobre la iglesia“ — anstoßen und Feuerwerk."
+    },
+    {
+      "q": "¿A qué le ha invitado Carmen hoy?",
+      "options": ["A la comida popular en la plaza", "A un paseo por la playa", "A ver un partido de fútbol"],
+      "answer": 0,
+      "expl": "Am Ende heißt es: „Hoy Carmen me ha invitado a la comida popular en la plaza“ — zum Gemeinschaftsessen auf dem Platz."
+    }
+  ]
+}
