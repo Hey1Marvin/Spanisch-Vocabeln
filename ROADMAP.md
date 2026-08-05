@@ -28,7 +28,7 @@ Abhaken, was fertig im Repo ist. Hintergründe: [docs/RESEARCH.md](docs/RESEARCH
 
 ## Phase 3 – Konversation (B1)
 
-- [ ] **U13 Smalltalk & Kennenlernen** – über sich erzählen, nachfragen, reagieren
+- [x] **U13 Smalltalk & Kennenlernen** – über sich erzählen, nachfragen, reagieren
 - [x] **U14 Familie & Personen beschreiben** – Aussehen, Charakter, Beziehungen
 - [x] **U15 Freizeit, Hobbys & Sport**
 - [x] **U16 Wetter & Jahreszeiten**

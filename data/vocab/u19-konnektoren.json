@@ -1,0 +1,358 @@
+{
+  "id": "u19",
+  "title": "Konnektoren & Füllwörter",
+  "words": [
+    {
+      "es": "bueno",
+      "de": "na ja / also / nun",
+      "emoji": "💬",
+      "ex": "Bueno, ¿y ahora qué hacemos?",
+      "exDe": "Na ja, und was machen wir jetzt?"
+    },
+    {
+      "es": "pues",
+      "de": "tja / na / also",
+      "ex": "Pues no sé, la verdad.",
+      "exDe": "Tja, ich weiß es ehrlich gesagt nicht."
+    },
+    {
+      "es": "es que",
+      "de": "es ist nämlich so, dass … / nämlich",
+      "emoji": "🙈",
+      "ex": "Es que no me encuentro muy bien hoy.",
+      "exDe": "Es ist nämlich so, dass ich mich heute nicht sehr gut fühle."
+    },
+    {
+      "es": "o sea",
+      "de": "also / das heißt",
+      "ex": "El tren sale a las ocho, o sea, tenemos que salir ya.",
+      "exDe": "Der Zug fährt um acht, das heißt, wir müssen jetzt los."
+    },
+    {
+      "es": "en fin",
+      "de": "na ja / kurzum",
+      "emoji": "🤷",
+      "ex": "En fin, así es la vida.",
+      "exDe": "Na ja, so ist das Leben."
+    },
+    {
+      "es": "total que",
+      "de": "kurz gesagt / jedenfalls (beim Erzählen)",
+      "ex": "Total que perdimos el tren y llegamos tardísimo.",
+      "exDe": "Kurz gesagt, wir haben den Zug verpasst und kamen viel zu spät an."
+    },
+    {
+      "es": "por eso",
+      "de": "deshalb / darum",
+      "emoji": "👉",
+      "ex": "Había huelga, por eso no vine ayer.",
+      "exDe": "Es gab Streik, deshalb bin ich gestern nicht gekommen."
+    },
+    {
+      "es": "sin embargo",
+      "de": "jedoch / dennoch",
+      "ex": "El hotel es caro; sin embargo, merece la pena.",
+      "exDe": "Das Hotel ist teuer; dennoch lohnt es sich."
+    },
+    {
+      "es": "aunque",
+      "de": "obwohl / auch wenn",
+      "ex": "Vamos a la playa aunque haga un poco de frío.",
+      "exDe": "Wir gehen an den Strand, auch wenn es ein bisschen kalt ist."
+    },
+    {
+      "es": "además",
+      "de": "außerdem",
+      "emoji": "➕",
+      "ex": "El piso es bonito y, además, está en el centro.",
+      "exDe": "Die Wohnung ist schön und liegt außerdem im Zentrum."
+    },
+    {
+      "es": "entonces",
+      "de": "dann / also",
+      "ex": "¿No te gusta? Entonces pedimos otra cosa.",
+      "exDe": "Es schmeckt dir nicht? Dann bestellen wir etwas anderes."
+    },
+    {
+      "es": "mientras tanto",
+      "de": "währenddessen / inzwischen",
+      "emoji": "⏳",
+      "ex": "Tú haces la maleta; mientras tanto, yo pido un taxi.",
+      "exDe": "Du packst den Koffer; währenddessen bestelle ich ein Taxi."
+    },
+    {
+      "es": "de repente",
+      "de": "plötzlich",
+      "emoji": "⚡",
+      "ex": "Íbamos tan tranquilos y, de repente, empezó a llover.",
+      "exDe": "Wir liefen ganz entspannt, und plötzlich fing es an zu regnen."
+    },
+    {
+      "es": "por cierto",
+      "de": "übrigens",
+      "emoji": "💡",
+      "ex": "Por cierto, ¿ya tienes los billetes?",
+      "exDe": "Übrigens, hast du schon die Tickets?"
+    },
+    {
+      "es": "la verdad es que",
+      "de": "ehrlich gesagt / um ehrlich zu sein",
+      "type": "phrase",
+      "ex": "La verdad es que estoy un poco cansado.",
+      "exDe": "Ehrlich gesagt bin ich ein bisschen müde."
+    },
+    {
+      "es": "a ver",
+      "de": "mal sehen / schauen wir mal",
+      "type": "phrase",
+      "emoji": "👀",
+      "ex": "A ver, enséñame el mapa.",
+      "exDe": "Mal sehen, zeig mir die Karte."
+    },
+    {
+      "es": "vale",
+      "de": "okay / in Ordnung (Spanien)",
+      "emoji": "👌",
+      "ex": "Nos vemos a las nueve, ¿vale?",
+      "exDe": "Wir sehen uns um neun, okay?"
+    },
+    {
+      "es": "¡hombre!",
+      "de": "Mensch! / na klar! (Ausruf; zu Frauen auch ¡mujer!)",
+      "type": "phrase",
+      "emoji": "😄",
+      "ex": "¡Hombre, cuánto tiempo sin verte!",
+      "exDe": "Mensch, wie lange haben wir uns nicht gesehen!"
+    },
+    {
+      "es": "¡qué va!",
+      "de": "ach was! / von wegen!",
+      "type": "phrase",
+      "emoji": "🙅",
+      "ex": "¿Que si fue caro? ¡Qué va, costó diez euros!",
+      "exDe": "Ob es teuer war? Ach was, es hat zehn Euro gekostet!"
+    },
+    {
+      "es": "¡menos mal!",
+      "de": "zum Glück! / Gott sei Dank!",
+      "type": "phrase",
+      "emoji": "😅",
+      "ex": "¡Menos mal que trajiste el paraguas!",
+      "exDe": "Zum Glück hast du den Regenschirm mitgebracht!"
+    },
+    {
+      "es": "en realidad",
+      "de": "eigentlich / in Wirklichkeit",
+      "ex": "En realidad no soy de Madrid, soy de Toledo.",
+      "exDe": "Eigentlich bin ich nicht aus Madrid, ich bin aus Toledo."
+    },
+    {
+      "es": "de todas formas",
+      "de": "jedenfalls / trotzdem / wie auch immer",
+      "ex": "Está un poco lejos, pero de todas formas quiero ir.",
+      "exDe": "Es ist etwas weit weg, aber ich will trotzdem hin."
+    },
+    {
+      "es": "por lo menos",
+      "de": "wenigstens / zumindest",
+      "ex": "El vuelo se retrasó, pero por lo menos no perdimos la conexión.",
+      "exDe": "Der Flug hatte Verspätung, aber wenigstens haben wir den Anschluss nicht verpasst."
+    },
+    {
+      "es": "sobre todo",
+      "de": "vor allem",
+      "emoji": "⭐",
+      "ex": "Me encanta España, sobre todo el norte.",
+      "exDe": "Ich liebe Spanien, vor allem den Norden."
+    },
+    {
+      "es": "es decir",
+      "de": "das heißt / mit anderen Worten",
+      "ex": "Llega el martes, es decir, pasado mañana.",
+      "exDe": "Er kommt am Dienstag an, das heißt übermorgen."
+    },
+    {
+      "es": "así que",
+      "de": "also / daher (Folge)",
+      "ex": "No quedaban entradas, así que fuimos a otro sitio.",
+      "exDe": "Es gab keine Tickets mehr, also sind wir woanders hingegangen."
+    },
+    {
+      "es": "ya que",
+      "de": "da / wo … schon mal",
+      "ex": "Ya que estamos aquí, ¿probamos las tapas?",
+      "exDe": "Wo wir schon mal hier sind, probieren wir die Tapas?"
+    },
+    {
+      "es": "en cambio",
+      "de": "dagegen / hingegen",
+      "emoji": "⚖️",
+      "ex": "Yo prefiero la playa; mi mujer, en cambio, la montaña.",
+      "exDe": "Ich mag lieber den Strand; meine Frau dagegen die Berge."
+    },
+    {
+      "es": "¡claro que sí!",
+      "de": "na klar! / aber sicher!",
+      "type": "phrase",
+      "emoji": "✅",
+      "ex": "¿Me ayudas con esto? — ¡Claro que sí!",
+      "exDe": "Hilfst du mir damit? — Na klar!"
+    },
+    {
+      "es": "digamos",
+      "de": "sagen wir mal",
+      "ex": "Es, digamos, un hotel sencillo pero limpio.",
+      "exDe": "Es ist, sagen wir mal, ein einfaches, aber sauberes Hotel."
+    },
+    {
+      "es": "bueno, pues nada",
+      "de": "na dann / also gut (Gesprächsabschluss)",
+      "type": "phrase",
+      "emoji": "👋",
+      "ex": "Bueno, pues nada, nos vemos mañana.",
+      "exDe": "Na dann, wir sehen uns morgen."
+    },
+    {
+      "es": "por supuesto",
+      "de": "selbstverständlich / natürlich",
+      "emoji": "👍",
+      "ex": "¿Puedo pagar con tarjeta? — Por supuesto.",
+      "exDe": "Kann ich mit Karte zahlen? — Selbstverständlich."
+    },
+    {
+      "es": "desde luego",
+      "de": "auf jeden Fall / allerdings",
+      "ex": "Desde luego, este restaurante merece la pena.",
+      "exDe": "Auf jeden Fall lohnt sich dieses Restaurant."
+    },
+    {
+      "es": "a lo mejor",
+      "de": "vielleicht (umgangssprachlich)",
+      "emoji": "🤔",
+      "ex": "A lo mejor mañana vamos en barco a la isla.",
+      "exDe": "Vielleicht fahren wir morgen mit dem Boot zur Insel."
+    },
+    {
+      "es": "de hecho",
+      "de": "tatsächlich / sogar",
+      "ex": "Conozco Sevilla; de hecho, viví allí dos años.",
+      "exDe": "Ich kenne Sevilla; tatsächlich habe ich zwei Jahre dort gelebt."
+    },
+    {
+      "es": "en cuanto a",
+      "de": "was … betrifft",
+      "ex": "En cuanto al precio, me parece razonable.",
+      "exDe": "Was den Preis betrifft, finde ich ihn vernünftig."
+    },
+    {
+      "es": "de verdad",
+      "de": "wirklich / echt",
+      "emoji": "💯",
+      "ex": "De verdad, la paella estaba buenísima.",
+      "exDe": "Wirklich, die Paella war superlecker."
+    },
+    {
+      "es": "en serio",
+      "de": "im Ernst / ernsthaft",
+      "ex": "¿En serio te vas a bañar en febrero?",
+      "exDe": "Im Ernst, du willst im Februar baden gehen?"
+    },
+    {
+      "es": "¿sabes?",
+      "de": "weißt du? (Füllwort am Satzende)",
+      "type": "phrase",
+      "ex": "Este barrio me encanta, ¿sabes?",
+      "exDe": "Dieses Viertel gefällt mir total, weißt du?"
+    },
+    {
+      "es": "¿verdad?",
+      "de": "nicht wahr? / oder?",
+      "type": "phrase",
+      "emoji": "🤝",
+      "ex": "Tú también vienes mañana, ¿verdad?",
+      "exDe": "Du kommst morgen auch mit, oder?"
+    },
+    {
+      "es": "¡venga!",
+      "de": "los! / na komm! / bis dann! (Spanien)",
+      "type": "phrase",
+      "emoji": "💪",
+      "ex": "¡Venga, que perdemos el autobús!",
+      "exDe": "Na komm, wir verpassen sonst den Bus!"
+    },
+    {
+      "es": "¡anda!",
+      "de": "na sowas! / ach komm!",
+      "type": "phrase",
+      "emoji": "😮",
+      "ex": "¡Anda! ¿Tú por aquí?",
+      "exDe": "Na sowas! Du hier?"
+    },
+    {
+      "es": "fíjate",
+      "de": "stell dir vor / schau mal",
+      "type": "phrase",
+      "ex": "Fíjate, hoy el museo es gratis.",
+      "exDe": "Stell dir vor, heute ist das Museum gratis."
+    },
+    {
+      "es": "o algo así",
+      "de": "oder so ähnlich / oder so",
+      "ex": "El pueblo se llama Frigiliana o algo así.",
+      "exDe": "Das Dorf heißt Frigiliana oder so ähnlich."
+    },
+    {
+      "es": "es más",
+      "de": "mehr noch / ja sogar",
+      "ex": "Me gusta la idea; es más, la encuentro genial.",
+      "exDe": "Mir gefällt die Idee; mehr noch, ich finde sie genial."
+    },
+    {
+      "es": "sin duda",
+      "de": "zweifellos / ohne Zweifel",
+      "emoji": "🎯",
+      "ex": "Es, sin duda, la mejor playa de la zona.",
+      "exDe": "Das ist zweifellos der beste Strand der Gegend."
+    },
+    {
+      "es": "por si acaso",
+      "de": "für alle Fälle / sicherheitshalber",
+      "emoji": "🎒",
+      "ex": "Llévate una chaqueta, por si acaso.",
+      "exDe": "Nimm eine Jacke mit, für alle Fälle."
+    },
+    {
+      "es": "igual",
+      "de": "vielleicht / womöglich (Spanien, umgangssprachlich)",
+      "ex": "Igual llegamos antes si vamos andando.",
+      "exDe": "Vielleicht sind wir schneller da, wenn wir zu Fuß gehen."
+    },
+    {
+      "es": "en el fondo",
+      "de": "im Grunde",
+      "ex": "Parece serio, pero en el fondo es muy simpático.",
+      "exDe": "Er wirkt ernst, aber im Grunde ist er sehr sympathisch."
+    },
+    {
+      "es": "¡ni hablar!",
+      "de": "kommt nicht in Frage!",
+      "type": "phrase",
+      "emoji": "🚫",
+      "ex": "¿Pagar cien euros por esto? ¡Ni hablar!",
+      "exDe": "Hundert Euro dafür zahlen? Kommt nicht in Frage!"
+    },
+    {
+      "es": "pues eso",
+      "de": "eben / genau das (sag ich ja)",
+      "type": "phrase",
+      "ex": "Es carísimo… pues eso, mejor buscamos otro sitio.",
+      "exDe": "Es ist superteuer … eben, besser suchen wir was anderes."
+    },
+    {
+      "es": "vamos",
+      "de": "also / na ja (Füllwort, relativierend)",
+      "ex": "Es un hotel normal, vamos, nada especial.",
+      "exDe": "Es ist ein normales Hotel, also nichts Besonderes."
+    }
+  ]
+}

@@ -122,6 +122,16 @@
       "desc": "Strandtag, Wanderung, Bootstour: alles für die schönsten Stunden des Urlaubs."
     },
     {
+      "id": "u13",
+      "file": "data/vocab/u13-smalltalk.json",
+      "title": "Smalltalk & Kennenlernen",
+      "emoji": "💬",
+      "phase": 3,
+      "rank": 13,
+      "level": "A2/B1",
+      "desc": "Über dich erzählen, nachfragen, reagieren – so kommst du ins Gespräch."
+    },
+    {
       "id": "u14",
       "file": "data/vocab/u14-familie-personen.json",
       "title": "Familie & Personen beschreiben",
@@ -170,6 +180,16 @@
       "rank": 18,
       "level": "B1",
       "desc": "Beruf, Tagesablauf, Alltag – von dir erzählen wie im echten Gespräch."
+    },
+    {
+      "id": "u19",
+      "file": "data/vocab/u19-konnektoren.json",
+      "title": "Konnektoren & Füllwörter",
+      "emoji": "🔗",
+      "phase": 3,
+      "rank": 19,
+      "level": "B1",
+      "desc": "Bueno, pues, es que … – der größte Hebel, um sofort flüssiger zu klingen."
     },
     {
       "id": "u20",

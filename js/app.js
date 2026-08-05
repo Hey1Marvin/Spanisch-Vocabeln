@@ -674,7 +674,18 @@ window.Vamos = window.Vamos || {};
     Vamos.ui.applyTheme(Vamos.store.settings().theme);
     route();
     if ("serviceWorker" in navigator && location.protocol !== "file:") {
-      navigator.serviceWorker.register("sw.js").catch(function () {});
+      navigator.serviceWorker.register("sw.js").then(function (reg) {
+        reg.update();
+      }).catch(function () {});
+      // Neuer Worker übernimmt → einmal neu laden, damit sofort die neue Version läuft
+      var hadController = !!navigator.serviceWorker.controller;
+      var reloaded = false;
+      navigator.serviceWorker.addEventListener("controllerchange", function () {
+        if (!hadController) { hadController = true; return; }
+        if (reloaded) return;
+        reloaded = true;
+        location.reload();
+      });
     }
   });
 })();

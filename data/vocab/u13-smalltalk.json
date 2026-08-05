@@ -1,0 +1,359 @@
+{
+  "id": "u13",
+  "title": "Smalltalk & Kennenlernen",
+  "words": [
+    {
+      "es": "presentarse",
+      "de": "sich vorstellen",
+      "emoji": "🙋",
+      "ex": "¿Puedo presentarme? Soy Jonas.",
+      "exDe": "Darf ich mich vorstellen? Ich bin Jonas."
+    },
+    {
+      "es": "el nombre",
+      "de": "der Name",
+      "ex": "¿Me apuntas tu nombre aquí?",
+      "exDe": "Schreibst du mir deinen Namen hier auf?"
+    },
+    {
+      "es": "el apellido",
+      "de": "der Nachname",
+      "ex": "Mi apellido es Schmidt, es alemán.",
+      "exDe": "Mein Nachname ist Schmidt, er ist deutsch."
+    },
+    {
+      "es": "nacer",
+      "de": "geboren werden",
+      "emoji": "👶",
+      "ex": "Nací en Colonia, pero vivo en Berlín.",
+      "exDe": "Ich bin in Köln geboren, aber ich wohne in Berlin."
+    },
+    {
+      "es": "la ciudad natal",
+      "de": "die Heimatstadt",
+      "emoji": "🏙️",
+      "ex": "Hamburgo es mi ciudad natal.",
+      "exDe": "Hamburg ist meine Heimatstadt."
+    },
+    {
+      "es": "la edad",
+      "de": "das Alter",
+      "ex": "Tenemos casi la misma edad.",
+      "exDe": "Wir sind fast gleich alt."
+    },
+    {
+      "es": "¿Cuántos años tienes?",
+      "de": "Wie alt bist du?",
+      "emoji": "🎂",
+      "ex": "¿Cuántos años tienes? — Tengo veintinueve.",
+      "exDe": "Wie alt bist du? — Ich bin neunundzwanzig.",
+      "type": "phrase"
+    },
+    {
+      "es": "Tengo treinta años.",
+      "de": "Ich bin dreißig Jahre alt.",
+      "ex": "Tengo treinta años, ¿y tú?",
+      "exDe": "Ich bin dreißig, und du?",
+      "type": "phrase"
+    },
+    {
+      "es": "la profesión",
+      "de": "der Beruf",
+      "ex": "Es una profesión con mucho futuro.",
+      "exDe": "Das ist ein Beruf mit viel Zukunft."
+    },
+    {
+      "es": "dedicarse a",
+      "de": "beruflich tätig sein / arbeiten als",
+      "ex": "Me dedico a la informática.",
+      "exDe": "Ich arbeite in der IT."
+    },
+    {
+      "es": "¿A qué te dedicas?",
+      "de": "Was machst du beruflich?",
+      "emoji": "💼",
+      "ex": "¿A qué te dedicas? — Soy enfermera.",
+      "exDe": "Was machst du beruflich? — Ich bin Krankenschwester.",
+      "type": "phrase"
+    },
+    {
+      "es": "el estudiante / la estudiante",
+      "de": "der Student / die Studentin",
+      "emoji": "🎓",
+      "ex": "Soy estudiante de medicina en Múnich.",
+      "exDe": "Ich bin Medizinstudent in München."
+    },
+    {
+      "es": "jubilado / jubilada",
+      "de": "im Ruhestand / pensioniert",
+      "ex": "Mis padres ya están jubilados.",
+      "exDe": "Meine Eltern sind schon im Ruhestand."
+    },
+    {
+      "es": "casado / casada",
+      "de": "verheiratet",
+      "emoji": "💍",
+      "ex": "¿Estás casado o soltero?",
+      "exDe": "Bist du verheiratet oder ledig?"
+    },
+    {
+      "es": "soltero / soltera",
+      "de": "ledig / Single",
+      "ex": "Sigo soltera y muy feliz.",
+      "exDe": "Ich bin immer noch Single und sehr glücklich."
+    },
+    {
+      "es": "la pareja",
+      "de": "der Partner / die Partnerin",
+      "emoji": "💑",
+      "ex": "He venido con mi pareja.",
+      "exDe": "Ich bin mit meinem Partner / meiner Partnerin gekommen."
+    },
+    {
+      "es": "¿Y tú?",
+      "de": "Und du?",
+      "ex": "Yo trabajo en un hotel, ¿y tú?",
+      "exDe": "Ich arbeite in einem Hotel, und du?",
+      "type": "phrase"
+    },
+    {
+      "es": "¿Primera vez en España?",
+      "de": "Zum ersten Mal in Spanien?",
+      "emoji": "🇪🇸",
+      "ex": "¿Primera vez en España? — No, ya estuve en Madrid hace dos años.",
+      "exDe": "Zum ersten Mal in Spanien? — Nein, ich war schon vor zwei Jahren in Madrid.",
+      "type": "phrase"
+    },
+    {
+      "es": "la primera vez",
+      "de": "das erste Mal",
+      "ex": "Es la primera vez que pruebo la paella.",
+      "exDe": "Es ist das erste Mal, dass ich Paella probiere."
+    },
+    {
+      "es": "¿Cuánto tiempo te quedas?",
+      "de": "Wie lange bleibst du?",
+      "emoji": "📅",
+      "ex": "¿Cuánto tiempo te quedas? — Hasta el domingo.",
+      "exDe": "Wie lange bleibst du? — Bis Sonntag.",
+      "type": "phrase"
+    },
+    {
+      "es": "quedarse",
+      "de": "bleiben",
+      "ex": "Nos quedamos una semana más.",
+      "exDe": "Wir bleiben noch eine Woche."
+    },
+    {
+      "es": "las vacaciones",
+      "de": "der Urlaub / die Ferien",
+      "emoji": "🏖️",
+      "ex": "Estoy aquí de vacaciones, dos semanas.",
+      "exDe": "Ich bin hier im Urlaub, zwei Wochen."
+    },
+    {
+      "es": "el viaje",
+      "de": "die Reise",
+      "emoji": "✈️",
+      "ex": "¿Qué tal el viaje hasta aquí?",
+      "exDe": "Wie war die Reise hierher?"
+    },
+    {
+      "es": "el extranjero",
+      "de": "das Ausland",
+      "ex": "¿Has vivido en el extranjero?",
+      "exDe": "Hast du im Ausland gelebt?"
+    },
+    {
+      "es": "¡No me digas!",
+      "de": "Was du nicht sagst! / Nicht dein Ernst!",
+      "emoji": "😲",
+      "ex": "¡No me digas! ¿Y qué pasó después?",
+      "exDe": "Nicht dein Ernst! Und was ist dann passiert?",
+      "type": "phrase"
+    },
+    {
+      "es": "¿En serio?",
+      "de": "Im Ernst? / Wirklich?",
+      "emoji": "😮",
+      "ex": "¿En serio? ¡Qué casualidad!",
+      "exDe": "Im Ernst? Was für ein Zufall!",
+      "type": "phrase"
+    },
+    {
+      "es": "¡Qué interesante!",
+      "de": "Wie interessant!",
+      "ex": "¿Eres fotógrafo? ¡Qué interesante!",
+      "exDe": "Du bist Fotograf? Wie interessant!",
+      "type": "phrase"
+    },
+    {
+      "es": "¡Qué suerte!",
+      "de": "Was für ein Glück! / Du Glückspilz!",
+      "emoji": "🍀",
+      "ex": "¿Un mes entero en Andalucía? ¡Qué suerte!",
+      "exDe": "Ein ganzer Monat in Andalusien? Was für ein Glück!",
+      "type": "phrase"
+    },
+    {
+      "es": "guapo / guapa",
+      "de": "hübsch / gutaussehend",
+      "emoji": "😍",
+      "ex": "¡Qué guapa estás hoy!",
+      "exDe": "Wie hübsch du heute aussiehst!"
+    },
+    {
+      "es": "majo / maja",
+      "de": "nett / sympathisch (bes. in Spanien)",
+      "emoji": "😄",
+      "ex": "Tus amigos son muy majos.",
+      "exDe": "Deine Freunde sind sehr nett."
+    },
+    {
+      "es": "simpático / simpática",
+      "de": "sympathisch / freundlich",
+      "ex": "La camarera es muy simpática.",
+      "exDe": "Die Kellnerin ist sehr freundlich."
+    },
+    {
+      "es": "encantador / encantadora",
+      "de": "bezaubernd / charmant",
+      "emoji": "🥰",
+      "ex": "Tu familia es encantadora.",
+      "exDe": "Deine Familie ist bezaubernd."
+    },
+    {
+      "es": "el acento",
+      "de": "der Akzent",
+      "ex": "Tienes un acento muy bonito.",
+      "exDe": "Du hast einen sehr schönen Akzent."
+    },
+    {
+      "es": "el ambiente",
+      "de": "die Stimmung / die Atmosphäre",
+      "emoji": "✨",
+      "ex": "¡Qué buen ambiente hay en esta plaza!",
+      "exDe": "Was für eine tolle Stimmung auf diesem Platz!"
+    },
+    {
+      "es": "Me caes muy bien.",
+      "de": "Ich finde dich sehr sympathisch.",
+      "emoji": "😊",
+      "ex": "Me caes muy bien, deberíamos quedar otra vez.",
+      "exDe": "Ich finde dich sehr sympathisch, wir sollten uns noch mal treffen.",
+      "type": "phrase"
+    },
+    {
+      "es": "llevarse bien",
+      "de": "sich gut verstehen",
+      "emoji": "🤗",
+      "ex": "Nos llevamos muy bien desde el primer día.",
+      "exDe": "Wir verstehen uns seit dem ersten Tag sehr gut."
+    },
+    {
+      "es": "la gente",
+      "de": "die Leute",
+      "emoji": "👥",
+      "ex": "La gente aquí es muy abierta.",
+      "exDe": "Die Leute hier sind sehr offen."
+    },
+    {
+      "es": "charlar",
+      "de": "plaudern / quatschen",
+      "emoji": "💬",
+      "ex": "Estuvimos charlando toda la noche.",
+      "exDe": "Wir haben die ganze Nacht geplaudert."
+    },
+    {
+      "es": "tutearse",
+      "de": "sich duzen",
+      "ex": "¿Nos tuteamos? — ¡Claro!",
+      "exDe": "Duzen wir uns? — Klar!"
+    },
+    {
+      "es": "invitar",
+      "de": "einladen",
+      "emoji": "🍹",
+      "ex": "Te invito a una caña, ¿vale?",
+      "exDe": "Ich lade dich auf ein kleines Bier ein, okay?"
+    },
+    {
+      "es": "el idioma",
+      "de": "die Sprache",
+      "emoji": "🗣️",
+      "ex": "¿Cuántos idiomas hablas?",
+      "exDe": "Wie viele Sprachen sprichst du?"
+    },
+    {
+      "es": "la costumbre",
+      "de": "der Brauch / die Gewohnheit",
+      "ex": "Es una costumbre típica del sur.",
+      "exDe": "Das ist ein typischer Brauch aus dem Süden."
+    },
+    {
+      "es": "el número de teléfono",
+      "de": "die Telefonnummer",
+      "emoji": "📞",
+      "ex": "Te dejo mi número de teléfono.",
+      "exDe": "Ich gebe dir meine Telefonnummer."
+    },
+    {
+      "es": "las redes sociales",
+      "de": "die sozialen Netzwerke",
+      "emoji": "📲",
+      "ex": "No uso mucho las redes sociales.",
+      "exDe": "Ich benutze soziale Netzwerke nicht viel."
+    },
+    {
+      "es": "¿Tienes Instagram?",
+      "de": "Hast du Instagram?",
+      "emoji": "📸",
+      "ex": "¿Tienes Instagram? Así seguimos en contacto.",
+      "exDe": "Hast du Instagram? So bleiben wir in Kontakt.",
+      "type": "phrase"
+    },
+    {
+      "es": "¿Me das tu número?",
+      "de": "Gibst du mir deine Nummer?",
+      "emoji": "📱",
+      "ex": "¿Me das tu número? Te escribo mañana.",
+      "exDe": "Gibst du mir deine Nummer? Ich schreibe dir morgen.",
+      "type": "phrase"
+    },
+    {
+      "es": "apuntar",
+      "de": "aufschreiben / notieren",
+      "emoji": "✍️",
+      "ex": "Apúntame tu correo, por favor.",
+      "exDe": "Schreib mir bitte deine E-Mail-Adresse auf."
+    },
+    {
+      "es": "conocer",
+      "de": "kennenlernen / kennen",
+      "ex": "Me encanta conocer a gente nueva.",
+      "exDe": "Ich lerne total gern neue Leute kennen."
+    },
+    {
+      "es": "Encantado de conocerte.",
+      "de": "Schön, dich kennenzulernen. (Frau: encantada)",
+      "emoji": "🤝",
+      "ex": "Encantado de conocerte, Marta.",
+      "exDe": "Schön, dich kennenzulernen, Marta.",
+      "type": "phrase"
+    },
+    {
+      "es": "el placer",
+      "de": "das Vergnügen",
+      "ex": "¡Ha sido un placer!",
+      "exDe": "Es war mir ein Vergnügen!"
+    },
+    {
+      "es": "¡Que lo pases bien!",
+      "de": "Viel Spaß! / Lass es dir gut gehen!",
+      "emoji": "🎉",
+      "ex": "Me voy ya. — ¡Que lo pases bien!",
+      "exDe": "Ich gehe jetzt. — Viel Spaß dir!",
+      "type": "phrase"
+    }
+  ]
+}
