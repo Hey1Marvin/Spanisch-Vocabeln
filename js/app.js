@@ -737,25 +737,95 @@ window.Vamos = window.Vamos || {};
 
   /* ---------- Grammatik ---------- */
 
+  function progressRow(href, emoji, title, level, r) {
+    return '<a class="unit-row" href="' + href + '">' +
+      '<span class="emoji">' + esc(emoji) + "</span>" +
+      '<span class="body"><span class="title">' + esc(title) + "</span> " +
+      '<span class="pill level">' + esc(level) + "</span>" +
+      (r ? '<span class="muted small" style="display:block">Zuletzt: ' +
+        r.score + "/" + r.total + " (" + r.date + ")</span>" :
+        '<span class="muted small" style="display:block">Noch nicht geübt</span>') +
+      "</span>" +
+      (r && r.score / r.total >= 0.8 ? '<span class="pill done">✓</span>' : "") +
+      "</a>";
+  }
+
   function viewGrammarList() {
     loading();
     Vamos.data.loadManifest().then(function (m) {
       var results = Vamos.store.grammar();
       var html = '<div class="card"><h2>' + Vamos.icons.svg("cap") + ' Grammatik</h2>' +
         m.grammar.map(function (g) {
-          var r = results[g.id];
-          return '<a class="unit-row" href="#/grammar/' + g.id + '">' +
-            '<span class="emoji">' + esc(g.emoji) + "</span>" +
-            '<span class="body"><span class="title">' + esc(g.title) + "</span> " +
-            '<span class="pill level">' + esc(g.level) + "</span>" +
-            (r ? '<span class="muted small" style="display:block">Zuletzt: ' +
-              r.score + "/" + r.total + " (" + r.date + ")</span>" :
-              '<span class="muted small" style="display:block">Noch nicht geübt</span>') +
-            "</span>" +
-            (r && r.score / r.total >= 0.8 ? '<span class="pill done">✓</span>' : "") +
-            "</a>";
+          return progressRow("#/grammar/" + g.id, g.emoji, g.title, g.level, results[g.id]);
         }).join("") + "</div>";
+      if (m.reading && m.reading.length) {
+        html += '<div class="card"><h2>' + Vamos.icons.svg("reader") + ' Lesetexte</h2>' +
+          '<p class="muted small">Kurze Geschichten mit Audio, Übersetzung, Glossar und Verständnisfragen.</p>' +
+          m.reading.map(function (r) {
+            return progressRow("#/reading/" + r.id, r.emoji, r.title, r.level, results[r.id]);
+          }).join("") + "</div>";
+      }
       main.innerHTML = html;
+    }).catch(fail);
+  }
+
+  function viewReading(id) {
+    loading();
+    Vamos.data.loadManifest().then(function (m) {
+      var meta = (m.reading || []).filter(function (r) { return r.id === id; })[0];
+      if (!meta) throw new Error("Lesetext nicht gefunden: " + id);
+      return fetch(meta.file).then(function (r) {
+        if (!r.ok) throw new Error("HTTP " + r.status);
+        return r.json();
+      });
+    }).then(function (t) {
+      var paras = t.text.split(/\n\n+/);
+      var parasDe = (t.textDe || "").split(/\n\n+/);
+      var html =
+        '<div class="card"><h2>' + esc(t.emoji) + " " + esc(t.title) +
+        ' <span class="pill level">' + esc(t.level) + "</span></h2>" +
+        '<div class="btn-row">' +
+        '<button class="btn primary" id="readBtn">' + Vamos.icons.svg("speaker") + " Vorlesen</button>" +
+        '<button class="btn" id="stopBtn">Stopp</button>' +
+        '<button class="btn" id="transBtn">Übersetzung</button>' +
+        "</div>" +
+        paras.map(function (p, i) {
+          return '<p style="font-size:1.05rem;line-height:1.7">' + esc(p) + "</p>" +
+            '<p class="muted small trans" style="display:none;margin-top:-.4rem">' +
+            esc(parasDe[i] || "") + "</p>";
+        }).join("") + "</div>" +
+        '<div class="card"><h2>' + Vamos.icons.svg("book") + " Glossar</h2><table class=\"vocab\"><tbody>" +
+        (t.glossary || []).map(function (g) {
+          return '<tr><td class="es">' + esc(g.es) + " " + Vamos.quiz.speakBtn(g.es) +
+            "</td><td>" + esc(g.de) + "</td></tr>";
+        }).join("") + "</tbody></table></div>" +
+        '<div class="card"><h2>Verstanden?</h2>' +
+        '<button class="btn primary" id="quizBtn">Fragen beantworten (' +
+        (t.questions || []).length + ")</button></div>";
+      main.innerHTML = html;
+      Vamos.quiz.bindSpeak(main);
+
+      document.getElementById("readBtn").addEventListener("click", function () {
+        Vamos.audio.speakLong(t.text);
+      });
+      document.getElementById("stopBtn").addEventListener("click", function () {
+        Vamos.audio.stop();
+      });
+      document.getElementById("transBtn").addEventListener("click", function () {
+        main.querySelectorAll(".trans").forEach(function (p) {
+          p.style.display = p.style.display === "none" ? "" : "none";
+        });
+      });
+      document.getElementById("quizBtn").addEventListener("click", function () {
+        var g = {
+          id: t.id,
+          exercises: (t.questions || []).map(function (q) {
+            return { type: "mc", q: q.q, options: q.options, answer: q.answer, expl: q.expl };
+          })
+        };
+        Vamos.grammar.renderExercises(main, g);
+        window.scrollTo(0, 0);
+      });
     }).catch(fail);
   }
 
@@ -954,6 +1024,7 @@ window.Vamos = window.Vamos || {};
     { re: /^#\/type\/([\w-]+)$/, fn: function (id) { withUnit(id, function (u) { Vamos.quiz.renderTypeQuiz(main, u); }); }, tab: "units" },
     { re: /^#\/grammar$/, fn: viewGrammarList, tab: "grammar" },
     { re: /^#\/grammar\/([\w-]+)$/, fn: viewGrammar, tab: "grammar" },
+    { re: /^#\/reading\/([\w-]+)$/, fn: viewReading, tab: "grammar" },
     { re: /^#\/stats$/, fn: viewStats, tab: "stats" },
     { re: /^#\/verbs$/, fn: viewVerbs, tab: "" },
     { re: /^#\/dict$/, fn: viewDict, tab: "" },

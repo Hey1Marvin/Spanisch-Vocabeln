@@ -365,5 +365,63 @@
       "rank": 14,
       "level": "B1"
     }
+  ],
+  "reading": [
+    {
+      "id": "r01",
+      "file": "data/reading/r01-aeropuerto.json",
+      "title": "En el aeropuerto",
+      "emoji": "🛬",
+      "level": "A2"
+    },
+    {
+      "id": "r02",
+      "file": "data/reading/r02-playa.json",
+      "title": "Un día en la playa",
+      "emoji": "🏖️",
+      "level": "A2"
+    },
+    {
+      "id": "r03",
+      "file": "data/reading/r03-tapas.json",
+      "title": "De tapas por Sevilla",
+      "emoji": "🍤",
+      "level": "A2/B1"
+    },
+    {
+      "id": "r04",
+      "file": "data/reading/r04-perdido.json",
+      "title": "Perdido en Madrid",
+      "emoji": "🗺️",
+      "level": "B1"
+    },
+    {
+      "id": "r05",
+      "file": "data/reading/r05-mercado.json",
+      "title": "En el mercado",
+      "emoji": "🛒",
+      "level": "A2/B1"
+    },
+    {
+      "id": "r06",
+      "file": "data/reading/r06-granada.json",
+      "title": "Excursión a Granada",
+      "emoji": "🏰",
+      "level": "B1"
+    },
+    {
+      "id": "r07",
+      "file": "data/reading/r07-peluqueria.json",
+      "title": "En la peluquería",
+      "emoji": "💈",
+      "level": "B1"
+    },
+    {
+      "id": "r08",
+      "file": "data/reading/r08-fiesta.json",
+      "title": "La fiesta del pueblo",
+      "emoji": "🎉",
+      "level": "B1"
+    }
   ]
 }

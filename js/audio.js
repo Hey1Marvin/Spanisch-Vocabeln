@@ -46,5 +46,26 @@ Vamos.audio = (function () {
     return !!window.speechSynthesis;
   }
 
-  return { speak: speak, spanishVoices: spanishVoices, available: available };
+  /* Längere Texte satzweise in die Warteschlange legen (Chrome bricht lange Utterances ab). */
+  function speakLong(text) {
+    if (!window.speechSynthesis) return false;
+    speechSynthesis.cancel();
+    var parts = text.split(/(?<=[.!?…])\s+|\n+/).filter(function (p) { return p.trim(); });
+    var v = pickVoice();
+    var rate = Vamos.store.settings().speechRate || 0.9;
+    parts.forEach(function (p) {
+      var u = new SpeechSynthesisUtterance(p);
+      u.lang = "es-ES";
+      u.rate = rate;
+      if (v) u.voice = v;
+      speechSynthesis.speak(u);
+    });
+    return true;
+  }
+
+  function stop() {
+    if (window.speechSynthesis) speechSynthesis.cancel();
+  }
+
+  return { speak: speak, speakLong: speakLong, stop: stop, spanishVoices: spanishVoices, available: available };
 })();
