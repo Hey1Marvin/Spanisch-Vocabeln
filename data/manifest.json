@@ -272,6 +272,26 @@
       "desc": "Mietwagen, Tanken, Maut, Panne – entspannt über Spaniens Straßen."
     },
     {
+      "id": "u28",
+      "file": "data/vocab/u28-camping-natur.json",
+      "title": "Camping & Natur aktiv",
+      "emoji": "🏕️",
+      "phase": 2,
+      "rank": 28,
+      "level": "A2/B1",
+      "desc": "Zelt, Wohnmobil, Wanderroute – Urlaub draußen."
+    },
+    {
+      "id": "u29",
+      "file": "data/vocab/u29-sport-fitness.json",
+      "title": "Sport & Fitness vertieft",
+      "emoji": "🏋️",
+      "phase": 3,
+      "rank": 29,
+      "level": "B1",
+      "desc": "Gym, Training und Fußball schauen wie ein Local."
+    },
+    {
       "id": "u30",
       "file": "data/vocab/u30-musik-kultur.json",
       "title": "Musik, Kunst & Kultur",
@@ -302,6 +322,16 @@
       "desc": "Freundschaft, Liebe, Trost und Glückwünsche."
     },
     {
+      "id": "u33",
+      "file": "data/vocab/u33-business-email.json",
+      "title": "Business & E-Mail-Spanisch",
+      "emoji": "📧",
+      "phase": 4,
+      "rank": 33,
+      "level": "B1/B2",
+      "desc": "Formell schreiben und telefonieren."
+    },
+    {
       "id": "u34",
       "file": "data/vocab/u34-slang.json",
       "title": "Slang & Umgangssprache",
@@ -310,6 +340,16 @@
       "rank": 34,
       "level": "B1",
       "desc": "Guay, mola, tío – klingen wie die Locals (mit Register-Warnung)."
+    },
+    {
+      "id": "u35",
+      "file": "data/vocab/u35-redewendungen.json",
+      "title": "Redewendungen & Sprichwörter",
+      "emoji": "🦜",
+      "phase": 4,
+      "rank": 35,
+      "level": "B1/B2",
+      "desc": "Ser pan comido & Co. – Idiome, die Eindruck machen."
     },
     {
       "id": "u36",
