@@ -112,6 +112,16 @@
       "desc": "Arzt, Apotheke, Polizei: die Sätze, die du hoffentlich nie brauchst – und dann doch draufhaben willst."
     },
     {
+      "id": "u12",
+      "file": "data/vocab/u12-strand-natur.json",
+      "title": "Strand, Natur & Ausflüge",
+      "emoji": "🏖️",
+      "phase": 2,
+      "rank": 12,
+      "level": "A2",
+      "desc": "Strandtag, Wanderung, Bootstour: alles für die schönsten Stunden des Urlaubs."
+    },
+    {
       "id": "u14",
       "file": "data/vocab/u14-familie-personen.json",
       "title": "Familie & Personen beschreiben",
@@ -152,6 +162,26 @@
       "desc": "Sagen, wie es dir geht und was du denkst – zustimmen, widersprechen, begeistert sein."
     },
     {
+      "id": "u18",
+      "file": "data/vocab/u18-arbeit-alltag.json",
+      "title": "Arbeit & Alltag erzählen",
+      "emoji": "💼",
+      "phase": 3,
+      "rank": 18,
+      "level": "B1",
+      "desc": "Beruf, Tagesablauf, Alltag – von dir erzählen wie im echten Gespräch."
+    },
+    {
+      "id": "u20",
+      "file": "data/vocab/u20-zeit-ausdruecke.json",
+      "title": "Zeit-Ausdrücke & Häufigkeit",
+      "emoji": "⏳",
+      "phase": 3,
+      "rank": 20,
+      "level": "A2/B1",
+      "desc": "Schon, noch nicht, gerade eben, meistens – Zeit präzise ausdrücken."
+    },
+    {
       "id": "u21",
       "file": "data/vocab/u21-ausgehen-feiern.json",
       "title": "Ausgehen, Feiern & Kultur",
@@ -162,6 +192,26 @@
       "desc": "Bar, Konzert, Fiesta: einladen, anstoßen und den Abend genießen."
     },
     {
+      "id": "u22",
+      "file": "data/vocab/u22-telefon-internet.json",
+      "title": "Telefon, Internet & Behörden",
+      "emoji": "📱",
+      "phase": 4,
+      "rank": 22,
+      "level": "B1",
+      "desc": "SIM-Karte, WLAN-Probleme, Termine und Formulare – Alltag organisiert bekommen."
+    },
+    {
+      "id": "u23",
+      "file": "data/vocab/u23-adjektive.json",
+      "title": "Adjektive-Grundstock",
+      "emoji": "🎨",
+      "phase": 4,
+      "rank": 23,
+      "level": "A2/B1",
+      "desc": "Die nützlichsten Eigenschaftswörter, um alles zu beschreiben und zu bewerten."
+    },
+    {
       "id": "u24",
       "file": "data/vocab/u24-diskutieren.json",
       "title": "Diskutieren & Argumentieren",
@@ -170,6 +220,16 @@
       "rank": 24,
       "level": "B1/B2",
       "desc": "Standpunkte vertreten, abwägen, höflich widersprechen – Konversation auf B2-Niveau."
+    },
+    {
+      "id": "u25",
+      "file": "data/vocab/u25-latam.json",
+      "title": "Spanien vs. Lateinamerika",
+      "emoji": "🌎",
+      "phase": 4,
+      "rank": 25,
+      "level": "B1",
+      "desc": "Coche oder carro? Die wichtigsten Unterschiede, damit du überall verstanden wirst."
     }
   ],
   "grammar": [
@@ -262,12 +322,28 @@
       "level": "B1/B2"
     },
     {
+      "id": "g12",
+      "file": "data/grammar/g12-subjuntivo2.json",
+      "title": "Subjuntivo II – Vertiefung",
+      "emoji": "🌀",
+      "rank": 12,
+      "level": "B2"
+    },
+    {
       "id": "g13",
       "file": "data/grammar/g13-vergleiche.json",
       "title": "Vergleiche & Superlativ",
       "emoji": "🆚",
       "rank": 13,
       "level": "A2/B1"
+    },
+    {
+      "id": "g14",
+      "file": "data/grammar/g14-por-para.json",
+      "title": "Por vs. Para",
+      "emoji": "↔️",
+      "rank": 14,
+      "level": "B1"
     }
   ]
 }

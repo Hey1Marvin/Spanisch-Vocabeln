@@ -23,35 +23,35 @@ Abhaken, was fertig im Repo ist. Hintergründe: [docs/RESEARCH.md](docs/RESEARCH
 - [x] **U11 Notfall, Gesundheit & Apotheke** – Arzt, Schmerzen, Hilfe holen
 - [ ] **U12 Strand, Natur & Ausflüge** – Meer, Wandern, Tickets, Touren
 - [x] **G03 Pretérito Indefinido** – Vergangenheit erzählen I
-- [ ] **G04 Pretérito Imperfecto** – Vergangenheit II + Abgrenzung
-- [ ] **G05 Objektpronomen** – me/te/le/lo/la, doppelte Pronomen
+- [x] **G04 Pretérito Imperfecto** – Vergangenheit II + Abgrenzung
+- [x] **G05 Objektpronomen** – me/te/le/lo/la, doppelte Pronomen
 
 ## Phase 3 – Konversation (B1)
 
 - [ ] **U13 Smalltalk & Kennenlernen** – über sich erzählen, nachfragen, reagieren
-- [ ] **U14 Familie & Personen beschreiben** – Aussehen, Charakter, Beziehungen
-- [ ] **U15 Freizeit, Hobbys & Sport**
-- [ ] **U16 Wetter & Jahreszeiten**
-- [ ] **U17 Gefühle & Meinung äußern** – zustimmen, widersprechen, finden dass …
+- [x] **U14 Familie & Personen beschreiben** – Aussehen, Charakter, Beziehungen
+- [x] **U15 Freizeit, Hobbys & Sport**
+- [x] **U16 Wetter & Jahreszeiten**
+- [x] **U17 Gefühle & Meinung äußern** – zustimmen, widersprechen, finden dass …
 - [ ] **U18 Arbeit & Alltag erzählen**
 - [ ] **U19 Konnektoren & Füllwörter** – bueno, pues, es que, sin embargo … (größter Flüssigkeits-Hebel!)
 - [ ] **U20 Zeit-Ausdrücke & Häufigkeit** – schon, noch nicht, gerade, meistens, neulich
-- [ ] **G06 Gustar & Co.** – gefallen, interessieren, wehtun
-- [ ] **G07 Pretérito Perfecto** – „heute/diese Woche“-Vergangenheit
-- [ ] **G08 Futuro & Pläne** – ir a + Infinitiv, futuro simple
+- [x] **G06 Gustar & Co.** – gefallen, interessieren, wehtun
+- [x] **G07 Pretérito Perfecto** – „heute/diese Woche“-Vergangenheit
+- [x] **G08 Futuro & Pläne** – ir a + Infinitiv, futuro simple
 
 ## Phase 4 – Feinschliff (B2)
 
-- [ ] **U21 Ausgehen, Feiern & Kultur** – Bar, Konzert, Feste, Einladungen
-- [ ] **U22 Telefon, Internet & Behörden** – SIM-Karte, Termine, Formulare
+- [x] **U21 Ausgehen, Feiern & Kultur** – Bar, Konzert, Feste, Einladungen
+- [x] **U22 Telefon, Internet & Behörden** – SIM-Karte, Termine, Formulare
 - [ ] **U23 Adjektive-Grundstock** – die 60 nützlichsten Eigenschaftswörter
-- [ ] **U24 Diskutieren & Argumentieren**
+- [x] **U24 Diskutieren & Argumentieren**
 - [ ] **U25 Spanien vs. Lateinamerika** – wichtigste Wort- & Aussprache-Unterschiede
-- [ ] **G09 Condicional & höfliche Bitten** – ¿Podrías…? Me gustaría…
-- [ ] **G10 Imperativ** – Anweisungen geben & verstehen
-- [ ] **G11 Subjuntivo I** – nach ojalá, querer que, es importante que …
-- [ ] **G12 Subjuntivo II** – Zweifel, Emotion, cuando + Zukunft
-- [ ] **G13 Vergleiche & Superlativ** – más que, tan como, el mejor
+- [x] **G09 Condicional & höfliche Bitten** – ¿Podrías…? Me gustaría…
+- [x] **G10 Imperativ** – Anweisungen geben & verstehen
+- [x] **G11 Subjuntivo I** – nach ojalá, querer que, es importante que …
+- [x] **G12 Subjuntivo II** – Zweifel, Emotion, cuando + Zukunft
+- [x] **G13 Vergleiche & Superlativ** – más que, tan como, el mejor
 - [ ] **G14 Por vs. Para**
 
 ## Feature-Roadmap
@@ -75,8 +75,8 @@ Abhaken, was fertig im Repo ist. Hintergründe: [docs/RESEARCH.md](docs/RESEARCH
 - [x] UI-Politur: Hero-Dashboard, Karten-Flip, sanfte Übergänge, Theme-Wahl
 
 **Geplant:**
-- [ ] Satzbau-Übung (Wörter antippen in richtiger Reihenfolge)
-- [ ] Konjugationstrainer (Verb + Zeit + Person drillen)
+- [x] Satzbau-Übung (Wörter antippen in richtiger Reihenfolge)
+- [x] Konjugationstrainer (Verb + Zeit + Person drillen)
 - [ ] Meilenstein-Checks (alle ~50 gelernten Karten ein Rückblick-Test)
 - [ ] Nachsprech-Modus (TTS vorsprechen, selbst bewerten)
 - [ ] Tagesziel-Erinnerung (Benachrichtigung)

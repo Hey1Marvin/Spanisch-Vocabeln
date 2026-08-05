@@ -1,0 +1,83 @@
+{
+  "id": "g12",
+  "title": "Subjuntivo II – Vertiefung",
+  "intro": "Du kennst die Formen – jetzt kommen die Situationen: Zweifel, Gefühle, die Zukunft nach cuando und Sätze über Dinge, die es vielleicht gar nicht gibt. Genau hier passieren deutschen Lernern die meisten Fehler, weil das Deutsche überall den Indikativ nimmt.",
+  "sections": [
+    {
+      "h": "Zweifel und Verneinung",
+      "p": "Verneinte Meinungs- und Wahrheitsverben sowie Zweifel schalten den Subjuntivo ein: **no creo que**, **dudo que**, **no es verdad que**, **no me parece que**. Bejaht bleibt alles im Indicativo.",
+      "table": {
+        "head": ["Indicativo (bejaht)", "Subjuntivo (verneint/Zweifel)"],
+        "rows": [
+          ["Creo que **tiene** razón.", "No creo que **tenga** razón."],
+          ["Es verdad que **vive** aquí.", "Dudo que **viva** aquí."]
+        ]
+      },
+      "examples": [
+        { "es": "Dudo que el museo esté abierto hoy.", "de": "Ich bezweifle, dass das Museum heute geöffnet ist." },
+        { "es": "No creo que sea tan difícil.", "de": "Ich glaube nicht, dass es so schwierig ist." }
+      ],
+      "tip": "Typischer Deutschen-Fehler: „Ich glaube nicht, dass er kommt“ – im Deutschen Indikativ, also rutscht einem `No creo que viene` heraus. Falsch! Es muss `No creo que venga` heißen."
+    },
+    {
+      "h": "Emotionen und Bewertungen",
+      "p": "Gefühlsausdrücke lösen **immer** Subjuntivo aus: **me alegro de que**, **me molesta que**, **me sorprende que**, **es una pena que**, **tengo miedo de que**.",
+      "examples": [
+        { "es": "Me alegro de que estés aquí.", "de": "Ich freue mich, dass du hier bist." },
+        { "es": "Me molesta que el bar cierre tan pronto.", "de": "Es stört mich, dass die Bar so früh schließt." }
+      ],
+      "tip": "Verwirrend für Deutsche: Der Fakt kann völlig wahr sein (du BIST ja hier) – trotzdem Subjuntivo, weil nicht die Information zählt, sondern deine Gefühlsreaktion darauf."
+    },
+    {
+      "h": "cuando + Zukunft, para que, aunque",
+      "p": "Bei **cuando** entscheidet die Zeit: Gewohnheit → Indicativo, Zukünftiges → Subjuntivo. **para que** (damit) steht ausnahmslos mit Subjuntivo. **aunque** kann beides: Fakt (obwohl) → Indicativo, Vermutung (selbst wenn) → Subjuntivo. Auch **en cuanto** (sobald) und **hasta que** (bis) folgen der cuando-Regel.",
+      "table": {
+        "head": ["Konjunktion", "Modus", "Beispiel"],
+        "rows": [
+          ["cuando (Gewohnheit)", "Indicativo", "Cuando **llego** a casa, ceno."],
+          ["cuando (Zukunft)", "Subjuntivo", "Cuando **llegues**, llámame."],
+          ["para que (immer)", "Subjuntivo", "Habla despacio para que te **entienda**."],
+          ["aunque (Fakt: obwohl)", "Indicativo", "Aunque **llueve**, salimos."],
+          ["aunque (selbst wenn)", "Subjuntivo", "Aunque **llueva**, saldremos."]
+        ]
+      },
+      "examples": [
+        { "es": "Cuando tengas tiempo, ven a verme.", "de": "Wenn du Zeit hast, komm mich besuchen." },
+        { "es": "Te escribo la dirección para que no te pierdas.", "de": "Ich schreibe dir die Adresse auf, damit du dich nicht verirrst." }
+      ],
+      "tip": "Typischer Deutschen-Fehler: „WENN du ankommst, ruf an“ verleitet zu `si` oder zum Futur. Bei Zeitpunkten in der Zukunft gilt aber: cuando + Subjuntivo – niemals `cuando llegarás`."
+    },
+    {
+      "h": "Relativsätze: Gibt es das überhaupt?",
+      "p": "Bezieht sich der Relativsatz auf etwas **Gesuchtes oder Unbestimmtes**, steht Subjuntivo. Bei etwas **Konkretem, Bekanntem** bleibt der Indicativo. Nach **no hay nadie/nada que** steht immer Subjuntivo.",
+      "table": {
+        "head": ["Bekannt → Indicativo", "Gesucht/unbestimmt → Subjuntivo"],
+        "rows": [
+          ["Tengo un hotel que **tiene** piscina.", "Busco un hotel que **tenga** piscina."],
+          ["Conozco a alguien que **habla** ruso.", "No conozco a nadie que **hable** ruso."]
+        ]
+      },
+      "examples": [
+        { "es": "Busco un piso que tenga balcón.", "de": "Ich suche eine Wohnung, die einen Balkon hat (irgendeine – ich kenne sie noch nicht)." },
+        { "es": "No hay nada que me guste más que el mar.", "de": "Es gibt nichts, das mir besser gefällt als das Meer." }
+      ],
+      "tip": "Frag dich: Kenne ich das Ding schon bzw. könnte ich es anfassen? Ja → Indicativo. Suche ich es nur oder existiert es vielleicht gar nicht? → Subjuntivo."
+    }
+  ],
+  "exercises": [
+    { "type": "gap", "text": "Dudo que ella ___ (venir) a la fiesta.", "answer": "venga", "hint": "Zweifel!", "expl": "dudar que drückt Zweifel aus → Subjuntivo: venir → vengo → venga." },
+    { "type": "gap", "text": "No creo que ___ (ser) una buena idea.", "answer": "sea", "hint": "verneinte Meinung", "expl": "Verneintes creer → Subjuntivo. ser hat die Sonderform sea." },
+    { "type": "gap", "text": "Me alegro de que ___ (estar, tú) mejor.", "answer": "estés", "hint": "Emotion → Subjuntivo", "expl": "Gefühlsausdrücke wie me alegro de que verlangen Subjuntivo – auch wenn der Fakt wahr ist: estar → estés." },
+    { "type": "gap", "text": "Me molesta que la gente ___ (hablar) tan alto en el metro.", "answer": "hable", "hint": "Emotion → Subjuntivo", "expl": "me molesta que ist eine Gefühlsreaktion → Subjuntivo: hablar → hable." },
+    { "type": "gap", "text": "Cuando ___ (llegar, tú) a casa, llámame.", "answer": "llegues", "hint": "Zukunft, nicht Gewohnheit", "expl": "cuando + zukünftiges Ereignis → Subjuntivo: llegues. Nicht „cuando llegarás“ – das Futur ist hier unmöglich!" },
+    { "type": "gap", "text": "Te lo explico otra vez para que lo ___ (entender, tú).", "answer": "entiendas", "hint": "para que + ?", "expl": "para que (damit) steht immer mit Subjuntivo. Der Vokalwechsel e→ie bleibt: entiendas." },
+    { "type": "gap", "text": "Busco un piso que ___ (tener) balcón.", "answer": "tenga", "hint": "unbestimmter Bezug", "expl": "Die Wohnung ist nur gesucht, nicht bekannt → Subjuntivo: tenga. Vergleiche: Tengo un piso que tiene balcón (Fakt)." },
+    { "type": "gap", "text": "No hay nadie aquí que ___ (saber) alemán.", "answer": "sepa", "hint": "no hay nadie que …", "expl": "Nach no hay nadie que steht immer Subjuntivo – die Person existiert ja gerade nicht: saber → sepa." },
+    { "type": "gap", "text": "Aunque ___ (llover) mañana, haremos la excursión.", "answer": "llueva", "hint": "Vermutung über morgen", "expl": "Ob es morgen regnet, weiß niemand → aunque + Subjuntivo: llueva (= selbst wenn es regnet)." },
+    { "type": "gap", "text": "Aunque ___ (ser) caro, voy a comprar el billete.", "answer": ["sea", "es"], "hint": "beides möglich – je nach Bedeutung", "expl": "Beide Formen sind korrekt: aunque es caro = obwohl es (nachweislich) teuer ist; aunque sea caro = selbst wenn es teuer sein sollte." },
+    { "type": "mc", "q": "Creo que el restaurante ___ abierto hoy.", "options": ["está", "esté", "estar"], "answer": 0, "expl": "Bejahtes creer que → Indicativo: está. Erst die Verneinung (no creo que) würde esté auslösen." },
+    { "type": "mc", "q": "Cuando ___ a Madrid, siempre visito el Prado.", "options": ["voy", "vaya", "iré"], "answer": 0, "expl": "siempre zeigt eine Gewohnheit an → cuando + Indicativo: voy. Subjuntivo (vaya) stünde nur bei einem zukünftigen Einzelereignis." },
+    { "type": "mc", "q": "Tengo una amiga que ___ alemán perfectamente.", "options": ["hable", "habla", "hablar"], "answer": 1, "expl": "Die Freundin existiert und ist bekannt → Indicativo: habla. Subjuntivo (hable) stünde bei Busco una amiga que hable alemán." },
+    { "type": "mc", "q": "No es verdad que los españoles ___ siempre tarde.", "options": ["llegan", "lleguen", "llegarán"], "answer": 1, "expl": "Verneinter Wahrheitsausdruck (no es verdad que) → Subjuntivo: lleguen. Bejaht wäre es Indicativo: Es verdad que llegan tarde." }
+  ]
+}

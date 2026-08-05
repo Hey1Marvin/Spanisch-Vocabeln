@@ -1,0 +1,92 @@
+{
+  "id": "g14",
+  "title": "Por vs. Para",
+  "intro": "Beide werden oft mit „für“ übersetzt – und genau da lauert die Falle. Die Grundidee ist zum Glück einfach: **para** zeigt nach vorn (Ziel), **por** schaut zurück (Grund).",
+  "sections": [
+    {
+      "h": "PARA – der Pfeil nach vorn",
+      "p": "**para** benutzt du, wenn etwas auf ein Ziel gerichtet ist: Richtung, Zweck (um zu…), Empfänger, Frist – und für Meinungen (`para mí` = meiner Meinung nach).",
+      "table": {
+        "head": ["Gebrauch", "Beispiel"],
+        "rows": [
+          ["Ziel / Richtung", "El tren sale **para** Madrid."],
+          ["Zweck (um zu)", "Estudio español **para** viajar."],
+          ["Empfänger", "Este regalo es **para** ti."],
+          ["Frist / Termin", "Lo necesito **para** el lunes."],
+          ["Meinung", "**Para** mí, la paella es lo mejor."]
+        ]
+      },
+      "examples": [
+        { "es": "Necesito la habitación para el viernes.", "de": "Ich brauche das Zimmer für (bis) Freitag." },
+        { "es": "Este bocadillo es para llevar, por favor.", "de": "Dieses Sandwich ist zum Mitnehmen, bitte." }
+      ],
+      "tip": "para = **P**lan, **A**bsicht, **R**ichtung, **A**dressat – alles, was VOR dir liegt."
+    },
+    {
+      "h": "POR – der Blick zurück (und mittendurch)",
+      "p": "**por** steht für den Grund oder Auslöser (warum? – `gracias por…`), für Austausch und Preis, für Bewegung **durch/entlang** einen Ort, für ungefähre Orts- und Tageszeitangaben (`por la mañana`) und für das „von“ im Passiv.",
+      "table": {
+        "head": ["Gebrauch", "Beispiel"],
+        "rows": [
+          ["Grund / Ursache", "Gracias **por** tu ayuda."],
+          ["Austausch / Preis", "Pagué veinte euros **por** la entrada."],
+          ["Bewegung durch", "Paseamos **por** el casco antiguo."],
+          ["Zeitraum / Tageszeit", "**Por** la mañana tomo café."],
+          ["„von“ im Passiv", "Fue escrito **por** Cervantes."]
+        ]
+      },
+      "examples": [
+        { "es": "¿Cuánto pagaste por el billete?", "de": "Wie viel hast du für die Fahrkarte bezahlt?" },
+        { "es": "Me gusta pasear por la playa por la tarde.", "de": "Ich gehe gern nachmittags am Strand entlang spazieren." }
+      ],
+      "tip": "por = der **Motor** hinter der Sache: Grund, Gegenwert, Durchgang. Frage-Test: Antwortet es auf „warum/wodurch?“ → por. Auf „wozu/für wen?“ → para."
+    },
+    {
+      "h": "Feste Wendungen: einfach auswendig lernen",
+      "p": "Viele Alltagsfloskeln sind fest – hier hilft keine Regel, nur Gewohnheit. Die gute Nachricht: Du benutzt sie so oft, dass sie schnell sitzen.",
+      "table": {
+        "head": ["Wendung", "Bedeutung"],
+        "rows": [
+          ["por favor", "bitte"],
+          ["por fin", "endlich"],
+          ["por ejemplo", "zum Beispiel"],
+          ["por supuesto", "selbstverständlich"],
+          ["por cierto", "übrigens"],
+          ["por lo menos", "wenigstens / mindestens"],
+          ["para nada", "überhaupt nicht"],
+          ["para siempre", "für immer"]
+        ]
+      },
+      "examples": [
+        { "es": "¡Por fin llega el autobús! Por cierto, ¿tienes el billete?", "de": "Endlich kommt der Bus! Übrigens, hast du die Fahrkarte?" },
+        { "es": "¿Te molesta la música? — No, para nada.", "de": "Stört dich die Musik? – Nein, überhaupt nicht." }
+      ],
+      "tip": "Fast alle festen Wendungen laufen über **por** – `para nada` und `para siempre` sind die wichtigsten Ausnahmen."
+    },
+    {
+      "h": "Die Eselsbrücke & die fiesen Minimalpaare",
+      "p": "Stell dir **para** als **Pfeil →** vor (Ziel, Zweck, Empfänger, Deadline) und **por** als **Kreis ↺** (Grund dahinter, Austausch, Weg hindurch, Zeitspanne). Bei manchen Paaren ändert die Wahl die Bedeutung: `Lo hago **por** ti` = ich tue es deinetwegen (du bist der Grund) vs. `Lo hago **para** ti` = ich tue es für dich (du bekommst es). Ebenso: `trabajar **para**` = angestellt sein bei vs. `trabajar **por**` = einspringen für jemanden.",
+      "examples": [
+        { "es": "Compré flores para mi madre.", "de": "Ich kaufte Blumen für meine Mutter. (sie bekommt sie)" },
+        { "es": "Lo hice por mi madre.", "de": "Ich tat es meiner Mutter zuliebe. (sie ist der Grund)" }
+      ],
+      "tip": "Im Zweifel frag den Satz: „WOZU / für WEN?“ → **para**. „WARUM / im Tausch WOGEGEN?“ → **por**."
+    }
+  ],
+  "exercises": [
+    { "type": "mc", "q": "Este regalo es ___ mi madre.", "options": ["por", "para"], "answer": 1, "expl": "Empfänger → para: Das Geschenk ist FÜR sie bestimmt, sie bekommt es." },
+    { "type": "mc", "q": "Gracias ___ tu ayuda.", "options": ["por", "para"], "answer": 0, "expl": "Grund des Dankes → por. gracias por… ist eine feste Kombination." },
+    { "type": "gap", "text": "El autobús sale ___ el aeropuerto a las seis.", "answer": "para", "hint": "Richtung/Ziel", "expl": "Ziel der Fahrt → para: salir para = abfahren in Richtung." },
+    { "type": "mc", "q": "Paseamos ___ el casco antiguo.", "options": ["por", "para"], "answer": 0, "expl": "Bewegung DURCH einen Ort → por: wir spazieren durch die Altstadt (kein Ziel, sondern ein Weg)." },
+    { "type": "gap", "text": "Estudio español ___ hablar con la gente en España.", "answer": "para", "hint": "um zu…", "expl": "Zweck/Absicht (um zu sprechen) → para + Infinitiv." },
+    { "type": "mc", "q": "¿Cuánto pagaste ___ el billete?", "options": ["por", "para"], "answer": 0, "expl": "Preis/Austausch (Geld gegen Ticket) → por." },
+    { "type": "gap", "text": "Necesito la habitación ___ el viernes.", "answer": "para", "hint": "Frist", "expl": "Deadline/Termin → para: Bis Freitag muss das Zimmer bereit sein." },
+    { "type": "mc", "q": "___ la mañana siempre tomo un café con leche.", "options": ["Por", "Para"], "answer": 0, "expl": "Tageszeit als Zeitraum → por la mañana / por la tarde / por la noche." },
+    { "type": "mc", "q": "„endlich“ heißt auf Spanisch:", "options": ["por fin", "para fin", "al fin para"], "answer": 0, "expl": "Feste Wendung: por fin = endlich. (Auch al fin geht – aber nie mit para.)" },
+    { "type": "gap", "text": "¿Me cambias este billete de cincuenta ___ monedas?", "answer": "por", "hint": "Austausch", "expl": "Tausch: Schein GEGEN Münzen → por. Immer wenn etwas den Besitzer wechselt: por." },
+    { "type": "mc", "q": "___ mí, el gazpacho es la mejor sopa del mundo.", "options": ["Por", "Para"], "answer": 1, "expl": "Meinung → para mí = meiner Meinung nach / für mich." },
+    { "type": "mc", "q": "El Quijote fue escrito ___ Cervantes.", "options": ["por", "para"], "answer": 0, "expl": "„von“ beim Passiv (der Urheber) → por: geschrieben VON Cervantes." },
+    { "type": "gap", "text": "¿Te gusta esperar? — ¡No, ___ nada!", "answer": "para", "hint": "feste Wendung: überhaupt nicht", "expl": "para nada = überhaupt nicht – eine der wenigen festen Wendungen mit para." },
+    { "type": "mc", "q": "„Lo hago por ti“ vs. „Lo hago para ti“ – was stimmt?", "options": ["por ti = deinetwegen (Grund), para ti = für dich (Empfänger)", "Beide bedeuten exakt dasselbe", "por ti = für dich (Empfänger), para ti = deinetwegen (Grund)"], "answer": 0, "expl": "por = der Grund liegt bei dir (ich tue es deinetwegen), para = du bist der Adressat (du bekommst das Ergebnis)." }
+  ]
+}
