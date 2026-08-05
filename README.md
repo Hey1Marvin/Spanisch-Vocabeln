@@ -16,6 +16,10 @@ bleibt auf dem Gerät (localStorage).
 - 📊 **Statistik**: Streak, Fortschritt pro Einheit, Aktivität
 - 📥 **CSV-Export** pro Einheit (Anki-kompatibel) + Druckansicht
 - 📱 **PWA**: am Handy „zum Startbildschirm hinzufügen" → wie eine App, offline nutzbar
+- 🤖 **KI-Tutor & Text-Check**: Konversations-Simulation und Textkorrektur (eigener API-Key, bleibt nur im Browser)
+- 📕 **Lesetexte**: 8 Geschichten mit Audio, Übersetzung, Glossar und Fragen
+- 📖 **Wörterbuch & Verbtabellen**: Nachschlagen und alle 7 Zeitformen für jedes Verb
+- 🎁 **Themen-Pakete**: z. B. „Essen komplett" als Anki-Deck herunterladen
 
 ## Nutzung
 

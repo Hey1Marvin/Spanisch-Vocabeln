@@ -74,9 +74,18 @@ Abhaken, was fertig im Repo ist. Hintergründe: [docs/RESEARCH.md](docs/RESEARCH
 - [x] **Suche** über alle Vokabeln
 - [x] UI-Politur: Hero-Dashboard, Karten-Flip, sanfte Übergänge, Theme-Wahl
 
-**Geplant:**
+**Neu dazugekommen:**
+- [x] **KI-Tutor**: Konversations-Simulation in 6 Reise-Szenarien (eigener API-Key, nur lokal gespeichert)
+- [x] **Text-Check**: Spanisch schreiben, KI korrigiert mit deutschen Erklärungen
+- [x] **Wörterbuch**: eigene Vokabeln + MyMemory-Online-Übersetzung + Links (SpanishDict/WordReference/DeepL)
+- [x] **Verbtabellen**: beliebiges Verb, 7 Zeitformen (Engine + unregelmäßige Kernverben)
+- [x] **Lesetexte r01–r08**: Geschichten mit Vorlesen (TTS), Übersetzungs-Toggle, Glossar, Verständnisfragen
+- [x] **Themen-Pakete & Such-Export**: kuratierte Bündel und beliebige Treffer als Anki/CSV
+- [x] **Professionelles UI**: SVG-Icon-System statt Emoji-UI, Dark-Mode-Fixes, Button-Reset
 - [x] Satzbau-Übung (Wörter antippen in richtiger Reihenfolge)
 - [x] Konjugationstrainer (Verb + Zeit + Person drillen)
+
+**Geplant:**
 - [ ] Meilenstein-Checks (alle ~50 gelernten Karten ein Rückblick-Test)
 - [ ] Nachsprech-Modus (TTS vorsprechen, selbst bewerten)
 - [ ] Tagesziel-Erinnerung (Benachrichtigung)
