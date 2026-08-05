@@ -1,6 +1,6 @@
 /* Service Worker: App-Shell cache-first, Daten network-first (Updates kommen an,
    offline gibt es den Cache). Bei neuen Inhalten CACHE-Version hochzählen. */
-var CACHE = "vamos-v8";
+var CACHE = "vamos-v9";
 
 var SHELL = [
   "./",
@@ -49,9 +49,9 @@ self.addEventListener("fetch", function (e) {
   if (e.request.method !== "GET" || url.origin !== location.origin) return;
 
   if (url.pathname.indexOf("/data/") >= 0) {
-    // network-first: frische Vokabeln, offline aus dem Cache
+    // network-first + no-cache: frische Vokabeln (revalidiert per ETag), offline aus dem Cache
     e.respondWith(
-      fetch(e.request).then(function (res) {
+      fetch(e.request.url, { cache: "no-cache" }).then(function (res) {
         var copy = res.clone();
         caches.open(CACHE).then(function (c) { c.put(e.request, copy); });
         return res;
