@@ -1,6 +1,6 @@
 /* Service Worker: App-Shell cache-first, Daten network-first (Updates kommen an,
    offline gibt es den Cache). Bei neuen Inhalten CACHE-Version hochzählen. */
-var CACHE = "vamos-v12";
+var CACHE = "vamos-v13";
 
 var SHELL = [
   "./",
@@ -15,6 +15,7 @@ var SHELL = [
   "js/quiz.js",
   "js/conj.js",
   "js/tutor.js",
+  "js/sync.js",
   "js/grammar.js",
   "js/app.js",
   "manifest.webmanifest",

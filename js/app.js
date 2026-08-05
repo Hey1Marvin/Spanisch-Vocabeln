@@ -1159,6 +1159,21 @@ window.Vamos = window.Vamos || {};
       '<button class="btn small" id="testVoice">Stimme testen</button></div>' +
       "</div>" +
       aiConfigCard(true) +
+      (function () {
+        var sc = Vamos.sync.cfg();
+        return '<div class="card"><h2>' + Vamos.icons.svg("refresh") + ' Sync zwischen Geräten</h2>' +
+          '<p class="muted small">Speichert deinen Fortschritt in einem <strong>privaten GitHub-Gist</strong>. ' +
+          'Dazu brauchst du ein Token mit „gist“-Berechtigung (github.com → Settings → Developer settings → ' +
+          'Personal access tokens). Das Token bleibt nur in diesem Browser.</p>' +
+          '<label class="setting">GitHub-Token</label>' +
+          '<input type="password" class="answer-input" id="syncToken" value="' + esc(sc.token || "") + '" placeholder="ghp_…">' +
+          '<p class="muted small" style="margin:.4rem 0 0">' +
+          (sc.gistId ? "Verbunden mit Gist <code>" + esc(sc.gistId) + "</code>" : "Noch kein Sync-Gist – „Hochladen“ legt eins an.") + "</p>" +
+          '<div class="btn-row">' +
+          '<button class="btn primary" id="syncPush">Hochladen ↑</button>' +
+          '<button class="btn" id="syncPull">Herunterladen ↓</button>' +
+          "</div></div>";
+      })() +
       '<div class="card"><h2>' + Vamos.icons.svg("download") + ' Backup</h2>' +
       '<p class="muted small">Dein Fortschritt liegt nur in diesem Browser. Exportiere regelmäßig ein Backup, ' +
       "z. B. vor einem Gerätewechsel.</p>" +
@@ -1174,6 +1189,31 @@ window.Vamos = window.Vamos || {};
 
     main.innerHTML = html;
     bindAiConfig(viewSettings);
+
+    function syncToken() {
+      var t = document.getElementById("syncToken").value.trim();
+      var sc = Vamos.sync.cfg();
+      sc.token = t;
+      Vamos.sync.saveCfg(sc);
+      return t;
+    }
+    document.getElementById("syncPush").addEventListener("click", function () {
+      if (!syncToken()) { toast("Erst Token eintragen"); return; }
+      toast("Lade hoch …");
+      Vamos.sync.push().then(function () {
+        toast("Fortschritt hochgeladen ✅");
+        viewSettings();
+      }).catch(function (e) { toast("Fehler: " + e.message); });
+    });
+    document.getElementById("syncPull").addEventListener("click", function () {
+      if (!syncToken()) { toast("Erst Token eintragen"); return; }
+      if (!confirm("Lokalen Fortschritt mit dem Stand aus dem Gist überschreiben?")) return;
+      toast("Lade herunter …");
+      Vamos.sync.pull().then(function () {
+        toast("Fortschritt übernommen ✅");
+        setTimeout(function () { location.hash = "#/"; }, 800);
+      }).catch(function (e) { toast("Fehler: " + e.message); });
+    });
 
     function save() {
       Vamos.store.saveSettings({

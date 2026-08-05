@@ -70,7 +70,7 @@ Inspiration: Duolingo, Busuu, Babbel, LingQ, Pimsleur, SpanishDict, Beelinguapp,
 | ✅ | Anki-Export (GUID, Re-Import-fest): Einheit/alles/Sätze/Themen-Pakete/Suchtreffer | |
 | ✅ | CSV überall, Druckansicht | |
 | ✅ | JSON-Backup Export/Import | |
-| 🟡 | Geräte-Sync | v1: Backup-Datei; GitHub-Gist-Sync (Token nur lokal) geplant |
+| ✅ | Geräte-Sync via privates GitHub-Gist (Token nur localStorage) | Hochladen/Herunterladen in den Einstellungen |
 | ⬜ | „Konto“ light: Profilname + Sync-Ziel, ohne jegliche Keys im Repo | DB-frei via Gist/Datei |
 | ⬜ | Später: freies Hosting mit DB (z. B. Supabase Free) als optionales Sync-Backend | Architektur offen halten |
 
