@@ -1,6 +1,6 @@
 /* Service Worker: App-Shell cache-first, Daten network-first (Updates kommen an,
    offline gibt es den Cache). Bei neuen Inhalten CACHE-Version hochzählen. */
-var CACHE = "vamos-v4";
+var CACHE = "vamos-v5";
 
 var SHELL = [
   "./",
@@ -22,8 +22,12 @@ var SHELL = [
 
 self.addEventListener("install", function (e) {
   e.waitUntil(
-    caches.open(CACHE).then(function (c) { return c.addAll(SHELL); })
-      .then(function () { return self.skipWaiting(); })
+    caches.open(CACHE).then(function (c) {
+      // cache: "reload" umgeht den HTTP-Cache – sonst landen alte Dateien im SW-Cache
+      return c.addAll(SHELL.map(function (u) {
+        return new Request(u, { cache: "reload" });
+      }));
+    }).then(function () { return self.skipWaiting(); })
   );
 });
 
