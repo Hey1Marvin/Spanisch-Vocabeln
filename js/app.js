@@ -99,7 +99,8 @@ window.Vamos = window.Vamos || {};
             '<p class="muted small">1️⃣ <strong>Lernen</strong> zeigt dir neue Karten und fragt fällige ab – ' +
             "bewerte ehrlich, der Rest passiert automatisch (Spaced Repetition).<br>" +
             "2️⃣ Die Einheiten sind nach Wichtigkeit sortiert – einfach oben anfangen.<br>" +
-            "3️⃣ 10–15 Minuten täglich schlagen jede Wochenend-Session. 🔥</p></div>"
+            "3️⃣ 10–15 Minuten täglich schlagen jede Wochenend-Session. 🔥</p>" +
+            '<a class="btn small" href="#/placement">Schon Vorkenntnisse? → Einstufungstest</a></div>'
           : "") +
         '<div class="quick-grid">' +
         '<a class="quick" href="#/mix"><span class="ico">' + Vamos.icons.svg("shuffle") + '</span><span class="lbl">Mix-Quiz</span></a>' +
@@ -462,6 +463,134 @@ window.Vamos = window.Vamos || {};
         Vamos.quiz.bindSpeak(results);
       });
       input.dispatchEvent(new Event("input"));
+    }).catch(fail);
+  }
+
+  /* ---------- Einstufungstest ---------- */
+
+  var PLACEMENT_BANDS = [
+    { name: "Fundament (A1)", units: ["u01", "u02", "u03", "u04"] },
+    { name: "Reisen (A2)", units: ["u05", "u06", "u07", "u08", "u09", "u10", "u11", "u12"] },
+    { name: "Konversation (B1)", units: ["u13", "u14", "u15", "u16", "u17", "u18", "u19", "u20"] },
+    { name: "Feinschliff (B1/B2)", units: ["u21", "u22", "u23", "u24", "u25"] }
+  ];
+
+  function viewPlacement() {
+    loading();
+    Vamos.data.loadAllUnits().then(function (units) {
+      var byId = {};
+      units.forEach(function (u) { byId[u.meta.id] = u; });
+
+      // 5 Fragen pro Band, Wörter (keine langen Phrasen)
+      var questions = [];
+      PLACEMENT_BANDS.forEach(function (band, bi) {
+        var pool = [];
+        band.units.forEach(function (id) {
+          if (byId[id]) pool = pool.concat(byId[id].words.filter(function (w) {
+            return w.type !== "phrase";
+          }));
+        });
+        Vamos.quiz.shuffle(pool).slice(0, 5).forEach(function (card) {
+          questions.push({ card: card, band: bi, pool: pool });
+        });
+      });
+
+      var idx = 0;
+      var bandScore = [0, 0, 0, 0];
+
+      function next() {
+        if (idx >= questions.length) return finish();
+        var q = questions[idx];
+        var wrong = Vamos.quiz.shuffle(q.pool.filter(function (w) { return w.id !== q.card.id; }))
+          .slice(0, 3).map(function (w) { return w.de; });
+        var options = Vamos.quiz.shuffle([q.card.de].concat(wrong));
+
+        main.innerHTML =
+          '<div class="session-bar"><span>Einstufungstest · ' + (idx + 1) + " / " +
+          questions.length + '</span><a href="#/">Abbrechen ✕</a></div>' +
+          '<div class="session-progress"><i style="width:' +
+          Math.round(100 * idx / questions.length) + '%"></i></div>' +
+          '<div class="card"><div class="muted small">Was heißt auf Deutsch:</div>' +
+          '<div class="word" style="font-size:1.3rem;font-weight:700;margin:.3rem 0 .8rem">' +
+          esc(q.card.es) + "</div><div id='options'></div>" +
+          '<button class="btn small" id="dunno" style="margin-top:.3rem">Keine Ahnung → weiter</button></div>';
+
+        var optEl = document.getElementById("options");
+        options.forEach(function (opt) {
+          var b = document.createElement("button");
+          b.className = "mc-option";
+          b.textContent = opt;
+          b.addEventListener("click", function () {
+            if (opt === q.card.de) bandScore[q.band] += 1;
+            idx += 1;
+            next();
+          });
+          optEl.appendChild(b);
+        });
+        document.getElementById("dunno").addEventListener("click", function () {
+          idx += 1;
+          next();
+        });
+      }
+
+      function markKnown(bandIdx) {
+        var map = Vamos.store.srs();
+        var n = 0;
+        var now = Date.now();
+        PLACEMENT_BANDS.slice(0, bandIdx + 1).forEach(function (band) {
+          band.units.forEach(function (id) {
+            if (!byId[id]) return;
+            byId[id].words.forEach(function (w) {
+              if (!map[w.id] || map[w.id].r === 0) {
+                map[w.id] = { r: 1, e: 2.5, i: 30, due: now + 30 * 86400000, l: 0 };
+                n += 1;
+              }
+            });
+          });
+        });
+        Vamos.store.saveSrs(map);
+        toast(n + " Karten als bekannt markiert");
+        setTimeout(function () { location.hash = "#/"; }, 900);
+      }
+
+      function finish() {
+        // Empfehlung: höchstes Band mit >= 4/5, dann eins weiter anfangen
+        var solid = -1;
+        for (var i = 0; i < 4; i++) {
+          if (bandScore[i] >= 4) solid = i; else break;
+        }
+        var reco = solid < 0
+          ? "Fang ganz vorne bei <strong>Phase 1</strong> an – die Basics sitzen noch nicht sicher."
+          : solid >= 3
+            ? "Stark! Du kannst direkt in <strong>Phase 4</strong> einsteigen und den Rest als Rückblick nutzen."
+            : "Empfehlung: Steig bei <strong>Phase " + (solid + 2) + "</strong> ein.";
+
+        main.innerHTML =
+          '<div class="card"><h2>Dein Ergebnis</h2>' +
+          PLACEMENT_BANDS.map(function (b, i) {
+            var pct = Math.round(100 * bandScore[i] / 5);
+            return '<div style="margin:.5rem 0"><div class="small" style="font-weight:650">' +
+              esc(b.name) + " · " + bandScore[i] + "/5</div>" +
+              '<div class="progress"><i class="' + (pct < 80 ? "partial" : "") +
+              '" style="width:' + pct + '%"></i></div></div>';
+          }).join("") +
+          '<p style="margin-top:.8rem">' + reco + "</p>" +
+          (solid >= 0
+            ? '<p class="muted small">Optional: Markiere die sicheren Phasen als „bekannt“ – ' +
+              "dann startet der Lernmodus direkt mit neuem Stoff (die Karten kommen in 30 Tagen zur Kontrolle wieder).</p>" +
+              '<div class="btn-row"><button class="btn primary" id="markBtn">Phase 1–' + (solid + 1) +
+              " als bekannt markieren</button>" +
+              '<a class="btn" href="#/">Ohne Markieren starten</a></div>'
+            : '<div class="btn-row"><a class="btn primary" href="#/learn">Lernen starten</a></div>') +
+          "</div>";
+        if (solid >= 0) {
+          document.getElementById("markBtn").addEventListener("click", function () {
+            markKnown(solid);
+          });
+        }
+      }
+
+      next();
     }).catch(fail);
   }
 
@@ -951,6 +1080,23 @@ window.Vamos = window.Vamos || {};
         '<div class="card"><div class="num">' + total + "</div><div class=\"lbl\">Reviews</div></div>" +
         '<div class="card"><div class="num">' + c.due + "</div><div class=\"lbl\">Fällig</div></div>" +
         "</div>" +
+        (function () {
+          var week = 0, activeDays = 0, best = 0, bestDay = "";
+          for (var i = 6; i >= 0; i--) {
+            var d = new Date();
+            d.setDate(d.getDate() - i);
+            var k = d.toISOString().slice(0, 10);
+            var n = log[k] || 0;
+            week += n;
+            if (n > 0) activeDays += 1;
+            if (n > best) { best = n; bestDay = d.toLocaleDateString("de-DE", { weekday: "long" }); }
+          }
+          return '<div class="card"><h2>Diese Woche</h2><p class="muted small">' +
+            "<strong>" + week + "</strong> Wiederholungen an <strong>" + activeDays +
+            "</strong> von 7 Tagen" +
+            (best ? " · stärkster Tag: <strong>" + bestDay + "</strong> (" + best + ")" : "") +
+            "</p></div>";
+        })() +
         '<div class="card"><h2>Aktivität (14 Tage)</h2><div class="chart">' +
         days.map(function (d) {
           var h = Math.round(100 * d.n / maxN);
@@ -1105,6 +1251,7 @@ window.Vamos = window.Vamos || {};
     { re: /^#\/grammar\/([\w-]+)$/, fn: viewGrammar, tab: "grammar" },
     { re: /^#\/reading\/([\w-]+)$/, fn: viewReading, tab: "grammar" },
     { re: /^#\/stats$/, fn: viewStats, tab: "stats" },
+    { re: /^#\/placement$/, fn: viewPlacement, tab: "" },
     { re: /^#\/verbs$/, fn: viewVerbs, tab: "" },
     { re: /^#\/dict$/, fn: viewDict, tab: "" },
     { re: /^#\/tutor$/, fn: viewTutor, tab: "" },

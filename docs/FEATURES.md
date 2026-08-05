@@ -20,7 +20,7 @@ Inspiration: Duolingo, Busuu, Babbel, LingQ, Pimsleur, SpanishDict, Beelinguapp,
 | 🟡 | Parallel-Lesen ES/DE | Beelinguapp | Toggle da; Satz-für-Satz-Hervorhebung offen |
 | ✅ | Nachsprech-Modus (hören → nachsprechen → selbst bewerten) | Pimsleur | |
 | ✅ | Meilenstein-/Rückblick-Test über Gelerntes | Busuu | |
-| ⬜ | Einstufungstest (Startlevel bestimmen, Einheiten überspringen) | Busuu/Babbel | |
+| ✅ | Einstufungstest (20 Fragen, 4 Bänder, „als bekannt markieren“) | Busuu/Babbel | |
 | ✅ | Konjugationstrainer: alle 7 Zeiten | Ella Verbs | Drill nutzt die Engine |
 | ✅ | Diktat-Modus (hören → tippen) | — | 8 Sätze, akzent-tolerant |
 | ⬜ | Minimal-Paare-Hörtraining (pero/perro, casa/caza) | — | |
@@ -47,7 +47,7 @@ Inspiration: Duolingo, Busuu, Babbel, LingQ, Pimsleur, SpanishDict, Beelinguapp,
 | ✅ | Konfetti/Feier-Momente | Duolingo | dosiert |
 | ✅ | Wort des Tages (Dashboard) | SpanishDict | |
 | 🟡 | Achievements/Abzeichen | Duolingo | v1: Meilenstein-Zähler; Badge-Galerie offen |
-| ⬜ | Wochenrückblick („Diese Woche: 120 Reviews, 34 neue Wörter…“) | Duolingo | |
+| ✅ | Wochenrückblick in der Statistik | Duolingo | |
 | ⬜ | Tagesziel-Erinnerung (Web-Notification) | Duolingo | |
 
 ## Inhalte
