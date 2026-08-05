@@ -56,10 +56,10 @@ Inspiration: Duolingo, Busuu, Babbel, LingQ, Pimsleur, SpanishDict, Beelinguapp,
 |---|---|---|
 | ✅ | 25 Vokabel-Einheiten (1300 Karten) nach Wichtigkeit | U01–U25 |
 | ✅ | 14 Grammatik-Kapitel mit Übungen | G01–G14 |
-| ✅ | 8 Lesetexte | r01–r08 |
-| 🟡 | Ausbau: U26–U37 (Friseur-Fach!, Auto/Roadtrip, Camping, Sport+, Musik/Kultur, Nachrichten, Beziehungen, Business, Slang, Redewendungen, falsche Freunde, Bank/Geld+) | Agents laufen |
-| 🟡 | Ausbau: r09–r16 Lesetexte | Agents laufen |
-| 🟡 | Ausbau: G15–G18 (Pluscuamperfecto, se/Passiv, Relativsätze, indirekte Rede) | Agents laufen |
+| ✅ | 16 Lesetexte | r01–r16 |
+| 🟡 | Ausbau: U26–U37 | U26+U30 fertig; U27–U29, U31–U37 nach Limit-Reset (23:10) |
+| ✅ | Ausbau: r09–r16 Lesetexte | fertig |
+| ✅ | Ausbau: G15–G18 (Pluscuamperfecto, se/Passiv, Relativsätze, indirekte Rede) | fertig |
 | ⬜ | Dialog-Skripte zum Rollenspiel (A/B-Rollen mit Audio) | |
 | ⬜ | Podcast-/Video-Linksammlung mit Level-Empfehlung | Immersion |
 

@@ -262,6 +262,16 @@
       "desc": "Dein Fachgebiet auf Spanisch: Schnitt, Farbe, Styling – und das Kundengespräch im Salon."
     },
     {
+      "id": "u27",
+      "file": "data/vocab/u27-auto-roadtrip.json",
+      "title": "Auto, Verkehr & Roadtrip",
+      "emoji": "🚗",
+      "phase": 2,
+      "rank": 27,
+      "level": "A2/B1",
+      "desc": "Mietwagen, Tanken, Maut, Panne – entspannt über Spaniens Straßen."
+    },
+    {
       "id": "u30",
       "file": "data/vocab/u30-musik-kultur.json",
       "title": "Musik, Kunst & Kultur",
@@ -270,6 +280,46 @@
       "rank": 30,
       "level": "B1",
       "desc": "Konzerte, Flamenco, Museen – über Kultur reden."
+    },
+    {
+      "id": "u31",
+      "file": "data/vocab/u31-nachrichten-politik.json",
+      "title": "Nachrichten & Zeitgeschehen",
+      "emoji": "📰",
+      "phase": 4,
+      "rank": 31,
+      "level": "B1/B2",
+      "desc": "Schlagzeilen verstehen und mitreden."
+    },
+    {
+      "id": "u32",
+      "file": "data/vocab/u32-beziehungen.json",
+      "title": "Beziehungen & Gefühle vertieft",
+      "emoji": "💞",
+      "phase": 3,
+      "rank": 32,
+      "level": "B1",
+      "desc": "Freundschaft, Liebe, Trost und Glückwünsche."
+    },
+    {
+      "id": "u34",
+      "file": "data/vocab/u34-slang.json",
+      "title": "Slang & Umgangssprache",
+      "emoji": "😎",
+      "phase": 4,
+      "rank": 34,
+      "level": "B1",
+      "desc": "Guay, mola, tío – klingen wie die Locals (mit Register-Warnung)."
+    },
+    {
+      "id": "u36",
+      "file": "data/vocab/u36-falsche-freunde.json",
+      "title": "Falsche Freunde DE/ES",
+      "emoji": "⚠️",
+      "phase": 3,
+      "rank": 36,
+      "level": "A2/B1",
+      "desc": "Embarazada heißt NICHT peinlich – die klassischen Fallen."
     }
   ],
   "grammar": [
