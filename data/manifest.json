@@ -320,6 +320,16 @@
       "rank": 36,
       "level": "A2/B1",
       "desc": "Embarazada heißt NICHT peinlich – die klassischen Fallen."
+    },
+    {
+      "id": "u37",
+      "file": "data/vocab/u37-bank-geld.json",
+      "title": "Bank, Geld & Verträge",
+      "emoji": "🏦",
+      "phase": 4,
+      "rank": 37,
+      "level": "B1",
+      "desc": "Konto, Überweisung, Kaution, Kleingedrucktes."
     }
   ],
   "grammar": [
