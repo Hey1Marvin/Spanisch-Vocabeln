@@ -1,0 +1,47 @@
+{
+  "id": "r15",
+  "title": "Noche de fútbol",
+  "emoji": "⚽",
+  "level": "A2/B1",
+  "text": "Esta noche juega el Real Madrid contra el Barcelona y quiero ver el partido como los españoles: en un bar. Llego al bar Manolo una hora antes, pero ya está casi lleno. Encuentro un sitio pequeño en la barra y pido una caña y una ración de patatas bravas.\n\nEl ambiente es increíble. Los aficionados llevan camisetas blancas o azulgranas y todos hablan del partido. Mi vecino, un señor con bufanda blanca, me explica: «Esto no es solo fútbol, ¡es el clásico!». Cuando empieza el partido, el bar se queda en silencio.\n\nEn la segunda parte, el Barcelona marca un gol. La mitad del bar grita de alegría, la otra mitad protesta. Cinco minutos antes del final, el árbitro pita un penalti para el Madrid. «¡No lo puedo mirar!», dice mi vecino y se tapa los ojos.\n\nEl jugador tira… ¡y gol! Empate. El bar explota: la gente salta, canta y se abraza. Yo también grito como un loco. Ahora entiendo por qué el fútbol es tan importante aquí.",
+  "textDe": "Heute Abend spielt Real Madrid gegen Barcelona, und ich will das Spiel wie die Spanier sehen: in einer Bar. Ich komme eine Stunde vorher in die Bar Manolo, aber sie ist schon fast voll. Ich finde einen kleinen Platz an der Theke und bestelle ein kleines Bier und eine Portion Patatas Bravas.\n\nDie Stimmung ist unglaublich. Die Fans tragen weiße oder blaugranatrote Trikots, und alle reden über das Spiel. Mein Nachbar, ein Herr mit weißem Schal, erklärt mir: „Das ist nicht nur Fußball, das ist der Clásico!“ Als das Spiel beginnt, wird es still in der Bar.\n\nIn der zweiten Halbzeit schießt Barcelona ein Tor. Die eine Hälfte der Bar schreit vor Freude, die andere Hälfte protestiert. Fünf Minuten vor Schluss pfeift der Schiedsrichter einen Elfmeter für Madrid. „Ich kann nicht hinsehen!“, sagt mein Nachbar und hält sich die Augen zu.\n\nDer Spieler schießt … und Tor! Ausgleich. Die Bar explodiert: Die Leute springen, singen und umarmen sich. Auch ich schreie wie ein Verrückter. Jetzt verstehe ich, warum Fußball hier so wichtig ist.",
+  "glossary": [
+    {"es": "el partido", "de": "das Spiel (Sport)"},
+    {"es": "el aficionado", "de": "der Fan, der Anhänger"},
+    {"es": "la caña", "de": "das kleine Bier vom Fass"},
+    {"es": "la barra", "de": "die Theke"},
+    {"es": "la bufanda", "de": "der (Fan-)Schal"},
+    {"es": "el ambiente", "de": "die Stimmung"},
+    {"es": "marcar un gol", "de": "ein Tor schießen"},
+    {"es": "el árbitro", "de": "der Schiedsrichter"},
+    {"es": "pitar un penalti", "de": "einen Elfmeter pfeifen"},
+    {"es": "taparse los ojos", "de": "sich die Augen zuhalten"},
+    {"es": "el empate", "de": "das Unentschieden, der Ausgleich"}
+  ],
+  "questions": [
+    {
+      "q": "¿Dónde ve el narrador el partido?",
+      "options": ["En el estadio", "En un bar", "En casa"],
+      "answer": 1,
+      "expl": "Im Text steht: „Quiero ver el partido como los españoles: en un bar“ — er sieht das Spiel in der Bar Manolo, nicht im Stadion."
+    },
+    {
+      "q": "¿Qué pide el narrador en el bar?",
+      "options": ["Una caña y patatas bravas", "Un vino y jamón", "Un café con leche"],
+      "answer": 0,
+      "expl": "„Pido una caña y una ración de patatas bravas“ — er bestellt ein kleines Bier vom Fass und eine Portion Patatas Bravas."
+    },
+    {
+      "q": "¿Quién marca el primer gol?",
+      "options": ["El Real Madrid", "El árbitro", "El Barcelona"],
+      "answer": 2,
+      "expl": "„En la segunda parte, el Barcelona marca un gol“ — in der zweiten Halbzeit schießt Barcelona das erste Tor."
+    },
+    {
+      "q": "¿Qué pasa con el penalti?",
+      "options": ["El jugador marca y es empate", "El portero lo para", "El jugador falla el tiro"],
+      "answer": 0,
+      "expl": "„El jugador tira… ¡y gol! Empate“ — der Spieler verwandelt den Elfmeter, und das Spiel steht unentschieden."
+    }
+  ]
+}

@@ -250,6 +250,26 @@
       "rank": 25,
       "level": "B1",
       "desc": "Coche oder carro? Die wichtigsten Unterschiede, damit du überall verstanden wirst."
+    },
+    {
+      "id": "u26",
+      "file": "data/vocab/u26-friseur-beauty.json",
+      "title": "Friseur & Beauty",
+      "emoji": "💈",
+      "phase": 4,
+      "rank": 26,
+      "level": "B1",
+      "desc": "Dein Fachgebiet auf Spanisch: Schnitt, Farbe, Styling – und das Kundengespräch im Salon."
+    },
+    {
+      "id": "u30",
+      "file": "data/vocab/u30-musik-kultur.json",
+      "title": "Musik, Kunst & Kultur",
+      "emoji": "🎸",
+      "phase": 3,
+      "rank": 30,
+      "level": "B1",
+      "desc": "Konzerte, Flamenco, Museen – über Kultur reden."
     }
   ],
   "grammar": [
@@ -388,6 +408,14 @@
       "emoji": "🔗",
       "rank": 17,
       "level": "B1"
+    },
+    {
+      "id": "g18",
+      "file": "data/grammar/g18-indirekte-rede.json",
+      "title": "Indirekte Rede",
+      "emoji": "💬",
+      "rank": 18,
+      "level": "B1/B2"
     }
   ],
   "reading": [
@@ -488,6 +516,20 @@
       "title": "Clase de cocina española",
       "emoji": "🥘",
       "level": "A2/B1"
+    },
+    {
+      "id": "r15",
+      "file": "data/reading/r15-futbol.json",
+      "title": "Noche de fútbol",
+      "emoji": "⚽",
+      "level": "A2/B1"
+    },
+    {
+      "id": "r16",
+      "file": "data/reading/r16-navidad.json",
+      "title": "Navidad en España",
+      "emoji": "🎄",
+      "level": "B1"
     }
   ]
 }

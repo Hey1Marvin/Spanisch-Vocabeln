@@ -1,0 +1,48 @@
+{
+  "id": "r16",
+  "title": "Navidad en España",
+  "emoji": "🎄",
+  "level": "B1",
+  "text": "Este año paso las Navidades en España, en casa de mi amiga Carmen, en Sevilla. El veintidós de diciembre, toda la familia escucha la Lotería de Navidad en la radio. Los niños de un colegio de Madrid cantan los números. «Es el sorteo más famoso del país», me explica Carmen. «Casi todos los españoles compran un décimo». No ganamos nada, pero el ambiente es muy especial.\n\nEn Nochebuena cenamos todos juntos: gambas, cordero asado y turrón de postre. Lo que más me sorprende es la Nochevieja. A medianoche hay que comer doce uvas, una con cada campanada. «¡Si lo consigues, tendrás suerte todo el año!», me dice el abuelo. Yo casi me atraganto, y todos se ríen.\n\nPero la fiesta más importante para los niños llega el seis de enero: los Reyes Magos. La noche anterior vemos la cabalgata, donde los Reyes lanzan caramelos desde sus carrozas.\n\nPor la mañana desayunamos roscón de Reyes. Dentro del dulce hay una figurita y un haba. ¡Encuentro el haba y tengo que pagar el roscón del año que viene!",
+  "textDe": "Dieses Jahr verbringe ich Weihnachten in Spanien, bei meiner Freundin Carmen in Sevilla. Am zweiundzwanzigsten Dezember hört die ganze Familie die Weihnachtslotterie im Radio. Die Kinder einer Madrider Schule singen die Zahlen. „Es ist die berühmteste Ziehung des Landes“, erklärt mir Carmen. „Fast alle Spanier kaufen ein Los.“ Wir gewinnen nichts, aber die Stimmung ist ganz besonders.\n\nAn Heiligabend essen wir alle zusammen zu Abend: Garnelen, gebratenes Lamm und Turrón zum Nachtisch. Was mich am meisten überrascht, ist Silvester. Um Mitternacht muss man zwölf Trauben essen, eine bei jedem Glockenschlag. „Wenn du es schaffst, hast du das ganze Jahr Glück!“, sagt mir der Großvater. Ich verschlucke mich fast, und alle lachen.\n\nAber das wichtigste Fest für die Kinder kommt am sechsten Januar: die Heiligen Drei Könige. Am Abend davor sehen wir den Umzug, bei dem die Könige Bonbons von ihren Festwagen werfen.\n\nAm Morgen frühstücken wir Roscón de Reyes. In dem Kuchen stecken eine kleine Figur und eine Bohne. Ich finde die Bohne und muss den Roscón vom nächsten Jahr bezahlen!",
+  "glossary": [
+    {"es": "la Lotería de Navidad", "de": "die spanische Weihnachtslotterie"},
+    {"es": "el sorteo", "de": "die Ziehung, die Verlosung"},
+    {"es": "el décimo", "de": "das (Lotterie-)Los"},
+    {"es": "la Nochebuena", "de": "der Heiligabend"},
+    {"es": "el turrón", "de": "spanische Mandelsüßigkeit"},
+    {"es": "la Nochevieja", "de": "der Silvesterabend"},
+    {"es": "la campanada", "de": "der Glockenschlag"},
+    {"es": "atragantarse", "de": "sich verschlucken"},
+    {"es": "los Reyes Magos", "de": "die Heiligen Drei Könige"},
+    {"es": "la cabalgata", "de": "der Dreikönigsumzug"},
+    {"es": "el roscón de Reyes", "de": "der Dreikönigskuchen"},
+    {"es": "el haba", "de": "die Bohne"}
+  ],
+  "questions": [
+    {
+      "q": "¿Qué escucha la familia el veintidós de diciembre?",
+      "options": ["La Lotería de Navidad", "Un partido de fútbol", "Villancicos en la iglesia"],
+      "answer": 0,
+      "expl": "Im Text steht: „Toda la familia escucha la Lotería de Navidad en la radio“ — am 22. Dezember hört die ganze Familie die Weihnachtslotterie im Radio."
+    },
+    {
+      "q": "¿Qué hay que hacer a medianoche en Nochevieja?",
+      "options": ["Comer doce uvas", "Cantar los números", "Lanzar caramelos"],
+      "answer": 0,
+      "expl": "„A medianoche hay que comer doce uvas, una con cada campanada“ — an Silvester isst man um Mitternacht zwölf Trauben, eine bei jedem Glockenschlag."
+    },
+    {
+      "q": "¿Cuándo llegan los Reyes Magos?",
+      "options": ["El veinticuatro de diciembre", "El seis de enero", "El uno de enero"],
+      "answer": 1,
+      "expl": "„La fiesta más importante para los niños llega el seis de enero: los Reyes Magos“ — die Heiligen Drei Könige kommen am 6. Januar."
+    },
+    {
+      "q": "¿Qué encuentra el narrador en el roscón?",
+      "options": ["Una figurita", "Un décimo", "El haba"],
+      "answer": 2,
+      "expl": "„Encuentro el haba y tengo que pagar el roscón del año que viene“ — wer die Bohne findet, muss traditionell den Roscón des nächsten Jahres bezahlen."
+    }
+  ]
+}

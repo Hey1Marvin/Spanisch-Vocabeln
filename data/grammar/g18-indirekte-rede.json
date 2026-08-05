@@ -1,0 +1,95 @@
+{
+  "id": "g18",
+  "title": "Indirekte Rede",
+  "intro": "„Er sagte, dass er müde sei“ – im Spanischen läuft das über **decir que** plus eine Zeitverschiebung nach hinten. Dazu kommen indirekte Fragen mit preguntar si/qué, Aufforderungen mit pedir que + Subjuntivo und das Verschieben von hoy zu aquel día.",
+  "sections": [
+    {
+      "h": "decir que + Zeitverschiebung",
+      "p": "Steht das Einleitungsverb in der Vergangenheit (**dijo**, **contó**, **explicó**), rutschen die Zeiten der ursprünglichen Aussage **eine Stufe zurück**. Steht es dagegen im Presente (**dice**), ändert sich nichts: Dice que está cansado. Denk außerdem an Pronomen und Possessive: yo → él/ella, mi → su.",
+      "table": {
+        "head": ["Direkte Rede", "Indirekte Rede (dijo que …)"],
+        "rows": [
+          ["Presente: «Estoy cansado.»", "**Imperfecto**: … estaba cansado"],
+          ["Perfecto: «He comido.»", "**Pluscuamperfecto**: … había comido"],
+          ["Indefinido: «Fui a Cádiz.»", "**Pluscuamperfecto**: … había ido a Cádiz"],
+          ["Futuro: «Te llamaré.»", "**Condicional**: … me llamaría"]
+        ]
+      },
+      "examples": [
+        { "es": "«Vivo en Sevilla.» → Dijo que vivía en Sevilla.", "de": "„Ich wohne in Sevilla.“ → Er sagte, dass er in Sevilla wohne." },
+        { "es": "«He perdido las llaves.» → Dijo que había perdido las llaves.", "de": "„Ich habe die Schlüssel verloren.“ → Sie sagte, dass sie die Schlüssel verloren habe." }
+      ],
+      "tip": "Merkformel: **eine Stufe zurück** – Presente → Imperfecto, Perfecto/Indefinido → Pluscuamperfecto, Futuro → Condicional."
+    },
+    {
+      "h": "Indirekte Fragen: preguntar si / qué",
+      "p": "Ja/Nein-Fragen werden mit **si** (ob) angeschlossen, W-Fragen behalten ihr Fragewort – **mit Akzent** (qué, dónde, cuándo, por qué). Die Fragezeichen fallen weg, die Zeitverschiebung gilt genauso wie bei decir que.",
+      "table": {
+        "head": ["Direkte Frage", "Indirekt (me preguntó …)"],
+        "rows": [
+          ["«¿Tienes hambre?»", "**si** tenía hambre"],
+          ["«¿Dónde trabajas?»", "**dónde** trabajaba"],
+          ["«¿Cuándo llegaste?»", "**cuándo** había llegado"]
+        ]
+      },
+      "examples": [
+        { "es": "Me preguntó si quería un café.", "de": "Er fragte mich, ob ich einen Kaffee wollte." },
+        { "es": "Le pregunté dónde estaba la estación.", "de": "Ich fragte ihn, wo der Bahnhof sei." }
+      ],
+      "tip": "Das Fragewort behält seinen **Akzent** auch indirekt: No sé qué quiere. Aber Achtung: si (ob) schreibt sich **ohne** Akzent – sí mit Akzent heißt „ja“!"
+    },
+    {
+      "h": "Aufforderungen: pedir que + Subjuntivo",
+      "p": "Ein Imperativ lässt sich nicht eins zu eins übernehmen – aus «¡Ven!» wird **pedir/decir que + Subjuntivo**. Nach einem Einleitungsverb in der Vergangenheit (pidió, dijo) steht der **Imperfecto de Subjuntivo** (-ara/-iera): Me pidió que viniera. Nach Presente (pide) entsprechend der Presente de Subjuntivo: Me pide que venga.",
+      "table": {
+        "head": ["Direkte Aufforderung", "Indirekt (me pidió que …)"],
+        "rows": [
+          ["«¡Ven!»", "que **viniera**"],
+          ["«¡Habla más despacio!»", "que **hablara** más despacio"],
+          ["«¡No fumes aquí!»", "que no **fumara** allí"]
+        ]
+      },
+      "examples": [
+        { "es": "«¡Ayúdame!» → Me pidió que la ayudara.", "de": "„Hilf mir!“ → Sie bat mich, ihr zu helfen." },
+        { "es": "El médico me dijo que bebiera más agua.", "de": "Der Arzt sagte mir, ich solle mehr Wasser trinken." }
+      ],
+      "tip": "**decir que** kann beides: Mit Indikativ berichtet es (dijo que venía = er komme), mit Subjuntivo fordert es auf (dijo que viniera = er solle kommen)."
+    },
+    {
+      "h": "Zeit- und Ortsangaben verschieben",
+      "p": "Ist zwischen Aussage und Bericht Zeit vergangen, wandern auch die Zeit- und Ortsangaben mit – aus der Perspektive des Sprechers von damals wird die Perspektive von heute:",
+      "table": {
+        "head": ["Direkte Rede", "Indirekte Rede"],
+        "rows": [
+          ["hoy", "**aquel día**"],
+          ["ayer", "**el día anterior**"],
+          ["mañana", "**al día siguiente**"],
+          ["ahora", "**entonces / en aquel momento**"],
+          ["aquí", "**allí**"],
+          ["este / esta", "**aquel / aquella**"]
+        ]
+      },
+      "examples": [
+        { "es": "«Hoy no puedo.» → Dijo que aquel día no podía.", "de": "„Heute kann ich nicht.“ → Er sagte, dass er an jenem Tag nicht könne." },
+        { "es": "«Te veo mañana aquí.» → Dijo que me vería al día siguiente allí.", "de": "„Ich sehe dich morgen hier.“ → Sie sagte, dass sie mich am nächsten Tag dort sehen würde." }
+      ],
+      "tip": "Die Verschiebung ist nur nötig, wenn sich der Bezugspunkt wirklich verschoben hat – berichtest du **am selben Tag**, bleibt hoy einfach hoy."
+    }
+  ],
+  "exercises": [
+    { "type": "gap", "text": "«Estoy muy cansado.» → Dijo que ___ muy cansado.", "answer": "estaba", "hint": "Presente → ?", "expl": "Nach dijo rutscht das Presente (estoy) eine Stufe zurück ins Imperfecto: estaba." },
+    { "type": "gap", "text": "«He visto esa película.» → Dijo que ___ esa película.", "answer": "había visto", "hint": "Perfecto → ?", "expl": "Perfecto (he visto) wird zum Pluscuamperfecto: había visto." },
+    { "type": "gap", "text": "«Vivimos en Madrid.» → Dijeron que ___ en Madrid.", "answer": "vivían", "hint": "Presente → Imperfecto, 3. Person Plural", "expl": "Zeitverschiebung plus Personenwechsel: nosotros vivimos → ellos vivían." },
+    { "type": "gap", "text": "«Te llamaré mañana.» → Dijo que me ___ al día siguiente.", "answer": "llamaría", "hint": "Futuro → ?", "expl": "Das Futuro (llamaré) wird in der indirekten Rede zum Condicional: llamaría. Und mañana → al día siguiente." },
+    { "type": "gap", "text": "«¿Tienes tiempo?» → Me preguntó ___ tenía tiempo.", "answer": "si", "hint": "Ja/Nein-Frage", "expl": "Ja/Nein-Fragen werden mit si (ob) angeschlossen – ohne Akzent, denn sí mit Akzent heißt „ja“." },
+    { "type": "gap", "text": "«¿Dónde trabajas?» → Me preguntó dónde ___.", "answer": "trabajaba", "hint": "Zeitverschiebung auch in Fragen", "expl": "Das Fragewort dónde bleibt (mit Akzent), das Presente trabajas rutscht ins Imperfecto: trabajaba." },
+    { "type": "gap", "text": "«¡Ven a mi fiesta!» → Me pidió que ___ (venir) a su fiesta.", "answer": ["viniera", "viniese"], "hint": "Imperfecto de Subjuntivo", "expl": "Aufforderung nach pidió → Imperfecto de Subjuntivo: viniera (oder viniese). Beachte auch mi → su." },
+    { "type": "gap", "text": "«Hoy no puedo ir.» → Dijo que ___ no podía ir.", "answer": "aquel día", "hint": "hoy → ?", "expl": "Mit zeitlichem Abstand verschiebt sich hoy zu aquel día (an jenem Tag)." },
+    { "type": "gap", "text": "«¡Hagan los deberes!» → La profesora les dijo que ___ (hacer) los deberes.", "answer": ["hicieran", "hiciesen"], "hint": "Aufforderung → Subjuntivo", "expl": "decir que als Aufforderung nach Vergangenheit → Imperfecto de Subjuntivo: hicieran (oder hiciesen)." },
+    { "type": "mc", "q": "«Trabajo en un banco.» → Dijo que ___ en un banco.", "options": ["trabaja", "trabajaba", "trabajó"], "answer": 1, "expl": "Nach dijo wird das Presente zum Imperfecto: trabajaba. trabajó (Indefinido) wäre keine Verschiebung, sondern eine andere Aussage." },
+    { "type": "mc", "q": "«Hemos terminado ya.» → Dijeron que ya ___.", "options": ["han terminado", "habían terminado", "terminaban"], "answer": 1, "expl": "Perfecto (hemos terminado) → Pluscuamperfecto: habían terminado. Eine Stufe zurück!" },
+    { "type": "mc", "q": "Wie gibst du «¿Estás en casa?» indirekt wieder?", "options": ["Me preguntó si estaba en casa.", "Me preguntó que estaba en casa.", "Me preguntó si estoy en casa."], "answer": 0, "expl": "Ja/Nein-Frage → si (nicht que), und nach preguntó gilt die Zeitverschiebung: estás → estaba." },
+    { "type": "mc", "q": "«¡Ayúdame!» → Me pidió que la ___.", "options": ["ayudara", "ayudo", "ayudaba"], "answer": 0, "expl": "Aufforderungen stehen nach pidió im Imperfecto de Subjuntivo: ayudara. Indikativ (ayudo, ayudaba) würde berichten statt auffordern." },
+    { "type": "mc", "q": "„ayer“ wird in der indirekten Rede (mit zeitlichem Abstand) zu …", "options": ["el día anterior", "al día siguiente", "aquel día"], "answer": 0, "expl": "ayer → el día anterior (am Tag zuvor). al día siguiente entspricht mañana, aquel día entspricht hoy." }
+  ]
+}
