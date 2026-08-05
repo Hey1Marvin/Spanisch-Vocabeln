@@ -1,0 +1,48 @@
+{
+  "id": "r14",
+  "title": "Clase de cocina española",
+  "emoji": "🥘",
+  "level": "A2/B1",
+  "text": "Hoy participo en una clase de cocina en Valencia. Quiero aprender a preparar una paella auténtica. El cocinero se llama Vicente y lleva un delantal blanco. Sobre la mesa están todos los ingredientes: arroz, pollo, conejo, judías verdes, tomate, aceite de oliva y azafrán.\n\nVicente nos explica los pasos con mucha paciencia. «Primero, calentad el aceite en la paellera», dice. «Ahora añadid el pollo y el conejo. ¡Cuidado, el aceite está muy caliente!». Después de unos minutos continúa: «Echad el tomate y las judías. Y ahora, lo más importante: el azafrán, que da color y sabor».\n\nCuando el caldo hierve, añadimos el arroz. «No mováis el arroz, ¡es la regla de oro!», nos dice Vicente riendo. Yo pregunto: «¿Cuánto tiempo tiene que cocinarse?». «Unos dieciocho minutos», responde.\n\nAl final, todos comemos juntos en una mesa grande. Mi paella no es perfecta, pero está riquísima. Vicente me da la receta y me dice: «Practica en casa y pronto cocinarás como un valenciano».",
+  "textDe": "Heute nehme ich an einem Kochkurs in Valencia teil. Ich möchte lernen, eine echte Paella zuzubereiten. Der Koch heißt Vicente und trägt eine weiße Schürze. Auf dem Tisch liegen alle Zutaten: Reis, Hähnchen, Kaninchen, grüne Bohnen, Tomate, Olivenöl und Safran.\n\nVicente erklärt uns die Schritte mit viel Geduld. „Erhitzt zuerst das Öl in der Paella-Pfanne“, sagt er. „Gebt jetzt das Hähnchen und das Kaninchen hinein. Vorsicht, das Öl ist sehr heiß!“ Nach ein paar Minuten fährt er fort: „Gebt die Tomate und die Bohnen dazu. Und jetzt das Wichtigste: der Safran, der Farbe und Geschmack gibt.“\n\nAls die Brühe kocht, geben wir den Reis hinein. „Rührt den Reis nicht um, das ist die goldene Regel!“, sagt Vicente lachend. Ich frage: „Wie lange muss sie kochen?“ „Ungefähr achtzehn Minuten“, antwortet er.\n\nAm Ende essen wir alle zusammen an einem großen Tisch. Meine Paella ist nicht perfekt, aber sie schmeckt köstlich. Vicente gibt mir das Rezept und sagt: „Üb zu Hause, und bald kochst du wie ein Valencianer.“",
+  "glossary": [
+    {"es": "el cocinero", "de": "der Koch"},
+    {"es": "el delantal", "de": "die Schürze"},
+    {"es": "los ingredientes", "de": "die Zutaten"},
+    {"es": "las judías verdes", "de": "die grünen Bohnen"},
+    {"es": "el azafrán", "de": "der Safran"},
+    {"es": "la paellera", "de": "die Paella-Pfanne"},
+    {"es": "calentad el aceite", "de": "erhitzt das Öl"},
+    {"es": "añadir", "de": "hinzufügen"},
+    {"es": "el caldo", "de": "die Brühe"},
+    {"es": "hervir", "de": "kochen, sieden"},
+    {"es": "la receta", "de": "das Rezept"},
+    {"es": "riquísimo", "de": "sehr lecker, köstlich"}
+  ],
+  "questions": [
+    {
+      "q": "¿Qué quiere aprender el narrador?",
+      "options": ["A preparar una paella", "A hacer una tortilla", "A hacer gazpacho"],
+      "answer": 0,
+      "expl": "Im Text steht: „Quiero aprender a preparar una paella auténtica“ — er möchte lernen, eine echte Paella zuzubereiten."
+    },
+    {
+      "q": "¿Qué ingrediente da color y sabor a la paella?",
+      "options": ["El tomate", "El azafrán", "El aceite de oliva"],
+      "answer": 1,
+      "expl": "Vicente sagt: «Y ahora, lo más importante: el azafrán, que da color y sabor» — der Safran gibt der Paella Farbe und Geschmack."
+    },
+    {
+      "q": "¿Cuál es la regla de oro de la paella?",
+      "options": ["No mover el arroz", "Añadir mucha sal", "Cocinar el arroz una hora"],
+      "answer": 0,
+      "expl": "«No mováis el arroz, ¡es la regla de oro!» — den Reis nicht umrühren, das ist die goldene Regel."
+    },
+    {
+      "q": "¿Cuánto tiempo tiene que cocinarse el arroz?",
+      "options": ["Unos ocho minutos", "Unos treinta minutos", "Unos dieciocho minutos"],
+      "answer": 2,
+      "expl": "Auf die Frage des Erzählers antwortet Vicente: «Unos dieciocho minutos» — der Reis muss ungefähr achtzehn Minuten kochen."
+    }
+  ]
+}

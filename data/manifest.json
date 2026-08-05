@@ -364,6 +364,30 @@
       "emoji": "↔️",
       "rank": 14,
       "level": "B1"
+    },
+    {
+      "id": "g15",
+      "file": "data/grammar/g15-pluscuamperfecto.json",
+      "title": "Pluscuamperfecto",
+      "emoji": "⏮️",
+      "rank": 15,
+      "level": "B1"
+    },
+    {
+      "id": "g16",
+      "file": "data/grammar/g16-se-passiv.json",
+      "title": "Se-Konstruktionen & Passiv",
+      "emoji": "🔁",
+      "rank": 16,
+      "level": "B1/B2"
+    },
+    {
+      "id": "g17",
+      "file": "data/grammar/g17-relativsaetze.json",
+      "title": "Relativsätze",
+      "emoji": "🔗",
+      "rank": 17,
+      "level": "B1"
     }
   ],
   "reading": [
@@ -422,6 +446,48 @@
       "title": "La fiesta del pueblo",
       "emoji": "🎉",
       "level": "B1"
+    },
+    {
+      "id": "r09",
+      "file": "data/reading/r09-tren.json",
+      "title": "El tren a Valencia",
+      "emoji": "🚆",
+      "level": "A2/B1"
+    },
+    {
+      "id": "r10",
+      "file": "data/reading/r10-medico.json",
+      "title": "Una visita al médico",
+      "emoji": "🩺",
+      "level": "B1"
+    },
+    {
+      "id": "r11",
+      "file": "data/reading/r11-alquiler.json",
+      "title": "El coche de alquiler",
+      "emoji": "🚗",
+      "level": "B1"
+    },
+    {
+      "id": "r12",
+      "file": "data/reading/r12-cumpleanos.json",
+      "title": "Un cumpleaños español",
+      "emoji": "🎂",
+      "level": "A2/B1"
+    },
+    {
+      "id": "r13",
+      "file": "data/reading/r13-camino.json",
+      "title": "Un día en el Camino de Santiago",
+      "emoji": "🥾",
+      "level": "B1"
+    },
+    {
+      "id": "r14",
+      "file": "data/reading/r14-cocina.json",
+      "title": "Clase de cocina española",
+      "emoji": "🥘",
+      "level": "A2/B1"
     }
   ]
 }
