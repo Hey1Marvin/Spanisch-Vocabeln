@@ -15,14 +15,14 @@ Inspiration: Duolingo, Busuu, Babbel, LingQ, Pimsleur, SpanishDict, Beelinguapp,
 | ✅ | Satz-Lücke (Cloze im Beispielsatz) | Clozemaster | |
 | ✅ | Satzbau (Wörter ordnen) | Duolingo | |
 | ✅ | Mix-Quiz / Interleaving | Lernforschung | |
-| ✅ | Konjugationstrainer | Ella Verbs | 15 Kernverben, 2 Zeiten |
-| ✅ | Lesetexte mit Fragen, Glossar, Audio | Duolingo Stories, Beelinguapp | 8 Stück |
+| ✅ | Konjugationstrainer | Ella Verbs | 15 Kernverben, alle 7 Zeiten (Engine) |
+| ✅ | Lesetexte mit Fragen, Glossar, Audio | Duolingo Stories, Beelinguapp | 16 Stück |
 | 🟡 | Parallel-Lesen ES/DE | Beelinguapp | Toggle da; Satz-für-Satz-Hervorhebung offen |
 | ✅ | Nachsprech-Modus (hören → nachsprechen → selbst bewerten) | Pimsleur | |
 | ✅ | Meilenstein-/Rückblick-Test über Gelerntes | Busuu | |
 | ⬜ | Einstufungstest (Startlevel bestimmen, Einheiten überspringen) | Busuu/Babbel | |
-| ⬜ | Konjugationstrainer: alle 7 Zeiten + beliebige Verben (Engine existiert) | Ella Verbs | |
-| ⬜ | Diktat-Modus (hören → tippen) | — | |
+| ✅ | Konjugationstrainer: alle 7 Zeiten | Ella Verbs | Drill nutzt die Engine |
+| ✅ | Diktat-Modus (hören → tippen) | — | 8 Sätze, akzent-tolerant |
 | ⬜ | Minimal-Paare-Hörtraining (pero/perro, casa/caza) | — | |
 | ⬜ | KI-generierte personalisierte Übungen aus schwachen Karten | — | braucht KI-Key |
 
@@ -83,7 +83,7 @@ Inspiration: Duolingo, Busuu, Babbel, LingQ, Pimsleur, SpanishDict, Beelinguapp,
 | ✅ | Settings: Theme, Tagesziel, neue Karten, Richtung, Stimme, Tempo, Backup | |
 | ✅ | Settings-Überarbeitung: Gruppierung, KI-Konfiguration zentral, Über-Sektion | |
 | ⬜ | Onboarding-Tour (3 Screens beim ersten Start) | |
-| ⬜ | Tastatur-Shortcuts Desktop (1–4 fürs Bewerten, Enter = aufdecken) | |
+| ✅ | Tastatur-Shortcuts Desktop (Space/Enter aufdecken, 1–4 bewerten) | |
 
 **Sicherheits-Grundsatz:** API-Keys/Tokens (KI, GitHub, …) werden ausschließlich in
 localStorage gehalten, tauchen nie im Repo, in Exporten oder Backups auf.
