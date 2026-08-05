@@ -21,7 +21,7 @@ Abhaken, was fertig im Repo ist. Hintergründe: [docs/RESEARCH.md](docs/RESEARCH
 - [x] **U09 Stadt & Wegbeschreibung**
 - [x] **U10 Einkaufen & Geld** – Größen, Preise, bezahlen, reklamieren
 - [x] **U11 Notfall, Gesundheit & Apotheke** – Arzt, Schmerzen, Hilfe holen
-- [ ] **U12 Strand, Natur & Ausflüge** – Meer, Wandern, Tickets, Touren
+- [x] **U12 Strand, Natur & Ausflüge** – Meer, Wandern, Tickets, Touren
 - [x] **G03 Pretérito Indefinido** – Vergangenheit erzählen I
 - [x] **G04 Pretérito Imperfecto** – Vergangenheit II + Abgrenzung
 - [x] **G05 Objektpronomen** – me/te/le/lo/la, doppelte Pronomen
@@ -33,9 +33,9 @@ Abhaken, was fertig im Repo ist. Hintergründe: [docs/RESEARCH.md](docs/RESEARCH
 - [x] **U15 Freizeit, Hobbys & Sport**
 - [x] **U16 Wetter & Jahreszeiten**
 - [x] **U17 Gefühle & Meinung äußern** – zustimmen, widersprechen, finden dass …
-- [ ] **U18 Arbeit & Alltag erzählen**
+- [x] **U18 Arbeit & Alltag erzählen**
 - [ ] **U19 Konnektoren & Füllwörter** – bueno, pues, es que, sin embargo … (größter Flüssigkeits-Hebel!)
-- [ ] **U20 Zeit-Ausdrücke & Häufigkeit** – schon, noch nicht, gerade, meistens, neulich
+- [x] **U20 Zeit-Ausdrücke & Häufigkeit** – schon, noch nicht, gerade, meistens, neulich
 - [x] **G06 Gustar & Co.** – gefallen, interessieren, wehtun
 - [x] **G07 Pretérito Perfecto** – „heute/diese Woche“-Vergangenheit
 - [x] **G08 Futuro & Pläne** – ir a + Infinitiv, futuro simple
@@ -44,15 +44,15 @@ Abhaken, was fertig im Repo ist. Hintergründe: [docs/RESEARCH.md](docs/RESEARCH
 
 - [x] **U21 Ausgehen, Feiern & Kultur** – Bar, Konzert, Feste, Einladungen
 - [x] **U22 Telefon, Internet & Behörden** – SIM-Karte, Termine, Formulare
-- [ ] **U23 Adjektive-Grundstock** – die 60 nützlichsten Eigenschaftswörter
+- [x] **U23 Adjektive-Grundstock** – die 60 nützlichsten Eigenschaftswörter
 - [x] **U24 Diskutieren & Argumentieren**
-- [ ] **U25 Spanien vs. Lateinamerika** – wichtigste Wort- & Aussprache-Unterschiede
+- [x] **U25 Spanien vs. Lateinamerika** – wichtigste Wort- & Aussprache-Unterschiede
 - [x] **G09 Condicional & höfliche Bitten** – ¿Podrías…? Me gustaría…
 - [x] **G10 Imperativ** – Anweisungen geben & verstehen
 - [x] **G11 Subjuntivo I** – nach ojalá, querer que, es importante que …
 - [x] **G12 Subjuntivo II** – Zweifel, Emotion, cuando + Zukunft
 - [x] **G13 Vergleiche & Superlativ** – más que, tan como, el mejor
-- [ ] **G14 Por vs. Para**
+- [x] **G14 Por vs. Para**
 
 ## Feature-Roadmap
 
